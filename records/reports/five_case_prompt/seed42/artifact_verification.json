@@ -1,0 +1,980 @@
+{
+  "status": "passed",
+  "partial": false,
+  "new_generations": 45,
+  "reused_generations": 15,
+  "pending": [],
+  "plan_sha256": "1c8f83076d5d97b81b4d1a41f1326224a313e633851d2cebbd32772a768c0915",
+  "common_fields_equal_to_P0_except_text_and_gpu": [
+    "audio",
+    "audio_positions_sha256",
+    "base_video_positions_sha256",
+    "base_video_tokens",
+    "cohort_config_sha256",
+    "common_inputs_sha256",
+    "common_time_shift_seconds",
+    "controls_sha256",
+    "cwd",
+    "decoder_execution",
+    "decoder_script_sha256",
+    "decoder_seed",
+    "denoising_trace",
+    "environment",
+    "eta",
+    "example",
+    "example_id",
+    "final_frozen_max_abs_error",
+    "fps",
+    "gt_video_opened",
+    "guidance",
+    "height",
+    "initial_noise_seed",
+    "input_cache",
+    "local_latent_sha256",
+    "ltx_commit",
+    "models",
+    "noise_audit",
+    "noise_policy",
+    "precision",
+    "prefix_frames",
+    "prefix_tokens",
+    "prompt_enhancement",
+    "s_noise",
+    "sampler",
+    "seed",
+    "sigmas",
+    "source_dependency_gap_seconds",
+    "status",
+    "step_noise_seed",
+    "target_decoded_slice",
+    "target_frames",
+    "target_model_time_range",
+    "total_frames",
+    "width"
+  ],
+  "actual_text_cache_matches_each_exact_prompt": true,
+  "all_initial_and_seven_step_noises_match_P0": true,
+  "actual_reference_content_and_positions_match_P0": true,
+  "all_frozen_errors": 0,
+  "target_frames_fully_decoded": 4320,
+  "all_output_frames_fully_decoded": 18780,
+  "provenance": [
+    {
+      "example_id": "five_001_nursery_manager",
+      "variant": "P0",
+      "cell": "local",
+      "config_sha256": "d25c7db6f2a30f8a3f64d00769f1dbd1c89e5d6dd0bedc9c1308016eb11145fb",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "eb43997807ec2aaea4b9e8869ffe0c2250a84b918b40549b301e50a69ab65b50",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "variant": "P0",
+      "cell": "image_past",
+      "config_sha256": "d02c49fab5243d4e829093a0160276945cfa94720cbca04b4becfc78ae3ce99e",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "c9fa70523f80353c8d1d809b2f95336785dc74398cf6aac66d933e8414480d6f",
+      "latent_tensor_sha256": "3aa01828e266e8d79937c12fa394cc64ab03e1beecd55469e0b3e075e26b5129",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "variant": "P0",
+      "cell": "video_past",
+      "config_sha256": "0b65f3f51e14420ca4133772ad696cc1a7179d355f0d639188b7e4d18af8d843",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "ea2c63d2e1b4f51227d6b6230a8b5472277b7258e8cc68b141ac44da5350af31",
+      "latent_tensor_sha256": "b4ff57ded918d6ebf237a4a5127584f710c47634d6bedc399a5df818b78a9d1c",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "variant": "P1",
+      "cell": "local",
+      "config_sha256": "10fc66e3bba62a28e213c6ca60b52b99e318cb1706f8f1f4277172071b306d7e",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "25ac2153d79375026741d757ab4770f831649630154cd1cf9634bc583e4bfa9c",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "variant": "P1",
+      "cell": "image_past",
+      "config_sha256": "96e10771c04da6d096aa0aafeca0ea8e4ea226b22497a183caa74fb817009904",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "c9fa70523f80353c8d1d809b2f95336785dc74398cf6aac66d933e8414480d6f",
+      "latent_tensor_sha256": "eddde75c7ba40bfec617ac2a41b49cd25b0c9bd756cb038079b17573284421a1",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "variant": "P1",
+      "cell": "video_past",
+      "config_sha256": "f1465b0633fafa2b59942e3697860c1446ba0b333b2b4588b8a768a68fa9a9bb",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "ea2c63d2e1b4f51227d6b6230a8b5472277b7258e8cc68b141ac44da5350af31",
+      "latent_tensor_sha256": "2922e1df7145cb9d96604b521f178a9ab2fa12a1fe13449fd9a1ff48e5e2a9e5",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "variant": "P2",
+      "cell": "local",
+      "config_sha256": "60035fe4e1408f5203ddee122a62545408d9611c845c5385be0a183a02ae5cd7",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "fe468066ae18841260405dbb4e77076087a1c94c1bc195bc5783958bd240f9ac",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "variant": "P2",
+      "cell": "image_past",
+      "config_sha256": "0d63f1ae7c6f30733784b652677dd2281f0fd8733d0f6a72fd50c18b1810f88d",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "c9fa70523f80353c8d1d809b2f95336785dc74398cf6aac66d933e8414480d6f",
+      "latent_tensor_sha256": "c176a2fe161fd5b04f3449d56fc0b277cbf43e2a24533e553f369f3e4a0ebe4a",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "variant": "P2",
+      "cell": "video_past",
+      "config_sha256": "519b882febaa9b7266aa600fe1764c0367775939f1104f5411931b23e0cccc80",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "ea2c63d2e1b4f51227d6b6230a8b5472277b7258e8cc68b141ac44da5350af31",
+      "latent_tensor_sha256": "0a64fe0354e969f5b63df373a29cbbac14fb58d2479455635f54175457dd00b5",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "variant": "P3",
+      "cell": "local",
+      "config_sha256": "8c091596db8b792a9210d68996fba1cc9d6517adc5c7d3ffa2bac93aa6cc5fb5",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "cd9ccfc3eb692d6db5234df4cc9411d1f476cb0061f235cc3319728a80deecbf",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "variant": "P3",
+      "cell": "image_past",
+      "config_sha256": "29fd313f92007e219d7834f06b7839b7e6837a5c55f66da1e0560a2bb264dcae",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "c9fa70523f80353c8d1d809b2f95336785dc74398cf6aac66d933e8414480d6f",
+      "latent_tensor_sha256": "02efe11cabc0f1fe8f9e707591952c08f40674fba4cadf3a34081f4b3d8072dc",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "variant": "P3",
+      "cell": "video_past",
+      "config_sha256": "5e57ee0737cfcad42d7b8070d9f823df8d9f86ccaaa46fc9532cba0bc86bb318",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "ea2c63d2e1b4f51227d6b6230a8b5472277b7258e8cc68b141ac44da5350af31",
+      "latent_tensor_sha256": "5d777426fd66093968130ee9f02c4f290f5e17d7266a188bfa4877a58a4f7335",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "variant": "P0",
+      "cell": "local",
+      "config_sha256": "11fdc49234bef37704eccbce73b7557fb2f22384503c4c8666150d77070b35c1",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "5cdc36037bb674f90abffdcf8564ce0746b6f923d870767816dd68cc83b2a307",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "variant": "P0",
+      "cell": "image_past",
+      "config_sha256": "551949e0b223242612c26ea50baed64bd55de55714d2a313c819486256c63420",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "a0b01041085491a676640cacc400cd22aa87f7f17bd708bbe02908adb6705362",
+      "latent_tensor_sha256": "41ad86e8902730e24a9caaa61a6e68a85498b144d8baf3304cff74c06cc98c56",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "variant": "P0",
+      "cell": "video_past",
+      "config_sha256": "b9fcedc5fcb1dbe9e2d39c38d343ffa27cff024fc69913755d3fdba40649a42c",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "2668c11e5d63ff14e9aeb258cb8c82499b7360ad3ba92d7228adb3bc6440f60e",
+      "latent_tensor_sha256": "0984336028d8fd53976d5beba404af9d1b3428873c23c11499879cbc3aae9bb9",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "variant": "P1",
+      "cell": "local",
+      "config_sha256": "0b965fad609c808e3a08cec80ba942ee8ab5c15e18f9da89dd37e5f2c1156226",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "f3a4d4b6d023ac0221674ba1527a8313a3216b8303b69fe5bec00b7e229cb9d4",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "variant": "P1",
+      "cell": "image_past",
+      "config_sha256": "40a6d9bbebdd2df1a61e379387b7c0ee54d3af5e79591f4e5b3e715154162d65",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "a0b01041085491a676640cacc400cd22aa87f7f17bd708bbe02908adb6705362",
+      "latent_tensor_sha256": "e90f7713ed8d3c3271c0a079d56ce6c5a20502be7028f578c67b8bab3807dca4",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "variant": "P1",
+      "cell": "video_past",
+      "config_sha256": "c5b909bdd2c58b2c751f0bc01a38b906873325badd014c1e8f27da69c9f7085c",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "2668c11e5d63ff14e9aeb258cb8c82499b7360ad3ba92d7228adb3bc6440f60e",
+      "latent_tensor_sha256": "ad3040fbd7b6c7715c415a06f3474028419ee835a058013db475e98bdffa6846",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "variant": "P2",
+      "cell": "local",
+      "config_sha256": "04d19d752bd20715edcaf9d9f77290873182a14d25db15b1c2727341a70164a1",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "40947f998d14d9bf7b9f3eaf04a826aebb68e66d22ddc2b0a4c35c61fd92c171",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "variant": "P2",
+      "cell": "image_past",
+      "config_sha256": "e12db488b5107190aecdacbe790f902e68fcc220eb5c69c0145bb5d06807e46d",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "a0b01041085491a676640cacc400cd22aa87f7f17bd708bbe02908adb6705362",
+      "latent_tensor_sha256": "8fc5c68d9c69dfd50d6d4b0e92a2df196f3d30224fd4217839bc0345facd203c",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "variant": "P2",
+      "cell": "video_past",
+      "config_sha256": "f0c4c7cd7d37ff1d5ab77911743a0f2d041c597a9d80098d19e674216603d7e6",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "2668c11e5d63ff14e9aeb258cb8c82499b7360ad3ba92d7228adb3bc6440f60e",
+      "latent_tensor_sha256": "b201d92fbc7a58abda28fb7d52ca222c009dc90a5871089cfe19d72a504edf61",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "variant": "P3",
+      "cell": "local",
+      "config_sha256": "addfbf4b29ddabdb9d150eee60c19f395dd28ef5eb5d988ff3bc569dda751d4c",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "c1f52456a8966a3689f3975c7024818a0529855c5c9186808fe8025e4fc390be",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "variant": "P3",
+      "cell": "image_past",
+      "config_sha256": "3f8e227c3e6b007d935448f5c452fc45bbd47337b3a524649f29fd9430980153",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "a0b01041085491a676640cacc400cd22aa87f7f17bd708bbe02908adb6705362",
+      "latent_tensor_sha256": "80988c270ca7b05c45d9e1c55bb1681f328d91da11d2b968b18bcdc868e0bcd3",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "variant": "P3",
+      "cell": "video_past",
+      "config_sha256": "7c3a53649d64aad501c2d7f40aa73a8235d81514332e07012f2691ab9d70ad64",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "2668c11e5d63ff14e9aeb258cb8c82499b7360ad3ba92d7228adb3bc6440f60e",
+      "latent_tensor_sha256": "e723a2f7300b444e541e24c11f31f1328c33fe462373129ad696c42e916ac209",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "variant": "P0",
+      "cell": "local",
+      "config_sha256": "219555b96349664a2937223fbb3a0027313eb3ecfc84ad1af2cb5fc59aedef37",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "f1a9cfd699208222bfdc0918a461b78e34e7b7d86f79dabb2f8bbe7adcf7d472",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "variant": "P0",
+      "cell": "image_past",
+      "config_sha256": "d5279ec668be653234b9ea39594626007d0b9c25a9961be0edf185aca75d1e35",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "c9da74392cf09e54c20f1cf59dd1d0ec09342915e860085c36cba9fc7a5dd3f5",
+      "latent_tensor_sha256": "5931a54b5e63df4da0ec211968e8baea0bf387708c711ccafc4911ca39870e17",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "variant": "P0",
+      "cell": "video_past",
+      "config_sha256": "9a210b8c0ea9677d1ceebe0c4ba8e6c1e8130d8ede0e5c6547c0c303ee7e6bbb",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "32f2bc0696a8c2ffbe82fc38e3c8aaed3b7b20ca08d9696db5eb11ab03c39899",
+      "latent_tensor_sha256": "b72fcef92dd20936a932d97fcaf12cbf1f9449f348926b9297b0c72b8af91970",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "variant": "P1",
+      "cell": "local",
+      "config_sha256": "c4ab333f81c1cd132c50372430788f377006c575f7608dc134204e8ee1bd97bd",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "8505ebef1f9f1d2b5aba77c4df878e184c8fbbb673a652c4dd1f250389e360d8",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "variant": "P1",
+      "cell": "image_past",
+      "config_sha256": "6731830cad637e0f2d483ee32f4cac26f8d8a1076eb53774a4c23235927118d7",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "c9da74392cf09e54c20f1cf59dd1d0ec09342915e860085c36cba9fc7a5dd3f5",
+      "latent_tensor_sha256": "9ac49b0d068fc2fbd51b64039f1c5cb56ffbba190aa7a3091bc6f48bb6d83069",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "variant": "P1",
+      "cell": "video_past",
+      "config_sha256": "94de7a3efcc5ff83b382101717c04bcc603af9cc5e905dd9b83021c1dcd1dd16",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "32f2bc0696a8c2ffbe82fc38e3c8aaed3b7b20ca08d9696db5eb11ab03c39899",
+      "latent_tensor_sha256": "e8744d84d07da487eacd58930cf0b6af0157318111c666b6be12d9f7389ae9e2",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "variant": "P2",
+      "cell": "local",
+      "config_sha256": "bbdfd9a5342c50bb4bde1005c0da1a60a32aff1c797d8d7ecf91c632e1f3c737",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "e82bd99b7d13bcd7676455d119e2b1b8e93fd717a7b7b9c81eeabc1ce1195538",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "variant": "P2",
+      "cell": "image_past",
+      "config_sha256": "eb7258c68ca935913c2879795c6dd068c431c41deff32a7ace4dd622605d382b",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "c9da74392cf09e54c20f1cf59dd1d0ec09342915e860085c36cba9fc7a5dd3f5",
+      "latent_tensor_sha256": "1a899406425ea6fc484f9052742ed924ca29fb88ae12d74fa545aad466028920",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "variant": "P2",
+      "cell": "video_past",
+      "config_sha256": "6cde394819f8dbfc9cbb4b98840512b51c1abc68453264533e16abe45b10a7e6",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "32f2bc0696a8c2ffbe82fc38e3c8aaed3b7b20ca08d9696db5eb11ab03c39899",
+      "latent_tensor_sha256": "a3a046a02c8a2d8e500ee1fcfa3f8db2e688e22e172e5ae19ea5f961f3011115",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "variant": "P3",
+      "cell": "local",
+      "config_sha256": "2eaff091b2111263ba8ce474933d45e7718a25b3933f1b925dfbdae3cccb832b",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "40452e6045cc5597dfe92dc1da64202c8a3ad3c7f462128516c5007deaab0925",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "variant": "P3",
+      "cell": "image_past",
+      "config_sha256": "aaacac30286e8ace80edb0bd8247f08aab3793e1b0eb6cded3616ad3e4cd0b0f",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "c9da74392cf09e54c20f1cf59dd1d0ec09342915e860085c36cba9fc7a5dd3f5",
+      "latent_tensor_sha256": "6cce8f5436428284fa5bd1fd71cfe32f783a6876ff49c2ecc320ad5d73a5937f",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "variant": "P3",
+      "cell": "video_past",
+      "config_sha256": "a92b99a960789a3713e730b1986c976dc5379b7d4c1b1f10e1c2e7d3efbd8bcf",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "32f2bc0696a8c2ffbe82fc38e3c8aaed3b7b20ca08d9696db5eb11ab03c39899",
+      "latent_tensor_sha256": "5cc6e6354c5f91ac2358fcd561dd45caf112477296296d77e8e5248a4aff93cf",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "variant": "P0",
+      "cell": "local",
+      "config_sha256": "9b348fe0c155d42821b61dc3eb3b013cea42a32695cf0b4702fbbc144473af5c",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "875ca25916b48ea98533cfefa95938925f590623a9a3345cf6881e5ae10e098e",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "variant": "P0",
+      "cell": "image_past",
+      "config_sha256": "3c444d984f4c8ac123074d0b62e3913f1188e8eee99657b08c27d53be9f9a226",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "d8bf850efd0c98be5514f584101e3797ae7b926a3a38760a2146000eb39eade4",
+      "latent_tensor_sha256": "96bf803a7a6fea038a39b04b446cab6f352d079c5d357d58489efbe487d4f076",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "variant": "P0",
+      "cell": "video_past",
+      "config_sha256": "8d58293e7a6104dd6b0fe478a0e24d12f1a0b6b6b19d81550fa7e06a58d6bbd6",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "fd7b52651030803248f3ac5a3edb7e6fbcdf4d27ace13432954afc07b2a154b8",
+      "latent_tensor_sha256": "2a9001495a49ad1123d3438e1a11d4ffc4a4eecbc2fe0a80b47b8c9537de27e9",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "variant": "P1",
+      "cell": "local",
+      "config_sha256": "58813e6fa09315b35f9e71aa3938c21c428ec70492df7261a202d7a5f05efc01",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "188283138d026d33a7b6a23586eb74f61432da21e0b0f41bf03f783735bf16e1",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "variant": "P1",
+      "cell": "image_past",
+      "config_sha256": "4f2fdffaf50df70b64cf706d47711d4a5ecbcc373f103e922ab53dfa304d444a",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "d8bf850efd0c98be5514f584101e3797ae7b926a3a38760a2146000eb39eade4",
+      "latent_tensor_sha256": "71e3d66a821d6f32bf5459dfe425de9e33a2923eca569bfdb6298d926904961c",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "variant": "P1",
+      "cell": "video_past",
+      "config_sha256": "e36cea9d5463483068a95ea090851db56d1e5f27d7c26b0c37a3215db681c059",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "fd7b52651030803248f3ac5a3edb7e6fbcdf4d27ace13432954afc07b2a154b8",
+      "latent_tensor_sha256": "9fc8602db80673507fcaec001aabfdf0f041a88bf49f25f38fbf98b496312fc0",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "variant": "P2",
+      "cell": "local",
+      "config_sha256": "303a93553092fcca541b2fccb9661c5556ee27bb7c919d8c94f8d51410e58491",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "1b12679e7e9acc463e097814962e0bc8fe6458a57023c15f7cca3aafeb03237d",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "variant": "P2",
+      "cell": "image_past",
+      "config_sha256": "3b25a7ab88fad74edcf7993ac6b3fa75486aed795665b87ddd09f3725409cddc",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "d8bf850efd0c98be5514f584101e3797ae7b926a3a38760a2146000eb39eade4",
+      "latent_tensor_sha256": "ca414b7d5df0330aa6cd4d0a894436183e4e58864b84d6ad2e4043005505e1fa",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "variant": "P2",
+      "cell": "video_past",
+      "config_sha256": "a803500bd26f7a1bdffedaed4ab58b094bb6510c0a1e9a8ac35af42b5595ddb5",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "fd7b52651030803248f3ac5a3edb7e6fbcdf4d27ace13432954afc07b2a154b8",
+      "latent_tensor_sha256": "5f2c5226e7f5d432589b333b822b614780a380965a7069e8e2ced77443d08421",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "variant": "P3",
+      "cell": "local",
+      "config_sha256": "1b2de21de5784bd3be8430f810f50ca5d0e08a12e2b5ea07466db9f04a82e78b",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "648429d4bb1599c63674df87239d05ca5510d712aadb4d36c74c79d03b5d9fb6",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "variant": "P3",
+      "cell": "image_past",
+      "config_sha256": "83938834d879ef1bc8116cf517d75ed46affcf34b9642fa4aa7c76386eedb370",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "d8bf850efd0c98be5514f584101e3797ae7b926a3a38760a2146000eb39eade4",
+      "latent_tensor_sha256": "099df9426891ed88887c3441119b3d9810a697093b26afa11b42e2af72396e56",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "variant": "P3",
+      "cell": "video_past",
+      "config_sha256": "25bc4f3f363453723995485eaed5d76fcdb8d589f82138e45a3efc996097dab9",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "fd7b52651030803248f3ac5a3edb7e6fbcdf4d27ace13432954afc07b2a154b8",
+      "latent_tensor_sha256": "23a1cb71a2404f79f81cae6ceec3b8af5c72eebe9bb270b5bd577f7c9b158aad",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "variant": "P0",
+      "cell": "local",
+      "config_sha256": "2f0cdb7c728a392220f2c43b62e74f15bc03636983d8a1df13ef549f7c5c063e",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "8e19bd8b01f5636915f269033ddd08b667fc31c370cdc8ecbf957d70aff51383",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "variant": "P0",
+      "cell": "image_past",
+      "config_sha256": "f6fa26a481b48053254652b53cb0e065dca60ed833ef003b4f7d092875486d3a",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "a5b81231c92c8cdcc5cd06ce880bc844bd0e4ec3d3fd5f314e5eecc8f3bd2dc7",
+      "latent_tensor_sha256": "9274612b2f05fd84a99734b53ee401ecc3b132f19d51d0d1df4a5f0290f7ce9d",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "variant": "P0",
+      "cell": "video_past",
+      "config_sha256": "e38dd568f4db9e1d87bbf5d68841f44889fd121017cd784e063b69e66d5b75f6",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "13bb292dfd9ac4d1d4978ddd80317daba9c4429394bda6de1b0bc7965f232988",
+      "latent_tensor_sha256": "53d841b8f9b7c122a248463caccd09c001b943d95d8a0d25f8eea42554a9af22",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "variant": "P1",
+      "cell": "local",
+      "config_sha256": "1a8be3cd8a518b5a5d35e76b8873531d10b9e9c796eafe5f02461f84daf0b8c9",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "647e5589cee3aec5291054d5fad5b2912330a642618b95462cbacd2234a12a45",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "variant": "P1",
+      "cell": "image_past",
+      "config_sha256": "667d567dd2c3e2ad9623e25be62790870e8f01ae0b760acfea1039c13ede9f31",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "a5b81231c92c8cdcc5cd06ce880bc844bd0e4ec3d3fd5f314e5eecc8f3bd2dc7",
+      "latent_tensor_sha256": "b421ce49802957dd6750c6cb310f240208af18ffb2983ae2d54eee7640370475",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "variant": "P1",
+      "cell": "video_past",
+      "config_sha256": "6207ac1e8d28bc56cb91d8cfcaf25ce5d0bc171517b9ccc82d6b6cdea43c2368",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "13bb292dfd9ac4d1d4978ddd80317daba9c4429394bda6de1b0bc7965f232988",
+      "latent_tensor_sha256": "3658cb6c56046280758c73ac88fdb3340435f47140ab4dcda0ec6cdd6b6badd1",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "variant": "P2",
+      "cell": "local",
+      "config_sha256": "361db1b74c145159347bbb60f513d919ac007dca516e602f4aae228289883e5c",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "11bc3bc2b4d4c6c1bafb6815f135b10cabbbefc87922c6181ab39570dba837fd",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "variant": "P2",
+      "cell": "image_past",
+      "config_sha256": "21ea708aca073425d6b5e96e0bad293e10db1b0e84260a2aaa9afc0bc5acc124",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "a5b81231c92c8cdcc5cd06ce880bc844bd0e4ec3d3fd5f314e5eecc8f3bd2dc7",
+      "latent_tensor_sha256": "4b91ccc35cd426cf6b1b833d0195bc5b73554b968cd6658866766f5ea556007b",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "variant": "P2",
+      "cell": "video_past",
+      "config_sha256": "33d13149d029409b7cd8513d12c7b24957846cd6cb2382a3aa881a94ab340e99",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "13bb292dfd9ac4d1d4978ddd80317daba9c4429394bda6de1b0bc7965f232988",
+      "latent_tensor_sha256": "941accb0f19a91e403f3d6ab1ef9958a5f2acecb954cc5adf7c8035fcd764734",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "variant": "P3",
+      "cell": "local",
+      "config_sha256": "341f996da46db4ae3a826d13b91d09b876d64c52dc6eaa33d7e40c3f659c90e1",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "latent_tensor_sha256": "08d1faef15e77db89fa42f3d715e00d55720ada3b84103a50d08e36a24940d8b",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "variant": "P3",
+      "cell": "image_past",
+      "config_sha256": "3579ca50e11209b97dd00e61685e9ddbe27706eecd6b4a2da1a8bdb8f32073ee",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_tokens_sha256": "a5b81231c92c8cdcc5cd06ce880bc844bd0e4ec3d3fd5f314e5eecc8f3bd2dc7",
+      "latent_tensor_sha256": "def2679c4d07643efb3f817bcd211bd31ca6d97bb356ec26e7c8e8728b049192",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "variant": "P3",
+      "cell": "video_past",
+      "config_sha256": "938cdc63e8f69adcac292546e0bcd6c7ba9b0147962c83e4560624f9f9aa85c0",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "reference_tokens_sha256": "13bb292dfd9ac4d1d4978ddd80317daba9c4429394bda6de1b0bc7965f232988",
+      "latent_tensor_sha256": "7a75453f535786ecafb48187689a3f8c3f8e79711946be91e30165929dbc6e25",
+      "decoded_frames": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    }
+  ],
+  "reused_provenance": [
+    {
+      "example_id": "five_001_nursery_manager",
+      "cell": "local",
+      "config_sha256": "d25c7db6f2a30f8a3f64d00769f1dbd1c89e5d6dd0bedc9c1308016eb11145fb"
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "cell": "image_past",
+      "config_sha256": "d02c49fab5243d4e829093a0160276945cfa94720cbca04b4becfc78ae3ce99e"
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "cell": "video_past",
+      "config_sha256": "0b65f3f51e14420ca4133772ad696cc1a7179d355f0d639188b7e4d18af8d843"
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "cell": "local",
+      "config_sha256": "11fdc49234bef37704eccbce73b7557fb2f22384503c4c8666150d77070b35c1"
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "cell": "image_past",
+      "config_sha256": "551949e0b223242612c26ea50baed64bd55de55714d2a313c819486256c63420"
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "cell": "video_past",
+      "config_sha256": "b9fcedc5fcb1dbe9e2d39c38d343ffa27cff024fc69913755d3fdba40649a42c"
+    },
+    {
+      "example_id": "five_003_student_return",
+      "cell": "local",
+      "config_sha256": "219555b96349664a2937223fbb3a0027313eb3ecfc84ad1af2cb5fc59aedef37"
+    },
+    {
+      "example_id": "five_003_student_return",
+      "cell": "image_past",
+      "config_sha256": "d5279ec668be653234b9ea39594626007d0b9c25a9961be0edf185aca75d1e35"
+    },
+    {
+      "example_id": "five_003_student_return",
+      "cell": "video_past",
+      "config_sha256": "9a210b8c0ea9677d1ceebe0c4ba8e6c1e8130d8ede0e5c6547c0c303ee7e6bbb"
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "cell": "local",
+      "config_sha256": "9b348fe0c155d42821b61dc3eb3b013cea42a32695cf0b4702fbbc144473af5c"
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "cell": "image_past",
+      "config_sha256": "3c444d984f4c8ac123074d0b62e3913f1188e8eee99657b08c27d53be9f9a226"
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "cell": "video_past",
+      "config_sha256": "8d58293e7a6104dd6b0fe478a0e24d12f1a0b6b6b19d81550fa7e06a58d6bbd6"
+    },
+    {
+      "example_id": "five_005_conservator",
+      "cell": "local",
+      "config_sha256": "2f0cdb7c728a392220f2c43b62e74f15bc03636983d8a1df13ef549f7c5c063e"
+    },
+    {
+      "example_id": "five_005_conservator",
+      "cell": "image_past",
+      "config_sha256": "f6fa26a481b48053254652b53cb0e065dca60ed833ef003b4f7d092875486d3a"
+    },
+    {
+      "example_id": "five_005_conservator",
+      "cell": "video_past",
+      "config_sha256": "e38dd568f4db9e1d87bbf5d68841f44889fd121017cd784e063b69e66d5b75f6"
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "condition_medians": {
+    "local": {
+      "video_tokens": 2304,
+      "reference_tokens": 0,
+      "denoising_seconds": 2.718714685179293,
+      "forward_cuda_seconds": 2.6573583068847655,
+      "peak_allocated_gib": 35.97020483016968,
+      "resident_baseline_gib": 35.38853597640991,
+      "incremental_peak_gib": 0.5816688537597656,
+      "peak_reserved_gib": 40.513671875,
+      "device_peak_gib": 41.228515625,
+      "transformer_load_seconds": 8.754479219205678,
+      "decoder_seconds": 3.7794485120102763,
+      "execution_body_seconds_including_audits": 20.76444134209305,
+      "vae_text_prepare_seconds_including_load": 13.7785629555583,
+      "prepared_plus_execution_component_sum_seconds": 34.54300429765135
+    },
+    "native_full": {
+      "video_tokens": 15264,
+      "reference_tokens": 0,
+      "denoising_seconds": 18.034853025339544,
+      "forward_cuda_seconds": 17.966435302734375,
+      "peak_allocated_gib": 39.01636743545532,
+      "resident_baseline_gib": 35.39220190048218,
+      "incremental_peak_gib": 3.6241655349731445,
+      "peak_reserved_gib": 43.154296875,
+      "device_peak_gib": 43.869140625,
+      "transformer_load_seconds": 8.710945382714272,
+      "decoder_seconds": 3.8952615866437554,
+      "execution_body_seconds_including_audits": 36.08073652163148,
+      "vae_text_prepare_seconds_including_load": 16.469594764523208,
+      "prepared_plus_execution_component_sum_seconds": 52.53566903900355
+    },
+    "full_reference": {
+      "video_tokens": 15408,
+      "reference_tokens": 13104,
+      "denoising_seconds": 18.181214503012598,
+      "forward_cuda_seconds": 18.1135205078125,
+      "peak_allocated_gib": 39.048930644989014,
+      "resident_baseline_gib": 35.39244222640991,
+      "incremental_peak_gib": 3.6564884185791016,
+      "peak_reserved_gib": 43.1796875,
+      "device_peak_gib": 43.89453125,
+      "transformer_load_seconds": 8.771497756242752,
+      "decoder_seconds": 3.799138546921313,
+      "execution_body_seconds_including_audits": 36.227153667248785,
+      "vae_text_prepare_seconds_including_load": 17.090842070057988,
+      "prepared_plus_execution_component_sum_seconds": 53.31358948815614
+    },
+    "oracle_sparse": {
+      "video_tokens": 3600,
+      "reference_tokens": 1296,
+      "denoising_seconds": 3.868252158164978,
+      "forward_cuda_seconds": 3.8028016357421874,
+      "peak_allocated_gib": 36.276188373565674,
+      "resident_baseline_gib": 35.38884496688843,
+      "incremental_peak_gib": 0.8873434066772461,
+      "peak_reserved_gib": 40.607421875,
+      "device_peak_gib": 41.322265625,
+      "transformer_load_seconds": 8.70646749716252,
+      "decoder_seconds": 3.877493469044566,
+      "execution_body_seconds_including_audits": 21.923563838005066,
+      "vae_text_prepare_seconds_including_load": 17.090842070057988,
+      "prepared_plus_execution_component_sum_seconds": 39.00999965891242
+    },
+    "uniform_sparse": {
+      "video_tokens": 3600,
+      "reference_tokens": 1296,
+      "denoising_seconds": 3.867617417126894,
+      "forward_cuda_seconds": 3.802499237060547,
+      "peak_allocated_gib": 36.276188373565674,
+      "resident_baseline_gib": 35.38884496688843,
+      "incremental_peak_gib": 0.8873434066772461,
+      "peak_reserved_gib": 40.607421875,
+      "device_peak_gib": 41.322265625,
+      "transformer_load_seconds": 8.709867004305124,
+      "decoder_seconds": 3.7356340112164617,
+      "execution_body_seconds_including_audits": 21.873735426925123,
+      "vae_text_prepare_seconds_including_load": 17.090842070057988,
+      "prepared_plus_execution_component_sum_seconds": 39.07155556883663
+    }
+  },
+  "paired_ratios": [
+    {
+      "example_id": "long_001_nursery_manager",
+      "baseline": "native_full",
+      "denoising_speedup": 4.663302521694571,
+      "execution_body_speedup": 1.626173182921116,
+      "component_sum_speedup": 1.3354286512881433,
+      "allocated_reduction_fraction": 0.07023152697192325,
+      "incremental_reduction_fraction": 0.7551592502841288,
+      "device_peak_reduction_fraction": 0.05805618627843823
+    },
+    {
+      "example_id": "long_001_nursery_manager",
+      "baseline": "full_reference",
+      "denoising_speedup": 4.704244715184891,
+      "execution_body_speedup": 1.648817427519055,
+      "component_sum_speedup": 1.3644743025935668,
+      "allocated_reduction_fraction": 0.07100686819394775,
+      "incremental_reduction_fraction": 0.7573236107713246,
+      "device_peak_reduction_fraction": 0.05860105010234051
+    },
+    {
+      "example_id": "long_002_robot_head",
+      "baseline": "native_full",
+      "denoising_speedup": 4.662990397412655,
+      "execution_body_speedup": 1.6653480832154985,
+      "component_sum_speedup": 1.3446562092012015,
+      "allocated_reduction_fraction": 0.07023152697192325,
+      "incremental_reduction_fraction": 0.7551592502841288,
+      "device_peak_reduction_fraction": 0.05805618627843823
+    },
+    {
+      "example_id": "long_002_robot_head",
+      "baseline": "full_reference",
+      "denoising_speedup": 4.702366655127298,
+      "execution_body_speedup": 1.6529592335644359,
+      "component_sum_speedup": 1.3535347695653992,
+      "allocated_reduction_fraction": 0.07100686819394775,
+      "incremental_reduction_fraction": 0.7573236107713246,
+      "device_peak_reduction_fraction": 0.05860105010234051
+    },
+    {
+      "example_id": "long_003_student_return",
+      "baseline": "native_full",
+      "denoising_speedup": 4.666273693763111,
+      "execution_body_speedup": 1.6547104422318812,
+      "component_sum_speedup": 1.350075441278777,
+      "allocated_reduction_fraction": 0.07023152697192325,
+      "incremental_reduction_fraction": 0.7551592502841288,
+      "device_peak_reduction_fraction": 0.05805618627843823
+    },
+    {
+      "example_id": "long_003_student_return",
+      "baseline": "full_reference",
+      "denoising_speedup": 4.7037610447319365,
+      "execution_body_speedup": 1.6625173813889849,
+      "component_sum_speedup": 1.370464685468328,
+      "allocated_reduction_fraction": 0.07100686819394775,
+      "incremental_reduction_fraction": 0.7573236107713246,
+      "device_peak_reduction_fraction": 0.05860105010234051
+    },
+    {
+      "example_id": "long_004_van_exterior",
+      "baseline": "native_full",
+      "denoising_speedup": 4.662776300002271,
+      "execution_body_speedup": 1.6489248862792074,
+      "component_sum_speedup": 1.347580613411136,
+      "allocated_reduction_fraction": 0.07023152697192325,
+      "incremental_reduction_fraction": 0.7551592502841288,
+      "device_peak_reduction_fraction": 0.05805618627843823
+    },
+    {
+      "example_id": "long_004_van_exterior",
+      "baseline": "full_reference",
+      "denoising_speedup": 4.703435016063622,
+      "execution_body_speedup": 1.667383102107729,
+      "component_sum_speedup": 1.375121546952888,
+      "allocated_reduction_fraction": 0.07100686819394775,
+      "incremental_reduction_fraction": 0.7573236107713246,
+      "device_peak_reduction_fraction": 0.05860105010234051
+    },
+    {
+      "example_id": "long_005_conservator",
+      "baseline": "native_full",
+      "denoising_speedup": 4.65347840416847,
+      "execution_body_speedup": 1.6457514292947475,
+      "component_sum_speedup": 1.3467231350513735,
+      "allocated_reduction_fraction": 0.07023152697192325,
+      "incremental_reduction_fraction": 0.7551592502841288,
+      "device_peak_reduction_fraction": 0.05805618627843823
+    },
+    {
+      "example_id": "long_005_conservator",
+      "baseline": "full_reference",
+      "denoising_speedup": 4.691237938882471,
+      "execution_body_speedup": 1.6524299577812287,
+      "component_sum_speedup": 1.3666647001873493,
+      "allocated_reduction_fraction": 0.07100686819394775,
+      "incremental_reduction_fraction": 0.7573236107713246,
+      "device_peak_reduction_fraction": 0.05860105010234051
+    }
+  ],
+  "paired_medians": {
+    "native_full": {
+      "denoising_speedup": 4.662990397412655,
+      "execution_body_speedup": 1.6489248862792074,
+      "component_sum_speedup": 1.3467231350513735,
+      "allocated_reduction_fraction": 0.07023152697192325,
+      "incremental_reduction_fraction": 0.7551592502841288,
+      "device_peak_reduction_fraction": 0.05805618627843823
+    },
+    "full_reference": {
+      "denoising_speedup": 4.703435016063622,
+      "execution_body_speedup": 1.6529592335644359,
+      "component_sum_speedup": 1.3666647001873493,
+      "allocated_reduction_fraction": 0.07100686819394775,
+      "incremental_reduction_fraction": 0.7573236107713246,
+      "device_peak_reduction_fraction": 0.05860105010234051
+    }
+  },
+  "scope": "Denoising subtracts measured audit sections. Execution body includes loading/audits/decoder, excludes Python startup. Preparation+execution is a sum of separately measured components, not a single end-to-end request measurement. Source ingest is separate. No retrieval/memory-network cost."
+}

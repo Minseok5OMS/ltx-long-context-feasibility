@@ -1,0 +1,42 @@
+{
+  "status": "passed_rendering",
+  "verified_at_utc": "2026-09-08T07:42:33.828412+00:00",
+  "browser": "Firefox headless",
+  "url": "http://127.0.0.1:8765/reports/five_case_prompt/seed42/index.html",
+  "user_url": "http://localhost:8765/reports/five_case_prompt/seed42/index.html",
+  "screenshot": "outputs/browser_check/prompt_report.png",
+  "screenshot_sha256": "d34d7f3a2885f96006f0147817798ab602bad54914d023492fb58b4d89182619",
+  "viewport": [
+    1600,
+    3000
+  ],
+  "observed": [
+    "Korean headings and prompt labels render clearly.",
+    "Actual Local, Oracle image/video and GT previews are visible.",
+    "P0-P3 rows and Local/Image-Past/Video-Past columns are visible, with comparison buttons and prompt disclosure controls.",
+    "45/45 completed state, metric scores and result-document links are visible."
+  ],
+  "limitations": [
+    "Static screenshot does not verify synchronized playback interaction or user-PC playback."
+  ],
+  "http_assets_checked": 436,
+  "html_pages_checked": 25,
+  "local_links_checked": 866,
+  "raw_md_navigation_links": 0,
+  "delivery_verification_sha256": "6b342701a5ac994d7d5f0346b2c4fde40295807228de184cb368eeacb504f192",
+  "gpu_end_state": {
+    "0": {
+      "memory_used_mib": 14,
+      "utilization_percent": 0
+    },
+    "1": {
+      "memory_used_mib": 14,
+      "utilization_percent": 0
+    },
+    "2": {
+      "memory_used_mib": 14,
+      "utilization_percent": 0
+    }
+  },
+  "server": "Existing tmux ltx-longcond-report server preserved; no restart."
+}

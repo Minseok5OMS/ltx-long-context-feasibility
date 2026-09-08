@@ -1,0 +1,21 @@
+{
+  "status": "passed_static_browser_render",
+  "checked_at_utc": "2026-09-08T13:44:26.470415+00:00",
+  "browser": "Firefox headless",
+  "viewport": [
+    1600,
+    3000
+  ],
+  "url": "http://127.0.0.1:8765/reports/long_input/index.html",
+  "screenshot": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/browser_check/long_input_report.png",
+  "screenshot_sha256": "20b37d17ff136fb2c5c26dcd23205be8887492d77a688f6bb840d219a8785199",
+  "html_sha256": "392057e9caa89242549e6e43f8fb22ecb96f9aba943ff4325f44a59e3766ece4",
+  "observed": [
+    "UTF-8 Korean text readable",
+    "25/25 complete and total120",
+    "Actual history/local/oracle/uniform/GT input posters visible",
+    "A-E generated posters visible",
+    "Timeline chunk positions and comparison/reveal buttons visible"
+  ],
+  "limits": "Static viewport screenshot; not a functional test of synchronized playback or user PC port forwarding. Lower cases are outside this screenshot; local/HTTP checks cover all5 cases."
+}

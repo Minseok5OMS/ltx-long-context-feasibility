@@ -1,0 +1,132 @@
+{
+  "status": "frozen_for_execution",
+  "created_date_kst": "2026-09-08",
+  "purpose": "Test clearer output prompts with unchanged full-frame past evidence, before any scene-removing preprocessing or new adapter.",
+  "cohort_config_sha256": "5911ef474bc2b929104b2dee8cf57f79b25baea421facf91a0c59c7c9f1c724f",
+  "primary_matrix": {
+    "cases": 5,
+    "seed": 42,
+    "conditions": [
+      "local",
+      "image_past",
+      "video_past"
+    ],
+    "planned_new_generations": 45,
+    "reused_P0_generations": 15,
+    "compared_outputs": 60,
+    "new_prompts": [
+      "P1_explicit_shot_action",
+      "P2_continuity",
+      "P3_reference_role"
+    ]
+  },
+  "controls": {
+    "original_rgb_and_vae_caches_unchanged": true,
+    "no_subject_extraction_or_background_removal": true,
+    "no_reference_sheet": true,
+    "no_target_position_generation": true,
+    "same_prompt_across_conditions_within_case": true,
+    "same_actual_base_and_step_noise": true,
+    "same_model_sampler_length_fps_resolution": true,
+    "prompt_enhancement": false,
+    "cfg_stg_or_negative_branch_added": false,
+    "no_new_random_or_seeds": true,
+    "new_text_embeddings_separate_cache": true,
+    "original_configs_unchanged": true
+  },
+  "examples": [
+    {
+      "example_id": "five_001_nursery_manager",
+      "title_ko": "보육원 관리자 재등장",
+      "P0_original": "The video returns to the nursery manager's seated interview as she continues speaking.",
+      "P1_explicit_shot_action": "The close-up of the laptop ends with a hard cut to an eye-level medium close-up of the same childcare manager seated in the childcare room. The camera views her from a three-quarter side angle and keeps her face and shoulders in frame. She continues speaking and makes a small hand gesture. The camera stays steady throughout the interview shot.",
+      "intent_and_limits_ko": "childcare로 nursery의 의미 모호성을 줄이고, 측면 인터뷰와 실제 발화/손짓을 구체화한다. 옷 색·머리·얼굴 정답은 적지 않는다.",
+      "P2_added_sentence": "The manager's appearance and the recognizable childcare-room setting stay consistent with the earlier interview.",
+      "P2_continuity": "The close-up of the laptop ends with a hard cut to an eye-level medium close-up of the same childcare manager seated in the childcare room. The camera views her from a three-quarter side angle and keeps her face and shoulders in frame. She continues speaking and makes a small hand gesture. The camera stays steady throughout the interview shot. The manager's appearance and the recognizable childcare-room setting stay consistent with the earlier interview.",
+      "P3_added_sentences": "The earlier interview provides visual details of the manager and the room. The framing, camera position and ongoing speech follow the new side-angle interview shot described here.",
+      "P3_reference_role": "The close-up of the laptop ends with a hard cut to an eye-level medium close-up of the same childcare manager seated in the childcare room. The camera views her from a three-quarter side angle and keeps her face and shoulders in frame. She continues speaking and makes a small hand gesture. The camera stays steady throughout the interview shot. The manager's appearance and the recognizable childcare-room setting stay consistent with the earlier interview. The earlier interview provides visual details of the manager and the room. The framing, camera position and ongoing speech follow the new side-angle interview shot described here."
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "title_ko": "로봇 모형의 가려졌던 머리",
+      "P0_original": "The view switches to the same robot model posed on its display turntable, showing its head and upper body.",
+      "P1_explicit_shot_action": "The close-up of the robot's lower body ends with a hard cut to a wider display shot. The same robot model stands on its own on its display turntable, with its entire head, both shoulders and upper torso comfortably inside the frame. The camera is fixed at the model's head height. The model maintains its display pose for the rest of the shot.",
+      "intent_and_limits_ko": "손에 들린 근접 구도에서 자립한 전시 구도로 전환하고 머리를 frame 안에 넣도록 명확히 한다. 정적인 전시 pose는 의도된 출력이며 정지 자체를 실패로 세지 않는다.",
+      "P2_added_sentence": "The robot model and its display turntable keep the same appearance as in the earlier view.",
+      "P2_continuity": "The close-up of the robot's lower body ends with a hard cut to a wider display shot. The same robot model stands on its own on its display turntable, with its entire head, both shoulders and upper torso comfortably inside the frame. The camera is fixed at the model's head height. The model maintains its display pose for the rest of the shot. The robot model and its display turntable keep the same appearance as in the earlier view.",
+      "P3_added_sentences": "The earlier view provides visual details of the robot and its display setting. The model's pose and the camera framing follow the freestanding display shot described here.",
+      "P3_reference_role": "The close-up of the robot's lower body ends with a hard cut to a wider display shot. The same robot model stands on its own on its display turntable, with its entire head, both shoulders and upper torso comfortably inside the frame. The camera is fixed at the model's head height. The model maintains its display pose for the rest of the shot. The robot model and its display turntable keep the same appearance as in the earlier view. The earlier view provides visual details of the robot and its display setting. The model's pose and the camera framing follow the freestanding display shot described here."
+    },
+    {
+      "example_id": "five_003_student_return",
+      "title_ko": "교실 학생의 얼굴 재등장",
+      "P0_original": "The view returns to the student standing at the teacher's desk as she listens and responds.",
+      "P1_explicit_shot_action": "A hard cut switches from the teacher-facing view to a reverse-angle medium close-up of the same student at the teacher's desk. Her face is fully visible as she looks toward the teacher just beside the camera. She listens and gives a brief response with a small nod. The camera stays fixed on the student throughout the shot.",
+      "intent_and_limits_ko": "교사 쪽 시점을 학생 얼굴 쪽 역방향 시점으로 전환한다. 얼굴·곱슬머리·셔츠 색은 prompt로 알려주지 않는다.",
+      "P2_added_sentence": "The student's appearance and the teacher's-desk setting stay consistent with the earlier classroom view.",
+      "P2_continuity": "A hard cut switches from the teacher-facing view to a reverse-angle medium close-up of the same student at the teacher's desk. Her face is fully visible as she looks toward the teacher just beside the camera. She listens and gives a brief response with a small nod. The camera stays fixed on the student throughout the shot. The student's appearance and the teacher's-desk setting stay consistent with the earlier classroom view.",
+      "P3_added_sentences": "The earlier classroom view provides visual details of the student and the surrounding classroom. Her gaze, her response and the camera framing follow the new reverse-angle shot described here.",
+      "P3_reference_role": "A hard cut switches from the teacher-facing view to a reverse-angle medium close-up of the same student at the teacher's desk. Her face is fully visible as she looks toward the teacher just beside the camera. She listens and gives a brief response with a small nod. The camera stays fixed on the student throughout the shot. The student's appearance and the teacher's-desk setting stay consistent with the earlier classroom view. The earlier classroom view provides visual details of the student and the surrounding classroom. Her gaze, her response and the camera framing follow the new reverse-angle shot described here."
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "title_ko": "캠퍼 밴 외관으로 시점 전환",
+      "P0_original": "The camera transitions outside to the camper van from the tour as it slowly drives across the driveway.",
+      "P1_explicit_shot_action": "A hard cut switches from the view inside the van to a wide exterior shot of the same camper van on a driveway. A stationary camera stands outside the vehicle at a front three-quarter angle, with the entire van in frame. The van itself rolls slowly forward across the driveway while its wheels turn. The camera remains fixed, and the exterior shot fills the frame.",
+      "intent_and_limits_ko": "외부 고정 카메라와 차량 자체 이동을 분리한다. 원본 GT의 dissolve 대신 hard cut을 요청하므로 GT 전환 모양을 복원하는 실험은 아니다.",
+      "P2_added_sentence": "The same camper van seen earlier in the tour keeps its appearance across the cut.",
+      "P2_continuity": "A hard cut switches from the view inside the van to a wide exterior shot of the same camper van on a driveway. A stationary camera stands outside the vehicle at a front three-quarter angle, with the entire van in frame. The van itself rolls slowly forward across the driveway while its wheels turn. The camera remains fixed, and the exterior shot fills the frame. The same camper van seen earlier in the tour keeps its appearance across the cut.",
+      "P3_added_sentences": "The earlier view supplies visual details of the van and any surroundings that are visible again. The fixed camera and the van's forward movement follow the new exterior shot described here.",
+      "P3_reference_role": "A hard cut switches from the view inside the van to a wide exterior shot of the same camper van on a driveway. A stationary camera stands outside the vehicle at a front three-quarter angle, with the entire van in frame. The van itself rolls slowly forward across the driveway while its wheels turn. The camera remains fixed, and the exterior shot fills the frame. The same camper van seen earlier in the tour keeps its appearance across the cut. The earlier view supplies visual details of the van and any surroundings that are visible again. The fixed camera and the van's forward movement follow the new exterior shot described here."
+    },
+    {
+      "example_id": "five_005_conservator",
+      "title_ko": "보존 작업자의 얼굴 재등장",
+      "P0_original": "The camera returns to the textile conservator at the workbench, showing her face as she looks down and resumes working.",
+      "P1_explicit_shot_action": "The close-up of the hands ends with a hard cut to a side-angle medium close-up of the same textile conservator at the workbench. Her face remains in the upper half of the frame, with her hands and the book visible below. She looks down and continues gently cleaning the book. The camera holds this view throughout the shot.",
+      "intent_and_limits_ko": "얼굴과 작업이 함께 보이는 측면 구도를 유지한다. 머리색·안경의 정답을 적지 않으며 같은 작업대라는 장소/관계는 유지한다.",
+      "P2_added_sentence": "The conservator, the book and the workbench retain their appearance from the earlier conservation scene.",
+      "P2_continuity": "The close-up of the hands ends with a hard cut to a side-angle medium close-up of the same textile conservator at the workbench. Her face remains in the upper half of the frame, with her hands and the book visible below. She looks down and continues gently cleaning the book. The camera holds this view throughout the shot. The conservator, the book and the workbench retain their appearance from the earlier conservation scene.",
+      "P3_added_sentences": "The earlier scene provides visual details of the conservator and the work area. Her cleaning action and the camera framing follow the new side-angle shot described here.",
+      "P3_reference_role": "The close-up of the hands ends with a hard cut to a side-angle medium close-up of the same textile conservator at the workbench. Her face remains in the upper half of the frame, with her hands and the book visible below. She looks down and continues gently cleaning the book. The camera holds this view throughout the shot. The conservator, the book and the workbench retain their appearance from the earlier conservation scene. The earlier scene provides visual details of the conservator and the work area. Her cleaning action and the camera framing follow the new side-angle shot described here."
+    }
+  ],
+  "limitations": [
+    "P1 is a bundled prompt intervention, not isolation of one word or camera term.",
+    "Prompt changes requested framing/action, so whole-frame GT DINO is auxiliary rather than a prompt-compliance score.",
+    "Existing five cases do not validate general background, state, event or multi-evidence use.",
+    "No claim that free-form text can assign semantic roles to appended reference tokens without training.",
+    "P2 and P3 preserve the complete P1 shot/action text and add sentences; wording, length and repetition effects are not isolated.",
+    "P2/P3 earlier-view wording is applied unchanged to Local-only controls even when no remote reference is supplied.",
+    "P3 is a positive-text hypothesis; it does not implement attention masks, semantic routing or a negative-prompt branch."
+  ],
+  "updated_date_kst": "2026-09-08",
+  "requested_prompt_scope": {
+    "user_request_ko": "프롬프트는 3개 추가해줘.",
+    "interpretation_ko": "기존 P0에 추가할 대안 prompt를 사례마다 3종(P1/P2/P3)으로 구성한다. 앞서 작성한 P1을 유지하고 P2/P3를 완성한다.",
+    "new_variants_per_case": 3,
+    "total_variants_including_P0": 4,
+    "this_update": "Prompt drafting and experiment-plan update only; no generation or text encoding performed."
+  },
+  "prompt_variants": {
+    "P1_explicit_shot_action": {
+      "label_ko": "출력 지시 구체화",
+      "construction": "Previously drafted P1; unchanged."
+    },
+    "P2_continuity": {
+      "label_ko": "과거와의 연속성",
+      "construction": "P1 + one continuity sentence.",
+      "base": "P1_explicit_shot_action"
+    },
+    "P3_reference_role": {
+      "label_ko": "과거 정보와 새 구도·동작의 역할 명시",
+      "construction": "P2 + two reference-role sentences.",
+      "base": "P2_continuity"
+    }
+  },
+  "frozen_at_utc": "2026-09-08T07:03:24.383649+00:00",
+  "proposal_sha256": "a7536e40f08799b7a1d41fea53c6580e352b28e3b6cbdb84495d72697a177d7e",
+  "authorization_ko": "사용자의 실행해 요청: 5사례 × 3조건 × P1/P2/P3 생성·평가·보고서.",
+  "reused_grid_audit_sha256": "2c3aae81e035c13da55a3e1ec49ffcadabc0762e7a23c9f744f50a9aa314ba94",
+  "reused_grid_summary_sha256": "ae3f31d6f5ca19c363e959e3de1c0008537730866a9215331d7453577d7abb42"
+}

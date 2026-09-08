@@ -1,0 +1,423 @@
+{
+  "status": "passed",
+  "new_generations": 15,
+  "reused_reference_generations": 5,
+  "reused_local_generations": 5,
+  "common_fields_checked_against_reused_image_past": [
+    "audio",
+    "audio_positions_sha256",
+    "base_video_positions_sha256",
+    "base_video_tokens",
+    "cohort_config_sha256",
+    "common_inputs_sha256",
+    "common_time_shift_seconds",
+    "controls_sha256",
+    "cuda_visible_devices",
+    "cwd",
+    "decoder_execution",
+    "decoder_script_sha256",
+    "decoder_seed",
+    "denoising_trace",
+    "environment",
+    "eta",
+    "example",
+    "example_id",
+    "final_frozen_max_abs_error",
+    "fps",
+    "gt_video_opened",
+    "guidance",
+    "height",
+    "initial_noise_seed",
+    "input_cache",
+    "local_latent_sha256",
+    "ltx_commit",
+    "models",
+    "noise_audit",
+    "noise_policy",
+    "physical_gpu",
+    "precision",
+    "prefix_frames",
+    "prefix_tokens",
+    "prompt",
+    "prompt_context_hashes",
+    "prompt_enhancement",
+    "s_noise",
+    "sampler",
+    "seed",
+    "sigmas",
+    "source_dependency_gap_seconds",
+    "status",
+    "step_noise_seed",
+    "target_decoded_slice",
+    "target_frames",
+    "target_model_time_range",
+    "total_frames",
+    "width"
+  ],
+  "reused_artifact_audit_identical": true,
+  "actual_initial_and_seven_step_noise_equal_all_25": true,
+  "reference_content_fixed_within_each_image_or_video_pair": true,
+  "only_appended_time_coordinates_translated": true,
+  "all_frozen_errors": 0,
+  "target_frames_fully_decoded": 1800,
+  "all_output_frames_fully_decoded": 7825,
+  "provenance": [
+    {
+      "example_id": "five_001_nursery_manager",
+      "cell": "image_target",
+      "config_sha256": "77a60fe888d8a581fbfa1f3b4578f5a75b3df420ff179be8e1025957fdf93efe",
+      "reference_clean_tokens_sha256": "c9fa70523f80353c8d1d809b2f95336785dc74398cf6aac66d933e8414480d6f",
+      "positions_tensor_sha256": "2678a13a5b08c45629073b3895369f803b348a1726fa7a0ec19e294826c2593b",
+      "generated_latent_tensor_sha256": "0023db59593a88b4033415f68ca65f0e893e15df5d2e6b83739fe28da881366b",
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "cell": "video_past",
+      "config_sha256": "0b65f3f51e14420ca4133772ad696cc1a7179d355f0d639188b7e4d18af8d843",
+      "reference_clean_tokens_sha256": "ea2c63d2e1b4f51227d6b6230a8b5472277b7258e8cc68b141ac44da5350af31",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "generated_latent_tensor_sha256": "b4ff57ded918d6ebf237a4a5127584f710c47634d6bedc399a5df818b78a9d1c",
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "cell": "video_target",
+      "config_sha256": "1ff5ba6b470fb0c4e57a34ef228069e9c569519f64b7e28757125613397d1a5e",
+      "reference_clean_tokens_sha256": "ea2c63d2e1b4f51227d6b6230a8b5472277b7258e8cc68b141ac44da5350af31",
+      "positions_tensor_sha256": "82d893d8c89b9a7af2983e529070d2d0801f1530e6661b5d3db02427ed7b0692",
+      "generated_latent_tensor_sha256": "9c3dccf2871fc94b679cbd9be142d36f0a522226b4decf34e3138bcd910a4eaf",
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "cell": "image_target",
+      "config_sha256": "2ff3c9c950888fe6d935c0d0182f73291f7ea9e54dce252c3aa0e2c9d61bae16",
+      "reference_clean_tokens_sha256": "a0b01041085491a676640cacc400cd22aa87f7f17bd708bbe02908adb6705362",
+      "positions_tensor_sha256": "2678a13a5b08c45629073b3895369f803b348a1726fa7a0ec19e294826c2593b",
+      "generated_latent_tensor_sha256": "62f6b3a384d8c0aaa532be52663d4dab5403473602c07640b0dc90f182875bfc",
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "cell": "video_past",
+      "config_sha256": "b9fcedc5fcb1dbe9e2d39c38d343ffa27cff024fc69913755d3fdba40649a42c",
+      "reference_clean_tokens_sha256": "2668c11e5d63ff14e9aeb258cb8c82499b7360ad3ba92d7228adb3bc6440f60e",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "generated_latent_tensor_sha256": "0984336028d8fd53976d5beba404af9d1b3428873c23c11499879cbc3aae9bb9",
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "cell": "video_target",
+      "config_sha256": "3b8c721fed8e3b4ca68da69358b6ad2e33364236598caf584b025f33f4501a49",
+      "reference_clean_tokens_sha256": "2668c11e5d63ff14e9aeb258cb8c82499b7360ad3ba92d7228adb3bc6440f60e",
+      "positions_tensor_sha256": "82d893d8c89b9a7af2983e529070d2d0801f1530e6661b5d3db02427ed7b0692",
+      "generated_latent_tensor_sha256": "4fee5b0f69a0fd4e1487769d44366a47a37716ee4c2f46a8c32afcc1ffdf687d",
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "cell": "image_target",
+      "config_sha256": "d7f948c443a7fd596ac8ab573c00307a600eeb1b9d623826d07d0a3095bfd2f3",
+      "reference_clean_tokens_sha256": "c9da74392cf09e54c20f1cf59dd1d0ec09342915e860085c36cba9fc7a5dd3f5",
+      "positions_tensor_sha256": "2678a13a5b08c45629073b3895369f803b348a1726fa7a0ec19e294826c2593b",
+      "generated_latent_tensor_sha256": "564478318878a1922b53cf0795f747c54b54ecba42f9d5fcba6e1a34d13c96ce",
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "cell": "video_past",
+      "config_sha256": "9a210b8c0ea9677d1ceebe0c4ba8e6c1e8130d8ede0e5c6547c0c303ee7e6bbb",
+      "reference_clean_tokens_sha256": "32f2bc0696a8c2ffbe82fc38e3c8aaed3b7b20ca08d9696db5eb11ab03c39899",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "generated_latent_tensor_sha256": "b72fcef92dd20936a932d97fcaf12cbf1f9449f348926b9297b0c72b8af91970",
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "cell": "video_target",
+      "config_sha256": "920156e2089a80e455f5dcf4aaef62678012487570b13178f592ec870c971594",
+      "reference_clean_tokens_sha256": "32f2bc0696a8c2ffbe82fc38e3c8aaed3b7b20ca08d9696db5eb11ab03c39899",
+      "positions_tensor_sha256": "82d893d8c89b9a7af2983e529070d2d0801f1530e6661b5d3db02427ed7b0692",
+      "generated_latent_tensor_sha256": "d1faa90f0478bfbac3a04bf87efbe6deca779cf51a895655cf69af4a4889433e",
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "cell": "image_target",
+      "config_sha256": "3ebfb0cd64d8bd8151edd0da907951a1a619e106fa569b486c439082dca1e6b7",
+      "reference_clean_tokens_sha256": "d8bf850efd0c98be5514f584101e3797ae7b926a3a38760a2146000eb39eade4",
+      "positions_tensor_sha256": "2678a13a5b08c45629073b3895369f803b348a1726fa7a0ec19e294826c2593b",
+      "generated_latent_tensor_sha256": "20847d70c9fcb8fa16800cf9414b474856f019abf713203587f55e412a6b30f6",
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "cell": "video_past",
+      "config_sha256": "8d58293e7a6104dd6b0fe478a0e24d12f1a0b6b6b19d81550fa7e06a58d6bbd6",
+      "reference_clean_tokens_sha256": "fd7b52651030803248f3ac5a3edb7e6fbcdf4d27ace13432954afc07b2a154b8",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "generated_latent_tensor_sha256": "2a9001495a49ad1123d3438e1a11d4ffc4a4eecbc2fe0a80b47b8c9537de27e9",
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "cell": "video_target",
+      "config_sha256": "e83c8396314078a1ad1c9c4892835fec59ecff96c1759436828381d281f3565a",
+      "reference_clean_tokens_sha256": "fd7b52651030803248f3ac5a3edb7e6fbcdf4d27ace13432954afc07b2a154b8",
+      "positions_tensor_sha256": "82d893d8c89b9a7af2983e529070d2d0801f1530e6661b5d3db02427ed7b0692",
+      "generated_latent_tensor_sha256": "23ce557b77fca09429c4fe473fabf7de97c4b9cea9c4c61be60a91395ffb3bf3",
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "cell": "image_target",
+      "config_sha256": "00222e64203d7c39e2e0813d1b0e2517d82d2930df86406d4b3a383288a33eeb",
+      "reference_clean_tokens_sha256": "a5b81231c92c8cdcc5cd06ce880bc844bd0e4ec3d3fd5f314e5eecc8f3bd2dc7",
+      "positions_tensor_sha256": "2678a13a5b08c45629073b3895369f803b348a1726fa7a0ec19e294826c2593b",
+      "generated_latent_tensor_sha256": "f2d48181917436032075e0b18e82fa4ac7082746579af0ec8ba738df2a129f6e",
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "cell": "video_past",
+      "config_sha256": "e38dd568f4db9e1d87bbf5d68841f44889fd121017cd784e063b69e66d5b75f6",
+      "reference_clean_tokens_sha256": "13bb292dfd9ac4d1d4978ddd80317daba9c4429394bda6de1b0bc7965f232988",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "generated_latent_tensor_sha256": "53d841b8f9b7c122a248463caccd09c001b943d95d8a0d25f8eea42554a9af22",
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "cell": "video_target",
+      "config_sha256": "e5ad3984828f87bffc8efda149c6c3a3e8eaaf9655b16e226bd5d6aa263b34bc",
+      "reference_clean_tokens_sha256": "13bb292dfd9ac4d1d4978ddd80317daba9c4429394bda6de1b0bc7965f232988",
+      "positions_tensor_sha256": "82d893d8c89b9a7af2983e529070d2d0801f1530e6661b5d3db02427ed7b0692",
+      "generated_latent_tensor_sha256": "82ce2fe5df435f9d42487b04ad08bc0a46eaca8f2ca9cb8a483557e39578e66f",
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    }
+  ],
+  "reused_provenance": [
+    {
+      "example_id": "five_001_nursery_manager",
+      "mode": "local",
+      "config_sha256": "d25c7db6f2a30f8a3f64d00769f1dbd1c89e5d6dd0bedc9c1308016eb11145fb",
+      "input_cache_sha256": "5763c4cf101d353f5ece4ce8e4e2e7daaf25a3371560beee82ce75b5a410d88d",
+      "oracle_image_sha256": "ff795e8c7dd74e25f34714439e6fcee1cb626de661c7a570633d3045f30b3b15",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_clean_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "generated_latent_tensor_sha256": "eb43997807ec2aaea4b9e8869ffe0c2250a84b918b40549b301e50a69ab65b50",
+      "reference_tokens": 0,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "mode": "oracle",
+      "config_sha256": "d02c49fab5243d4e829093a0160276945cfa94720cbca04b4becfc78ae3ce99e",
+      "input_cache_sha256": "5763c4cf101d353f5ece4ce8e4e2e7daaf25a3371560beee82ce75b5a410d88d",
+      "oracle_image_sha256": "ff795e8c7dd74e25f34714439e6fcee1cb626de661c7a570633d3045f30b3b15",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_clean_tokens_sha256": "c9fa70523f80353c8d1d809b2f95336785dc74398cf6aac66d933e8414480d6f",
+      "generated_latent_tensor_sha256": "3aa01828e266e8d79937c12fa394cc64ab03e1beecd55469e0b3e075e26b5129",
+      "reference_tokens": 144,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "mode": "local",
+      "config_sha256": "11fdc49234bef37704eccbce73b7557fb2f22384503c4c8666150d77070b35c1",
+      "input_cache_sha256": "5187e4cae8d6ec3e76125b5f58b7087eecf4cc3491f01ef6041947c0965232f8",
+      "oracle_image_sha256": "e359083d77893fd6824b3b77776ade0616632b5c88f1ad2776a98a04a893db95",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_clean_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "generated_latent_tensor_sha256": "5cdc36037bb674f90abffdcf8564ce0746b6f923d870767816dd68cc83b2a307",
+      "reference_tokens": 0,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "mode": "oracle",
+      "config_sha256": "551949e0b223242612c26ea50baed64bd55de55714d2a313c819486256c63420",
+      "input_cache_sha256": "5187e4cae8d6ec3e76125b5f58b7087eecf4cc3491f01ef6041947c0965232f8",
+      "oracle_image_sha256": "e359083d77893fd6824b3b77776ade0616632b5c88f1ad2776a98a04a893db95",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_clean_tokens_sha256": "a0b01041085491a676640cacc400cd22aa87f7f17bd708bbe02908adb6705362",
+      "generated_latent_tensor_sha256": "41ad86e8902730e24a9caaa61a6e68a85498b144d8baf3304cff74c06cc98c56",
+      "reference_tokens": 144,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "mode": "local",
+      "config_sha256": "219555b96349664a2937223fbb3a0027313eb3ecfc84ad1af2cb5fc59aedef37",
+      "input_cache_sha256": "3f110ca2435d11f4b02364aca47f69e0405a11047e21798f7ec5950163eef74f",
+      "oracle_image_sha256": "79c9b02de3b208ea74b0e1151f5ab65f971e5ee649d70a727871629436c1fd4a",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_clean_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "generated_latent_tensor_sha256": "f1a9cfd699208222bfdc0918a461b78e34e7b7d86f79dabb2f8bbe7adcf7d472",
+      "reference_tokens": 0,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "mode": "oracle",
+      "config_sha256": "d5279ec668be653234b9ea39594626007d0b9c25a9961be0edf185aca75d1e35",
+      "input_cache_sha256": "3f110ca2435d11f4b02364aca47f69e0405a11047e21798f7ec5950163eef74f",
+      "oracle_image_sha256": "79c9b02de3b208ea74b0e1151f5ab65f971e5ee649d70a727871629436c1fd4a",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_clean_tokens_sha256": "c9da74392cf09e54c20f1cf59dd1d0ec09342915e860085c36cba9fc7a5dd3f5",
+      "generated_latent_tensor_sha256": "5931a54b5e63df4da0ec211968e8baea0bf387708c711ccafc4911ca39870e17",
+      "reference_tokens": 144,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "mode": "local",
+      "config_sha256": "9b348fe0c155d42821b61dc3eb3b013cea42a32695cf0b4702fbbc144473af5c",
+      "input_cache_sha256": "bf8e0731fc46ce2a3b1dd01a1e6e16fe3c1d13240889981e67b94184f0714720",
+      "oracle_image_sha256": "64032b809b35ed65e58c97d7fbbd3bf28e06798be635d1565b659ce5d4210fe8",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_clean_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "generated_latent_tensor_sha256": "875ca25916b48ea98533cfefa95938925f590623a9a3345cf6881e5ae10e098e",
+      "reference_tokens": 0,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "mode": "oracle",
+      "config_sha256": "3c444d984f4c8ac123074d0b62e3913f1188e8eee99657b08c27d53be9f9a226",
+      "input_cache_sha256": "bf8e0731fc46ce2a3b1dd01a1e6e16fe3c1d13240889981e67b94184f0714720",
+      "oracle_image_sha256": "64032b809b35ed65e58c97d7fbbd3bf28e06798be635d1565b659ce5d4210fe8",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_clean_tokens_sha256": "d8bf850efd0c98be5514f584101e3797ae7b926a3a38760a2146000eb39eade4",
+      "generated_latent_tensor_sha256": "96bf803a7a6fea038a39b04b446cab6f352d079c5d357d58489efbe487d4f076",
+      "reference_tokens": 144,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "mode": "local",
+      "config_sha256": "2f0cdb7c728a392220f2c43b62e74f15bc03636983d8a1df13ef549f7c5c063e",
+      "input_cache_sha256": "1c45d6ded50960aa398c65e71d51771d66df9e4466e145f180066a652374aa0a",
+      "oracle_image_sha256": "6e8976f362347191da9f6b9666054db88245c7eacbdaa19daa9bc42d22aa3540",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_clean_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "generated_latent_tensor_sha256": "8e19bd8b01f5636915f269033ddd08b667fc31c370cdc8ecbf957d70aff51383",
+      "reference_tokens": 0,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "mode": "oracle",
+      "config_sha256": "f6fa26a481b48053254652b53cb0e065dca60ed833ef003b4f7d092875486d3a",
+      "input_cache_sha256": "1c45d6ded50960aa398c65e71d51771d66df9e4466e145f180066a652374aa0a",
+      "oracle_image_sha256": "6e8976f362347191da9f6b9666054db88245c7eacbdaa19daa9bc42d22aa3540",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_clean_tokens_sha256": "a5b81231c92c8cdcc5cd06ce880bc844bd0e4ec3d3fd5f314e5eecc8f3bd2dc7",
+      "generated_latent_tensor_sha256": "9274612b2f05fd84a99734b53ee401ecc3b132f19d51d0d1df4a5f0290f7ce9d",
+      "reference_tokens": 144,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    }
+  ]
+}

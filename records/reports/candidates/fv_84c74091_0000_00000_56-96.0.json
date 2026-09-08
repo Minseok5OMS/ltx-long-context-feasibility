@@ -1,0 +1,140 @@
+{
+  "command": "/mnt/minu/minseok/LTX-2/longcond/../.venv/bin/python feasibility_long_context/preview_candidates.py --candidate fv_84c74091_0000_00000 --start 56 --end 96 --frames 32",
+  "scope": "Sparse decoded frames only; no oracle validation or model output",
+  "videos": [
+    {
+      "id": "fv_84c74091_0000_00000",
+      "contact_sheet": "fv_84c74091_0000_00000_56-96.0.jpg",
+      "frames": [
+        {
+          "requested_seconds": 56.0,
+          "decoded_seconds": 56.01428888888889
+        },
+        {
+          "requested_seconds": 57.29032258064516,
+          "decoded_seconds": 57.30725555555556
+        },
+        {
+          "requested_seconds": 58.58064516129032,
+          "decoded_seconds": 58.60021111111111
+        },
+        {
+          "requested_seconds": 59.87096774193549,
+          "decoded_seconds": 59.893166666666666
+        },
+        {
+          "requested_seconds": 61.16129032258065,
+          "decoded_seconds": 61.186122222222224
+        },
+        {
+          "requested_seconds": 62.45161290322581,
+          "decoded_seconds": 62.47908888888889
+        },
+        {
+          "requested_seconds": 63.74193548387097,
+          "decoded_seconds": 63.77204444444445
+        },
+        {
+          "requested_seconds": 65.03225806451613,
+          "decoded_seconds": 65.065
+        },
+        {
+          "requested_seconds": 66.3225806451613,
+          "decoded_seconds": 66.35795555555555
+        },
+        {
+          "requested_seconds": 67.61290322580645,
+          "decoded_seconds": 67.65092222222222
+        },
+        {
+          "requested_seconds": 68.90322580645162,
+          "decoded_seconds": 68.94387777777777
+        },
+        {
+          "requested_seconds": 70.19354838709677,
+          "decoded_seconds": 70.19512222222222
+        },
+        {
+          "requested_seconds": 71.48387096774194,
+          "decoded_seconds": 71.48808888888888
+        },
+        {
+          "requested_seconds": 72.7741935483871,
+          "decoded_seconds": 72.78104444444445
+        },
+        {
+          "requested_seconds": 74.06451612903226,
+          "decoded_seconds": 74.074
+        },
+        {
+          "requested_seconds": 75.35483870967742,
+          "decoded_seconds": 75.36695555555555
+        },
+        {
+          "requested_seconds": 76.64516129032258,
+          "decoded_seconds": 76.65991111111111
+        },
+        {
+          "requested_seconds": 77.93548387096774,
+          "decoded_seconds": 77.95287777777777
+        },
+        {
+          "requested_seconds": 79.2258064516129,
+          "decoded_seconds": 79.24583333333334
+        },
+        {
+          "requested_seconds": 80.51612903225806,
+          "decoded_seconds": 80.53878888888889
+        },
+        {
+          "requested_seconds": 81.80645161290323,
+          "decoded_seconds": 81.83175555555556
+        },
+        {
+          "requested_seconds": 83.09677419354838,
+          "decoded_seconds": 83.12471111111111
+        },
+        {
+          "requested_seconds": 84.38709677419355,
+          "decoded_seconds": 84.41766666666666
+        },
+        {
+          "requested_seconds": 85.6774193548387,
+          "decoded_seconds": 85.71062222222223
+        },
+        {
+          "requested_seconds": 86.96774193548387,
+          "decoded_seconds": 87.00358888888888
+        },
+        {
+          "requested_seconds": 88.25806451612902,
+          "decoded_seconds": 88.29654444444445
+        },
+        {
+          "requested_seconds": 89.54838709677419,
+          "decoded_seconds": 89.5895
+        },
+        {
+          "requested_seconds": 90.83870967741936,
+          "decoded_seconds": 90.84075555555556
+        },
+        {
+          "requested_seconds": 92.12903225806451,
+          "decoded_seconds": 92.13371111111111
+        },
+        {
+          "requested_seconds": 93.41935483870968,
+          "decoded_seconds": 93.42666666666666
+        },
+        {
+          "requested_seconds": 94.70967741935485,
+          "decoded_seconds": 94.71962222222223
+        },
+        {
+          "requested_seconds": 96.0,
+          "decoded_seconds": 96.01258888888889
+        }
+      ]
+    }
+  ]
+}

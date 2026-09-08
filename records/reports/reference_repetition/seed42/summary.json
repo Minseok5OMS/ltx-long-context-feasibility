@@ -1,0 +1,211 @@
+{
+  "example_id": "pilot_001_interview_return",
+  "seed": 42,
+  "new_generations": 2,
+  "reused_generations": 2,
+  "command": "/mnt/minu/minseok/LTX-2/.venv/bin/python3 feasibility_long_context/evaluate_reference_repetition.py --gpu 2",
+  "evaluation_script_sha256": "5f0066fc443f4349cc9e26f94b7ded6010e17ed6897ff60e4edf2237ca42e1ec",
+  "audit_script_sha256": "a1b3555df206c826fa609cdcd44da97366793cac4fe25779f13b23407fd5aa4e",
+  "metric": {
+    "name": "dinov2_vitb14_mean_aligned_frame_cls_cosine",
+    "sample_frame_indices": [
+      0,
+      6,
+      13,
+      19,
+      26,
+      32,
+      39,
+      45,
+      52,
+      58,
+      65,
+      71
+    ],
+    "after_1s_sample_indices": [
+      26,
+      32,
+      39,
+      45,
+      52,
+      58,
+      65,
+      71
+    ],
+    "after_1s_scope": "Supplementary fixed window selected before inspecting N2/N4 outputs; unchanged from earlier diagnostics; not automatic transition detection",
+    "preprocessing": "RGB, short edge 256 bicubic, center crop 224, ImageNet normalization, FP32",
+    "weights_sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73",
+    "backbone_source_sha256": "871fca671b12a9ff02e810654baf509e97ccf461bf8196ce5ddeefff2fd87d3e"
+  },
+  "rows": [
+    {
+      "case": "N1",
+      "name": "repeat_1",
+      "seed": 42,
+      "reference_tokens": 144,
+      "reference_time_layout": "same",
+      "repeats": 1,
+      "reused": true,
+      "dino_gt_cosine": 0.7725699543952942,
+      "dino_gt_cosine_after_1s": 0.9207797050476074,
+      "adjacent_pixel_mae_0_255": 1.9050177335739136
+    },
+    {
+      "case": "N2",
+      "name": "repeat_2",
+      "seed": 42,
+      "reference_tokens": 288,
+      "reference_time_layout": "same",
+      "repeats": 2,
+      "reused": false,
+      "dino_gt_cosine": 0.7404122948646545,
+      "dino_gt_cosine_after_1s": 0.9238390326499939,
+      "adjacent_pixel_mae_0_255": 1.3632359504699707
+    },
+    {
+      "case": "N4",
+      "name": "repeat_4",
+      "seed": 42,
+      "reference_tokens": 576,
+      "reference_time_layout": "same",
+      "repeats": 4,
+      "reused": false,
+      "dino_gt_cosine": 0.6726424098014832,
+      "dino_gt_cosine_after_1s": 0.9200878739356995,
+      "adjacent_pixel_mae_0_255": 1.7133744955062866
+    },
+    {
+      "case": "N10",
+      "name": "repeat_10",
+      "seed": 42,
+      "reference_tokens": 1440,
+      "reference_time_layout": "same",
+      "repeats": 10,
+      "reused": true,
+      "dino_gt_cosine": 0.03445374593138695,
+      "dino_gt_cosine_after_1s": 0.025604253634810448,
+      "adjacent_pixel_mae_0_255": 4.396816253662109
+    }
+  ],
+  "contrasts": {
+    "N2_minus_N1": {
+      "dino_gt_cosine": -0.03215765953063965,
+      "dino_gt_cosine_after_1s": 0.0030593276023864746
+    },
+    "N4_minus_N2": {
+      "dino_gt_cosine": -0.06776988506317139,
+      "dino_gt_cosine_after_1s": -0.0037511587142944336
+    },
+    "N10_minus_N4": {
+      "dino_gt_cosine": -0.6381886638700962,
+      "dino_gt_cosine_after_1s": -0.894483620300889
+    }
+  },
+  "pixel_diagnostics": {
+    "N1": {
+      "dino_gt_frame_cosines": [
+        0.05552970990538597,
+        0.048848990350961685,
+        0.861808717250824,
+        0.9384147524833679,
+        0.892447292804718,
+        0.9134655594825745,
+        0.9083379507064819,
+        0.9133479595184326,
+        0.9448955059051514,
+        0.9362467527389526,
+        0.9248964190483093,
+        0.9326000809669495
+      ],
+      "adjacent_pixel_mae_0_255": 1.9050177335739136,
+      "near_static_pair_fraction_mae_below_0_1": 0.04225352112676056,
+      "boundary_pixel_mae_0_255": 9.644097328186035,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 15.58285109202067,
+      "oracle_max_feature_cosine_mean": 0.8098923563957214
+    },
+    "N2": {
+      "dino_gt_frame_cosines": [
+        0.05381295830011368,
+        0.03574449568986893,
+        0.4875720143318176,
+        0.917106032371521,
+        0.9084542989730835,
+        0.9190391302108765,
+        0.9128367900848389,
+        0.9082221984863281,
+        0.9372555613517761,
+        0.9360261559486389,
+        0.9360293745994568,
+        0.9328488111495972
+      ],
+      "adjacent_pixel_mae_0_255": 1.3632359504699707,
+      "near_static_pair_fraction_mae_below_0_1": 0.028169014084507043,
+      "boundary_pixel_mae_0_255": 9.902352333068848,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 11.72647531827291,
+      "oracle_max_feature_cosine_mean": 0.7726618647575378
+    },
+    "N4": {
+      "dino_gt_frame_cosines": [
+        0.06121854856610298,
+        0.05336311459541321,
+        0.06736941635608673,
+        0.5290544629096985,
+        0.8796916007995605,
+        0.894333004951477,
+        0.9033405184745789,
+        0.9118646383285522,
+        0.9474048614501953,
+        0.9426531195640564,
+        0.9391970634460449,
+        0.9422183632850647
+      ],
+      "adjacent_pixel_mae_0_255": 1.7133744955062866,
+      "near_static_pair_fraction_mae_below_0_1": 0.04225352112676056,
+      "boundary_pixel_mae_0_255": 9.508079528808594,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 13.959291934967041,
+      "oracle_max_feature_cosine_mean": 0.7035711407661438
+    },
+    "N10": {
+      "dino_gt_frame_cosines": [
+        0.04890407994389534,
+        0.05765930190682411,
+        0.05751510709524155,
+        0.044532448053359985,
+        0.017734050750732422,
+        0.018916012719273567,
+        0.028689004480838776,
+        0.034048765897750854,
+        0.01638398878276348,
+        0.0336596742272377,
+        0.0192745141685009,
+        0.03612801060080528
+      ],
+      "adjacent_pixel_mae_0_255": 4.396816253662109,
+      "near_static_pair_fraction_mae_below_0_1": 0.0,
+      "boundary_pixel_mae_0_255": 9.10679817199707,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 43.86178334554037,
+      "oracle_max_feature_cosine_mean": 0.04496621713042259
+    }
+  },
+  "anchor_metric_checks": {
+    "N1": {
+      "previous": 0.7725699543952942,
+      "current": 0.7725699543952942
+    },
+    "N10": {
+      "previous": 0.03445374593138695,
+      "current": 0.03445374593138695
+    }
+  },
+  "comparison_video": {
+    "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/reference_repetition/seed42/comparison.mp4",
+    "frames": 120,
+    "fps": 24,
+    "duration_seconds": 5.0,
+    "sha256": "32f53380399158e344d650937fa2479017fd58fcc867990de46c8d65ff0a8a45",
+    "full_decode_passed": true
+  },
+  "artifact_audit": "artifact_verification.json",
+  "scope": "Single scene and seed; exact image duplication at coincident past coordinates; no training or IC-LoRA",
+  "review_status": "See review.json for assistant sample-frame review; user review is separate"
+}

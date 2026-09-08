@@ -1,0 +1,29 @@
+{
+  "ltx_commit": "a95ab856bf29407b6b066ede0abe1846050db56c",
+  "recorded_environment": {
+    "torch": "2.13.0+cu132",
+    "cuda": "13.2",
+    "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  },
+  "model_files": {
+    "transformer": {
+      "path": "/mnt/minu/minseok/LTX-2/models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors",
+      "bytes": 42018190584,
+      "mtime_ns": 1787903911728802396
+    },
+    "video_vae": {
+      "path": "/mnt/minu/minseok/LTX-2/models/ltx-2.5/vae/ltx-2.5-video-vae-bf16.safetensors",
+      "bytes": 1472223346,
+      "mtime_ns": 1787902886111443535
+    },
+    "text_encoder": {
+      "path": "/mnt/minu/minseok/LTX-2/models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors",
+      "bytes": 26263858182,
+      "mtime_ns": 1787904902081692604
+    }
+  },
+  "python_version_at_archive_export": "3.13.13 | packaged by Anaconda, Inc. | (main, Apr 14 2026, 06:19:41) [GCC 14.3.0]",
+  "new_gpu_runs_during_export": 0,
+  "model_identification_limit": "File sizes and mtimes, not full weight checksums",
+  "original_workspace": "/mnt/minu/minseok/LTX-2/longcond"
+}

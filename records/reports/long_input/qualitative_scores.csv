@@ -1,0 +1,26 @@
+example_id,cell,blind_code,evidence_score,view_action_score,continuity_score,visibility,observation_ko
+long_001_nursery_manager,oracle_sparse,A,2,1,1,visible_target,"약 0.125초부터 직원으로 전환, 어두운 묶은 머리와 빨간 셔츠/남색 조끼가 보인다. Oracle과 매우 비슷한 중간 거리 구도를 재현하며 요청한 측면 close-up은 약하다. 초반 dissolve 이후 말/손 동작 변화가 있다."
+long_001_nursery_manager,full_reference,B,0,0,2,wrong_subject,방문 평가자의 금발 얼굴 close-up이 지속한다. 대상 직원으로 전환하지 않는다.
+long_001_nursery_manager,uniform_sparse,C,0,0,2,wrong_subject,방문 평가자의 금발 얼굴 close-up이 지속한다. 대상 직원으로 전환하지 않는다.
+long_001_nursery_manager,local,D,0,0,2,wrong_subject,방문 평가자의 금발 얼굴 close-up과 손짓이 지속한다. 대상 직원으로 전환하지 않는다.
+long_001_nursery_manager,native_full,E,0,0,2,wrong_subject,방문 평가자의 금발 얼굴 close-up이 지속한다. 대상 직원으로 전환하지 않는다.
+long_002_robot_head,native_full,A,0,0,2,not_exposed,손으로 몸통을 조작하며 머리가 상단에서 잘린다. 요청한 독립 display와 앞면 외관을 확인할 수 없다.
+long_002_robot_head,full_reference,B,0,0,2,not_exposed,손으로 몸통을 조작하며 머리가 상단에서 잘린다. 요청한 독립 display와 앞면 외관을 확인할 수 없다.
+long_002_robot_head,local,C,0,2,1,visible_wrong_attribute,약 0.208초 이후 손 없는 정면 display를 만들지만 머리가 둥근 은색 얼굴로 바뀌어 Oracle의 각진 helmet/금색 앞면과 다르다.
+long_002_robot_head,oracle_sparse,D,2,2,1,visible_target,"약 0.5초 이후 손 없는 정면 display에서 각진 helmet과 금색 앞면, 어깨 형상을 함께 유지한다. 초반 약 0.25–0.5초 dissolve/겹침이 있다. 이후 거의 고정된 display는 요청과 부합한다."
+long_002_robot_head,uniform_sparse,E,0,1,2,wrong_view_back,손이 빠지며 더 넓은 display를 만들지만 주로 등/뒷면을 유지한다. 요청한 앞면 속성 전달은 확인할 수 없다.
+long_003_student_return,oracle_sparse,A,0,0,2,not_exposed,교사 앞면/학생 뒷면을 유지한다. 학생 얼굴 reverse angle 실패.
+long_003_student_return,local,B,0,0,2,not_exposed,교사 앞면/학생 뒷면을 유지한다. 학생 얼굴 reverse angle 실패.
+long_003_student_return,uniform_sparse,C,0,0,2,not_exposed,교사 앞면/학생 뒷면을 유지한다. 학생 얼굴 reverse angle 실패.
+long_003_student_return,full_reference,D,0,0,2,not_exposed,교사 앞면/학생 뒷면을 유지한다. 학생 얼굴 reverse angle 실패.
+long_003_student_return,native_full,E,0,0,2,not_exposed,교사 앞면/학생 뒷면을 유지한다. 학생 얼굴 reverse angle 실패.
+long_004_van_exterior,local,A,0,0,2,not_exposed,차량 내부 운전 시점을 유지한다. 외부 차체 속성은 노출되지 않는다.
+long_004_van_exterior,native_full,B,0,0,2,not_exposed,차량 내부 운전 시점을 유지한다. 외부 차체 속성은 노출되지 않는다.
+long_004_van_exterior,uniform_sparse,C,0,0,2,not_exposed,차량 내부 운전 시점을 유지한다. 외부 차체 속성은 노출되지 않는다.
+long_004_van_exterior,oracle_sparse,D,2,1,1,visible_target,약 0.25–1.33초 긴 dissolve 후 외부의 밝은 각진 밴/어두운 전면 띠가 보인다. Oracle의 남성 selfie와 주차 구도를 함께 재현한다. 바퀴 회전이나 도로 주행은 확인되지 않으며 주행 요청 성공으로 평가하지 않는다.
+long_004_van_exterior,full_reference,E,0,0,2,not_exposed,차량 내부 운전 시점을 유지한다. 외부 차체 속성은 노출되지 않는다.
+long_005_conservator,local,A,0,2,2,visible_wrong_attribute,갈색 묶은 머리/안경 없는 측면 얼굴과 상체가 나타난다. Oracle의 회색 머리/안경 외관과 다르다.
+long_005_conservator,oracle_sparse,B,1,1,1,partial_cropped,손/몸통 중심 구도에 gray hair/glasses 얼굴 일부가 화면 상단에서 잘린다. 머리·얼굴 전체 노출을 충족하지 못한다. 약 1초 이후 참조 자막이 나타나고 마지막에 겹침이 있다.
+long_005_conservator,uniform_sparse,C,0,2,2,visible_wrong_attribute,갈색 묶은 머리/안경 없는 측면 얼굴과 상체가 나타난다. Oracle의 회색 머리/안경 외관과 다르다.
+long_005_conservator,native_full,D,0,0,0,not_exposed,얼굴 없이 작업대/손/책의 이중 영상과 흐림이 1초 이후에도 지속한다. 자막도 나타난다.
+long_005_conservator,full_reference,E,0,0,0,not_exposed,얼굴 없이 작업대/손/책의 이중 영상과 흐림이 1초 이후에도 지속한다. 자막도 나타난다.

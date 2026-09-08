@@ -1,0 +1,366 @@
+{
+  "status": "completed",
+  "example": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/data/five_002_robot_head",
+  "example_id": "five_002_robot_head",
+  "mode": "oracle",
+  "layout": "image_past",
+  "seed": 42,
+  "physical_gpu": 1,
+  "cuda_visible_devices": "1",
+  "command": "/mnt/minu/minseok/LTX-2/.venv/bin/python3 /mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/run_five_case_comparison.py --example /mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/data/five_002_robot_head --gpu 1 --mode oracle",
+  "cwd": "/mnt/minu/minseok/LTX-2/longcond",
+  "script_sha256": "5614587b5c105a39c2f19f3830f66abe0926477ee2e48aa72afd8ae572ac5630",
+  "cohort_config_sha256": "5911ef474bc2b929104b2dee8cf57f79b25baea421facf91a0c59c7c9f1c724f",
+  "controls_sha256": "f15ef6a0b269e48410e56981cc399726c7f6ef89d6125ba390394cf12eb312a8",
+  "ltx_commit": "a95ab856bf29407b6b066ede0abe1846050db56c",
+  "started_at_utc": "2026-09-07T12:46:59.293312+00:00",
+  "models": {
+    "transformer": {
+      "path": "/mnt/minu/minseok/LTX-2/models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors",
+      "bytes": 42018190584,
+      "mtime_ns": 1787903911728802396
+    },
+    "video_vae": {
+      "path": "/mnt/minu/minseok/LTX-2/models/ltx-2.5/vae/ltx-2.5-video-vae-bf16.safetensors",
+      "bytes": 1472223346,
+      "mtime_ns": 1787902886111443535
+    },
+    "text_encoder": {
+      "path": "/mnt/minu/minseok/LTX-2/models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors",
+      "bytes": 26263858182,
+      "mtime_ns": 1787904902081692604
+    }
+  },
+  "environment": {
+    "torch": "2.13.0+cu132",
+    "cuda": "13.2",
+    "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  },
+  "prompt": "The view switches to the same robot model posed on its display turntable, showing its head and upper body.",
+  "prompt_enhancement": false,
+  "fps": 24,
+  "width": 512,
+  "height": 288,
+  "prefix_frames": 49,
+  "target_frames": 72,
+  "total_frames": 121,
+  "target_decoded_slice": [
+    49,
+    121
+  ],
+  "base_video_tokens": 2304,
+  "prefix_tokens": 1008,
+  "common_time_shift_seconds": 4.041666666666667,
+  "reference_model_time_range": [
+    0,
+    0.041666666666666664
+  ],
+  "target_model_time_range": [
+    6.083333333333333,
+    9.083333333333334
+  ],
+  "source_dependency_gap_seconds": 217.63430096763432,
+  "reference_frames": 1,
+  "reference_source": {
+    "kind": "oracle",
+    "selection_interval": [
+      147.0,
+      150.0
+    ],
+    "clip_frame_index": 36,
+    "source_seconds": 148.48181514848181,
+    "image_sha256": "e359083d77893fd6824b3b77776ade0616632b5c88f1ad2776a98a04a893db95"
+  },
+  "input_cache": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_002_robot_head/five_case_inputs_512x288",
+  "common_inputs_sha256": "5187e4cae8d6ec3e76125b5f58b7087eecf4cc3491f01ef6041947c0965232f8",
+  "local_latent_sha256": "657240382783f71748c475c30bfa38e3c881a3a5ff3b0ba8f7f496c93d8d48bb",
+  "prompt_context_hashes": {
+    "video_context": "16b6e71f97733af2a2d3e8e49ebb1117e60db697201f17ed16ee1bceb62057a5",
+    "audio_context": "cee838880aa7a4af310baf0ceedeeb9b4f1ca7309821eb0b1e4fa28ac899707b"
+  },
+  "sigmas": [
+    1.0,
+    0.9937499761581421,
+    0.987500011920929,
+    0.981249988079071,
+    0.9750000238418579,
+    0.909375011920929,
+    0.7250000238418579,
+    0.421875,
+    0.0
+  ],
+  "sampler": "Euler ancestral",
+  "eta": 1.0,
+  "s_noise": 1.0,
+  "precision": "bfloat16",
+  "guidance": "SimpleDenoiser; no CFG/STG",
+  "audio": "Jointly generated, no input audio or output audio decode",
+  "initial_noise_seed": 42,
+  "step_noise_seed": 10042,
+  "decoder_seed": 20042,
+  "noise_policy": "CPU base grid with independent seed per modality/step, appended clean references get zero noise",
+  "gt_video_opened": false,
+  "outputs": {
+    "target": {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_002_robot_head/image_past_seed42/oracle/local_oracle.mp4",
+      "frames": 72,
+      "fps": 24,
+      "duration_seconds": 3.0,
+      "sha256": "2dd4d40f74bf9c0403fcec03711e3d394dfd3325b7359cb6be3174d52e2b2368",
+      "full_decode_passed": true
+    },
+    "continuation": {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_002_robot_head/image_past_seed42/oracle/local_then_generated.mp4",
+      "frames": 120,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "sha256": "e8e96399bf10563ed1b72a4b14be2442da558e2f2046be6bb5fd7ed5db60a4e0",
+      "full_decode_passed": true
+    },
+    "decoded_full": {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_002_robot_head/image_past_seed42/oracle/decoded_model_sequence.mp4",
+      "frames": 121,
+      "fps": 24,
+      "duration_seconds": 5.041666666666667,
+      "sha256": "0dfa46d29c2141388f16cd0f699357ecc98ed58cbad2c30cdd8bf0988b6d616b",
+      "full_decode_passed": true
+    }
+  },
+  "base_video_positions_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+  "audio_positions_sha256": "a7f6da159340bee98bf40476995d7a6af97bc8532d5cab513afa3ada91052ddc",
+  "reference_tokens": 144,
+  "final_frozen_max_abs_error": 0.0,
+  "noise_audit": {
+    "initial": [
+      {
+        "step": 0,
+        "modality": "video",
+        "seed": 42,
+        "base_shape": [
+          1,
+          2304,
+          128
+        ],
+        "base_sha256": "2f93ffd939d6b47143082d37155728b0a2b47320d34e3ae359cc1c0c40e1e7d7",
+        "target_sha256": "c3e0effc62e399cb642f0569b4b85bc3de9459d85bbfa26a66a07d2788dabb29"
+      },
+      {
+        "step": 0,
+        "modality": "audio",
+        "seed": 43,
+        "base_shape": [
+          1,
+          126,
+          128
+        ],
+        "base_sha256": "af1a4f1399db3d1bcdd41e28e3761b6b316b9c703aa600a95f0522b424bfa085"
+      }
+    ],
+    "ancestral": [
+      {
+        "step": 0,
+        "modality": "video",
+        "seed": 10042,
+        "base_shape": [
+          1,
+          2304,
+          128
+        ],
+        "base_sha256": "d138cae048b3f5976fdcc2252090629e32c8b1145c18daab81a3cbc80fce3fe9",
+        "target_sha256": "5f79f392863b4fdf343ef06c46df928adab88237b1dac90cb58199529f0b5b33"
+      },
+      {
+        "step": 0,
+        "modality": "audio",
+        "seed": 10043,
+        "base_shape": [
+          1,
+          126,
+          128
+        ],
+        "base_sha256": "bf26ca1d773a5cb2b3414d9074c2596c99c6f347164be0f39918e39e5f3b4dea"
+      },
+      {
+        "step": 1,
+        "modality": "video",
+        "seed": 10044,
+        "base_shape": [
+          1,
+          2304,
+          128
+        ],
+        "base_sha256": "ffefdfc5c4fdd20b20aa69a99c3147a3accded7d42af9e6a94958c04038509b9",
+        "target_sha256": "0c50a14283d388ee2ea815ba6f339fbf4599577cafa5fda1371907a64d485498"
+      },
+      {
+        "step": 1,
+        "modality": "audio",
+        "seed": 10045,
+        "base_shape": [
+          1,
+          126,
+          128
+        ],
+        "base_sha256": "0a01d868e581fb15a9c0bbe4761c3fd94710321e809944c0b7ac1a57efab5543"
+      },
+      {
+        "step": 2,
+        "modality": "video",
+        "seed": 10046,
+        "base_shape": [
+          1,
+          2304,
+          128
+        ],
+        "base_sha256": "aee09394e49be322f177cd04210d797f582d952f83ef3f98187ad4c54ec3b58e",
+        "target_sha256": "f179b69b5b37a46c584c0bcd4edb44b71110a18a0ccea582ac8360d94a0f3bc8"
+      },
+      {
+        "step": 2,
+        "modality": "audio",
+        "seed": 10047,
+        "base_shape": [
+          1,
+          126,
+          128
+        ],
+        "base_sha256": "7673794ce5cec3b344eb202f59fc96b7d63701654c883b5562649f557e51b022"
+      },
+      {
+        "step": 3,
+        "modality": "video",
+        "seed": 10048,
+        "base_shape": [
+          1,
+          2304,
+          128
+        ],
+        "base_sha256": "cbee35b49a040b929691dc32011251bfbb2a8c3775dc77fbf67f4a86edcde7c6",
+        "target_sha256": "aff1b9ab40be92ecaa51649ac80d852390005042a0320ba492531df2370b775f"
+      },
+      {
+        "step": 3,
+        "modality": "audio",
+        "seed": 10049,
+        "base_shape": [
+          1,
+          126,
+          128
+        ],
+        "base_sha256": "2c855935be3babcff20b3e459ba16ba6f77adbbe9cf94bd567392bb1529913c7"
+      },
+      {
+        "step": 4,
+        "modality": "video",
+        "seed": 10050,
+        "base_shape": [
+          1,
+          2304,
+          128
+        ],
+        "base_sha256": "25ff476595a5b262055c391227845f723391fb8e369a168f98ea75bfae17eb18",
+        "target_sha256": "c0fea7515320c2a9f2b5dae63d611849eebe6e1d7ad22e24fa6da6e8d0517aa2"
+      },
+      {
+        "step": 4,
+        "modality": "audio",
+        "seed": 10051,
+        "base_shape": [
+          1,
+          126,
+          128
+        ],
+        "base_sha256": "16d73ecba7b1df194ae3d5863fa9347f9acbf32c63c714f7705bf90b329f1953"
+      },
+      {
+        "step": 5,
+        "modality": "video",
+        "seed": 10052,
+        "base_shape": [
+          1,
+          2304,
+          128
+        ],
+        "base_sha256": "544de7a0d70c1b2bd0f71577830e2ca59f60977a7735b7577f1fca50697bfdaa",
+        "target_sha256": "f49331b4f24e42d0caa3a41b26c9a87829113a8d57463d9aee3a3e3dd462fa6e"
+      },
+      {
+        "step": 5,
+        "modality": "audio",
+        "seed": 10053,
+        "base_shape": [
+          1,
+          126,
+          128
+        ],
+        "base_sha256": "8e74579276a1e055cc8a4e43367a84bce2862210fdc32db886d4bd5cdfca2743"
+      },
+      {
+        "step": 6,
+        "modality": "video",
+        "seed": 10054,
+        "base_shape": [
+          1,
+          2304,
+          128
+        ],
+        "base_sha256": "e1db435a44de1738336ffeadecc5e0a8806e9c7229fce75b26de6de19f80345b",
+        "target_sha256": "da5676fcd6de42721ed587e2a65c8e33cc92dfab08e31cc08a24d32199f658ef"
+      },
+      {
+        "step": 6,
+        "modality": "audio",
+        "seed": 10055,
+        "base_shape": [
+          1,
+          126,
+          128
+        ],
+        "base_sha256": "979ed7d3f4522e28dfcc78c23baa0fe3213d7c064c91d5c731b8b07505693c8a"
+      }
+    ]
+  },
+  "denoising_trace": [
+    {
+      "step": 0,
+      "frozen_max_abs_error": 0.0
+    },
+    {
+      "step": 1,
+      "frozen_max_abs_error": 0.0
+    },
+    {
+      "step": 2,
+      "frozen_max_abs_error": 0.0
+    },
+    {
+      "step": 3,
+      "frozen_max_abs_error": 0.0
+    },
+    {
+      "step": 4,
+      "frozen_max_abs_error": 0.0
+    },
+    {
+      "step": 5,
+      "frozen_max_abs_error": 0.0
+    },
+    {
+      "step": 6,
+      "frozen_max_abs_error": 0.0
+    },
+    {
+      "step": 7,
+      "frozen_max_abs_error": 0.0
+    }
+  ],
+  "diffusion_seconds_including_load": 14.505821969360113,
+  "decoder_execution": "fresh_cuda_process",
+  "decoder_script_sha256": "69c0707fe61e9441e7c10fee665cce06a82230257d49663f05ea09b1cb703876",
+  "decoder_seconds": 4.125523705035448,
+  "decoder_peak_gpu_allocated_gib": 3.3081536293029785,
+  "decoder_result_sha256": "28ba084e6c8365263a397a57ec97b3fc98653c548fdb5a9029228fef166c1dab",
+  "total_seconds": 23.198293638415635,
+  "peak_gpu_allocated_gib": 39.14397954940796,
+  "finished_at_utc": "2026-09-07T12:47:22.489148+00:00"
+}

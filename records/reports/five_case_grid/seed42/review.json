@@ -1,0 +1,160 @@
+{
+  "reviewed_at_utc": "2026-09-07T13:47:11.268843+00:00",
+  "reviewer": "assistant visual sample-frame review",
+  "human_verified": false,
+  "blind_review": false,
+  "sample_frame_indices": [
+    0,
+    8,
+    16,
+    24,
+    32,
+    40,
+    56,
+    71
+  ],
+  "review_evidence": "All five six-column sample sheets; additional full-resolution 1.33s six-panel posters for vehicle/conservator; actual input previews and per-frame diagnostics. Not full-playback human review.",
+  "overall_summary_ko": "로봇·학생·차량은 두 Past 조건에서 막혔지만 두 Target 조건에서는 필요한 외관이 드러났습니다. 관리자·보존 작업자는 Video/Past에서도 외관을 전달했습니다. 생성 위치는 참조 활용을 강화하지만 구도·동작·자막의 재현까지 강화할 수 있어, 참조 활용과 새 장면 제어를 구분해야 합니다.",
+  "cases": {
+    "five_001_nursery_manager": {
+      "verdict_ko": "네 조건 외관 전달 · Target 전환 빠름",
+      "summary_ko": "Image와 Video 모두 Past에서도 보육원 인물의 외관을 전달한다. Target 위치에서는 전환이 빨라지고, Video/Target은 첫 샘플부터 참조 인터뷰를 재현한다.",
+      "local_observation_ko": "긴 머리·붉은 체크 셔츠 인물과 식물 재배장처럼 보이는 다른 공간을 생성한다.",
+      "limitation_ko": "네 참조 조건 모두 GT의 측면 근접 대신 과거의 중간 구도·보육 공간을 따른다. nursery의 의미 모호성도 Local/Oracle 차이 일부를 설명할 수 있다.",
+      "cells": {
+        "image_past": {
+          "observation_ko": "0.33초 샘플에서 노트북과 인터뷰가 겹치고 0.67초부터 올린 머리·붉은 긴팔·검은 앞치마가 보인다.",
+          "motion_copy_ko": "손·고개 움직임은 있지만 참조 구도·배경을 따른다.",
+          "distant_appearance_visible": true
+        },
+        "image_target": {
+          "observation_ko": "첫 샘플은 전환이 겹치지만 0.33초부터 참조 인물 외관이 드러난다.",
+          "motion_copy_ko": "Past보다 빠르다. 시선·손 자세는 변하지만 GT와 다른 중간 구도다.",
+          "distant_appearance_visible": true
+        },
+        "video_past": {
+          "observation_ko": "0.33초에는 전환이 겹치고 0.67초부터 참조 인물 외관이 나타난다.",
+          "motion_copy_ko": "이번 사례에서는 1,440 token의 Video/Past도 작동한다. 영상 past가 항상 실패한다는 결론은 맞지 않는다.",
+          "distant_appearance_visible": true
+        },
+        "video_target": {
+          "observation_ko": "Target 첫 샘플부터 인터뷰 인물과 보육 공간이 보인다.",
+          "motion_copy_ko": "과거 영상의 구도·손짓·말하는 자세를 강하게 따른다. 정지 화면은 아니지만 새로운 view 활용은 입증하지 않는다.",
+          "distant_appearance_visible": true
+        }
+      }
+    },
+    "five_002_robot_head": {
+      "verdict_ko": "Target에서 머리 노출 · 손/구도 동반",
+      "summary_ko": "두 Past 조건은 머리가 잘린 Local 구도를 유지한다. 두 Target 조건은 각진 머리와 금색 얼굴 부분을 드러내지만 과거 조작자의 손과 근접 구도를 함께 가져온다.",
+      "local_observation_ko": "머리가 잘린 큰 몸통·다리 구도를 계속 생성한다.",
+      "limitation_ko": "몸체와 배경만 비슷해도 DINO가 높다. Target 위치에서 필요한 머리는 보이지만 GT처럼 넓은 전시 포즈를 생성했다고 판정할 수 없다.",
+      "cells": {
+        "image_past": {
+          "observation_ko": "머리가 화면 위로 잘린 몸통·다리 시점이 지속된다.",
+          "motion_copy_ko": "몸통은 움직여도 평가할 머리가 드러나지 않는다.",
+          "distant_appearance_visible": false
+        },
+        "image_target": {
+          "observation_ko": "첫 샘플부터 각진 머리·금색 얼굴 부분이 드러난다. 처음에는 조작자의 손도 보인다.",
+          "motion_copy_ko": "약 1초 이후 샘플부터 손이 거의 사라지지만 GT의 넓은 전시 포즈와 다르다. DINO 하락을 머리 전달 실패로 읽으면 안 된다.",
+          "distant_appearance_visible": true
+        },
+        "video_past": {
+          "observation_ko": "이미지 Past와 같이 머리가 잘린 Local 시점에 머문다.",
+          "motion_copy_ko": "전체 DINO는 높아도 필요한 의존 속성을 노출하지 못한다.",
+          "distant_appearance_visible": false
+        },
+        "video_target": {
+          "observation_ko": "머리와 상체 세부가 보이며 조작자의 양손도 대부분 함께 나타난다.",
+          "motion_copy_ko": "원본 과거 영상의 로봇을 만지는 동작·근접 구도를 강하게 재현한다. 전시 장면 제어의 성공과 별개다.",
+          "distant_appearance_visible": true
+        }
+      }
+    },
+    "five_003_student_return": {
+      "verdict_ko": "Target 두 조건에서 학생 정면으로 전환",
+      "summary_ko": "두 Past 조건은 교사 정면을 유지하고, 두 Target 조건은 과거 학생을 닮은 얼굴·앞머리·밝은 안쪽 셔츠가 보이는 역방향 시점으로 전환한다.",
+      "local_observation_ko": "교사가 고개를 들고 말하는 듯 움직이지만 학생 얼굴은 드러나지 않는다.",
+      "limitation_ko": "Oracle와 GT가 비슷한 역방향 구도이며 원본 간격도 약 15초다. GT 후반의 돌아서는 동작은 재현되지 않았지만 공통 prompt가 그 정확한 행동을 요구하지는 않았다.",
+      "cells": {
+        "image_past": {
+          "observation_ko": "학생의 얼굴이 보이지 않는 교사 정면 구도가 지속된다.",
+          "motion_copy_ko": "참조를 추가해도 필요한 시점으로 전환하지 못한다.",
+          "distant_appearance_visible": false
+        },
+        "image_target": {
+          "observation_ko": "첫 샘플부터 학생 정면이 보이고 곱슬머리·얼굴·밝은 셔츠가 전달된다.",
+          "motion_copy_ko": "말하는 표정 변화는 있으나 움직임이 작고 GT 후반 돌아서는 행동은 없다. 참조 정면 구도 영향이 크다.",
+          "distant_appearance_visible": true
+        },
+        "video_past": {
+          "observation_ko": "교사의 시선과 자세만 변하며 학생 뒷부분이 남는다.",
+          "motion_copy_ko": "영상 정보량이 늘어도 Past 위치에서는 전환이 성립하지 않는다.",
+          "distant_appearance_visible": false
+        },
+        "video_target": {
+          "observation_ko": "첫 샘플은 교사와 학생 시점이 겹치고 0.33초부터 학생 정면이 뚜렷하다.",
+          "motion_copy_ko": "과거 정면 영상과 비슷한 말하기·표정 흐름이다. 새로운 행동 일반화의 검증은 아니다.",
+          "distant_appearance_visible": true
+        }
+      }
+    },
+    "five_004_van_exterior": {
+      "verdict_ko": "Target 외관 전달 · 주행/연결은 제한",
+      "summary_ko": "두 Past 조건은 운전석 안에 머문다. 두 Target 조건은 차체·줄무늬·전면을 드러내지만 과거 주차 장면을 강하게 따르며, Image/Target에는 Local 잔상과 합성 경계가 보인다.",
+      "local_observation_ko": "도로와 운전석 내부를 계속 생성하고 외부 차체 시점으로 바뀌지 않는다.",
+      "limitation_ko": "GT는 실제 주행 외부 장면이고 Oracle은 주차된 차량을 둘러보는 장면이다. 카메라/크기 변화만으로 요청한 차량 주행 동작의 성공을 판정할 수 없다.",
+      "cells": {
+        "image_past": {
+          "observation_ko": "3초 동안 운전대·손·도로가 지속된다.",
+          "motion_copy_ko": "도로 움직임이 있어도 외부 차체 증거는 드러나지 않는다.",
+          "distant_appearance_visible": false
+        },
+        "image_target": {
+          "observation_ko": "첫 샘플부터 흰 차체·측면 줄무늬·검은 그릴과 원형 전조등이 보인다.",
+          "motion_copy_ko": "일부 샘플에서 주변에 운전석/도로 잔상과 삽입 영상 같은 경계가 남는다. 과거 주차 구도에 가까워 외관 전달과 장면 통합을 나눠 봐야 한다.",
+          "distant_appearance_visible": true
+        },
+        "video_past": {
+          "observation_ko": "이미지 Past와 같이 운전석 내부 주행을 지속한다.",
+          "motion_copy_ko": "참조 영상 자체를 입력해도 Past에서는 외부 시점으로 바뀌지 않는다.",
+          "distant_appearance_visible": false
+        },
+        "video_target": {
+          "observation_ko": "차량 외관이 전체 장면으로 드러나고 과거의 주차 장소·카메라 이동을 강하게 따른다.",
+          "motion_copy_ko": "Image/Target보다 Local 잔상이 덜 보이지만 GT의 다른 장소에서 차가 주행하는 결과와 다르다. Pixel 움직임은 카메라 변화도 포함한다.",
+          "distant_appearance_visible": true
+        }
+      }
+    },
+    "five_005_conservator": {
+      "verdict_ko": "외관 전달 · Video/Target은 과거 컷/자막 재현",
+      "summary_ko": "네 조건 모두 어느 시점에는 회색 머리·안경을 갖춘 과거 작업자 외관을 전달한다. Image/Target은 처음부터 작업자, Video/Target은 과거의 손 근접→작업대 컷과 자막까지 따른다.",
+      "local_observation_ko": "검은 머리를 묶은 안경 없는 작업자를 GT와 비슷한 측면 근접 구도에 생성한다.",
+      "limitation_ko": "영상 참조는 선택 구간 초반의 손 근접과 후반 작업대 컷을 포함하며, 이미지는 후반의 단일 정면이다. 이 내용 차이가 형식 축과 함께 바뀐다. GT는 다른 시점의 작업자 근접이다.",
+      "cells": {
+        "image_past": {
+          "observation_ko": "1초 샘플까지 손·도구가 지속되고 이후 회색 머리·안경의 작업자가 넓은 작업대 구도에 보인다.",
+          "motion_copy_ko": "얼굴 외관은 전달되지만 전환이 늦고 과거 배경·구도를 따른다.",
+          "distant_appearance_visible": true
+        },
+        "image_target": {
+          "observation_ko": "첫 샘플부터 회색 머리·안경을 갖춘 작업자가 정면 작업대 구도에 보인다.",
+          "motion_copy_ko": "뒤에는 고개를 숙이지만 GT의 측면 근접과 다르다. 전체 DINO 상승과 달리 1초 이후 DINO는 Past보다 낮다.",
+          "distant_appearance_visible": true
+        },
+        "video_past": {
+          "observation_ko": "약 1초 샘플에서 손·도구와 작업자가 겹치며 이후 참조 외관이 나타난다.",
+          "motion_copy_ko": "Video/Past도 외관을 전달한다. 일부 전환 혼합과 과거 작업대 구도가 남는다.",
+          "distant_appearance_visible": true
+        },
+        "video_target": {
+          "observation_ko": "첫 약 1초는 참조의 책/손 근접과 자막, 이후 과거 작업대 인물과 자막을 재현한다.",
+          "motion_copy_ko": "원본 과거 영상의 컷 순서와 자막까지 따라간다. 낮은 GT DINO는 참조 미사용보다 과거 장면 재현의 영향으로 해석하는 것이 맞다.",
+          "distant_appearance_visible": true
+        }
+      }
+    }
+  }
+}

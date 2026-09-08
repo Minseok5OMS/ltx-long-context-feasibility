@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "run_config_sha256": "3c225faee0d60d156eca3fb1f2ec257213be94d86b7d86e96e612917a133d723",
+  "checks": [
+    "Saved local and final prefix latents exactly equal",
+    "Saved target noise shape and SHA256 match",
+    "All 8 denoising steps preserve local latents",
+    "Generated latent finite and expected shape",
+    "All generation MP4 SHA256 values match",
+    "Python source syntax and local documentation links valid"
+  ],
+  "new_generation_performed": false
+}

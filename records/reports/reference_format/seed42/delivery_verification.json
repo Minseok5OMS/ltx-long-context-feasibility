@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "utf8_html_pages": 14,
+  "local_links_assets_and_anchors_checked": 300,
+  "raw_markdown_navigation_links": 0,
+  "target_frames_fully_decoded": 360,
+  "comparison_frames_fully_decoded": 120,
+  "all_frame_pts_exact_24fps": true,
+  "new_scripts_syntax_checked": [
+    "format_controls.py",
+    "test_format_controls.py",
+    "format_artifacts.py",
+    "run_reference_format.py",
+    "evaluate_reference_format.py",
+    "make_reference_format_report.py"
+  ],
+  "runner_snapshots_preserved": true,
+  "review_sha256": "a458d0896f53a9b4f76d4892fa60e9a6b6b545cd0eb54648f073fe2e235cac1e",
+  "rendered_report_sha256": "715f93b1001a30a7ed79a0aa88c03cd7dd6b74b57bb74bde6d1083f2944a213d",
+  "condition_tests": "2 tests passed on CPU and GPU through actual state_with_conditionings; no new GPU inference after these three completed cases",
+  "browser": {
+    "engine": "Firefox headless",
+    "html_http_status": 200,
+    "mp4_http_status": 200,
+    "korean_text_inputs_table_and_synchronized_layout": "visually inspected",
+    "screenshot": "outputs/browser_check/reference_format.png",
+    "full_speed_playback": "not claimed; MP4 fully decoded and timestamps verified separately"
+  }
+}

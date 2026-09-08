@@ -1,0 +1,35 @@
+{
+  "utf8_html_pages": 16,
+  "local_links_assets_and_anchors_checked": 298,
+  "raw_markdown_navigation_links": 0,
+  "new_and_updated_scripts_syntax_checked": [
+    "repetition_controls.py",
+    "test_repetition_controls.py",
+    "run_reference_repetition.py",
+    "repetition_artifacts.py",
+    "evaluate_reference_repetition.py",
+    "make_reference_repetition_report.py",
+    "make_reference_report.py"
+  ],
+  "adopted_generation_configs": {
+    "completed": 25
+  },
+  "status": "passed",
+  "checked_at_utc": "2026-09-07T08:09:30.375430+00:00",
+  "target_frames_fully_decoded": 288,
+  "comparison_frames_fully_decoded": 120,
+  "all_frame_pts_exact_24fps": true,
+  "condition_tests": "2 tests passed on CPU and GPU through installed state_with_conditionings; actual saved initial and 7 step noises matched for N1/N2/N4/N10",
+  "runner_snapshots_preserved": true,
+  "review_sha256": "57b3707c11ee9ec2ae316da309502a7525718cf2a02745d59deed17534fc882c",
+  "rendered_report_sha256": "904d612e4f824bb5d0fd7c00a59a342cebf8c6001dbc5f591416005a8ec374be",
+  "browser": {
+    "engine": "Firefox headless",
+    "http_status": 200,
+    "server": "existing tmux ltx-longcond-report/report on 127.0.0.1:8765",
+    "screenshot": "outputs/browser_check/reference_repetition.png",
+    "screenshot_sha256": "5475a70803185e9ecf5ef85e114dbb07228d270d3b73952f474dcce442ba875f",
+    "visual_check": "Korean text, actual local/reference/GT inputs, four-row metrics table, comparison poster and individual posters visible",
+    "scope": "Server-side browser rendering verified; user browser review is separate"
+  }
+}

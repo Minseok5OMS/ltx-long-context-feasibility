@@ -1,0 +1,5042 @@
+{
+  "examples": 5,
+  "seed": 42,
+  "new_generations": 45,
+  "reused_generations": 15,
+  "outputs_compared": 60,
+  "plan_sha256": "1c8f83076d5d97b81b4d1a41f1326224a313e633851d2cebbd32772a768c0915",
+  "command": "/mnt/minu/minseok/LTX-2/.venv/bin/python3 feasibility_long_context/evaluate_five_case_prompts.py --gpu 2",
+  "evaluation_script_sha256": "77a6059871d2dc17df289985a28f28b169a6f2f087c2b245ebcbc65b6e6e1650",
+  "audit_script_sha256": "14e4674184e89c5f7c86c97f9c1f815898f93c23c9b75017f04e6d46fe77fd09",
+  "metric": {
+    "name": "dinov2_vitb14_mean_aligned_frame_cls_cosine",
+    "precision": "float32",
+    "sample_frame_indices": [
+      0,
+      6,
+      13,
+      19,
+      26,
+      32,
+      39,
+      45,
+      52,
+      58,
+      65,
+      71
+    ],
+    "after_1s_sample_indices": [
+      26,
+      32,
+      39,
+      45,
+      52,
+      58,
+      65,
+      71
+    ],
+    "preprocessing": "RGB; resize short edge 256 bicubic; center crop 224; ImageNet normalization; normalized CLS",
+    "weights_sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73",
+    "backbone_source_sha256": "871fca671b12a9ff02e810654baf509e97ccf461bf8196ce5ddeefff2fd87d3e",
+    "meaning": "Auxiliary whole-frame similarity, not identity accuracy; after-1s is a common fixed window, not transition detection"
+  },
+  "rows": [
+    {
+      "example_id": "five_001_nursery_manager",
+      "title_ko": "보육원 관리자 재등장",
+      "variant": "P0",
+      "cell": "local",
+      "seed": 42,
+      "reused": true,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 79.06326666666666,
+      "dino_gt_cosine": 0.2008225917816162,
+      "dino_gt_cosine_after_1s": 0.21654200553894043,
+      "dino_oracle_image_cosine": 0.26092538237571716,
+      "dino_oracle_video_max_cosine": 0.3066766560077667,
+      "adjacent_pixel_mae_0_255": 2.5951247215270996,
+      "generation_seconds_including_load": 22.22067579254508,
+      "peak_gpu_allocated_gib": 39.14397954940796,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_001_nursery_manager/image_past_seed42/local/config.json"
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "title_ko": "보육원 관리자 재등장",
+      "variant": "P0",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": true,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 79.06326666666666,
+      "dino_gt_cosine": 0.39150699973106384,
+      "dino_gt_cosine_after_1s": 0.434749960899353,
+      "dino_oracle_image_cosine": 0.7383918762207031,
+      "dino_oracle_video_max_cosine": 0.7630360126495361,
+      "adjacent_pixel_mae_0_255": 2.073456048965454,
+      "generation_seconds_including_load": 19.75647732336074,
+      "peak_gpu_allocated_gib": 39.14397954940796,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_001_nursery_manager/image_past_seed42/oracle/config.json"
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "title_ko": "보육원 관리자 재등장",
+      "variant": "P0",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": true,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 79.06326666666666,
+      "dino_gt_cosine": 0.4192763864994049,
+      "dino_gt_cosine_after_1s": 0.4732188582420349,
+      "dino_oracle_image_cosine": 0.7376143932342529,
+      "dino_oracle_video_max_cosine": 0.7690237164497375,
+      "adjacent_pixel_mae_0_255": 1.6639324426651,
+      "generation_seconds_including_load": 22.06398398708552,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_001_nursery_manager/reference_grid_seed42/video_past/config.json"
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "title_ko": "보육원 관리자 재등장",
+      "variant": "P1",
+      "cell": "local",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 79.06326666666666,
+      "dino_gt_cosine": 0.4253683388233185,
+      "dino_gt_cosine_after_1s": 0.4922856390476227,
+      "dino_oracle_image_cosine": 0.47319188714027405,
+      "dino_oracle_video_max_cosine": 0.516843855381012,
+      "adjacent_pixel_mae_0_255": 3.798740863800049,
+      "generation_seconds_including_load": 22.101657365448773,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_001_nursery_manager/prompt_control_seed42/P1/local/config.json"
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "title_ko": "보육원 관리자 재등장",
+      "variant": "P1",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 79.06326666666666,
+      "dino_gt_cosine": 0.1103082075715065,
+      "dino_gt_cosine_after_1s": 0.11267044395208359,
+      "dino_oracle_image_cosine": 0.07501895725727081,
+      "dino_oracle_video_max_cosine": 0.10840591043233871,
+      "adjacent_pixel_mae_0_255": 6.218560218811035,
+      "generation_seconds_including_load": 20.510408103466034,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_001_nursery_manager/prompt_control_seed42/P1/image_past/config.json"
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "title_ko": "보육원 관리자 재등장",
+      "variant": "P1",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 79.06326666666666,
+      "dino_gt_cosine": 0.11170884221792221,
+      "dino_gt_cosine_after_1s": 0.11389769613742828,
+      "dino_oracle_image_cosine": 0.07490762323141098,
+      "dino_oracle_video_max_cosine": 0.10848522186279297,
+      "adjacent_pixel_mae_0_255": 5.133512020111084,
+      "generation_seconds_including_load": 24.73174840770662,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_001_nursery_manager/prompt_control_seed42/P1/video_past/config.json"
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "title_ko": "보육원 관리자 재등장",
+      "variant": "P2",
+      "cell": "local",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 79.06326666666666,
+      "dino_gt_cosine": 0.46863558888435364,
+      "dino_gt_cosine_after_1s": 0.5397805571556091,
+      "dino_oracle_image_cosine": 0.4587126672267914,
+      "dino_oracle_video_max_cosine": 0.5194122195243835,
+      "adjacent_pixel_mae_0_255": 3.923933506011963,
+      "generation_seconds_including_load": 20.678303436376154,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_001_nursery_manager/prompt_control_seed42/P2/local/config.json"
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "title_ko": "보육원 관리자 재등장",
+      "variant": "P2",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 79.06326666666666,
+      "dino_gt_cosine": 0.4023638069629669,
+      "dino_gt_cosine_after_1s": 0.48723286390304565,
+      "dino_oracle_image_cosine": 0.5954116582870483,
+      "dino_oracle_video_max_cosine": 0.6443037390708923,
+      "adjacent_pixel_mae_0_255": 1.8609346151351929,
+      "generation_seconds_including_load": 23.10832002852112,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_001_nursery_manager/prompt_control_seed42/P2/image_past/config.json"
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "title_ko": "보육원 관리자 재등장",
+      "variant": "P2",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 79.06326666666666,
+      "dino_gt_cosine": 0.10843298584222794,
+      "dino_gt_cosine_after_1s": 0.10948341339826584,
+      "dino_oracle_image_cosine": 0.08133939653635025,
+      "dino_oracle_video_max_cosine": 0.11301145702600479,
+      "adjacent_pixel_mae_0_255": 3.171801805496216,
+      "generation_seconds_including_load": 21.978168978355825,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_001_nursery_manager/prompt_control_seed42/P2/video_past/config.json"
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "title_ko": "보육원 관리자 재등장",
+      "variant": "P3",
+      "cell": "local",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 79.06326666666666,
+      "dino_gt_cosine": 0.4273017644882202,
+      "dino_gt_cosine_after_1s": 0.4857887029647827,
+      "dino_oracle_image_cosine": 0.49358895421028137,
+      "dino_oracle_video_max_cosine": 0.5405496954917908,
+      "adjacent_pixel_mae_0_255": 3.83740234375,
+      "generation_seconds_including_load": 20.23672459460795,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_001_nursery_manager/prompt_control_seed42/P3/local/config.json"
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "title_ko": "보육원 관리자 재등장",
+      "variant": "P3",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 79.06326666666666,
+      "dino_gt_cosine": 0.4329134523868561,
+      "dino_gt_cosine_after_1s": 0.5102821588516235,
+      "dino_oracle_image_cosine": 0.5958631634712219,
+      "dino_oracle_video_max_cosine": 0.6365224123001099,
+      "adjacent_pixel_mae_0_255": 2.713421583175659,
+      "generation_seconds_including_load": 20.181810501031578,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_001_nursery_manager/prompt_control_seed42/P3/image_past/config.json"
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "title_ko": "보육원 관리자 재등장",
+      "variant": "P3",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 79.06326666666666,
+      "dino_gt_cosine": 0.11210799962282181,
+      "dino_gt_cosine_after_1s": 0.11534231901168823,
+      "dino_oracle_image_cosine": 0.07346075028181076,
+      "dino_oracle_video_max_cosine": 0.10599181801080704,
+      "adjacent_pixel_mae_0_255": 5.169130802154541,
+      "generation_seconds_including_load": 24.241080980747938,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_001_nursery_manager/prompt_control_seed42/P3/video_past/config.json"
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "title_ko": "로봇 모형의 가려졌던 머리",
+      "variant": "P0",
+      "cell": "local",
+      "seed": 42,
+      "reused": true,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 217.63430096763432,
+      "dino_gt_cosine": 0.8735718131065369,
+      "dino_gt_cosine_after_1s": 0.8635478019714355,
+      "dino_oracle_image_cosine": 0.7638241648674011,
+      "dino_oracle_video_max_cosine": 0.8766706585884094,
+      "adjacent_pixel_mae_0_255": 1.9209134578704834,
+      "generation_seconds_including_load": 22.655203103087842,
+      "peak_gpu_allocated_gib": 39.14397954940796,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_002_robot_head/image_past_seed42/local/config.json"
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "title_ko": "로봇 모형의 가려졌던 머리",
+      "variant": "P0",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": true,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 217.63430096763432,
+      "dino_gt_cosine": 0.8677577972412109,
+      "dino_gt_cosine_after_1s": 0.852974534034729,
+      "dino_oracle_image_cosine": 0.7740743160247803,
+      "dino_oracle_video_max_cosine": 0.8861899971961975,
+      "adjacent_pixel_mae_0_255": 2.019041061401367,
+      "generation_seconds_including_load": 23.198293638415635,
+      "peak_gpu_allocated_gib": 39.14397954940796,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_002_robot_head/image_past_seed42/oracle/config.json"
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "title_ko": "로봇 모형의 가려졌던 머리",
+      "variant": "P0",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": true,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 217.63430096763432,
+      "dino_gt_cosine": 0.8769631385803223,
+      "dino_gt_cosine_after_1s": 0.870339035987854,
+      "dino_oracle_image_cosine": 0.7691676020622253,
+      "dino_oracle_video_max_cosine": 0.883141279220581,
+      "adjacent_pixel_mae_0_255": 1.7034568786621094,
+      "generation_seconds_including_load": 22.225335421971977,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_002_robot_head/reference_grid_seed42/video_past/config.json"
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "title_ko": "로봇 모형의 가려졌던 머리",
+      "variant": "P1",
+      "cell": "local",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 217.63430096763432,
+      "dino_gt_cosine": 0.8843209743499756,
+      "dino_gt_cosine_after_1s": 0.8773835301399231,
+      "dino_oracle_image_cosine": 0.7793889045715332,
+      "dino_oracle_video_max_cosine": 0.89420086145401,
+      "adjacent_pixel_mae_0_255": 1.609079122543335,
+      "generation_seconds_including_load": 20.51823470275849,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_002_robot_head/prompt_control_seed42/P1/local/config.json"
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "title_ko": "로봇 모형의 가려졌던 머리",
+      "variant": "P1",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 217.63430096763432,
+      "dino_gt_cosine": 0.8788185119628906,
+      "dino_gt_cosine_after_1s": 0.8649440407752991,
+      "dino_oracle_image_cosine": 0.7695930600166321,
+      "dino_oracle_video_max_cosine": 0.8961522579193115,
+      "adjacent_pixel_mae_0_255": 1.9642034769058228,
+      "generation_seconds_including_load": 20.553763078525662,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_002_robot_head/prompt_control_seed42/P1/image_past/config.json"
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "title_ko": "로봇 모형의 가려졌던 머리",
+      "variant": "P1",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 217.63430096763432,
+      "dino_gt_cosine": 0.8811433911323547,
+      "dino_gt_cosine_after_1s": 0.8774657249450684,
+      "dino_oracle_image_cosine": 0.7767747044563293,
+      "dino_oracle_video_max_cosine": 0.8894794583320618,
+      "adjacent_pixel_mae_0_255": 1.9582198858261108,
+      "generation_seconds_including_load": 24.849179906770587,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_002_robot_head/prompt_control_seed42/P1/video_past/config.json"
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "title_ko": "로봇 모형의 가려졌던 머리",
+      "variant": "P2",
+      "cell": "local",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 217.63430096763432,
+      "dino_gt_cosine": 0.8740513324737549,
+      "dino_gt_cosine_after_1s": 0.8794491291046143,
+      "dino_oracle_image_cosine": 0.7652084231376648,
+      "dino_oracle_video_max_cosine": 0.8811631202697754,
+      "adjacent_pixel_mae_0_255": 0.619968593120575,
+      "generation_seconds_including_load": 20.231116506271064,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_002_robot_head/prompt_control_seed42/P2/local/config.json"
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "title_ko": "로봇 모형의 가려졌던 머리",
+      "variant": "P2",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 217.63430096763432,
+      "dino_gt_cosine": 0.8752245903015137,
+      "dino_gt_cosine_after_1s": 0.8829555511474609,
+      "dino_oracle_image_cosine": 0.7647483348846436,
+      "dino_oracle_video_max_cosine": 0.8769813179969788,
+      "adjacent_pixel_mae_0_255": 0.6429993510246277,
+      "generation_seconds_including_load": 20.468126677908003,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_002_robot_head/prompt_control_seed42/P2/image_past/config.json"
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "title_ko": "로봇 모형의 가려졌던 머리",
+      "variant": "P2",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 217.63430096763432,
+      "dino_gt_cosine": 0.8846309185028076,
+      "dino_gt_cosine_after_1s": 0.8798984885215759,
+      "dino_oracle_image_cosine": 0.7751958966255188,
+      "dino_oracle_video_max_cosine": 0.891751229763031,
+      "adjacent_pixel_mae_0_255": 1.739892601966858,
+      "generation_seconds_including_load": 24.359984308481216,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_002_robot_head/prompt_control_seed42/P2/video_past/config.json"
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "title_ko": "로봇 모형의 가려졌던 머리",
+      "variant": "P3",
+      "cell": "local",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 217.63430096763432,
+      "dino_gt_cosine": 0.86112380027771,
+      "dino_gt_cosine_after_1s": 0.8646201491355896,
+      "dino_oracle_image_cosine": 0.7666024565696716,
+      "dino_oracle_video_max_cosine": 0.8707971572875977,
+      "adjacent_pixel_mae_0_255": 0.6015406847000122,
+      "generation_seconds_including_load": 20.65644560754299,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_002_robot_head/prompt_control_seed42/P3/local/config.json"
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "title_ko": "로봇 모형의 가려졌던 머리",
+      "variant": "P3",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 217.63430096763432,
+      "dino_gt_cosine": 0.863806962966919,
+      "dino_gt_cosine_after_1s": 0.8674883842468262,
+      "dino_oracle_image_cosine": 0.7678957581520081,
+      "dino_oracle_video_max_cosine": 0.8793160319328308,
+      "adjacent_pixel_mae_0_255": 0.5805947184562683,
+      "generation_seconds_including_load": 20.54887240100652,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_002_robot_head/prompt_control_seed42/P3/image_past/config.json"
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "title_ko": "로봇 모형의 가려졌던 머리",
+      "variant": "P3",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 217.63430096763432,
+      "dino_gt_cosine": 0.8878956437110901,
+      "dino_gt_cosine_after_1s": 0.8874463438987732,
+      "dino_oracle_image_cosine": 0.7741066813468933,
+      "dino_oracle_video_max_cosine": 0.8896772265434265,
+      "adjacent_pixel_mae_0_255": 2.0267083644866943,
+      "generation_seconds_including_load": 24.705442763864994,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_002_robot_head/prompt_control_seed42/P3/video_past/config.json"
+    },
+    {
+      "example_id": "five_003_student_return",
+      "title_ko": "교실 학생의 얼굴 재등장",
+      "variant": "P0",
+      "cell": "local",
+      "seed": 42,
+      "reused": true,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 14.583333333333329,
+      "dino_gt_cosine": 0.3772127628326416,
+      "dino_gt_cosine_after_1s": 0.3644559383392334,
+      "dino_oracle_image_cosine": 0.356643944978714,
+      "dino_oracle_video_max_cosine": 0.3857717216014862,
+      "adjacent_pixel_mae_0_255": 1.132595419883728,
+      "generation_seconds_including_load": 20.709113482385874,
+      "peak_gpu_allocated_gib": 39.14397954940796,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_003_student_return/image_past_seed42/local/config.json"
+    },
+    {
+      "example_id": "five_003_student_return",
+      "title_ko": "교실 학생의 얼굴 재등장",
+      "variant": "P0",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": true,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 14.583333333333329,
+      "dino_gt_cosine": 0.356964111328125,
+      "dino_gt_cosine_after_1s": 0.34062400460243225,
+      "dino_oracle_image_cosine": 0.34423017501831055,
+      "dino_oracle_video_max_cosine": 0.36999884247779846,
+      "adjacent_pixel_mae_0_255": 1.0968579053878784,
+      "generation_seconds_including_load": 20.665521880611777,
+      "peak_gpu_allocated_gib": 39.14397954940796,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_003_student_return/image_past_seed42/oracle/config.json"
+    },
+    {
+      "example_id": "five_003_student_return",
+      "title_ko": "교실 학생의 얼굴 재등장",
+      "variant": "P0",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": true,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 14.583333333333329,
+      "dino_gt_cosine": 0.3951418697834015,
+      "dino_gt_cosine_after_1s": 0.3743489980697632,
+      "dino_oracle_image_cosine": 0.4400081932544708,
+      "dino_oracle_video_max_cosine": 0.461269348859787,
+      "adjacent_pixel_mae_0_255": 0.6526737213134766,
+      "generation_seconds_including_load": 24.220279096625745,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_003_student_return/reference_grid_seed42/video_past/config.json"
+    },
+    {
+      "example_id": "five_003_student_return",
+      "title_ko": "교실 학생의 얼굴 재등장",
+      "variant": "P1",
+      "cell": "local",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 14.583333333333329,
+      "dino_gt_cosine": 0.3805084228515625,
+      "dino_gt_cosine_after_1s": 0.37028878927230835,
+      "dino_oracle_image_cosine": 0.38445770740509033,
+      "dino_oracle_video_max_cosine": 0.40979254245758057,
+      "adjacent_pixel_mae_0_255": 0.6443663835525513,
+      "generation_seconds_including_load": 20.528270865790546,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_003_student_return/prompt_control_seed42/P1/local/config.json"
+    },
+    {
+      "example_id": "five_003_student_return",
+      "title_ko": "교실 학생의 얼굴 재등장",
+      "variant": "P1",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 14.583333333333329,
+      "dino_gt_cosine": 0.40320563316345215,
+      "dino_gt_cosine_after_1s": 0.40079283714294434,
+      "dino_oracle_image_cosine": 0.41350409388542175,
+      "dino_oracle_video_max_cosine": 0.4386700391769409,
+      "adjacent_pixel_mae_0_255": 0.574347198009491,
+      "generation_seconds_including_load": 20.55364927649498,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_003_student_return/prompt_control_seed42/P1/image_past/config.json"
+    },
+    {
+      "example_id": "five_003_student_return",
+      "title_ko": "교실 학생의 얼굴 재등장",
+      "variant": "P1",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 14.583333333333329,
+      "dino_gt_cosine": 0.4061206579208374,
+      "dino_gt_cosine_after_1s": 0.4010767638683319,
+      "dino_oracle_image_cosine": 0.40822744369506836,
+      "dino_oracle_video_max_cosine": 0.43525826930999756,
+      "adjacent_pixel_mae_0_255": 0.6257925629615784,
+      "generation_seconds_including_load": 24.38784551434219,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_003_student_return/prompt_control_seed42/P1/video_past/config.json"
+    },
+    {
+      "example_id": "five_003_student_return",
+      "title_ko": "교실 학생의 얼굴 재등장",
+      "variant": "P2",
+      "cell": "local",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 14.583333333333329,
+      "dino_gt_cosine": 0.3914291560649872,
+      "dino_gt_cosine_after_1s": 0.37955141067504883,
+      "dino_oracle_image_cosine": 0.39125773310661316,
+      "dino_oracle_video_max_cosine": 0.4195398986339569,
+      "adjacent_pixel_mae_0_255": 0.5947241187095642,
+      "generation_seconds_including_load": 20.27143058925867,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_003_student_return/prompt_control_seed42/P2/local/config.json"
+    },
+    {
+      "example_id": "five_003_student_return",
+      "title_ko": "교실 학생의 얼굴 재등장",
+      "variant": "P2",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 14.583333333333329,
+      "dino_gt_cosine": 0.405183345079422,
+      "dino_gt_cosine_after_1s": 0.4033314883708954,
+      "dino_oracle_image_cosine": 0.4126822054386139,
+      "dino_oracle_video_max_cosine": 0.4386850893497467,
+      "adjacent_pixel_mae_0_255": 0.5602025985717773,
+      "generation_seconds_including_load": 20.47134311310947,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_003_student_return/prompt_control_seed42/P2/image_past/config.json"
+    },
+    {
+      "example_id": "five_003_student_return",
+      "title_ko": "교실 학생의 얼굴 재등장",
+      "variant": "P2",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 14.583333333333329,
+      "dino_gt_cosine": 0.4026000201702118,
+      "dino_gt_cosine_after_1s": 0.3984275758266449,
+      "dino_oracle_image_cosine": 0.3976164758205414,
+      "dino_oracle_video_max_cosine": 0.424376517534256,
+      "adjacent_pixel_mae_0_255": 0.6138444542884827,
+      "generation_seconds_including_load": 24.11590022407472,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_003_student_return/prompt_control_seed42/P2/video_past/config.json"
+    },
+    {
+      "example_id": "five_003_student_return",
+      "title_ko": "교실 학생의 얼굴 재등장",
+      "variant": "P3",
+      "cell": "local",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 14.583333333333329,
+      "dino_gt_cosine": 0.3622928559780121,
+      "dino_gt_cosine_after_1s": 0.3375444710254669,
+      "dino_oracle_image_cosine": 0.3480032980442047,
+      "dino_oracle_video_max_cosine": 0.37360572814941406,
+      "adjacent_pixel_mae_0_255": 1.0169473886489868,
+      "generation_seconds_including_load": 20.210974698886275,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_003_student_return/prompt_control_seed42/P3/local/config.json"
+    },
+    {
+      "example_id": "five_003_student_return",
+      "title_ko": "교실 학생의 얼굴 재등장",
+      "variant": "P3",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 14.583333333333329,
+      "dino_gt_cosine": 0.38996824622154236,
+      "dino_gt_cosine_after_1s": 0.3804895281791687,
+      "dino_oracle_image_cosine": 0.40431252121925354,
+      "dino_oracle_video_max_cosine": 0.42880570888519287,
+      "adjacent_pixel_mae_0_255": 0.6228155493736267,
+      "generation_seconds_including_load": 20.414118490181863,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_003_student_return/prompt_control_seed42/P3/image_past/config.json"
+    },
+    {
+      "example_id": "five_003_student_return",
+      "title_ko": "교실 학생의 얼굴 재등장",
+      "variant": "P3",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 14.583333333333329,
+      "dino_gt_cosine": 0.4001263380050659,
+      "dino_gt_cosine_after_1s": 0.383783757686615,
+      "dino_oracle_image_cosine": 0.4251221716403961,
+      "dino_oracle_video_max_cosine": 0.4472258985042572,
+      "adjacent_pixel_mae_0_255": 0.6085346937179565,
+      "generation_seconds_including_load": 23.92546523734927,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_003_student_return/prompt_control_seed42/P3/video_past/config.json"
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "title_ko": "캠퍼 밴 외관으로 시점 전환",
+      "variant": "P0",
+      "cell": "local",
+      "seed": 42,
+      "reused": true,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 167.0,
+      "dino_gt_cosine": 0.24982132017612457,
+      "dino_gt_cosine_after_1s": 0.1179056242108345,
+      "dino_oracle_image_cosine": 0.038294751197099686,
+      "dino_oracle_video_max_cosine": 0.05074687674641609,
+      "adjacent_pixel_mae_0_255": 9.301119804382324,
+      "generation_seconds_including_load": 20.828215522691607,
+      "peak_gpu_allocated_gib": 39.14397954940796,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_004_van_exterior/image_past_seed42/local/config.json"
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "title_ko": "캠퍼 밴 외관으로 시점 전환",
+      "variant": "P0",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": true,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 167.0,
+      "dino_gt_cosine": 0.24221740663051605,
+      "dino_gt_cosine_after_1s": 0.11260911077260971,
+      "dino_oracle_image_cosine": 0.03558972105383873,
+      "dino_oracle_video_max_cosine": 0.0482899434864521,
+      "adjacent_pixel_mae_0_255": 9.097624778747559,
+      "generation_seconds_including_load": 20.97823541611433,
+      "peak_gpu_allocated_gib": 39.14397954940796,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_004_van_exterior/image_past_seed42/oracle/config.json"
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "title_ko": "캠퍼 밴 외관으로 시점 전환",
+      "variant": "P0",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": true,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 167.0,
+      "dino_gt_cosine": 0.24342302978038788,
+      "dino_gt_cosine_after_1s": 0.11025656759738922,
+      "dino_oracle_image_cosine": 0.04080527275800705,
+      "dino_oracle_video_max_cosine": 0.052757129073143005,
+      "adjacent_pixel_mae_0_255": 9.023804664611816,
+      "generation_seconds_including_load": 22.104449359700084,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_004_van_exterior/reference_grid_seed42/video_past/config.json"
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "title_ko": "캠퍼 밴 외관으로 시점 전환",
+      "variant": "P1",
+      "cell": "local",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 167.0,
+      "dino_gt_cosine": 0.24971537292003632,
+      "dino_gt_cosine_after_1s": 0.11968289315700531,
+      "dino_oracle_image_cosine": 0.04032605513930321,
+      "dino_oracle_video_max_cosine": 0.05330924317240715,
+      "adjacent_pixel_mae_0_255": 8.180814743041992,
+      "generation_seconds_including_load": 20.74169814772904,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_004_van_exterior/prompt_control_seed42/P1/local/config.json"
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "title_ko": "캠퍼 밴 외관으로 시점 전환",
+      "variant": "P1",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 167.0,
+      "dino_gt_cosine": 0.24540720880031586,
+      "dino_gt_cosine_after_1s": 0.11058130860328674,
+      "dino_oracle_image_cosine": 0.03919777646660805,
+      "dino_oracle_video_max_cosine": 0.05271429941058159,
+      "adjacent_pixel_mae_0_255": 8.500754356384277,
+      "generation_seconds_including_load": 20.986604554578662,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_004_van_exterior/prompt_control_seed42/P1/image_past/config.json"
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "title_ko": "캠퍼 밴 외관으로 시점 전환",
+      "variant": "P1",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 167.0,
+      "dino_gt_cosine": 0.25244614481925964,
+      "dino_gt_cosine_after_1s": 0.11907421797513962,
+      "dino_oracle_image_cosine": 0.03961675241589546,
+      "dino_oracle_video_max_cosine": 0.05295735225081444,
+      "adjacent_pixel_mae_0_255": 8.622681617736816,
+      "generation_seconds_including_load": 22.614119433797896,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_004_van_exterior/prompt_control_seed42/P1/video_past/config.json"
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "title_ko": "캠퍼 밴 외관으로 시점 전환",
+      "variant": "P2",
+      "cell": "local",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 167.0,
+      "dino_gt_cosine": 0.24705661833286285,
+      "dino_gt_cosine_after_1s": 0.11519867926836014,
+      "dino_oracle_image_cosine": 0.04090779647231102,
+      "dino_oracle_video_max_cosine": 0.054155126214027405,
+      "adjacent_pixel_mae_0_255": 8.117779731750488,
+      "generation_seconds_including_load": 22.891407411545515,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_004_van_exterior/prompt_control_seed42/P2/local/config.json"
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "title_ko": "캠퍼 밴 외관으로 시점 전환",
+      "variant": "P2",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 167.0,
+      "dino_gt_cosine": 0.2440568208694458,
+      "dino_gt_cosine_after_1s": 0.10530208796262741,
+      "dino_oracle_image_cosine": 0.03995174914598465,
+      "dino_oracle_video_max_cosine": 0.05277372896671295,
+      "adjacent_pixel_mae_0_255": 8.088540077209473,
+      "generation_seconds_including_load": 20.616543650627136,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_004_van_exterior/prompt_control_seed42/P2/image_past/config.json"
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "title_ko": "캠퍼 밴 외관으로 시점 전환",
+      "variant": "P2",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 167.0,
+      "dino_gt_cosine": 0.771531343460083,
+      "dino_gt_cosine_after_1s": 0.793307363986969,
+      "dino_oracle_image_cosine": 0.8106856942176819,
+      "dino_oracle_video_max_cosine": 0.8282768130302429,
+      "adjacent_pixel_mae_0_255": 3.7800185680389404,
+      "generation_seconds_including_load": 22.29384750314057,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_004_van_exterior/prompt_control_seed42/P2/video_past/config.json"
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "title_ko": "캠퍼 밴 외관으로 시점 전환",
+      "variant": "P3",
+      "cell": "local",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 167.0,
+      "dino_gt_cosine": 0.24718163907527924,
+      "dino_gt_cosine_after_1s": 0.11594852805137634,
+      "dino_oracle_image_cosine": 0.03666337952017784,
+      "dino_oracle_video_max_cosine": 0.05049673095345497,
+      "adjacent_pixel_mae_0_255": 8.256397247314453,
+      "generation_seconds_including_load": 20.384757028892636,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_004_van_exterior/prompt_control_seed42/P3/local/config.json"
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "title_ko": "캠퍼 밴 외관으로 시점 전환",
+      "variant": "P3",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 167.0,
+      "dino_gt_cosine": 0.24987493455410004,
+      "dino_gt_cosine_after_1s": 0.12359258532524109,
+      "dino_oracle_image_cosine": 0.03590971231460571,
+      "dino_oracle_video_max_cosine": 0.04780632257461548,
+      "adjacent_pixel_mae_0_255": 8.185437202453613,
+      "generation_seconds_including_load": 23.20839382521808,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_004_van_exterior/prompt_control_seed42/P3/image_past/config.json"
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "title_ko": "캠퍼 밴 외관으로 시점 전환",
+      "variant": "P3",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 167.0,
+      "dino_gt_cosine": 0.799419105052948,
+      "dino_gt_cosine_after_1s": 0.809845507144928,
+      "dino_oracle_image_cosine": 0.7803947925567627,
+      "dino_oracle_video_max_cosine": 0.8017842173576355,
+      "adjacent_pixel_mae_0_255": 4.391475677490234,
+      "generation_seconds_including_load": 21.840635334141552,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_004_van_exterior/prompt_control_seed42/P3/video_past/config.json"
+    },
+    {
+      "example_id": "five_005_conservator",
+      "title_ko": "보존 작업자의 얼굴 재등장",
+      "variant": "P0",
+      "cell": "local",
+      "seed": 42,
+      "reused": true,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 61.96666666666667,
+      "dino_gt_cosine": 0.38563868403434753,
+      "dino_gt_cosine_after_1s": 0.5367565155029297,
+      "dino_oracle_image_cosine": 0.30069079995155334,
+      "dino_oracle_video_max_cosine": 0.36426472663879395,
+      "adjacent_pixel_mae_0_255": 3.3296470642089844,
+      "generation_seconds_including_load": 22.53483202494681,
+      "peak_gpu_allocated_gib": 39.14397954940796,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_005_conservator/image_past_seed42/local/config.json"
+    },
+    {
+      "example_id": "five_005_conservator",
+      "title_ko": "보존 작업자의 얼굴 재등장",
+      "variant": "P0",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": true,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 61.96666666666667,
+      "dino_gt_cosine": 0.2920973002910614,
+      "dino_gt_cosine_after_1s": 0.3945522904396057,
+      "dino_oracle_image_cosine": 0.5383611917495728,
+      "dino_oracle_video_max_cosine": 0.5947256088256836,
+      "adjacent_pixel_mae_0_255": 2.168181896209717,
+      "generation_seconds_including_load": 20.97984302416444,
+      "peak_gpu_allocated_gib": 39.14397954940796,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_005_conservator/image_past_seed42/oracle/config.json"
+    },
+    {
+      "example_id": "five_005_conservator",
+      "title_ko": "보존 작업자의 얼굴 재등장",
+      "variant": "P0",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": true,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 61.96666666666667,
+      "dino_gt_cosine": 0.3065052330493927,
+      "dino_gt_cosine_after_1s": 0.41660696268081665,
+      "dino_oracle_image_cosine": 0.5025132894515991,
+      "dino_oracle_video_max_cosine": 0.5567721724510193,
+      "adjacent_pixel_mae_0_255": 2.202131748199463,
+      "generation_seconds_including_load": 22.031008671969175,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_005_conservator/reference_grid_seed42/video_past/config.json"
+    },
+    {
+      "example_id": "five_005_conservator",
+      "title_ko": "보존 작업자의 얼굴 재등장",
+      "variant": "P1",
+      "cell": "local",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 61.96666666666667,
+      "dino_gt_cosine": 0.4197566509246826,
+      "dino_gt_cosine_after_1s": 0.5765401721000671,
+      "dino_oracle_image_cosine": 0.3931112587451935,
+      "dino_oracle_video_max_cosine": 0.46951231360435486,
+      "adjacent_pixel_mae_0_255": 3.338324785232544,
+      "generation_seconds_including_load": 20.402181580662727,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_005_conservator/prompt_control_seed42/P1/local/config.json"
+    },
+    {
+      "example_id": "five_005_conservator",
+      "title_ko": "보존 작업자의 얼굴 재등장",
+      "variant": "P1",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 61.96666666666667,
+      "dino_gt_cosine": 0.43477097153663635,
+      "dino_gt_cosine_after_1s": 0.5529597997665405,
+      "dino_oracle_image_cosine": 0.3466181755065918,
+      "dino_oracle_video_max_cosine": 0.40307721495628357,
+      "adjacent_pixel_mae_0_255": 2.8049869537353516,
+      "generation_seconds_including_load": 22.852293216623366,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_005_conservator/prompt_control_seed42/P1/image_past/config.json"
+    },
+    {
+      "example_id": "five_005_conservator",
+      "title_ko": "보존 작업자의 얼굴 재등장",
+      "variant": "P1",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 61.96666666666667,
+      "dino_gt_cosine": 0.413225919008255,
+      "dino_gt_cosine_after_1s": 0.5630999803543091,
+      "dino_oracle_image_cosine": 0.3411741554737091,
+      "dino_oracle_video_max_cosine": 0.4249062240123749,
+      "adjacent_pixel_mae_0_255": 2.380357027053833,
+      "generation_seconds_including_load": 21.811286121606827,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_005_conservator/prompt_control_seed42/P1/video_past/config.json"
+    },
+    {
+      "example_id": "five_005_conservator",
+      "title_ko": "보존 작업자의 얼굴 재등장",
+      "variant": "P2",
+      "cell": "local",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 61.96666666666667,
+      "dino_gt_cosine": 0.5033743977546692,
+      "dino_gt_cosine_after_1s": 0.5731830596923828,
+      "dino_oracle_image_cosine": 0.44502338767051697,
+      "dino_oracle_video_max_cosine": 0.49388614296913147,
+      "adjacent_pixel_mae_0_255": 2.673069953918457,
+      "generation_seconds_including_load": 22.611807852983475,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_005_conservator/prompt_control_seed42/P2/local/config.json"
+    },
+    {
+      "example_id": "five_005_conservator",
+      "title_ko": "보존 작업자의 얼굴 재등장",
+      "variant": "P2",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 61.96666666666667,
+      "dino_gt_cosine": 0.39379677176475525,
+      "dino_gt_cosine_after_1s": 0.48348262906074524,
+      "dino_oracle_image_cosine": 0.32250162959098816,
+      "dino_oracle_video_max_cosine": 0.3830857574939728,
+      "adjacent_pixel_mae_0_255": 2.5714142322540283,
+      "generation_seconds_including_load": 20.83482636511326,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_005_conservator/prompt_control_seed42/P2/image_past/config.json"
+    },
+    {
+      "example_id": "five_005_conservator",
+      "title_ko": "보존 작업자의 얼굴 재등장",
+      "variant": "P2",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 61.96666666666667,
+      "dino_gt_cosine": 0.4221002161502838,
+      "dino_gt_cosine_after_1s": 0.5849971175193787,
+      "dino_oracle_image_cosine": 0.32480689883232117,
+      "dino_oracle_video_max_cosine": 0.40981411933898926,
+      "adjacent_pixel_mae_0_255": 2.5151379108428955,
+      "generation_seconds_including_load": 21.518816181458533,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_005_conservator/prompt_control_seed42/P2/video_past/config.json"
+    },
+    {
+      "example_id": "five_005_conservator",
+      "title_ko": "보존 작업자의 얼굴 재등장",
+      "variant": "P3",
+      "cell": "local",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 0,
+      "source_dependency_gap_seconds": 61.96666666666667,
+      "dino_gt_cosine": 0.42601266503334045,
+      "dino_gt_cosine_after_1s": 0.5111742615699768,
+      "dino_oracle_image_cosine": 0.42434653639793396,
+      "dino_oracle_video_max_cosine": 0.4919181764125824,
+      "adjacent_pixel_mae_0_255": 3.2140369415283203,
+      "generation_seconds_including_load": 22.11200938746333,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_005_conservator/prompt_control_seed42/P3/local/config.json"
+    },
+    {
+      "example_id": "five_005_conservator",
+      "title_ko": "보존 작업자의 얼굴 재등장",
+      "variant": "P3",
+      "cell": "image_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 144,
+      "source_dependency_gap_seconds": 61.96666666666667,
+      "dino_gt_cosine": 0.3646415174007416,
+      "dino_gt_cosine_after_1s": 0.40391573309898376,
+      "dino_oracle_image_cosine": 0.34874477982521057,
+      "dino_oracle_video_max_cosine": 0.4256117641925812,
+      "adjacent_pixel_mae_0_255": 3.6507627964019775,
+      "generation_seconds_including_load": 23.25853099208325,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_005_conservator/prompt_control_seed42/P3/image_past/config.json"
+    },
+    {
+      "example_id": "five_005_conservator",
+      "title_ko": "보존 작업자의 얼굴 재등장",
+      "variant": "P3",
+      "cell": "video_past",
+      "seed": 42,
+      "reused": false,
+      "reference_tokens": 1440,
+      "source_dependency_gap_seconds": 61.96666666666667,
+      "dino_gt_cosine": 0.3949606418609619,
+      "dino_gt_cosine_after_1s": 0.5091934204101562,
+      "dino_oracle_image_cosine": 0.34595897793769836,
+      "dino_oracle_video_max_cosine": 0.4012175500392914,
+      "adjacent_pixel_mae_0_255": 2.3171608448028564,
+      "generation_seconds_including_load": 22.271210441365838,
+      "peak_gpu_allocated_gib": 39.144322872161865,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/five_005_conservator/prompt_control_seed42/P3/video_past/config.json"
+    }
+  ],
+  "condition_means": {
+    "P0": {
+      "local": {
+        "dino_gt_cosine": 0.41741343438625333,
+        "dino_gt_cosine_after_1s": 0.4198415771126747,
+        "dino_oracle_image_cosine": 0.34407580867409704,
+        "dino_oracle_video_max_cosine": 0.39682612791657446
+      },
+      "image_past": {
+        "dino_gt_cosine": 0.43010872304439546,
+        "dino_gt_cosine_after_1s": 0.42710198014974593,
+        "dino_oracle_image_cosine": 0.4861294560134411,
+        "dino_oracle_video_max_cosine": 0.5324480809271336
+      },
+      "video_past": {
+        "dino_gt_cosine": 0.44826193153858185,
+        "dino_gt_cosine_after_1s": 0.4489540845155716,
+        "dino_oracle_image_cosine": 0.49802175015211103,
+        "dino_oracle_video_max_cosine": 0.5445927292108536
+      }
+    },
+    "P1": {
+      "local": {
+        "dino_gt_cosine": 0.4719339519739151,
+        "dino_gt_cosine_after_1s": 0.4872362047433853,
+        "dino_oracle_image_cosine": 0.41409516260027884,
+        "dino_oracle_video_max_cosine": 0.4687317632138729
+      },
+      "image_past": {
+        "dino_gt_cosine": 0.4145021066069603,
+        "dino_gt_cosine_after_1s": 0.40838968604803083,
+        "dino_oracle_image_cosine": 0.3287864126265049,
+        "dino_oracle_video_max_cosine": 0.37980394437909126
+      },
+      "video_past": {
+        "dino_gt_cosine": 0.4129289910197258,
+        "dino_gt_cosine_after_1s": 0.41492287665605543,
+        "dino_oracle_image_cosine": 0.32814013585448265,
+        "dino_oracle_video_max_cosine": 0.3822173051536083
+      }
+    },
+    "P2": {
+      "local": {
+        "dino_gt_cosine": 0.49690941870212557,
+        "dino_gt_cosine_after_1s": 0.49743256717920303,
+        "dino_oracle_image_cosine": 0.42022200152277944,
+        "dino_oracle_video_max_cosine": 0.47363130152225497
+      },
+      "image_past": {
+        "dino_gt_cosine": 0.4641250669956207,
+        "dino_gt_cosine_after_1s": 0.4724609240889549,
+        "dino_oracle_image_cosine": 0.42705911546945574,
+        "dino_oracle_video_max_cosine": 0.4791659265756607
+      },
+      "video_past": {
+        "dino_gt_cosine": 0.5178590968251229,
+        "dino_gt_cosine_after_1s": 0.5532227918505669,
+        "dino_oracle_image_cosine": 0.4779288724064827,
+        "dino_oracle_video_max_cosine": 0.5334460273385048
+      }
+    },
+    "P3": {
+      "local": {
+        "dino_gt_cosine": 0.4647825449705124,
+        "dino_gt_cosine_after_1s": 0.4630152225494385,
+        "dino_oracle_image_cosine": 0.4138409249484539,
+        "dino_oracle_video_max_cosine": 0.46547349765896795
+      },
+      "image_past": {
+        "dino_gt_cosine": 0.4602410227060318,
+        "dino_gt_cosine_after_1s": 0.45715367794036865,
+        "dino_oracle_image_cosine": 0.43054518699645994,
+        "dino_oracle_video_max_cosine": 0.48361244797706604
+      },
+      "video_past": {
+        "dino_gt_cosine": 0.5189019456505776,
+        "dino_gt_cosine_after_1s": 0.5411222696304321,
+        "dino_oracle_image_cosine": 0.47980867475271227,
+        "dino_oracle_video_max_cosine": 0.5291793420910835
+      }
+    }
+  },
+  "contrasts": {
+    "five_001_nursery_manager": {
+      "P0": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.19068440794944763,
+            "video_past": 0.2184537947177887
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": 0.2182079553604126,
+            "video_past": 0.2566768527030945
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.47746649384498596,
+            "video_past": 0.47668901085853577
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.4563593566417694,
+            "video_past": 0.4623470604419708
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        }
+      },
+      "P1": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.315060131251812,
+            "video_past": -0.31365949660539627
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.22454574704170227,
+            "image_past": -0.28119879215955734,
+            "video_past": -0.3075675442814827
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.5057445392012596,
+            "video_past": -0.532113291323185
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": -0.3796151950955391,
+            "video_past": -0.3783879429101944
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.27574363350868225,
+            "image_past": -0.32207951694726944,
+            "video_past": -0.35932116210460663
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.5978231504559517,
+            "video_past": -0.6350647956132889
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.39817292988300323,
+            "video_past": -0.39828426390886307
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.21226650476455688,
+            "image_past": -0.6633729189634323,
+            "video_past": -0.662706770002842
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.8756394237279892,
+            "video_past": -0.8749732747673988
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.40843794494867325,
+            "video_past": -0.408358633518219
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.21016719937324524,
+            "image_past": -0.6546301022171974,
+            "video_past": -0.6605384945869446
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.8647973015904427,
+            "video_past": -0.8707056939601898
+          }
+        }
+      },
+      "P2": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.06627178192138672,
+            "video_past": -0.3602026030421257
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.2678129971027374,
+            "image_past": 0.010856807231903076,
+            "video_past": -0.31084340065717697
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.25695618987083435,
+            "video_past": -0.5786563977599144
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": -0.05254769325256348,
+            "video_past": -0.4302971437573433
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.3232385516166687,
+            "image_past": 0.05248290300369263,
+            "video_past": -0.3637354448437691
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.2707556486129761,
+            "video_past": -0.6869739964604378
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.13669899106025696,
+            "video_past": -0.37737327069044113
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.19778728485107422,
+            "image_past": -0.14298021793365479,
+            "video_past": -0.6562749966979027
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.340767502784729,
+            "video_past": -0.8540622815489769
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.12489151954650879,
+            "video_past": -0.40640076249837875
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.21273556351661682,
+            "image_past": -0.1187322735786438,
+            "video_past": -0.6560122594237328
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.3314678370952606,
+            "video_past": -0.8687478229403496
+          }
+        }
+      },
+      "P3": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.005611687898635864,
+            "video_past": -0.3151937648653984
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.226479172706604,
+            "image_past": 0.041406452655792236,
+            "video_past": -0.3071683868765831
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.18507272005081177,
+            "video_past": -0.5336475595831871
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": 0.02449345588684082,
+            "video_past": -0.3704463839530945
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.2692466974258423,
+            "image_past": 0.07553219795227051,
+            "video_past": -0.3578765392303467
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.19371449947357178,
+            "video_past": -0.627123236656189
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.10227420926094055,
+            "video_past": -0.4201282039284706
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.2326635718345642,
+            "image_past": -0.1425287127494812,
+            "video_past": -0.6641536429524422
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.3751922845840454,
+            "video_past": -0.8968172147870064
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.09597271680831909,
+            "video_past": -0.43455787748098373
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.23387303948402405,
+            "image_past": -0.12651360034942627,
+            "video_past": -0.6630318984389305
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.3603866398334503,
+            "video_past": -0.8969049379229546
+          }
+        }
+      }
+    },
+    "five_002_robot_head": {
+      "P0": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.005814015865325928,
+            "video_past": 0.0033913254737854004
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": -0.010573267936706543,
+            "video_past": 0.006791234016418457
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.01025015115737915,
+            "video_past": 0.005343437194824219
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.009519338607788086,
+            "video_past": 0.006470620632171631
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        }
+      },
+      "P1": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.005502462387084961,
+            "video_past": -0.0031775832176208496
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.01074916124343872,
+            "image_past": 0.011060714721679688,
+            "video_past": 0.004180252552032471
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0003115534782409668,
+            "video_past": -0.00656890869140625
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": -0.012439489364624023,
+            "video_past": 8.219480514526367e-05
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.013835728168487549,
+            "image_past": 0.011969506740570068,
+            "video_past": 0.0071266889572143555
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.0018662214279174805,
+            "video_past": -0.006709039211273193
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.009795844554901123,
+            "video_past": -0.0026142001152038574
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.01556473970413208,
+            "image_past": -0.004481256008148193,
+            "video_past": 0.007607102394104004
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.020045995712280273,
+            "video_past": -0.007957637310028076
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.0019513964653015137,
+            "video_past": -0.004721403121948242
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.017530202865600586,
+            "image_past": 0.009962260723114014,
+            "video_past": 0.006338179111480713
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.007567942142486572,
+            "video_past": -0.011192023754119873
+          }
+        }
+      },
+      "P2": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.001173257827758789,
+            "video_past": 0.010579586029052734
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0004795193672180176,
+            "image_past": 0.007466793060302734,
+            "video_past": 0.0076677799224853516
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.006987273693084717,
+            "video_past": 0.007188260555267334
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": 0.0035064220428466797,
+            "video_past": 0.0004493594169616699
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.01590132713317871,
+            "image_past": 0.029981017112731934,
+            "video_past": 0.009559452533721924
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.014079689979553223,
+            "video_past": -0.006341874599456787
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.00046008825302124023,
+            "video_past": 0.009987473487854004
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0013842582702636719,
+            "image_past": -0.009325981140136719,
+            "video_past": 0.006028294563293457
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.01071023941040039,
+            "video_past": 0.004644036293029785
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.004181802272796631,
+            "video_past": 0.010588109493255615
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.004492461681365967,
+            "image_past": -0.00920867919921875,
+            "video_past": 0.008609950542449951
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.013701140880584717,
+            "video_past": 0.004117488861083984
+          }
+        }
+      },
+      "P3": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.0026831626892089844,
+            "video_past": 0.026771843433380127
+          },
+          "cell_minus_same_P0_cell": {
+            "local": -0.012448012828826904,
+            "image_past": -0.003950834274291992,
+            "video_past": 0.010932505130767822
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.008497178554534912,
+            "video_past": 0.023380517959594727
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": 0.0028682351112365723,
+            "video_past": 0.022826194763183594
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0010723471641540527,
+            "image_past": 0.014513850212097168,
+            "video_past": 0.01710730791091919
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.013441503047943115,
+            "video_past": 0.016034960746765137
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.0012933015823364258,
+            "video_past": 0.00750422477722168
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.002778291702270508,
+            "image_past": -0.006178557872772217,
+            "video_past": 0.004939079284667969
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.008956849575042725,
+            "video_past": 0.002160787582397461
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.008518874645233154,
+            "video_past": 0.018880069255828857
+          },
+          "cell_minus_same_P0_cell": {
+            "local": -0.005873501300811768,
+            "image_past": -0.006873965263366699,
+            "video_past": 0.006535947322845459
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.0010004639625549316,
+            "video_past": 0.012409448623657227
+          }
+        }
+      }
+    },
+    "five_003_student_return": {
+      "P0": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.0202486515045166,
+            "video_past": 0.017929106950759888
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": -0.023831933736801147,
+            "video_past": 0.009893059730529785
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.012413769960403442,
+            "video_past": 0.08336424827575684
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.015772879123687744,
+            "video_past": 0.07549762725830078
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        }
+      },
+      "P1": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.02269721031188965,
+            "video_past": 0.025612235069274902
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0032956600189208984,
+            "image_past": 0.04624152183532715,
+            "video_past": 0.010978788137435913
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.04294586181640625,
+            "video_past": 0.007683128118515015
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": 0.030504047870635986,
+            "video_past": 0.03078797459602356
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.005832850933074951,
+            "image_past": 0.060168832540512085,
+            "video_past": 0.026727765798568726
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.054335981607437134,
+            "video_past": 0.020894914865493774
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.02904638648033142,
+            "video_past": 0.023769736289978027
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.027813762426376343,
+            "image_past": 0.0692739188671112,
+            "video_past": -0.031780749559402466
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.04146015644073486,
+            "video_past": -0.05959451198577881
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.02887749671936035,
+            "video_past": 0.025465726852416992
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.02402082085609436,
+            "image_past": 0.06867119669914246,
+            "video_past": -0.02601107954978943
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.044650375843048096,
+            "video_past": -0.05003190040588379
+          }
+        }
+      },
+      "P2": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.013754189014434814,
+            "video_past": 0.01117086410522461
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.014216393232345581,
+            "image_past": 0.048219233751297,
+            "video_past": 0.007458150386810303
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.034002840518951416,
+            "video_past": -0.006758242845535278
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": 0.023780077695846558,
+            "video_past": 0.01887616515159607
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.01509547233581543,
+            "image_past": 0.06270748376846313,
+            "video_past": 0.024078577756881714
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.047612011432647705,
+            "video_past": 0.008983105421066284
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.021424472332000732,
+            "video_past": 0.006358742713928223
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.03461378812789917,
+            "image_past": 0.06845203042030334,
+            "video_past": -0.04239171743392944
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.033838242292404175,
+            "video_past": -0.07700550556182861
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.019145190715789795,
+            "video_past": 0.004836618900299072
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0337681770324707,
+            "image_past": 0.06868624687194824,
+            "video_past": -0.036892831325531006
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.03491806983947754,
+            "video_past": -0.07066100835800171
+          }
+        }
+      },
+      "P3": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.027675390243530273,
+            "video_past": 0.03783348202705383
+          },
+          "cell_minus_same_P0_cell": {
+            "local": -0.014919906854629517,
+            "image_past": 0.03300413489341736,
+            "video_past": 0.004984468221664429
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.047924041748046875,
+            "video_past": 0.019904375076293945
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": 0.04294505715370178,
+            "video_past": 0.04623928666114807
+          },
+          "cell_minus_same_P0_cell": {
+            "local": -0.02691146731376648,
+            "image_past": 0.03986552357673645,
+            "video_past": 0.009434759616851807
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.06677699089050293,
+            "video_past": 0.036346226930618286
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.05630922317504883,
+            "video_past": 0.0771188735961914
+          },
+          "cell_minus_same_P0_cell": {
+            "local": -0.008640646934509277,
+            "image_past": 0.06008234620094299,
+            "video_past": -0.014886021614074707
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.06872299313545227,
+            "video_past": -0.00624537467956543
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.05519998073577881,
+            "video_past": 0.07362017035484314
+          },
+          "cell_minus_same_P0_cell": {
+            "local": -0.012165993452072144,
+            "image_past": 0.05880686640739441,
+            "video_past": -0.014043450355529785
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.07097285985946655,
+            "video_past": -0.0018774569034576416
+          }
+        }
+      }
+    },
+    "five_004_van_exterior": {
+      "P0": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.0076039135456085205,
+            "video_past": -0.006398290395736694
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": -0.0052965134382247925,
+            "video_past": -0.007649056613445282
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.002705030143260956,
+            "video_past": 0.002510521560907364
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.0024569332599639893,
+            "video_past": 0.0020102523267269135
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        }
+      },
+      "P1": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.004308164119720459,
+            "video_past": 0.0027307718992233276
+          },
+          "cell_minus_same_P0_cell": {
+            "local": -0.00010594725608825684,
+            "image_past": 0.0031898021697998047,
+            "video_past": 0.009023115038871765
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0032957494258880615,
+            "video_past": 0.009129062294960022
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": -0.009101584553718567,
+            "video_past": -0.0006086751818656921
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0017772689461708069,
+            "image_past": -0.0020278021693229675,
+            "video_past": 0.008817650377750397
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.0038050711154937744,
+            "video_past": 0.00704038143157959
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.00112827867269516,
+            "video_past": -0.0007093027234077454
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0020313039422035217,
+            "image_past": 0.0036080554127693176,
+            "video_past": -0.0011885203421115875
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.001576751470565796,
+            "video_past": -0.0032198242843151093
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.0005949437618255615,
+            "video_past": -0.0003518909215927124
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0025623664259910583,
+            "image_past": 0.004424355924129486,
+            "video_past": 0.0002002231776714325
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0018619894981384277,
+            "video_past": -0.002362143248319626
+          }
+        }
+      },
+      "P2": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.0029997974634170532,
+            "video_past": 0.5244747251272202
+          },
+          "cell_minus_same_P0_cell": {
+            "local": -0.0027647018432617188,
+            "image_past": 0.0018394142389297485,
+            "video_past": 0.5281083136796951
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.004604116082191467,
+            "video_past": 0.5308730155229568
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": -0.009896591305732727,
+            "video_past": 0.6781086847186089
+          },
+          "cell_minus_same_P0_cell": {
+            "local": -0.0027069449424743652,
+            "image_past": -0.0073070228099823,
+            "video_past": 0.6830507963895798
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.004600077867507935,
+            "video_past": 0.6857577413320541
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.0009560473263263702,
+            "video_past": 0.7697778977453709
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0026130452752113342,
+            "image_past": 0.00436202809214592,
+            "video_past": 0.7698804214596748
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0017489828169345856,
+            "video_past": 0.7672673761844635
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.0013813972473144531,
+            "video_past": 0.7741216868162155
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.003408249467611313,
+            "image_past": 0.004483785480260849,
+            "video_past": 0.7755196839570999
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0010755360126495361,
+            "video_past": 0.7721114344894886
+          }
+        }
+      },
+      "P3": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.0026932954788208008,
+            "video_past": 0.5522374659776688
+          },
+          "cell_minus_same_P0_cell": {
+            "local": -0.002639681100845337,
+            "image_past": 0.007657527923583984,
+            "video_past": 0.5559960752725601
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.010297209024429321,
+            "video_past": 0.5586357563734055
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": 0.007644057273864746,
+            "video_past": 0.6938969790935516
+          },
+          "cell_minus_same_P0_cell": {
+            "local": -0.0019570961594581604,
+            "image_past": 0.010983474552631378,
+            "video_past": 0.6995889395475388
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.012940570712089539,
+            "video_past": 0.7015460357069969
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.0007536672055721283,
+            "video_past": 0.7437314130365849
+          },
+          "cell_minus_same_P0_cell": {
+            "local": -0.0016313716769218445,
+            "image_past": 0.00031999126076698303,
+            "video_past": 0.7395895197987556
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0019513629376888275,
+            "video_past": 0.7412208914756775
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.002690408378839493,
+            "video_past": 0.7512874864041805
+          },
+          "cell_minus_same_P0_cell": {
+            "local": -0.0002501457929611206,
+            "image_past": -0.00048362091183662415,
+            "video_past": 0.7490270882844925
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.00023347511887550354,
+            "video_past": 0.7492772340774536
+          }
+        }
+      }
+    },
+    "five_005_conservator": {
+      "P0": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.09354138374328613,
+            "video_past": -0.07913345098495483
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": -0.14220422506332397,
+            "video_past": -0.12014955282211304
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.2376703917980194,
+            "video_past": 0.20182248950004578
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.23046088218688965,
+            "video_past": 0.19250744581222534
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.0,
+            "image_past": 0.0,
+            "video_past": 0.0
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0,
+            "video_past": 0.0
+          }
+        }
+      },
+      "P1": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": 0.015014320611953735,
+            "video_past": -0.006530731916427612
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.03411796689033508,
+            "image_past": 0.14267367124557495,
+            "video_past": 0.1067206859588623
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.10855570435523987,
+            "video_past": 0.07260271906852722
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": -0.02358037233352661,
+            "video_past": -0.013440191745758057
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.03978365659713745,
+            "image_past": 0.15840750932693481,
+            "video_past": 0.14649301767349243
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.11862385272979736,
+            "video_past": 0.10670936107635498
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.046493083238601685,
+            "video_past": -0.051937103271484375
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.09242045879364014,
+            "image_past": -0.19174301624298096,
+            "video_past": -0.16133913397789001
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.2841634750366211,
+            "video_past": -0.25375959277153015
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.06643509864807129,
+            "video_past": -0.04460608959197998
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.10524758696556091,
+            "image_past": -0.19164839386940002,
+            "video_past": -0.1318659484386444
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.29689598083496094,
+            "video_past": -0.23711353540420532
+          }
+        }
+      },
+      "P2": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.10957762598991394,
+            "video_past": -0.08127418160438538
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.11773571372032166,
+            "image_past": 0.10169947147369385,
+            "video_past": 0.11559498310089111
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.016036242246627808,
+            "video_past": -0.002140730619430542
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": -0.08970043063163757,
+            "video_past": 0.01181405782699585
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.036426544189453125,
+            "image_past": 0.08893033862113953,
+            "video_past": 0.168390154838562
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.0525037944316864,
+            "video_past": 0.1319636106491089
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.12252175807952881,
+            "video_past": -0.1202164888381958
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.14433258771896362,
+            "image_past": -0.2158595621585846,
+            "video_past": -0.17770639061927795
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.3601921498775482,
+            "video_past": -0.3220389783382416
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.11080038547515869,
+            "video_past": -0.08407202363014221
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.12962141633033752,
+            "image_past": -0.21163985133171082,
+            "video_past": -0.14695805311203003
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.34126126766204834,
+            "video_past": -0.27657946944236755
+          }
+        }
+      },
+      "P3": {
+        "dino_gt_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.06137114763259888,
+            "video_past": -0.03105202317237854
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.04037398099899292,
+            "image_past": 0.07254421710968018,
+            "video_past": 0.08845540881156921
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.032170236110687256,
+            "video_past": 0.048081427812576294
+          }
+        },
+        "dino_gt_cosine_after_1s": {
+          "oracle_minus_local": {
+            "image_past": -0.10725852847099304,
+            "video_past": -0.0019808411598205566
+          },
+          "cell_minus_same_P0_cell": {
+            "local": -0.02558225393295288,
+            "image_past": 0.009363442659378052,
+            "video_past": 0.0925864577293396
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": 0.03494569659233093,
+            "video_past": 0.11816871166229248
+          }
+        },
+        "dino_oracle_image_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.07560175657272339,
+            "video_past": -0.0783875584602356
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.12365573644638062,
+            "image_past": -0.18961641192436218,
+            "video_past": -0.15655431151390076
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.3132721483707428,
+            "video_past": -0.28021004796028137
+          }
+        },
+        "dino_oracle_video_max_cosine": {
+          "oracle_minus_local": {
+            "image_past": -0.06630641222000122,
+            "video_past": -0.09070062637329102
+          },
+          "cell_minus_same_P0_cell": {
+            "local": 0.12765344977378845,
+            "image_past": -0.16911384463310242,
+            "video_past": -0.1555546224117279
+          },
+          "oracle_benefit_change_vs_P0": {
+            "image_past": -0.29676729440689087,
+            "video_past": -0.28320807218551636
+          }
+        }
+      }
+    }
+  },
+  "pixel_diagnostics": {
+    "five_001_nursery_manager": {
+      "gt": {
+        "dino_gt_frame_cosines": [
+          0.9999999403953552,
+          1.0,
+          1.0,
+          1.0,
+          1.0000001192092896,
+          0.9999999403953552,
+          1.0,
+          1.0000001192092896,
+          1.0,
+          0.9999999403953552,
+          0.9999999403953552,
+          0.9999998807907104
+        ],
+        "oracle_image_feature_cosines": [
+          0.5428812503814697,
+          0.5399587154388428,
+          0.5445539355278015,
+          0.5325348377227783,
+          0.5458295345306396,
+          0.5471977591514587,
+          0.5585805177688599,
+          0.5544679760932922,
+          0.5379664897918701,
+          0.5419549942016602,
+          0.5497682690620422,
+          0.5265076160430908
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.5913909077644348,
+        "adjacent_pixel_mae_0_255": 0.7394781708717346,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 70.61779022216797
+      },
+      "P0_local": {
+        "dino_gt_frame_cosines": [
+          0.11906544864177704,
+          0.09359706938266754,
+          0.24024273455142975,
+          0.2246299535036087,
+          0.21581211686134338,
+          0.21296268701553345,
+          0.2386968582868576,
+          0.24742576479911804,
+          0.23297259211540222,
+          0.21733573079109192,
+          0.19657190144062042,
+          0.17055830359458923
+        ],
+        "oracle_image_feature_cosines": [
+          0.08180256187915802,
+          0.07804227620363235,
+          0.3062175214290619,
+          0.27880391478538513,
+          0.30135446786880493,
+          0.3016129732131958,
+          0.30046460032463074,
+          0.3022162914276123,
+          0.3010815382003784,
+          0.2994235157966614,
+          0.2925556004047394,
+          0.287529319524765
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.3066766560077667,
+        "adjacent_pixel_mae_0_255": 2.5951247215270996,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 7.866287708282471
+      },
+      "P0_image_past": {
+        "dino_gt_frame_cosines": [
+          0.11830316483974457,
+          0.11566884070634842,
+          0.48218005895614624,
+          0.5039325952529907,
+          0.4856739044189453,
+          0.46040335297584534,
+          0.44242116808891296,
+          0.44138291478157043,
+          0.4068024456501007,
+          0.422274112701416,
+          0.42637136578559875,
+          0.39267027378082275
+        ],
+        "oracle_image_feature_cosines": [
+          0.07801605761051178,
+          0.09565906226634979,
+          0.8552334308624268,
+          0.8551807999610901,
+          0.8729996085166931,
+          0.8639415502548218,
+          0.8463712930679321,
+          0.873692512512207,
+          0.8790262937545776,
+          0.883750319480896,
+          0.8828929662704468,
+          0.873938262462616
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.7630360126495361,
+        "adjacent_pixel_mae_0_255": 2.073456048965454,
+        "near_static_pair_fraction_mae_below_0_1": 0.028169014084507043,
+        "boundary_pixel_mae_0_255": 7.947216033935547
+      },
+      "P0_video_past": {
+        "dino_gt_frame_cosines": [
+          0.11442893743515015,
+          0.11984314769506454,
+          0.5109408497810364,
+          0.5003529787063599,
+          0.5070587992668152,
+          0.5342577695846558,
+          0.528800904750824,
+          0.471388041973114,
+          0.47485488653182983,
+          0.43259912729263306,
+          0.4282654821872711,
+          0.40852582454681396
+        ],
+        "oracle_image_feature_cosines": [
+          0.07750734686851501,
+          0.08854655921459198,
+          0.8197604417800903,
+          0.9076524972915649,
+          0.826266884803772,
+          0.8676263689994812,
+          0.898939847946167,
+          0.8953678607940674,
+          0.8962491750717163,
+          0.8590252995491028,
+          0.8581190705299377,
+          0.8563123941421509
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.7690237164497375,
+        "adjacent_pixel_mae_0_255": 1.6639324426651,
+        "near_static_pair_fraction_mae_below_0_1": 0.028169014084507043,
+        "boundary_pixel_mae_0_255": 8.075846672058105
+      },
+      "P1_local": {
+        "dino_gt_frame_cosines": [
+          0.11916299164295197,
+          0.10294082760810852,
+          0.4630732536315918,
+          0.48095768690109253,
+          0.5014916062355042,
+          0.5273735523223877,
+          0.5439313054084778,
+          0.5199324488639832,
+          0.48321065306663513,
+          0.4983730912208557,
+          0.4381985366344452,
+          0.4257741868495941
+        ],
+        "oracle_image_feature_cosines": [
+          0.08066374063491821,
+          0.08217394351959229,
+          0.5531262755393982,
+          0.5236059427261353,
+          0.551977276802063,
+          0.5176616907119751,
+          0.5513638257980347,
+          0.5448472499847412,
+          0.5637717247009277,
+          0.574560821056366,
+          0.5669921636581421,
+          0.5675584077835083
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.516843855381012,
+        "adjacent_pixel_mae_0_255": 3.798740863800049,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 7.563031196594238
+      },
+      "P1_image_past": {
+        "dino_gt_frame_cosines": [
+          0.11595474928617477,
+          0.1056567132472992,
+          0.10821648687124252,
+          0.09250712394714355,
+          0.10265709459781647,
+          0.10220906883478165,
+          0.10178296267986298,
+          0.11390136927366257,
+          0.12256466597318649,
+          0.14259034395217896,
+          0.11259669810533524,
+          0.10306129604578018
+        ],
+        "oracle_image_feature_cosines": [
+          0.07614307105541229,
+          0.06886877119541168,
+          0.07030198723077774,
+          0.06666693836450577,
+          0.06894378364086151,
+          0.06445984542369843,
+          0.07673340290784836,
+          0.07265150547027588,
+          0.07413806021213531,
+          0.1122187152504921,
+          0.0749269425868988,
+          0.07417437434196472
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.10840591043233871,
+        "adjacent_pixel_mae_0_255": 6.218560218811035,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 10.096943855285645
+      },
+      "P1_video_past": {
+        "dino_gt_frame_cosines": [
+          0.11914540827274323,
+          0.10074549168348312,
+          0.1096436008810997,
+          0.0997900515794754,
+          0.10253395140171051,
+          0.10683814436197281,
+          0.10023457556962967,
+          0.12052662670612335,
+          0.12195692956447601,
+          0.12434635311365128,
+          0.12211798131465912,
+          0.11262696236371994
+        ],
+        "oracle_image_feature_cosines": [
+          0.07440251857042313,
+          0.06936293840408325,
+          0.075857974588871,
+          0.07788805663585663,
+          0.0832924097776413,
+          0.0728442445397377,
+          0.06422771513462067,
+          0.0770333781838417,
+          0.07545528560876846,
+          0.07095956057310104,
+          0.07880070805549622,
+          0.0787665843963623
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.10848522186279297,
+        "adjacent_pixel_mae_0_255": 5.133512020111084,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 8.813164710998535
+      },
+      "P2_local": {
+        "dino_gt_frame_cosines": [
+          0.11736197024583817,
+          0.10800771415233612,
+          0.532899022102356,
+          0.5471144914627075,
+          0.5373764038085938,
+          0.514600396156311,
+          0.5296446084976196,
+          0.5118381381034851,
+          0.573512613773346,
+          0.562796950340271,
+          0.55484938621521,
+          0.5336257219314575
+        ],
+        "oracle_image_feature_cosines": [
+          0.08113875240087509,
+          0.0817912295460701,
+          0.5542957782745361,
+          0.5172563195228577,
+          0.5435897707939148,
+          0.5024706125259399,
+          0.5368494987487793,
+          0.46792322397232056,
+          0.5502321720123291,
+          0.5399202108383179,
+          0.556309700012207,
+          0.5727745890617371
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.5194122195243835,
+        "adjacent_pixel_mae_0_255": 3.923933506011963,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 7.292322158813477
+      },
+      "P2_image_past": {
+        "dino_gt_frame_cosines": [
+          0.11636003106832504,
+          0.10217525064945221,
+          0.27356117963790894,
+          0.4384060502052307,
+          0.45941510796546936,
+          0.4951982796192169,
+          0.44864195585250854,
+          0.4905255436897278,
+          0.5345550775527954,
+          0.5151859521865845,
+          0.48768383264541626,
+          0.46665728092193604
+        ],
+        "oracle_image_feature_cosines": [
+          0.08874081075191498,
+          0.10069134831428528,
+          0.3741696774959564,
+          0.6696550846099854,
+          0.7637221813201904,
+          0.7879889011383057,
+          0.7323467135429382,
+          0.7193760275840759,
+          0.7353585958480835,
+          0.7220856547355652,
+          0.7193164825439453,
+          0.731488823890686
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.6443037390708923,
+        "adjacent_pixel_mae_0_255": 1.8609346151351929,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 12.073565483093262
+      },
+      "P2_video_past": {
+        "dino_gt_frame_cosines": [
+          0.11246733367443085,
+          0.10249260812997818,
+          0.10177615284919739,
+          0.10859240591526031,
+          0.11521656066179276,
+          0.08714939653873444,
+          0.07985608279705048,
+          0.11512844264507294,
+          0.12638844549655914,
+          0.12019247561693192,
+          0.12185677140951157,
+          0.11007915437221527
+        ],
+        "oracle_image_feature_cosines": [
+          0.07974405586719513,
+          0.08097408711910248,
+          0.0860518366098404,
+          0.09268947690725327,
+          0.0934472531080246,
+          0.08013327419757843,
+          0.07162090390920639,
+          0.07297138124704361,
+          0.08029653877019882,
+          0.07707910239696503,
+          0.08284854888916016,
+          0.07821638882160187
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.11301145702600479,
+        "adjacent_pixel_mae_0_255": 3.171801805496216,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 14.799408912658691
+      },
+      "P3_local": {
+        "dino_gt_frame_cosines": [
+          0.11695417761802673,
+          0.09863214939832687,
+          0.5278979539871216,
+          0.49782782793045044,
+          0.4765968322753906,
+          0.5042535662651062,
+          0.5057345032691956,
+          0.5132862329483032,
+          0.511174201965332,
+          0.5072588920593262,
+          0.4438299834728241,
+          0.4241751432418823
+        ],
+        "oracle_image_feature_cosines": [
+          0.08291439712047577,
+          0.07827301323413849,
+          0.5894346237182617,
+          0.591876208782196,
+          0.5743656158447266,
+          0.5606369376182556,
+          0.5568872690200806,
+          0.5513123273849487,
+          0.5823301076889038,
+          0.5939247608184814,
+          0.5870376825332642,
+          0.5740745067596436
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.5405496954917908,
+        "adjacent_pixel_mae_0_255": 3.83740234375,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 7.498026371002197
+      },
+      "P3_image_past": {
+        "dino_gt_frame_cosines": [
+          0.12052494287490845,
+          0.11179764568805695,
+          0.41665107011795044,
+          0.46373116970062256,
+          0.4353702664375305,
+          0.5268683433532715,
+          0.5336763858795166,
+          0.5161713361740112,
+          0.5413756370544434,
+          0.525874674320221,
+          0.5212388038635254,
+          0.48168203234672546
+        ],
+        "oracle_image_feature_cosines": [
+          0.08161319047212601,
+          0.07985366135835648,
+          0.6861045956611633,
+          0.680618405342102,
+          0.5963540077209473,
+          0.7255945801734924,
+          0.739851713180542,
+          0.7316389679908752,
+          0.7026106119155884,
+          0.7289906740188599,
+          0.7092432975769043,
+          0.6878843903541565
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.6365224123001099,
+        "adjacent_pixel_mae_0_255": 2.713421583175659,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 7.672473907470703
+      },
+      "P3_video_past": {
+        "dino_gt_frame_cosines": [
+          0.11961501836776733,
+          0.10059626400470734,
+          0.1054421067237854,
+          0.09690409153699875,
+          0.09798555821180344,
+          0.11362535506486893,
+          0.09990109503269196,
+          0.12371426075696945,
+          0.13074909150600433,
+          0.1305742859840393,
+          0.11851005256175995,
+          0.10767880082130432
+        ],
+        "oracle_image_feature_cosines": [
+          0.06946970522403717,
+          0.06509813666343689,
+          0.0703851729631424,
+          0.070530004799366,
+          0.06859369575977325,
+          0.07550027966499329,
+          0.06286786496639252,
+          0.07842428237199783,
+          0.08240509033203125,
+          0.08149167895317078,
+          0.078440360724926,
+          0.07832270860671997
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.10599181801080704,
+        "adjacent_pixel_mae_0_255": 5.169130802154541,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 10.256047248840332
+      }
+    },
+    "five_002_robot_head": {
+      "gt": {
+        "dino_gt_frame_cosines": [
+          1.0,
+          1.0,
+          1.0,
+          0.9999999403953552,
+          1.0,
+          1.0000001192092896,
+          0.9999998807907104,
+          1.0000001192092896,
+          0.9999999403953552,
+          0.9999999403953552,
+          1.0,
+          1.0
+        ],
+        "oracle_image_feature_cosines": [
+          0.703917384147644,
+          0.7068102359771729,
+          0.7088368535041809,
+          0.710240364074707,
+          0.7104071974754333,
+          0.7102755308151245,
+          0.7118281126022339,
+          0.7129454612731934,
+          0.712135374546051,
+          0.7122896909713745,
+          0.6860952973365784,
+          0.7450252771377563
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.8351536393165588,
+        "adjacent_pixel_mae_0_255": 0.5640568733215332,
+        "near_static_pair_fraction_mae_below_0_1": 0.8169014084507042,
+        "boundary_pixel_mae_0_255": 33.99641799926758
+      },
+      "P0_local": {
+        "dino_gt_frame_cosines": [
+          0.8864353895187378,
+          0.8974201083183289,
+          0.8931456208229065,
+          0.8974769115447998,
+          0.8732240200042725,
+          0.8099112510681152,
+          0.8085504770278931,
+          0.8604587316513062,
+          0.9131648540496826,
+          0.8970190286636353,
+          0.8711491823196411,
+          0.8749051094055176
+        ],
+        "oracle_image_feature_cosines": [
+          0.7582077383995056,
+          0.7568647861480713,
+          0.7593216300010681,
+          0.7583022117614746,
+          0.752901554107666,
+          0.7578055262565613,
+          0.7673189043998718,
+          0.7739936113357544,
+          0.7659665942192078,
+          0.7770376801490784,
+          0.7692550420761108,
+          0.7689146399497986
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.8766706585884094,
+        "adjacent_pixel_mae_0_255": 1.9209134578704834,
+        "near_static_pair_fraction_mae_below_0_1": 0.04225352112676056,
+        "boundary_pixel_mae_0_255": 4.83283805847168
+      },
+      "P0_image_past": {
+        "dino_gt_frame_cosines": [
+          0.8958997130393982,
+          0.9017430543899536,
+          0.8929197788238525,
+          0.8987348675727844,
+          0.8607837557792664,
+          0.8126029968261719,
+          0.8265529870986938,
+          0.8466846942901611,
+          0.8770628571510315,
+          0.8779041171073914,
+          0.8589762449264526,
+          0.8632282018661499
+        ],
+        "oracle_image_feature_cosines": [
+          0.7674328088760376,
+          0.7676883935928345,
+          0.7554850578308105,
+          0.7563302516937256,
+          0.7792284488677979,
+          0.7881574630737305,
+          0.7831227779388428,
+          0.7810786366462708,
+          0.7850019931793213,
+          0.7853471636772156,
+          0.7699414491653442,
+          0.770078182220459
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.8861899971961975,
+        "adjacent_pixel_mae_0_255": 2.019041061401367,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 4.81764030456543
+      },
+      "P0_video_past": {
+        "dino_gt_frame_cosines": [
+          0.88763827085495,
+          0.8902922868728638,
+          0.8887580037117004,
+          0.8941568732261658,
+          0.872336745262146,
+          0.8238404393196106,
+          0.8343912363052368,
+          0.8596352338790894,
+          0.8958267569541931,
+          0.9031626582145691,
+          0.8910987377166748,
+          0.8824206590652466
+        ],
+        "oracle_image_feature_cosines": [
+          0.7583091259002686,
+          0.7685801982879639,
+          0.7723145484924316,
+          0.7683676481246948,
+          0.7782756686210632,
+          0.783751368522644,
+          0.7704339623451233,
+          0.7734072208404541,
+          0.7697658538818359,
+          0.7685801982879639,
+          0.7592155933380127,
+          0.7590097188949585
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.883141279220581,
+        "adjacent_pixel_mae_0_255": 1.7034568786621094,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 4.8526997566223145
+      },
+      "P1_local": {
+        "dino_gt_frame_cosines": [
+          0.8936697244644165,
+          0.9024060964584351,
+          0.9050185084342957,
+          0.891689121723175,
+          0.8141451478004456,
+          0.853657066822052,
+          0.8621954321861267,
+          0.9051399230957031,
+          0.9058799743652344,
+          0.908855140209198,
+          0.8869014978408813,
+          0.8822943568229675
+        ],
+        "oracle_image_feature_cosines": [
+          0.7762936949729919,
+          0.7689325213432312,
+          0.7714259028434753,
+          0.7594531178474426,
+          0.7584224939346313,
+          0.7849769592285156,
+          0.7953463196754456,
+          0.7904219627380371,
+          0.7862062454223633,
+          0.7872788906097412,
+          0.7869501113891602,
+          0.7869587540626526
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.89420086145401,
+        "adjacent_pixel_mae_0_255": 1.609079122543335,
+        "near_static_pair_fraction_mae_below_0_1": 0.16901408450704225,
+        "boundary_pixel_mae_0_255": 5.206619739532471
+      },
+      "P1_image_past": {
+        "dino_gt_frame_cosines": [
+          0.9034826159477234,
+          0.9141595959663391,
+          0.9126318097114563,
+          0.8959949016571045,
+          0.8033261895179749,
+          0.8436863422393799,
+          0.8630751371383667,
+          0.8854498267173767,
+          0.8940941691398621,
+          0.8940982818603516,
+          0.8757563829421997,
+          0.8600663542747498
+        ],
+        "oracle_image_feature_cosines": [
+          0.7659891843795776,
+          0.7664942145347595,
+          0.767536997795105,
+          0.7661751508712769,
+          0.7689869403839111,
+          0.776100754737854,
+          0.7856442332267761,
+          0.7798373699188232,
+          0.7698107957839966,
+          0.7645260095596313,
+          0.762669563293457,
+          0.7613456845283508
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.8961522579193115,
+        "adjacent_pixel_mae_0_255": 1.9642034769058228,
+        "near_static_pair_fraction_mae_below_0_1": 0.11267605633802817,
+        "boundary_pixel_mae_0_255": 5.062658309936523
+      },
+      "P1_video_past": {
+        "dino_gt_frame_cosines": [
+          0.8940925598144531,
+          0.8915388584136963,
+          0.8833923935890198,
+          0.8849716186523438,
+          0.8782119750976562,
+          0.8380939960479736,
+          0.8449047803878784,
+          0.8898698091506958,
+          0.8925979137420654,
+          0.9061398506164551,
+          0.8899261355400085,
+          0.8799813389778137
+        ],
+        "oracle_image_feature_cosines": [
+          0.7674599885940552,
+          0.7673553228378296,
+          0.7824993133544922,
+          0.7823790311813354,
+          0.7837232351303101,
+          0.8048941493034363,
+          0.8075368404388428,
+          0.7912802696228027,
+          0.7785705327987671,
+          0.7616143822669983,
+          0.7471048831939697,
+          0.7468785643577576
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.8894794583320618,
+        "adjacent_pixel_mae_0_255": 1.9582198858261108,
+        "near_static_pair_fraction_mae_below_0_1": 0.028169014084507043,
+        "boundary_pixel_mae_0_255": 4.831217288970947
+      },
+      "P2_local": {
+        "dino_gt_frame_cosines": [
+          0.8655399680137634,
+          0.847855269908905,
+          0.8604155778884888,
+          0.8792112469673157,
+          0.8802337050437927,
+          0.8830958604812622,
+          0.8834102153778076,
+          0.8852125406265259,
+          0.879547655582428,
+          0.8820753693580627,
+          0.8705078363418579,
+          0.8715100288391113
+        ],
+        "oracle_image_feature_cosines": [
+          0.738010048866272,
+          0.7674686908721924,
+          0.75799959897995,
+          0.7716200351715088,
+          0.7713252902030945,
+          0.7710052728652954,
+          0.7703282833099365,
+          0.7698683738708496,
+          0.7690176963806152,
+          0.7657276391983032,
+          0.7651069164276123,
+          0.7650233507156372
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.8811631202697754,
+        "adjacent_pixel_mae_0_255": 0.619968593120575,
+        "near_static_pair_fraction_mae_below_0_1": 0.28169014084507044,
+        "boundary_pixel_mae_0_255": 6.780210018157959
+      },
+      "P2_image_past": {
+        "dino_gt_frame_cosines": [
+          0.8551458120346069,
+          0.8336163759231567,
+          0.8714485168457031,
+          0.8788405060768127,
+          0.8834354877471924,
+          0.8843283653259277,
+          0.8862842321395874,
+          0.8863948583602905,
+          0.8869036436080933,
+          0.8888684511184692,
+          0.8737077713012695,
+          0.8737214207649231
+        ],
+        "oracle_image_feature_cosines": [
+          0.7405149936676025,
+          0.7489354610443115,
+          0.7692396640777588,
+          0.7727343440055847,
+          0.7726903557777405,
+          0.7691916227340698,
+          0.7667756080627441,
+          0.7641059160232544,
+          0.7686313390731812,
+          0.7702786326408386,
+          0.7671229839324951,
+          0.7667585611343384
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.8769813179969788,
+        "adjacent_pixel_mae_0_255": 0.6429993510246277,
+        "near_static_pair_fraction_mae_below_0_1": 0.18309859154929578,
+        "boundary_pixel_mae_0_255": 6.18962287902832
+      },
+      "P2_video_past": {
+        "dino_gt_frame_cosines": [
+          0.8958468437194824,
+          0.8886332511901855,
+          0.8940477967262268,
+          0.8978552222251892,
+          0.8152106404304504,
+          0.861611545085907,
+          0.894485354423523,
+          0.8958243131637573,
+          0.8983851671218872,
+          0.9021085500717163,
+          0.883957028388977,
+          0.8876052498817444
+        ],
+        "oracle_image_feature_cosines": [
+          0.7696863412857056,
+          0.7799131274223328,
+          0.7766955494880676,
+          0.7789007425308228,
+          0.7440866827964783,
+          0.7801145315170288,
+          0.7740023136138916,
+          0.7813281416893005,
+          0.7803847789764404,
+          0.7795461416244507,
+          0.77989262342453,
+          0.7777998447418213
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.891751229763031,
+        "adjacent_pixel_mae_0_255": 1.739892601966858,
+        "near_static_pair_fraction_mae_below_0_1": 0.18309859154929578,
+        "boundary_pixel_mae_0_255": 5.072733402252197
+      },
+      "P3_local": {
+        "dino_gt_frame_cosines": [
+          0.870134711265564,
+          0.8478590846061707,
+          0.8324981927871704,
+          0.8660327792167664,
+          0.8640977740287781,
+          0.8630820512771606,
+          0.8689556121826172,
+          0.868715226650238,
+          0.8682805895805359,
+          0.867796003818512,
+          0.8570679426193237,
+          0.8589658737182617
+        ],
+        "oracle_image_feature_cosines": [
+          0.7472858428955078,
+          0.7561560869216919,
+          0.7463916540145874,
+          0.7652556896209717,
+          0.7709056735038757,
+          0.7706612348556519,
+          0.7729541063308716,
+          0.7755504846572876,
+          0.7733019590377808,
+          0.7728434205055237,
+          0.7739347219467163,
+          0.7739877104759216
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.8707971572875977,
+        "adjacent_pixel_mae_0_255": 0.6015406847000122,
+        "near_static_pair_fraction_mae_below_0_1": 0.22535211267605634,
+        "boundary_pixel_mae_0_255": 6.538262367248535
+      },
+      "P3_image_past": {
+        "dino_gt_frame_cosines": [
+          0.8629953861236572,
+          0.8459621071815491,
+          0.8492191433906555,
+          0.8676000237464905,
+          0.8633260130882263,
+          0.8679737448692322,
+          0.872904896736145,
+          0.873551070690155,
+          0.8720253109931946,
+          0.8722690343856812,
+          0.8642120361328125,
+          0.853644847869873
+        ],
+        "oracle_image_feature_cosines": [
+          0.729106068611145,
+          0.7514204382896423,
+          0.7670045495033264,
+          0.7714655995368958,
+          0.7750474810600281,
+          0.7780694365501404,
+          0.7767689228057861,
+          0.7786253690719604,
+          0.7765016555786133,
+          0.7732493281364441,
+          0.769009530544281,
+          0.7684805393218994
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.8793160319328308,
+        "adjacent_pixel_mae_0_255": 0.5805947184562683,
+        "near_static_pair_fraction_mae_below_0_1": 0.22535211267605634,
+        "boundary_pixel_mae_0_255": 6.520659446716309
+      },
+      "P3_video_past": {
+        "dino_gt_frame_cosines": [
+          0.898442268371582,
+          0.8991207480430603,
+          0.8787500858306885,
+          0.8788636326789856,
+          0.8384602069854736,
+          0.8295707702636719,
+          0.9039873480796814,
+          0.9156179428100586,
+          0.9133070707321167,
+          0.9125109910964966,
+          0.8985766172409058,
+          0.887539803981781
+        ],
+        "oracle_image_feature_cosines": [
+          0.7669541835784912,
+          0.7767213582992554,
+          0.787956178188324,
+          0.7889561057090759,
+          0.792445182800293,
+          0.7737168073654175,
+          0.7613801956176758,
+          0.7784667611122131,
+          0.7663055658340454,
+          0.7658597230911255,
+          0.764012336730957,
+          0.7665048837661743
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.8896772265434265,
+        "adjacent_pixel_mae_0_255": 2.0267083644866943,
+        "near_static_pair_fraction_mae_below_0_1": 0.1267605633802817,
+        "boundary_pixel_mae_0_255": 4.798970699310303
+      }
+    },
+    "five_003_student_return": {
+      "gt": {
+        "dino_gt_frame_cosines": [
+          1.0,
+          1.0000001192092896,
+          1.0,
+          1.0,
+          1.0000001192092896,
+          0.9999999403953552,
+          0.9999999403953552,
+          1.0000001192092896,
+          1.0000001192092896,
+          1.0,
+          0.9999998807907104,
+          1.0
+        ],
+        "oracle_image_feature_cosines": [
+          0.8900072574615479,
+          0.8504229784011841,
+          0.775027871131897,
+          0.8209902048110962,
+          0.7854610085487366,
+          0.7360738515853882,
+          0.6801530718803406,
+          0.7244172096252441,
+          0.663324236869812,
+          0.5198676586151123,
+          0.5982626080513,
+          0.6072985529899597
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.7471104264259338,
+        "adjacent_pixel_mae_0_255": 2.105482816696167,
+        "near_static_pair_fraction_mae_below_0_1": 0.30985915492957744,
+        "boundary_pixel_mae_0_255": 61.74671936035156
+      },
+      "P0_local": {
+        "dino_gt_frame_cosines": [
+          0.4568789601325989,
+          0.3806861937046051,
+          0.41017770767211914,
+          0.3631628155708313,
+          0.414844274520874,
+          0.45779988169670105,
+          0.4588419198989868,
+          0.44718635082244873,
+          0.3884504437446594,
+          0.28515249490737915,
+          0.23619654774665833,
+          0.22717565298080444
+        ],
+        "oracle_image_feature_cosines": [
+          0.3926413953304291,
+          0.33952265977859497,
+          0.33788567781448364,
+          0.3196055293083191,
+          0.32688164710998535,
+          0.36698704957962036,
+          0.44040727615356445,
+          0.39677542448043823,
+          0.36971041560173035,
+          0.30930471420288086,
+          0.35468560457229614,
+          0.32531994581222534
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.3857717216014862,
+        "adjacent_pixel_mae_0_255": 1.132595419883728,
+        "near_static_pair_fraction_mae_below_0_1": 0.014084507042253521,
+        "boundary_pixel_mae_0_255": 5.097179412841797
+      },
+      "P0_image_past": {
+        "dino_gt_frame_cosines": [
+          0.45387202501296997,
+          0.34113097190856934,
+          0.396707683801651,
+          0.3668665587902069,
+          0.4505612850189209,
+          0.43971961736679077,
+          0.4432603418827057,
+          0.3924092650413513,
+          0.3604561984539032,
+          0.23787370324134827,
+          0.1995690017938614,
+          0.20114260911941528
+        ],
+        "oracle_image_feature_cosines": [
+          0.3957202136516571,
+          0.30091699957847595,
+          0.3361508250236511,
+          0.3149961233139038,
+          0.3360850214958191,
+          0.38073259592056274,
+          0.43917912244796753,
+          0.39422449469566345,
+          0.3567615747451782,
+          0.2810230553150177,
+          0.2933810353279114,
+          0.3015909790992737
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.36999884247779846,
+        "adjacent_pixel_mae_0_255": 1.0968579053878784,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 5.178263187408447
+      },
+      "P0_video_past": {
+        "dino_gt_frame_cosines": [
+          0.43276792764663696,
+          0.392023503780365,
+          0.4586830139160156,
+          0.4634363353252411,
+          0.4455516040325165,
+          0.427035391330719,
+          0.4127298593521118,
+          0.40384456515312195,
+          0.35954874753952026,
+          0.3066898584365845,
+          0.3332165479660034,
+          0.3061753213405609
+        ],
+        "oracle_image_feature_cosines": [
+          0.3747307062149048,
+          0.3643966019153595,
+          0.3954346776008606,
+          0.43564677238464355,
+          0.49790114164352417,
+          0.4752741754055023,
+          0.46386703848838806,
+          0.4522055387496948,
+          0.4530523419380188,
+          0.44570496678352356,
+          0.46656519174575806,
+          0.4553189277648926
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.461269348859787,
+        "adjacent_pixel_mae_0_255": 0.6526737213134766,
+        "near_static_pair_fraction_mae_below_0_1": 0.028169014084507043,
+        "boundary_pixel_mae_0_255": 5.017501354217529
+      },
+      "P1_local": {
+        "dino_gt_frame_cosines": [
+          0.41415148973464966,
+          0.4014132618904114,
+          0.38732433319091797,
+          0.40090203285217285,
+          0.46052396297454834,
+          0.45667752623558044,
+          0.4359937906265259,
+          0.3971395790576935,
+          0.3375500738620758,
+          0.28532788157463074,
+          0.29921668767929077,
+          0.289880633354187
+        ],
+        "oracle_image_feature_cosines": [
+          0.34412533044815063,
+          0.36966395378112793,
+          0.3121424615383148,
+          0.34191766381263733,
+          0.3588648736476898,
+          0.40068620443344116,
+          0.4360550045967102,
+          0.41777342557907104,
+          0.4071362614631653,
+          0.40421849489212036,
+          0.411155104637146,
+          0.4097538888454437
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.40979254245758057,
+        "adjacent_pixel_mae_0_255": 0.6443663835525513,
+        "near_static_pair_fraction_mae_below_0_1": 0.08450704225352113,
+        "boundary_pixel_mae_0_255": 4.959463596343994
+      },
+      "P1_image_past": {
+        "dino_gt_frame_cosines": [
+          0.41117504239082336,
+          0.37280625104904175,
+          0.428843230009079,
+          0.41930046677589417,
+          0.5171189904212952,
+          0.516198992729187,
+          0.4780808687210083,
+          0.4074759781360626,
+          0.35289710760116577,
+          0.31495940685272217,
+          0.30516481399536133,
+          0.314446359872818
+        ],
+        "oracle_image_feature_cosines": [
+          0.3627539277076721,
+          0.3318905234336853,
+          0.37271803617477417,
+          0.37105217576026917,
+          0.39605918526649475,
+          0.47831377387046814,
+          0.4615927040576935,
+          0.42767661809921265,
+          0.4205758571624756,
+          0.4449692368507385,
+          0.44662773609161377,
+          0.4478186368942261
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.4386700391769409,
+        "adjacent_pixel_mae_0_255": 0.574347198009491,
+        "near_static_pair_fraction_mae_below_0_1": 0.1267605633802817,
+        "boundary_pixel_mae_0_255": 5.054361820220947
+      },
+      "P1_video_past": {
+        "dino_gt_frame_cosines": [
+          0.426473468542099,
+          0.3782544732093811,
+          0.4238744378089905,
+          0.43623146414756775,
+          0.516318678855896,
+          0.4986427426338196,
+          0.46385619044303894,
+          0.399201899766922,
+          0.3778262138366699,
+          0.3139181435108185,
+          0.3212125599384308,
+          0.31763777136802673
+        ],
+        "oracle_image_feature_cosines": [
+          0.37251466512680054,
+          0.33181217312812805,
+          0.36304140090942383,
+          0.36343538761138916,
+          0.3991445302963257,
+          0.42145997285842896,
+          0.4405725598335266,
+          0.4099924564361572,
+          0.43927305936813354,
+          0.4435369670391083,
+          0.45632755756378174,
+          0.4576182961463928
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.43525826930999756,
+        "adjacent_pixel_mae_0_255": 0.6257925629615784,
+        "near_static_pair_fraction_mae_below_0_1": 0.11267605633802817,
+        "boundary_pixel_mae_0_255": 5.083014488220215
+      },
+      "P2_local": {
+        "dino_gt_frame_cosines": [
+          0.4382723569869995,
+          0.4298941493034363,
+          0.411363422870636,
+          0.3812093138694763,
+          0.474992573261261,
+          0.4667527973651886,
+          0.4453401267528534,
+          0.4073478877544403,
+          0.3614043593406677,
+          0.300809383392334,
+          0.28636741638183594,
+          0.29339659214019775
+        ],
+        "oracle_image_feature_cosines": [
+          0.3805679380893707,
+          0.40299665927886963,
+          0.33519622683525085,
+          0.31507042050361633,
+          0.3628286123275757,
+          0.40248093008995056,
+          0.4055643379688263,
+          0.4048840403556824,
+          0.4062008261680603,
+          0.41910266876220703,
+          0.43100157380104065,
+          0.42919835448265076
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.4195398986339569,
+        "adjacent_pixel_mae_0_255": 0.5947241187095642,
+        "near_static_pair_fraction_mae_below_0_1": 0.09859154929577464,
+        "boundary_pixel_mae_0_255": 4.950748920440674
+      },
+      "P2_image_past": {
+        "dino_gt_frame_cosines": [
+          0.40913039445877075,
+          0.35865071415901184,
+          0.425143301486969,
+          0.44262364506721497,
+          0.5098258852958679,
+          0.511574923992157,
+          0.45423486828804016,
+          0.42395246028900146,
+          0.38044029474258423,
+          0.3211299180984497,
+          0.318626344203949,
+          0.3068673610687256
+        ],
+        "oracle_image_feature_cosines": [
+          0.35569092631340027,
+          0.31824201345443726,
+          0.359078973531723,
+          0.369083434343338,
+          0.40109604597091675,
+          0.43724894523620605,
+          0.45338118076324463,
+          0.46048954129219055,
+          0.4524425268173218,
+          0.4413600564002991,
+          0.4577721357345581,
+          0.4463008642196655
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.4386850893497467,
+        "adjacent_pixel_mae_0_255": 0.5602025985717773,
+        "near_static_pair_fraction_mae_below_0_1": 0.14084507042253522,
+        "boundary_pixel_mae_0_255": 5.079280376434326
+      },
+      "P2_video_past": {
+        "dino_gt_frame_cosines": [
+          0.42466533184051514,
+          0.36998090147972107,
+          0.43402099609375,
+          0.4151127338409424,
+          0.48516231775283813,
+          0.5172985792160034,
+          0.4262358844280243,
+          0.3978605270385742,
+          0.38479235768318176,
+          0.32924649119377136,
+          0.3248288333415985,
+          0.32199543714523315
+        ],
+        "oracle_image_feature_cosines": [
+          0.3620947599411011,
+          0.31126436591148376,
+          0.33063703775405884,
+          0.33461835980415344,
+          0.3601996600627899,
+          0.4131290912628174,
+          0.40390321612358093,
+          0.41342657804489136,
+          0.46415984630584717,
+          0.46593400835990906,
+          0.45561158657073975,
+          0.45641931891441345
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.424376517534256,
+        "adjacent_pixel_mae_0_255": 0.6138444542884827,
+        "near_static_pair_fraction_mae_below_0_1": 0.1267605633802817,
+        "boundary_pixel_mae_0_255": 5.027633190155029
+      },
+      "P3_local": {
+        "dino_gt_frame_cosines": [
+          0.4363476037979126,
+          0.41083070635795593,
+          0.4150664806365967,
+          0.38491344451904297,
+          0.41402092576026917,
+          0.48138657212257385,
+          0.4776933789253235,
+          0.41253402829170227,
+          0.29989343881607056,
+          0.22831843793392181,
+          0.18890789151191711,
+          0.1976010948419571
+        ],
+        "oracle_image_feature_cosines": [
+          0.36518165469169617,
+          0.37747687101364136,
+          0.334838330745697,
+          0.32481154799461365,
+          0.2724592387676239,
+          0.396248996257782,
+          0.46833255887031555,
+          0.4111905097961426,
+          0.3301178812980652,
+          0.2991165518760681,
+          0.29830658435821533,
+          0.2979587912559509
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.37360572814941406,
+        "adjacent_pixel_mae_0_255": 1.0169473886489868,
+        "near_static_pair_fraction_mae_below_0_1": 0.04225352112676056,
+        "boundary_pixel_mae_0_255": 4.97566032409668
+      },
+      "P3_image_past": {
+        "dino_gt_frame_cosines": [
+          0.40904200077056885,
+          0.38203272223472595,
+          0.4205949008464813,
+          0.4240325093269348,
+          0.5466830134391785,
+          0.4677414298057556,
+          0.4170987904071808,
+          0.3928377628326416,
+          0.3454809784889221,
+          0.2941679358482361,
+          0.29065170884132385,
+          0.28925448656082153
+        ],
+        "oracle_image_feature_cosines": [
+          0.3588743507862091,
+          0.3454165458679199,
+          0.3634883165359497,
+          0.3724709451198578,
+          0.461517870426178,
+          0.4608912169933319,
+          0.4431076645851135,
+          0.43012213706970215,
+          0.4062730073928833,
+          0.4019317924976349,
+          0.3984527885913849,
+          0.409204363822937
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.42880570888519287,
+        "adjacent_pixel_mae_0_255": 0.6228155493736267,
+        "near_static_pair_fraction_mae_below_0_1": 0.08450704225352113,
+        "boundary_pixel_mae_0_255": 5.028308868408203
+      },
+      "P3_video_past": {
+        "dino_gt_frame_cosines": [
+          0.4425973892211914,
+          0.3891887664794922,
+          0.46647119522094727,
+          0.43298834562301636,
+          0.5304940938949585,
+          0.47614338994026184,
+          0.42917388677597046,
+          0.3698952794075012,
+          0.3468603491783142,
+          0.2995707392692566,
+          0.31019148230552673,
+          0.3079410195350647
+        ],
+        "oracle_image_feature_cosines": [
+          0.3878343105316162,
+          0.3332405686378479,
+          0.38135117292404175,
+          0.3762192726135254,
+          0.5076360702514648,
+          0.4759684205055237,
+          0.4653782844543457,
+          0.43144577741622925,
+          0.4316769540309906,
+          0.43306055665016174,
+          0.43816977739334106,
+          0.4394850730895996
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.4472258985042572,
+        "adjacent_pixel_mae_0_255": 0.6085346937179565,
+        "near_static_pair_fraction_mae_below_0_1": 0.11267605633802817,
+        "boundary_pixel_mae_0_255": 5.084719181060791
+      }
+    },
+    "five_004_van_exterior": {
+      "gt": {
+        "dino_gt_frame_cosines": [
+          0.9999998807907104,
+          1.0000001192092896,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.9999999403953552,
+          1.0000001192092896,
+          0.9999998807907104,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "oracle_image_feature_cosines": [
+          0.05473342910408974,
+          0.10648711770772934,
+          0.5200799107551575,
+          0.7328395247459412,
+          0.798514723777771,
+          0.8659407496452332,
+          0.792526125907898,
+          0.7928767204284668,
+          0.8025709390640259,
+          0.7268710136413574,
+          0.7150745391845703,
+          0.5720312595367432
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.6508880257606506,
+        "adjacent_pixel_mae_0_255": 10.987382888793945,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 32.574405670166016
+      },
+      "P0_local": {
+        "dino_gt_frame_cosines": [
+          0.8885679841041565,
+          0.7982034087181091,
+          0.22495689988136292,
+          0.14288230240345,
+          0.10889317840337753,
+          0.0637163519859314,
+          0.09793073683977127,
+          0.10647575557231903,
+          0.09884848445653915,
+          0.15108372271060944,
+          0.14568939805030823,
+          0.17060738801956177
+        ],
+        "oracle_image_feature_cosines": [
+          0.027384696528315544,
+          0.049089401960372925,
+          0.03703075647354126,
+          0.04849005490541458,
+          0.03224353864789009,
+          0.0372723713517189,
+          0.03583651781082153,
+          0.03881966695189476,
+          0.03515750169754028,
+          0.03442933410406113,
+          0.040345385670661926,
+          0.04343775659799576
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.05074687674641609,
+        "adjacent_pixel_mae_0_255": 9.301119804382324,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 23.237289428710938
+      },
+      "P0_image_past": {
+        "dino_gt_frame_cosines": [
+          0.9023765921592712,
+          0.7706234455108643,
+          0.2161681354045868,
+          0.11656779795885086,
+          0.09807304292917252,
+          0.058667879551649094,
+          0.1030898466706276,
+          0.11488085985183716,
+          0.09367289394140244,
+          0.13287968933582306,
+          0.13953827321529388,
+          0.16007034480571747
+        ],
+        "oracle_image_feature_cosines": [
+          0.03525929152965546,
+          0.03154093027114868,
+          0.0361684188246727,
+          0.04704701527953148,
+          0.027401788160204887,
+          0.01845414750277996,
+          0.03879588469862938,
+          0.03477630019187927,
+          0.032718807458877563,
+          0.04066700488328934,
+          0.04158150404691696,
+          0.042665574699640274
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.0482899434864521,
+        "adjacent_pixel_mae_0_255": 9.097624778747559,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 23.41860008239746
+      },
+      "P0_video_past": {
+        "dino_gt_frame_cosines": [
+          0.8894262909889221,
+          0.7839275598526001,
+          0.22572074830532074,
+          0.13994921743869781,
+          0.10964877158403397,
+          0.06788258254528046,
+          0.09873069822788239,
+          0.10764504969120026,
+          0.10017900168895721,
+          0.12778757512569427,
+          0.12882399559020996,
+          0.14135488867759705
+        ],
+        "oracle_image_feature_cosines": [
+          0.035870857536792755,
+          0.03500868380069733,
+          0.04343627765774727,
+          0.04493415728211403,
+          0.03648056089878082,
+          0.03374655172228813,
+          0.03309331834316254,
+          0.03498772159218788,
+          0.04122505709528923,
+          0.05751096084713936,
+          0.04582897201180458,
+          0.04754014313220978
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.052757129073143005,
+        "adjacent_pixel_mae_0_255": 9.023804664611816,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 23.980825424194336
+      },
+      "P1_local": {
+        "dino_gt_frame_cosines": [
+          0.8982808589935303,
+          0.8003664016723633,
+          0.21793916821479797,
+          0.12253459542989731,
+          0.1095559224486351,
+          0.07228564471006393,
+          0.12001150101423264,
+          0.10858669877052307,
+          0.11324062198400497,
+          0.12930023670196533,
+          0.13863049447536469,
+          0.16585204005241394
+        ],
+        "oracle_image_feature_cosines": [
+          0.03310760110616684,
+          0.03877991437911987,
+          0.0401565283536911,
+          0.03914519399404526,
+          0.03278905525803566,
+          0.03763570263981819,
+          0.03829146549105644,
+          0.0337822288274765,
+          0.0479540154337883,
+          0.046635523438453674,
+          0.04455062747001648,
+          0.051084790378808975
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.05330924317240715,
+        "adjacent_pixel_mae_0_255": 8.180814743041992,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 22.476669311523438
+      },
+      "P1_image_past": {
+        "dino_gt_frame_cosines": [
+          0.8962003588676453,
+          0.7676098346710205,
+          0.2567332983016968,
+          0.1396925300359726,
+          0.1094219759106636,
+          0.06868735700845718,
+          0.10129264742136002,
+          0.1235373318195343,
+          0.09413785487413406,
+          0.12476588785648346,
+          0.11923994868993759,
+          0.14356748759746552
+        ],
+        "oracle_image_feature_cosines": [
+          0.02961488999426365,
+          0.03439776599407196,
+          0.02668682113289833,
+          0.04816492646932602,
+          0.031084245070815086,
+          0.03799116611480713,
+          0.0387408621609211,
+          0.048763457685709,
+          0.039703916758298874,
+          0.04666490852832794,
+          0.042466964572668076,
+          0.04609337076544762
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.05271429941058159,
+        "adjacent_pixel_mae_0_255": 8.500754356384277,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 23.698877334594727
+      },
+      "P1_video_past": {
+        "dino_gt_frame_cosines": [
+          0.8870132565498352,
+          0.7928049564361572,
+          0.2464730441570282,
+          0.1504686176776886,
+          0.10888693481683731,
+          0.07048078626394272,
+          0.09536638855934143,
+          0.1283566802740097,
+          0.1013159304857254,
+          0.14004617929458618,
+          0.14312666654586792,
+          0.16501420736312866
+        ],
+        "oracle_image_feature_cosines": [
+          0.03260360285639763,
+          0.03896541893482208,
+          0.030038489028811455,
+          0.05365921929478645,
+          0.036922089755535126,
+          0.0380568727850914,
+          0.021403875201940536,
+          0.03735221177339554,
+          0.036409325897693634,
+          0.052526019513607025,
+          0.0576779842376709,
+          0.03978592902421951
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.05295735225081444,
+        "adjacent_pixel_mae_0_255": 8.622681617736816,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 22.457433700561523
+      },
+      "P2_local": {
+        "dino_gt_frame_cosines": [
+          0.8948054313659668,
+          0.784002423286438,
+          0.2349247932434082,
+          0.12935738265514374,
+          0.10482180863618851,
+          0.08112678676843643,
+          0.09751218557357788,
+          0.1111374944448471,
+          0.10406750440597534,
+          0.13091744482517242,
+          0.13706286251544952,
+          0.15494336187839508
+        ],
+        "oracle_image_feature_cosines": [
+          0.0420881025493145,
+          0.03859713301062584,
+          0.03512975573539734,
+          0.04564150422811508,
+          0.035160161554813385,
+          0.04339282959699631,
+          0.028772832825779915,
+          0.040606312453746796,
+          0.04514529928565025,
+          0.043134529143571854,
+          0.04317336156964302,
+          0.0500517264008522
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.054155126214027405,
+        "adjacent_pixel_mae_0_255": 8.117779731750488,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 22.298572540283203
+      },
+      "P2_image_past": {
+        "dino_gt_frame_cosines": [
+          0.8845605850219727,
+          0.7910692691802979,
+          0.27425405383110046,
+          0.13638123869895935,
+          0.0987524762749672,
+          0.06623566150665283,
+          0.09931406378746033,
+          0.1128370463848114,
+          0.08891848474740982,
+          0.11292046308517456,
+          0.1279226690530777,
+          0.13551585376262665
+        ],
+        "oracle_image_feature_cosines": [
+          0.03184113651514053,
+          0.03950351104140282,
+          0.042433060705661774,
+          0.0443183109164238,
+          0.035436395555734634,
+          0.03730419650673866,
+          0.04437113180756569,
+          0.042486369609832764,
+          0.042773179709911346,
+          0.037428803741931915,
+          0.04649118334054947,
+          0.03503373637795448
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.05277372896671295,
+        "adjacent_pixel_mae_0_255": 8.088540077209473,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 23.355607986450195
+      },
+      "P2_video_past": {
+        "dino_gt_frame_cosines": [
+          0.8884567618370056,
+          0.6099214553833008,
+          0.6348735094070435,
+          0.7786665558815002,
+          0.8469454646110535,
+          0.9052373170852661,
+          0.8305054306983948,
+          0.8223497867584229,
+          0.8366342186927795,
+          0.7500965595245361,
+          0.7499790787696838,
+          0.6047108769416809
+        ],
+        "oracle_image_feature_cosines": [
+          0.04721684753894806,
+          0.1554158478975296,
+          0.8840073943138123,
+          0.9524120688438416,
+          0.9591272473335266,
+          0.9604651927947998,
+          0.9645190238952637,
+          0.9655062556266785,
+          0.9589275121688843,
+          0.9609068036079407,
+          0.9599803686141968,
+          0.9597427845001221
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.8282768130302429,
+        "adjacent_pixel_mae_0_255": 3.7800185680389404,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 20.395906448364258
+      },
+      "P3_local": {
+        "dino_gt_frame_cosines": [
+          0.8887102603912354,
+          0.787240743637085,
+          0.2555835247039795,
+          0.10705660283565521,
+          0.10894335061311722,
+          0.07323294132947922,
+          0.10699941217899323,
+          0.11506355553865433,
+          0.10582530498504639,
+          0.129507377743721,
+          0.13232910633087158,
+          0.15568722784519196
+        ],
+        "oracle_image_feature_cosines": [
+          0.04137925058603287,
+          0.03436443954706192,
+          0.03917085379362106,
+          0.02197161316871643,
+          0.036394860595464706,
+          0.04194336757063866,
+          0.034333519637584686,
+          0.03897472843527794,
+          0.038471370935440063,
+          0.03428616374731064,
+          0.03975730389356613,
+          0.03891308605670929
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.05049673095345497,
+        "adjacent_pixel_mae_0_255": 8.256397247314453,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 22.250635147094727
+      },
+      "P3_image_past": {
+        "dino_gt_frame_cosines": [
+          0.8945815563201904,
+          0.7849092483520508,
+          0.21452176570892334,
+          0.11574632674455643,
+          0.12464359402656555,
+          0.0925043597817421,
+          0.12313967943191528,
+          0.12999030947685242,
+          0.0899546816945076,
+          0.13641373813152313,
+          0.14337944984436035,
+          0.1487148553133011
+        ],
+        "oracle_image_feature_cosines": [
+          0.03620588406920433,
+          0.0254790261387825,
+          0.027206730097532272,
+          0.03159292787313461,
+          0.03598695620894432,
+          0.04582063853740692,
+          0.0479123555123806,
+          0.04355023801326752,
+          0.036400433629751205,
+          0.039457064121961594,
+          0.0358537882566452,
+          0.02545049786567688
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.04780632257461548,
+        "adjacent_pixel_mae_0_255": 8.185437202453613,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 22.64059829711914
+      },
+      "P3_video_past": {
+        "dino_gt_frame_cosines": [
+          0.9187438488006592,
+          0.6819207072257996,
+          0.7093520164489746,
+          0.8042474985122681,
+          0.8656615614891052,
+          0.9161631464958191,
+          0.8403571248054504,
+          0.8370394706726074,
+          0.8526417016983032,
+          0.7693129181861877,
+          0.7572798728942871,
+          0.6403085589408875
+        ],
+        "oracle_image_feature_cosines": [
+          0.05821215733885765,
+          0.07164199650287628,
+          0.7397430539131165,
+          0.8602200746536255,
+          0.953150749206543,
+          0.9513134360313416,
+          0.9598073363304138,
+          0.9563775658607483,
+          0.9561247825622559,
+          0.9543740749359131,
+          0.9549944400787354,
+          0.9487782716751099
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.8017842173576355,
+        "adjacent_pixel_mae_0_255": 4.391475677490234,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 21.55631446838379
+      }
+    },
+    "five_005_conservator": {
+      "gt": {
+        "dino_gt_frame_cosines": [
+          0.9999999403953552,
+          1.0,
+          0.9999998211860657,
+          1.0,
+          1.0000001192092896,
+          1.0,
+          0.9999999403953552,
+          1.0000001192092896,
+          0.9999998807907104,
+          0.9999999403953552,
+          1.0,
+          0.9999999403953552
+        ],
+        "oracle_image_feature_cosines": [
+          0.40402719378471375,
+          0.43784433603286743,
+          0.43065762519836426,
+          0.4189012050628662,
+          0.4318355321884155,
+          0.38615530729293823,
+          0.31913042068481445,
+          0.39322400093078613,
+          0.3915281891822815,
+          0.38090041279792786,
+          0.30106231570243835,
+          0.25033658742904663
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.4210345447063446,
+        "adjacent_pixel_mae_0_255": 3.561065912246704,
+        "near_static_pair_fraction_mae_below_0_1": 0.014084507042253521,
+        "boundary_pixel_mae_0_255": 87.99994659423828
+      },
+      "P0_local": {
+        "dino_gt_frame_cosines": [
+          0.09849581122398376,
+          0.05646057426929474,
+          0.07896973192691803,
+          0.09968555718660355,
+          0.5237604975700378,
+          0.6599966287612915,
+          0.5749972462654114,
+          0.6204397082328796,
+          0.5725390911102295,
+          0.5357002019882202,
+          0.4864771366119385,
+          0.3201417028903961
+        ],
+        "oracle_image_feature_cosines": [
+          0.06345318257808685,
+          -0.00829419493675232,
+          -0.008823363110423088,
+          0.045655008405447006,
+          0.34972718358039856,
+          0.4395492374897003,
+          0.43840447068214417,
+          0.4592568576335907,
+          0.47525471448898315,
+          0.44750332832336426,
+          0.4574202001094818,
+          0.44918292760849
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.36426472663879395,
+        "adjacent_pixel_mae_0_255": 3.3296470642089844,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 7.28851318359375
+      },
+      "P0_image_past": {
+        "dino_gt_frame_cosines": [
+          0.09618885070085526,
+          0.09017220884561539,
+          0.0889756828546524,
+          0.07341212779283524,
+          0.5167808532714844,
+          0.4635661840438843,
+          0.3705398142337799,
+          0.4068596363067627,
+          0.45505470037460327,
+          0.3859889805316925,
+          0.3073858618736267,
+          0.2502422630786896
+        ],
+        "oracle_image_feature_cosines": [
+          0.06471919268369675,
+          0.0514821782708168,
+          0.022951286286115646,
+          0.014802370220422745,
+          0.7775963544845581,
+          0.7721469402313232,
+          0.7752882242202759,
+          0.759638786315918,
+          0.7655737400054932,
+          0.793138861656189,
+          0.8328021764755249,
+          0.8301945328712463
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.5947256088256836,
+        "adjacent_pixel_mae_0_255": 2.168181896209717,
+        "near_static_pair_fraction_mae_below_0_1": 0.028169014084507043,
+        "boundary_pixel_mae_0_255": 6.23634147644043
+      },
+      "P0_video_past": {
+        "dino_gt_frame_cosines": [
+          0.10983871668577194,
+          0.07960925251245499,
+          0.08689898252487183,
+          0.06886059790849686,
+          0.5507268905639648,
+          0.45140159130096436,
+          0.354190468788147,
+          0.44828325510025024,
+          0.48450738191604614,
+          0.43025171756744385,
+          0.33593595027923584,
+          0.277558296918869
+        ],
+        "oracle_image_feature_cosines": [
+          0.04401398077607155,
+          0.00909845158457756,
+          0.013825037516653538,
+          0.0092098293825984,
+          0.7527742385864258,
+          0.704201340675354,
+          0.6986902356147766,
+          0.7498871088027954,
+          0.745868444442749,
+          0.7730640769004822,
+          0.7587473392486572,
+          0.7707791328430176
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.5567721724510193,
+        "adjacent_pixel_mae_0_255": 2.202131748199463,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 7.592052459716797
+      },
+      "P1_local": {
+        "dino_gt_frame_cosines": [
+          0.08948805183172226,
+          0.08897809684276581,
+          0.11945416778326035,
+          0.12683825194835663,
+          0.6781193614006042,
+          0.6238706707954407,
+          0.5896488428115845,
+          0.6428793668746948,
+          0.6199949979782104,
+          0.5920350551605225,
+          0.5025646686553955,
+          0.3632080852985382
+        ],
+        "oracle_image_feature_cosines": [
+          0.04647762328386307,
+          0.022578733041882515,
+          0.048235803842544556,
+          0.03107447922229767,
+          0.5660966634750366,
+          0.5795789361000061,
+          0.5653113126754761,
+          0.588592529296875,
+          0.5751065611839294,
+          0.5577980875968933,
+          0.5656580924987793,
+          0.5708264112472534
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.46951231360435486,
+        "adjacent_pixel_mae_0_255": 3.338324785232544,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 6.790660858154297
+      },
+      "P1_image_past": {
+        "dino_gt_frame_cosines": [
+          0.09867539256811142,
+          0.12519928812980652,
+          0.16016237437725067,
+          0.4095364212989807,
+          0.511688768863678,
+          0.6272935271263123,
+          0.5422460436820984,
+          0.6709468364715576,
+          0.6004759669303894,
+          0.5876427888870239,
+          0.5020351409912109,
+          0.3813490569591522
+        ],
+        "oracle_image_feature_cosines": [
+          0.06869034469127655,
+          0.06694512814283371,
+          0.10654863715171814,
+          0.28394269943237305,
+          0.40501588582992554,
+          0.47924181818962097,
+          0.4698076844215393,
+          0.4453572630882263,
+          0.4480487108230591,
+          0.4748287796974182,
+          0.4550631046295166,
+          0.4559282660484314
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.40307721495628357,
+        "adjacent_pixel_mae_0_255": 2.8049869537353516,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 6.395600318908691
+      },
+      "P1_video_past": {
+        "dino_gt_frame_cosines": [
+          0.10038430243730545,
+          0.09991449117660522,
+          0.0950278490781784,
+          0.15858468413352966,
+          0.8011389374732971,
+          0.7765257358551025,
+          0.5764955878257751,
+          0.6941846013069153,
+          0.4990517795085907,
+          0.46376633644104004,
+          0.4075945317745209,
+          0.28604209423065186
+        ],
+        "oracle_image_feature_cosines": [
+          0.05777368322014809,
+          0.050922758877277374,
+          0.03839890658855438,
+          0.11342288553714752,
+          0.4650506377220154,
+          0.47980213165283203,
+          0.4720015525817871,
+          0.5034476518630981,
+          0.4792085289955139,
+          0.4820793569087982,
+          0.47200456261634827,
+          0.47997725009918213
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.4249062240123749,
+        "adjacent_pixel_mae_0_255": 2.380357027053833,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 6.13623046875
+      },
+      "P2_local": {
+        "dino_gt_frame_cosines": [
+          0.09783035516738892,
+          0.10418781638145447,
+          0.6192746758460999,
+          0.633736252784729,
+          0.6083738207817078,
+          0.5846574306488037,
+          0.5707101821899414,
+          0.6307743191719055,
+          0.633188784122467,
+          0.5899216532707214,
+          0.5383355617523193,
+          0.4295024275779724
+        ],
+        "oracle_image_feature_cosines": [
+          0.06086302548646927,
+          0.03989369422197342,
+          0.5316044092178345,
+          0.5495137572288513,
+          0.5309448838233948,
+          0.5234383344650269,
+          0.5357207655906677,
+          0.5259955525398254,
+          0.5330484509468079,
+          0.5254887342453003,
+          0.5110844373703003,
+          0.4726841151714325
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.49388614296913147,
+        "adjacent_pixel_mae_0_255": 2.673069953918457,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 6.4425272941589355
+      },
+      "P2_image_past": {
+        "dino_gt_frame_cosines": [
+          0.10318174213171005,
+          0.09247962385416031,
+          0.21364107728004456,
+          0.4483979642391205,
+          0.5408937931060791,
+          0.5510581731796265,
+          0.46978431940078735,
+          0.5869432091712952,
+          0.5168123245239258,
+          0.48214709758758545,
+          0.4220702350139618,
+          0.29815199971199036
+        ],
+        "oracle_image_feature_cosines": [
+          0.06972381472587585,
+          0.04074421525001526,
+          0.10580922663211823,
+          0.2995331287384033,
+          0.40701809525489807,
+          0.4203137457370758,
+          0.44713956117630005,
+          0.40658333897590637,
+          0.40908122062683105,
+          0.4375477433204651,
+          0.417644202709198,
+          0.4088812470436096
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.3830857574939728,
+        "adjacent_pixel_mae_0_255": 2.5714142322540283,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 6.511944770812988
+      },
+      "P2_video_past": {
+        "dino_gt_frame_cosines": [
+          0.09602649509906769,
+          0.09875604510307312,
+          0.09466104954481125,
+          0.09578162431716919,
+          0.8217979669570923,
+          0.8044455051422119,
+          0.6304785013198853,
+          0.7434109449386597,
+          0.5049973130226135,
+          0.460971862077713,
+          0.41878029704093933,
+          0.29509463906288147
+        ],
+        "oracle_image_feature_cosines": [
+          0.05071786791086197,
+          0.027310241013765335,
+          0.041774995625019073,
+          0.04960641264915466,
+          0.4621654152870178,
+          0.4446719288825989,
+          0.46804243326187134,
+          0.46795156598091125,
+          0.4717465043067932,
+          0.4681650698184967,
+          0.4747142791748047,
+          0.47081613540649414
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.40981411933898926,
+        "adjacent_pixel_mae_0_255": 2.5151379108428955,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 6.138296604156494
+      },
+      "P3_local": {
+        "dino_gt_frame_cosines": [
+          0.10409164428710938,
+          0.11828366667032242,
+          0.33173152804374695,
+          0.4686512351036072,
+          0.5451375246047974,
+          0.4973473846912384,
+          0.5148882865905762,
+          0.5815088748931885,
+          0.5583803057670593,
+          0.5421608090400696,
+          0.46479159593582153,
+          0.3851793110370636
+        ],
+        "oracle_image_feature_cosines": [
+          0.054577961564064026,
+          0.06308192014694214,
+          0.17891466617584229,
+          0.38218954205513,
+          0.5139386057853699,
+          0.5439743995666504,
+          0.5508497953414917,
+          0.5501929521560669,
+          0.5703169107437134,
+          0.5478124618530273,
+          0.571864664554596,
+          0.5644443035125732
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.4919181764125824,
+        "adjacent_pixel_mae_0_255": 3.2140369415283203,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 6.379464626312256
+      },
+      "P3_image_past": {
+        "dino_gt_frame_cosines": [
+          0.10963916778564453,
+          0.1084076389670372,
+          0.444913387298584,
+          0.4814121127128601,
+          0.3686492443084717,
+          0.39922094345092773,
+          0.4013937711715698,
+          0.47382795810699463,
+          0.40449976921081543,
+          0.4497031271457672,
+          0.4158569574356079,
+          0.3181741535663605
+        ],
+        "oracle_image_feature_cosines": [
+          0.06715680658817291,
+          0.04256554692983627,
+          0.3862267732620239,
+          0.3988023102283478,
+          0.3878811001777649,
+          0.3352625072002411,
+          0.37336817383766174,
+          0.3722825348377228,
+          0.4288712441921234,
+          0.4432353377342224,
+          0.4741608798503876,
+          0.4751242399215698
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.4256117641925812,
+        "adjacent_pixel_mae_0_255": 3.6507627964019775,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 6.700728893280029
+      },
+      "P3_video_past": {
+        "dino_gt_frame_cosines": [
+          0.09497316181659698,
+          0.10840698331594467,
+          0.10902957618236542,
+          0.35357072949409485,
+          0.4279811978340149,
+          0.5543858408927917,
+          0.49549776315689087,
+          0.5946049094200134,
+          0.5823958516120911,
+          0.52772057056427,
+          0.497064471244812,
+          0.39389681816101074
+        ],
+        "oracle_image_feature_cosines": [
+          0.04920342192053795,
+          0.02941954880952835,
+          0.10123200714588165,
+          0.2540278136730194,
+          0.39664021134376526,
+          0.46831247210502625,
+          0.509253978729248,
+          0.5066184997558594,
+          0.50257408618927,
+          0.44470059871673584,
+          0.4476664662361145,
+          0.4418587386608124
+        ],
+        "oracle_video_max_feature_cosine_mean": 0.4012175500392914,
+        "adjacent_pixel_mae_0_255": 2.3171608448028564,
+        "near_static_pair_fraction_mae_below_0_1": 0.0,
+        "boundary_pixel_mae_0_255": 6.710322856903076
+      }
+    }
+  },
+  "anchor_metric_checks": [
+    {
+      "example_id": "five_001_nursery_manager",
+      "cell": "local",
+      "metric": "dino_gt_cosine",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "cell": "local",
+      "metric": "dino_gt_cosine_after_1s",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "cell": "image_past",
+      "metric": "dino_gt_cosine",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "cell": "image_past",
+      "metric": "dino_gt_cosine_after_1s",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "cell": "video_past",
+      "metric": "dino_gt_cosine",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "cell": "video_past",
+      "metric": "dino_gt_cosine_after_1s",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "cell": "local",
+      "metric": "dino_gt_cosine",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "cell": "local",
+      "metric": "dino_gt_cosine_after_1s",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "cell": "image_past",
+      "metric": "dino_gt_cosine",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "cell": "image_past",
+      "metric": "dino_gt_cosine_after_1s",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "cell": "video_past",
+      "metric": "dino_gt_cosine",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "cell": "video_past",
+      "metric": "dino_gt_cosine_after_1s",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_003_student_return",
+      "cell": "local",
+      "metric": "dino_gt_cosine",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_003_student_return",
+      "cell": "local",
+      "metric": "dino_gt_cosine_after_1s",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_003_student_return",
+      "cell": "image_past",
+      "metric": "dino_gt_cosine",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_003_student_return",
+      "cell": "image_past",
+      "metric": "dino_gt_cosine_after_1s",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_003_student_return",
+      "cell": "video_past",
+      "metric": "dino_gt_cosine",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_003_student_return",
+      "cell": "video_past",
+      "metric": "dino_gt_cosine_after_1s",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "cell": "local",
+      "metric": "dino_gt_cosine",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "cell": "local",
+      "metric": "dino_gt_cosine_after_1s",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "cell": "image_past",
+      "metric": "dino_gt_cosine",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "cell": "image_past",
+      "metric": "dino_gt_cosine_after_1s",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "cell": "video_past",
+      "metric": "dino_gt_cosine",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "cell": "video_past",
+      "metric": "dino_gt_cosine_after_1s",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_005_conservator",
+      "cell": "local",
+      "metric": "dino_gt_cosine",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_005_conservator",
+      "cell": "local",
+      "metric": "dino_gt_cosine_after_1s",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_005_conservator",
+      "cell": "image_past",
+      "metric": "dino_gt_cosine",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_005_conservator",
+      "cell": "image_past",
+      "metric": "dino_gt_cosine_after_1s",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_005_conservator",
+      "cell": "video_past",
+      "metric": "dino_gt_cosine",
+      "difference": 0.0
+    },
+    {
+      "example_id": "five_005_conservator",
+      "cell": "video_past",
+      "metric": "dino_gt_cosine_after_1s",
+      "difference": 0.0
+    }
+  ],
+  "comparison_videos": {
+    "five_001_nursery_manager": {
+      "P0": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_001_nursery_manager/comparison_P0.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "ba8d73849949d169e53c690e9819d2fd974ebcaec3b7bbf80a54aba3175b1696",
+        "full_decode_passed": true
+      },
+      "P1": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_001_nursery_manager/comparison_P1.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "d734d043a22d304905c13d0f21dc266a3d9ff3e1bdc5c960eafd64a69bc8b6dd",
+        "full_decode_passed": true
+      },
+      "P2": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_001_nursery_manager/comparison_P2.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "f861ab5577471c6884b4f8214f43b285b5b507175db7452bcfd897b726d8f8ed",
+        "full_decode_passed": true
+      },
+      "P3": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_001_nursery_manager/comparison_P3.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "9ea4aac29995606316e2214e20eb5d8e7852305c267a60cb411a29afcaf1b8b0",
+        "full_decode_passed": true
+      }
+    },
+    "five_002_robot_head": {
+      "P0": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_002_robot_head/comparison_P0.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "3b3468ea9489b866313ca34794855e0ebba77dee2f067f11d181c25b87af02ac",
+        "full_decode_passed": true
+      },
+      "P1": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_002_robot_head/comparison_P1.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "dbd81db47343e9e9451df566f6d115f5404eeda193f03140a642cb5c9a215da5",
+        "full_decode_passed": true
+      },
+      "P2": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_002_robot_head/comparison_P2.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "537f88fac5cfc56ad631da2faef12f3932750e7dd4f00571b2201885c646ec5a",
+        "full_decode_passed": true
+      },
+      "P3": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_002_robot_head/comparison_P3.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "4eed46f7df8dbe96ea0c70b421ea0ba6f17d052e2ae473fca7ffbb3ddcfcf8ff",
+        "full_decode_passed": true
+      }
+    },
+    "five_003_student_return": {
+      "P0": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_003_student_return/comparison_P0.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "91fc0d6708cda5609fde77f5e7c6253f469fc387cab047fa0dd01d88f3d193c0",
+        "full_decode_passed": true
+      },
+      "P1": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_003_student_return/comparison_P1.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "0a4392a434412c8004bd0c514aa328344eea0610c8dabc42559ae5a1b72051a9",
+        "full_decode_passed": true
+      },
+      "P2": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_003_student_return/comparison_P2.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "e9865ff33ff64a04b055b9bed01dc2caeaad966ce029549ba1578ad5657acf6d",
+        "full_decode_passed": true
+      },
+      "P3": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_003_student_return/comparison_P3.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "53e2432468a7ad768157553a3cc8fee29bd332a98062545ccc14b4971b83b9e9",
+        "full_decode_passed": true
+      }
+    },
+    "five_004_van_exterior": {
+      "P0": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_004_van_exterior/comparison_P0.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "0b5228ba19714ded1ca85f6bec1e487604777cf4276ef952dd3549eb011f3a03",
+        "full_decode_passed": true
+      },
+      "P1": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_004_van_exterior/comparison_P1.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "cc6697316c6153f9909b8aff200c7bfd93a84fd85bb06f1d860071b42fd00970",
+        "full_decode_passed": true
+      },
+      "P2": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_004_van_exterior/comparison_P2.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "9b4b62684ac91e8400790729d6dbac38310e218b0f70435cfadee2a21061f293",
+        "full_decode_passed": true
+      },
+      "P3": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_004_van_exterior/comparison_P3.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "94734deacca4c60df05a21d8ab000e122d1c019c01f151eafb7e30e96ea4264a",
+        "full_decode_passed": true
+      }
+    },
+    "five_005_conservator": {
+      "P0": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_005_conservator/comparison_P0.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "3363da8dcf482590b88301f8c68b8e915c2aeb79223e75c71351fb7a33cad8af",
+        "full_decode_passed": true
+      },
+      "P1": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_005_conservator/comparison_P1.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "0440e656187be6bc5718d9c4af5ce4ff62d1a9a5ce6c52abb173bed8ad176c0c",
+        "full_decode_passed": true
+      },
+      "P2": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_005_conservator/comparison_P2.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "c154fc6cac760fd9ed1272bd5cd39afce4f2a0ef4bb37b516632b7c6c52be499",
+        "full_decode_passed": true
+      },
+      "P3": {
+        "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/five_case_prompt/seed42/five_005_conservator/comparison_P3.mp4",
+        "frames": 120,
+        "fps": 24,
+        "duration_seconds": 5.0,
+        "sha256": "9c2df28456e97392d5f5c84e63428c0402b327aa2713017dbae87da74a77c7bf",
+        "full_decode_passed": true
+      }
+    }
+  },
+  "scope": "Full-frame Past evidence, positive prompt only; no masks, adapters, Target positions, learning, or additional seeds.",
+  "limitations": [
+    "Whole-frame DINO is auxiliary, not identity or prompt-compliance accuracy.",
+    "P1-P3 request controlled cuts/actions that can differ from GT.",
+    "One seed and five appearance cases do not validate general background/state/event reasoning.",
+    "Role sentences also change length and repetition; no claim of attention mechanism."
+  ]
+}

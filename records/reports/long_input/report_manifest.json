@@ -1,0 +1,27 @@
+{
+  "assets": {
+    "long_001_nursery_manager": {
+      "comparison": "long_001_nursery_manager/comparison.mp4",
+      "blind_frames": "long_001_nursery_manager/blind_frames.jpg"
+    },
+    "long_002_robot_head": {
+      "comparison": "long_002_robot_head/comparison.mp4",
+      "blind_frames": "long_002_robot_head/blind_frames.jpg"
+    },
+    "long_003_student_return": {
+      "comparison": "long_003_student_return/comparison.mp4",
+      "blind_frames": "long_003_student_return/blind_frames.jpg"
+    },
+    "long_004_van_exterior": {
+      "comparison": "long_004_van_exterior/comparison.mp4",
+      "blind_frames": "long_004_van_exterior/blind_frames.jpg"
+    },
+    "long_005_conservator": {
+      "comparison": "long_005_conservator/comparison.mp4",
+      "blind_frames": "long_005_conservator/blind_frames.jpg"
+    }
+  },
+  "report_sha256": "392057e9caa89242549e6e43f8fb22ecb96f9aba943ff4325f44a59e3766ece4",
+  "summary_sha256": "1e90da7c5a5f903838a51004246cbf2f1cb5cdbe580c6c22e5cf06b35ff9009f",
+  "completed": 25
+}

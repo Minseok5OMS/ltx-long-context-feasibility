@@ -1,0 +1,13 @@
+example_id,seed,reference_kind,reference_position,reference_tokens,dino_gt_cosine,adjacent_pixel_mae_0_255,reused
+pilot_001_interview_return,42,image,past,144,0.7725699543952942,1.9050177335739136,False
+pilot_001_interview_return,42,image,target,144,0.8596082329750061,0.9201650619506836,True
+pilot_001_interview_return,42,video,past,1440,0.03916202113032341,3.5075323581695557,True
+pilot_001_interview_return,42,video,target,1440,0.9061753153800964,0.6470935940742493,False
+pilot_001_interview_return,43,image,past,144,0.7119318842887878,1.6870853900909424,False
+pilot_001_interview_return,43,image,target,144,0.8439686298370361,1.5081321001052856,False
+pilot_001_interview_return,43,video,past,1440,0.0480928011238575,4.074632167816162,False
+pilot_001_interview_return,43,video,target,1440,0.8682826161384583,0.6971814632415771,False
+pilot_001_interview_return,44,image,past,144,0.7351564764976501,1.5626100301742554,False
+pilot_001_interview_return,44,image,target,144,0.8534240126609802,0.9695635437965393,False
+pilot_001_interview_return,44,video,past,1440,0.04186384752392769,3.245619058609009,False
+pilot_001_interview_return,44,video,target,1440,0.8691855072975159,0.7474074363708496,False

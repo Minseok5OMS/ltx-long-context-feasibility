@@ -1,0 +1,157 @@
+{
+  "example_id": "pilot_001_interview_return",
+  "source_provenance": {
+    "repo_id": "HuggingFaceFV/finevideo",
+    "revision": "84c74091e1c6ee7a5dffabfafb5c9033e4718883",
+    "shard": "data/train-00000-of-01357.parquet",
+    "row_index": 0,
+    "sha256": "505b361345268f56550268b0ddde2226da1ccd25f5ee1758ac112bc04c0ac68d",
+    "source_bytes": 8710096,
+    "original_json_filename": "d6b4OmUFt7I.json",
+    "youtube_title": "Training Heavy Equipment Operators",
+    "video_probe": {
+      "width": 640,
+      "height": 360,
+      "fps": 23.976024615513296,
+      "duration_seconds": 208.306213
+    },
+    "review_status": "unreviewed",
+    "is_validated_feasibility_example": false
+  },
+  "metadata_sha256": "e635e14f5a0d8c8b799eeef63a44f7a4e5844f9853b5212ea3442eebe9abba1c",
+  "common_inputs_sha256": "7e01688d7e7c24ab88df111f63a0050dc5d80ed91ac8b5c0a89eb19b4d848a6e",
+  "preprocessing": "Same read_rgb as generation: centered Lanczos crop/resize to 512x288, before BF16 normalization and VAE",
+  "images": "Middle PNGs are lossless pre-VAE RGB; overview JPEG is a three-frame visual summary",
+  "gt_role": "Evaluation-only preview; never a generation input",
+  "prompt": "The video cuts back to a previously shown indoor interview. The interviewee continues speaking in a seated medium shot.",
+  "cached_shapes": {
+    "local": [
+      1,
+      128,
+      7,
+      9,
+      16
+    ],
+    "random": [
+      1,
+      128,
+      10,
+      9,
+      16
+    ],
+    "random_still": [
+      1,
+      128,
+      1,
+      9,
+      16
+    ],
+    "oracle": [
+      1,
+      128,
+      10,
+      9,
+      16
+    ],
+    "oracle_still": [
+      1,
+      128,
+      1,
+      9,
+      16
+    ],
+    "video_context": [
+      1,
+      1024,
+      4096
+    ],
+    "audio_context": [
+      1,
+      1024,
+      2048
+    ]
+  },
+  "clips": {
+    "local": {
+      "file": "data/pilot_001_interview_return/local_context.mp4",
+      "sha256": "3db1881b88303a781de6cca2866a483e43a47ff03c15c8949213479afa61c124",
+      "requested_source_range": [
+        156.82533333333333,
+        158.82533333333333
+      ],
+      "frames": 48,
+      "preview_frame_indices": [
+        0,
+        24,
+        47
+      ],
+      "middle_frame_index": 24,
+      "middle_clip_pts_seconds": 1.0,
+      "middle_source_pts_seconds": 157.82433333333333,
+      "middle_png": "reports/reference/inputs/pilot_001_interview_return/local_middle.png",
+      "middle_png_sha256": "2d254fadc1a18327a1ec35db258fbf6a3560b12251964715ba64bd2c169735ef",
+      "middle_rgb_sha256": "0021f880a7866d06914480bfe087f54687cc1977dc6cba4efb22e81717005251"
+    },
+    "random": {
+      "file": "data/pilot_001_interview_return/random_context.mp4",
+      "sha256": "ac32828b0e52b07bec603a18ea746f0c51dd1c271a7e2860beb7d8e55295172b",
+      "requested_source_range": [
+        44.0,
+        47.0
+      ],
+      "frames": 72,
+      "preview_frame_indices": [
+        0,
+        36,
+        71
+      ],
+      "middle_frame_index": 36,
+      "middle_clip_pts_seconds": 1.5,
+      "middle_source_pts_seconds": 45.462088888888886,
+      "middle_png": "reports/reference/inputs/pilot_001_interview_return/random_middle.png",
+      "middle_png_sha256": "fc5e1e2f018e656bb6266b50df22fed6b2f4b876af35c7171e5ea2a6e025b713",
+      "middle_rgb_sha256": "9572a1b67f3dca6356be6c2e6c2526ee46d83cc9ace5a58542e393d816f714fe"
+    },
+    "oracle": {
+      "file": "data/pilot_001_interview_return/oracle_context.mp4",
+      "sha256": "192a580090a50e362862988c4c70da14e3180da3bc76c6dc9e6b605d741eae91",
+      "requested_source_range": [
+        90.0,
+        93.0
+      ],
+      "frames": 72,
+      "preview_frame_indices": [
+        0,
+        36,
+        71
+      ],
+      "middle_frame_index": 36,
+      "middle_clip_pts_seconds": 1.5,
+      "middle_source_pts_seconds": 91.46637777777778,
+      "middle_png": "reports/reference/inputs/pilot_001_interview_return/oracle_middle.png",
+      "middle_png_sha256": "e23594161a50a3df4e8cbb36f65c848ef6b5eb12957daded52562cf9f3127c4b",
+      "middle_rgb_sha256": "12c0cd99d6aa1d94d11740ed23087657c779053cb831c2c4524b5d6465c86507"
+    },
+    "target": {
+      "file": "data/pilot_001_interview_return/gt_target.mp4",
+      "sha256": "d0b9718cbc1e5226057b1e80960aab6d92efe2b9fe77d2860ac1630308343125",
+      "requested_source_range": [
+        158.82533333333333,
+        161.82533333333333
+      ],
+      "frames": 72,
+      "preview_frame_indices": [
+        0,
+        36,
+        71
+      ],
+      "middle_frame_index": 36,
+      "middle_clip_pts_seconds": 1.5,
+      "middle_source_pts_seconds": 160.2851222222222,
+      "middle_png": "reports/reference/inputs/pilot_001_interview_return/target_middle.png",
+      "middle_png_sha256": "e8fe8454df1b0131c4f0ef5c12cb5ed93feaf2ea5e50010034fd4d8fabd2e5c9",
+      "middle_rgb_sha256": "68197c2dd6681cc76be913333bd9f24857e922bccef5a43c97324b7fdd0a1901"
+    }
+  },
+  "overview": "reports/reference/inputs/pilot_001_interview_return/inputs_overview.jpg"
+}

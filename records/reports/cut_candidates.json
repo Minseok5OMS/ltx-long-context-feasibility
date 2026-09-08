@@ -1,0 +1,42 @@
+[
+  {
+    "window": [
+      158,
+      159
+    ],
+    "largest_changes": [
+      {
+        "frame_seconds": 158.82533333333333,
+        "mean_rgb_change": 47.46231460571289
+      },
+      {
+        "frame_seconds": 158.28312222222223,
+        "mean_rgb_change": 2.0885186195373535
+      },
+      {
+        "frame_seconds": 158.78362222222222,
+        "mean_rgb_change": 2.018472194671631
+      }
+    ]
+  },
+  {
+    "window": [
+      177,
+      178
+    ],
+    "largest_changes": [
+      {
+        "frame_seconds": 177.6357888888889,
+        "mean_rgb_change": 85.33108520507812
+      },
+      {
+        "frame_seconds": 177.01017777777778,
+        "mean_rgb_change": 7.728217601776123
+      },
+      {
+        "frame_seconds": 177.05187777777778,
+        "mean_rgb_change": 7.284444332122803
+      }
+    ]
+  }
+]

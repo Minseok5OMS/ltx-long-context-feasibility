@@ -1,0 +1,16 @@
+{
+  "reviewer": "assistant_visual_inspection",
+  "method": "Six-frame GT/Local/Random/Oracle contact sheet plus decoded-frame motion diagnostics; not human or blind review",
+  "status": "reviewed",
+  "local": "공사 장면에서 약 1.2–1.8초에 다른 인터뷰 인물로 전환한다. 어두운 겉옷, 수염과 실내 배경이 GT의 외형과 다르다.",
+  "random": "공사 장면에서 다른 인터뷰 인물로 전환한다. 모자와 어두운 옷을 생성하며 GT 외형을 복원하지 못한다.",
+  "oracle": "검토한 target 전 구간에서 공사 차량과 숲 장면이 이어진다. Oracle 인터뷰 인물, 연한 보라색 셔츠, 원형 표시 배경은 나타나지 않는다.",
+  "oracle_attribute_checks": {
+    "light_lavender_shirt": "not_observed",
+    "short_light_hair_without_glasses": "not_observed_no_interviewee",
+    "dark_backdrop_with_circular_marks": "not_observed"
+  },
+  "conclusion": "이 입력·seed에서는 과거 Oracle 영상이 인터뷰 외형 복원에 도움이 되지 않았다.",
+  "quality": "Local/Random의 전환은 즉시 cut보다 겹쳐지는 dissolve에 가깝다. Oracle도 픽셀 변화가 있어 단순 정지 화면은 아니다.",
+  "limits": "한 seed의 편집된 재등장 진단. 실패 원인을 참조 시간 위치 하나로 특정할 수 없다."
+}

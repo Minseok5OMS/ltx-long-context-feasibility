@@ -1,0 +1,62 @@
+{
+  "command": "/mnt/minu/minseok/LTX-2/.venv/bin/python3 feasibility_long_context/prepare_five_cases.py",
+  "config_sha256": "5911ef474bc2b929104b2dee8cf57f79b25baea421facf91a0c59c7c9f1c724f",
+  "script_sha256": "9261b7f7df2b12bbb30b98e43e309b1d888375185c3333186f5355e9b3beb1b1",
+  "examples": [
+    {
+      "example_id": "five_001_nursery_manager",
+      "metadata_sha256": "dee280b03d87d8d7fa6351b26a3d511da8de9a67347e0c29d5dc1ac65bff0dad",
+      "oracle_image_source_seconds": 49.48276666666667,
+      "clip_frames": {
+        "local": 48,
+        "target": 72,
+        "oracle": 72
+      },
+      "source_intervals_and_full_decode": "passed"
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "metadata_sha256": "a638ee1ae9bc95f0490784495d453eee8411b130fe3a52b3f4a364316f5ce711",
+      "oracle_image_source_seconds": 148.48181514848181,
+      "clip_frames": {
+        "local": 48,
+        "target": 72,
+        "oracle": 72
+      },
+      "source_intervals_and_full_decode": "passed"
+    },
+    {
+      "example_id": "five_003_student_return",
+      "metadata_sha256": "0c75db537de7f0ee963ee2b94976fa83e1458a09fc96d0fe5a688f9cecd0aab4",
+      "oracle_image_source_seconds": 108.5,
+      "clip_frames": {
+        "local": 48,
+        "target": 72,
+        "oracle": 72
+      },
+      "source_intervals_and_full_decode": "passed"
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "metadata_sha256": "0260f0174a5b724ef79f63298d490bae1f8cd3048b742a26a86b855924faa847",
+      "oracle_image_source_seconds": 139.5,
+      "clip_frames": {
+        "local": 48,
+        "target": 72,
+        "oracle": 72
+      },
+      "source_intervals_and_full_decode": "passed"
+    },
+    {
+      "example_id": "five_005_conservator",
+      "metadata_sha256": "37e1d6e95776a17a1bdf4642fb65c62f50b384b063fcbf6ce3991ebf780f4bc6",
+      "oracle_image_source_seconds": 47.0,
+      "clip_frames": {
+        "local": 48,
+        "target": 72,
+        "oracle": 72
+      },
+      "source_intervals_and_full_decode": "passed"
+    }
+  ]
+}

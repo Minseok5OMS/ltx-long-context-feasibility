@@ -1,0 +1,870 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-09-07T13:06:32.579015+00:00",
+  "html_pages": 19,
+  "local_links_checked": 446,
+  "raw_md_navigation_links": 0,
+  "http_checked": true,
+  "http_assets": [
+    {
+      "path": "CONCLUSION.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "CONCLUSION.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "DATA_REVIEW.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "DATA_REVIEW.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "FEASIBILITY_STATUS.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "FEASIBILITY_STATUS.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "FIVE_CASE_PROTOCOL.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "FIVE_CASE_PROTOCOL.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "FIVE_CASE_RESULT.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "FIVE_CASE_RESULT.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "LOCAL_SMOKE_RESULT.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "LOCAL_SMOKE_RESULT.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "NEXT_STAGE.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "NEXT_STAGE.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "README.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "README.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "REFERENCE_FORMAT_DIAGNOSIS.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "REFERENCE_FORMAT_DIAGNOSIS.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "REFERENCE_FORMAT_RESULT.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "REFERENCE_FORMAT_RESULT.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "REFERENCE_PROTOCOL.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "REFERENCE_PROTOCOL.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "REFERENCE_REPETITION_DIAGNOSIS.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "REFERENCE_REPETITION_DIAGNOSIS.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "REFERENCE_REPETITION_RESULT.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "REFERENCE_REPETITION_RESULT.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "REFERENCE_RESULT.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "REFERENCE_RESULT.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "SETUP_NOTES.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "SETUP_NOTES.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "TEMPORAL_POSITION_ABLATION.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "TEMPORAL_POSITION_ABLATION.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "TEMPORAL_POSITION_RESULT.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "TEMPORAL_POSITION_RESULT.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "configs/pilot_examples.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "data/five_001_nursery_manager/gt_target.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/five_001_nursery_manager/metadata.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "data/five_002_robot_head/gt_target.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/five_002_robot_head/metadata.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "data/five_003_student_return/gt_target.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/five_003_student_return/metadata.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "data/five_004_van_exterior/gt_target.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/five_004_van_exterior/metadata.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "data/five_005_conservator/gt_target.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/five_005_conservator/metadata.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "data/pilot_001_interview_return/gt_target.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/pilot_001_interview_return/local_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/pilot_001_interview_return/metadata.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "data/pilot_001_interview_return/oracle_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/pilot_001_interview_return/random_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/pilot_002_interview_return/gt_target.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/pilot_002_interview_return/local_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/pilot_002_interview_return/metadata.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "data/pilot_002_interview_return/oracle_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/pilot_002_interview_return/random_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/five_case_inputs_512x288/inputs.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/five_case_inputs_512x288/local_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/five_case_inputs_512x288/oracle_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/five_case_inputs_512x288/oracle_image.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/image_past_seed42/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/image_past_seed42/oracle/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_002_robot_head/five_case_inputs_512x288/inputs.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_002_robot_head/five_case_inputs_512x288/local_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_002_robot_head/five_case_inputs_512x288/oracle_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_002_robot_head/five_case_inputs_512x288/oracle_image.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "outputs/five_002_robot_head/image_past_seed42/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_002_robot_head/image_past_seed42/oracle/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_003_student_return/five_case_inputs_512x288/inputs.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_003_student_return/five_case_inputs_512x288/local_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_003_student_return/five_case_inputs_512x288/oracle_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_003_student_return/five_case_inputs_512x288/oracle_image.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "outputs/five_003_student_return/image_past_seed42/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_003_student_return/image_past_seed42/oracle/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/five_case_inputs_512x288/inputs.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/five_case_inputs_512x288/local_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/five_case_inputs_512x288/oracle_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/five_case_inputs_512x288/oracle_image.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/image_past_seed42/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/image_past_seed42/oracle/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_005_conservator/five_case_inputs_512x288/inputs.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_005_conservator/five_case_inputs_512x288/local_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_005_conservator/five_case_inputs_512x288/oracle_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_005_conservator/five_case_inputs_512x288/oracle_image.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "outputs/five_005_conservator/image_past_seed42/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_005_conservator/image_past_seed42/oracle/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/pilot_000_local_cooking/local_seed42/comparison.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/pilot_000_local_cooking/local_seed42/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/pilot_000_local_cooking/local_seed42/local_only.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/pilot_000_local_cooking/local_seed42/run.log",
+      "status": 200,
+      "content_type": "application/octet-stream"
+    },
+    {
+      "path": "outputs/pilot_001_interview_return/reference_inputs_512x288/inputs.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/pilot_001_interview_return/reference_past_seed42/comparison.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/pilot_001_interview_return/reference_past_seed42/oracle/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/pilot_001_interview_return/reference_target_guide_seed42/comparison.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/pilot_001_interview_return/reference_target_guide_seed42/oracle/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/pilot_002_interview_return/reference_inputs_512x288/inputs.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/pilot_002_interview_return/reference_past_seed42/comparison.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/pilot_002_interview_return/reference_past_seed42/oracle/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reference_controls.py",
+      "status": 200,
+      "content_type": "text/x-python"
+    },
+    {
+      "path": "report.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/candidates/index_overview.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/finevideo_access.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/five_case_selection/execution_recovery.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/five_cases/seed42/artifact_verification.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_001_nursery_manager/comparison.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_001_nursery_manager/comparison_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_001_nursery_manager/comparison_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_001_nursery_manager/gt_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_001_nursery_manager/input_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_002_robot_head/comparison.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_002_robot_head/comparison_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_002_robot_head/comparison_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_002_robot_head/gt_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_002_robot_head/input_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_003_student_return/comparison.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_003_student_return/comparison_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_003_student_return/comparison_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_003_student_return/gt_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_003_student_return/input_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_004_van_exterior/comparison.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_004_van_exterior/comparison_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_004_van_exterior/comparison_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_004_van_exterior/gt_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_004_van_exterior/input_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_005_conservator/comparison.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_005_conservator/comparison_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_005_conservator/comparison_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_005_conservator/gt_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_005_conservator/input_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/five_cases/seed42/results.csv",
+      "status": 200,
+      "content_type": "text/csv"
+    },
+    {
+      "path": "reports/five_cases/seed42/review.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/five_cases/seed42/summary.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/local_smoke/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/local_smoke/summary.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/pilot/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/pilot/preparation.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference/artifact_verification.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_001_interview_return/inputs.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_001_interview_return/inputs_overview.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_001_interview_return/local_middle.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_001_interview_return/oracle_middle.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_001_interview_return/random_middle.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_002_interview_return/inputs.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_002_interview_return/inputs_overview.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_002_interview_return/local_middle.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_002_interview_return/oracle_middle.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_002_interview_return/random_middle.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "reports/reference/pilot_001_interview_return/past_seed42/comparison.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/reference/pilot_001_interview_return/past_seed42/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/reference/pilot_001_interview_return/past_seed42/review.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference/pilot_001_interview_return/past_seed42/summary.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference/pilot_001_interview_return/target_guide_seed42/comparison.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/reference/pilot_001_interview_return/target_guide_seed42/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/reference/pilot_001_interview_return/target_guide_seed42/review.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference/pilot_001_interview_return/target_guide_seed42/summary.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference/pilot_002_interview_return/past_seed42/comparison.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/reference/pilot_002_interview_return/past_seed42/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/reference/pilot_002_interview_return/past_seed42/review.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference/pilot_002_interview_return/past_seed42/summary.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference_format/seed42/artifact_verification.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference_format/seed42/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/reference_format/seed42/results.csv",
+      "status": 200,
+      "content_type": "text/csv"
+    },
+    {
+      "path": "reports/reference_repetition/seed42/artifact_verification.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference_repetition/seed42/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/reference_repetition/seed42/results.csv",
+      "status": 200,
+      "content_type": "text/csv"
+    },
+    {
+      "path": "reports/temporal_position/artifact_verification.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/temporal_position/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/temporal_position/results.csv",
+      "status": 200,
+      "content_type": "text/csv"
+    },
+    {
+      "path": "results.csv",
+      "status": 200,
+      "content_type": "text/csv"
+    },
+    {
+      "path": "run_generation.py",
+      "status": 200,
+      "content_type": "text/x-python"
+    },
+    {
+      "path": "run_reference_comparison.py",
+      "status": 200,
+      "content_type": "text/x-python"
+    }
+  ],
+  "report_sha256": "e7a8d1916065b73bf31061e1fd0d70ac85c5de8e01774e5b2ea33903b539b1cb",
+  "summary_sha256": "a731fab366d04241d86471c566031ff070dda13f3478105a5ea77d07604c8041",
+  "review_sha256": "a4785e993920ee768a198af38d261e10951dabf10860f78202b0dcd7deb2dc06",
+  "artifact_audit_sha256": "4fbb4343143adf87dffd293670282727389ae0723df88891f8e996acff56fea9",
+  "report_script_sha256": "cd7813a37f2c4b4c4cc384149b6894fb6fab77cf78effb1c3c3dbe314d693e34"
+}

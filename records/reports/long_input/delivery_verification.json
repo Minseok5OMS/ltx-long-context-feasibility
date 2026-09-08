@@ -1,0 +1,956 @@
+{
+  "status": "passed",
+  "documents": [
+    {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/long_input/index.html",
+      "sha256": "392057e9caa89242549e6e43f8fb22ecb96f9aba943ff4325f44a59e3766ece4",
+      "videos": 50
+    },
+    {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/LONG_INPUT_RESULT.html",
+      "sha256": "44b79862f1578ab66ceb73204155ba49fb36aadbcbd98d2befc14fd372bdea79",
+      "videos": 0
+    },
+    {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/LONG_INPUT_VS_SPARSE_PROTOCOL.html",
+      "sha256": "3a940181ef563fff509834307d4b2998a7e84dfe6480a4b57f5d84a2cef6120a",
+      "videos": 0
+    },
+    {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/NEXT_STAGE.html",
+      "sha256": "82500f99220fef3beac368b3051221d4202133d38008e767a0e993780a5e86f8",
+      "videos": 0
+    }
+  ],
+  "local_links": 186,
+  "http_assets": [
+    {
+      "path": "LONG_INPUT_RESULT.html",
+      "status": 200,
+      "bytes": "23605"
+    },
+    {
+      "path": "LONG_INPUT_RESULT.md",
+      "status": 200,
+      "bytes": "17059"
+    },
+    {
+      "path": "LONG_INPUT_VS_SPARSE_PROTOCOL.html",
+      "status": 200,
+      "bytes": "26168"
+    },
+    {
+      "path": "LONG_INPUT_VS_SPARSE_PROTOCOL.md",
+      "status": 200,
+      "bytes": "20010"
+    },
+    {
+      "path": "NEXT_STAGE.html",
+      "status": 200,
+      "bytes": "13487"
+    },
+    {
+      "path": "NEXT_STAGE.md",
+      "status": 200,
+      "bytes": "10407"
+    },
+    {
+      "path": "REFERENCE_PROTOCOL.html",
+      "status": 200,
+      "bytes": "29272"
+    },
+    {
+      "path": "REFERENCE_RESULT.html",
+      "status": 200,
+      "bytes": "15636"
+    },
+    {
+      "path": "configs/long_input_cases.json",
+      "status": 200,
+      "bytes": "12236"
+    },
+    {
+      "path": "data/long_input/long_001_nursery_manager/gt_target.mp4",
+      "status": 200,
+      "bytes": "239645"
+    },
+    {
+      "path": "data/long_input/long_001_nursery_manager/history_32s.mp4",
+      "status": 200,
+      "bytes": "1717061"
+    },
+    {
+      "path": "data/long_input/long_001_nursery_manager/local_context.mp4",
+      "status": 200,
+      "bytes": "124379"
+    },
+    {
+      "path": "data/long_input/long_001_nursery_manager/oracle_context.mp4",
+      "status": 200,
+      "bytes": "133844"
+    },
+    {
+      "path": "data/long_input/long_001_nursery_manager/uniform_context.mp4",
+      "status": 200,
+      "bytes": "120713"
+    },
+    {
+      "path": "data/long_input/long_002_robot_head/gt_target.mp4",
+      "status": 200,
+      "bytes": "416478"
+    },
+    {
+      "path": "data/long_input/long_002_robot_head/history_32s.mp4",
+      "status": 200,
+      "bytes": "3557927"
+    },
+    {
+      "path": "data/long_input/long_002_robot_head/local_context.mp4",
+      "status": 200,
+      "bytes": "269558"
+    },
+    {
+      "path": "data/long_input/long_002_robot_head/oracle_context.mp4",
+      "status": 200,
+      "bytes": "355980"
+    },
+    {
+      "path": "data/long_input/long_002_robot_head/uniform_context.mp4",
+      "status": 200,
+      "bytes": "218979"
+    },
+    {
+      "path": "data/long_input/long_003_student_return/gt_target.mp4",
+      "status": 200,
+      "bytes": "140166"
+    },
+    {
+      "path": "data/long_input/long_003_student_return/history_32s.mp4",
+      "status": 200,
+      "bytes": "802016"
+    },
+    {
+      "path": "data/long_input/long_003_student_return/local_context.mp4",
+      "status": 200,
+      "bytes": "67082"
+    },
+    {
+      "path": "data/long_input/long_003_student_return/oracle_context.mp4",
+      "status": 200,
+      "bytes": "89522"
+    },
+    {
+      "path": "data/long_input/long_003_student_return/uniform_context.mp4",
+      "status": 200,
+      "bytes": "91886"
+    },
+    {
+      "path": "data/long_input/long_004_van_exterior/gt_target.mp4",
+      "status": 200,
+      "bytes": "536445"
+    },
+    {
+      "path": "data/long_input/long_004_van_exterior/history_32s.mp4",
+      "status": 200,
+      "bytes": "4824928"
+    },
+    {
+      "path": "data/long_input/long_004_van_exterior/local_context.mp4",
+      "status": 200,
+      "bytes": "310470"
+    },
+    {
+      "path": "data/long_input/long_004_van_exterior/oracle_context.mp4",
+      "status": 200,
+      "bytes": "304296"
+    },
+    {
+      "path": "data/long_input/long_004_van_exterior/uniform_context.mp4",
+      "status": 200,
+      "bytes": "351010"
+    },
+    {
+      "path": "data/long_input/long_005_conservator/gt_target.mp4",
+      "status": 200,
+      "bytes": "206887"
+    },
+    {
+      "path": "data/long_input/long_005_conservator/history_32s.mp4",
+      "status": 200,
+      "bytes": "1445220"
+    },
+    {
+      "path": "data/long_input/long_005_conservator/local_context.mp4",
+      "status": 200,
+      "bytes": "85099"
+    },
+    {
+      "path": "data/long_input/long_005_conservator/oracle_context.mp4",
+      "status": 200,
+      "bytes": "153729"
+    },
+    {
+      "path": "data/long_input/long_005_conservator/uniform_context.mp4",
+      "status": 200,
+      "bytes": "103160"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_001_nursery_manager/full_reference/config.json",
+      "status": 200,
+      "bytes": "13050"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_001_nursery_manager/full_reference/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "234383"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_001_nursery_manager/local/config.json",
+      "status": 200,
+      "bytes": "11970"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_001_nursery_manager/local/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "310695"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_001_nursery_manager/native_full/config.json",
+      "status": 200,
+      "bytes": "11988"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_001_nursery_manager/native_full/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "236117"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_001_nursery_manager/oracle_sparse/config.json",
+      "status": 200,
+      "bytes": "12421"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_001_nursery_manager/oracle_sparse/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "266949"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_001_nursery_manager/uniform_sparse/config.json",
+      "status": 200,
+      "bytes": "12427"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_001_nursery_manager/uniform_sparse/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "290315"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_002_robot_head/full_reference/config.json",
+      "status": 200,
+      "bytes": "13092"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_002_robot_head/full_reference/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "600539"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_002_robot_head/local/config.json",
+      "status": 200,
+      "bytes": "12022"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_002_robot_head/local/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "367056"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_002_robot_head/native_full/config.json",
+      "status": 200,
+      "bytes": "12036"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_002_robot_head/native_full/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "590767"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_002_robot_head/oracle_sparse/config.json",
+      "status": 200,
+      "bytes": "12457"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_002_robot_head/oracle_sparse/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "405005"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_002_robot_head/uniform_sparse/config.json",
+      "status": 200,
+      "bytes": "12469"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_002_robot_head/uniform_sparse/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "386103"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_003_student_return/full_reference/config.json",
+      "status": 200,
+      "bytes": "13041"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_003_student_return/full_reference/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "146048"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_003_student_return/local/config.json",
+      "status": 200,
+      "bytes": "11972"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_003_student_return/local/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "167211"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_003_student_return/native_full/config.json",
+      "status": 200,
+      "bytes": "11987"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_003_student_return/native_full/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "147781"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_003_student_return/oracle_sparse/config.json",
+      "status": 200,
+      "bytes": "12420"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_003_student_return/oracle_sparse/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "164698"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_003_student_return/uniform_sparse/config.json",
+      "status": 200,
+      "bytes": "12427"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_003_student_return/uniform_sparse/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "165002"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_004_van_exterior/full_reference/config.json",
+      "status": 200,
+      "bytes": "13164"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_004_van_exterior/full_reference/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "712954"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_004_van_exterior/local/config.json",
+      "status": 200,
+      "bytes": "12084"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_004_van_exterior/local/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "645544"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_004_van_exterior/native_full/config.json",
+      "status": 200,
+      "bytes": "12098"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_004_van_exterior/native_full/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "707958"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_004_van_exterior/oracle_sparse/config.json",
+      "status": 200,
+      "bytes": "12515"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_004_van_exterior/oracle_sparse/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "647322"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_004_van_exterior/uniform_sparse/config.json",
+      "status": 200,
+      "bytes": "12533"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_004_van_exterior/uniform_sparse/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "649339"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_005_conservator/full_reference/config.json",
+      "status": 200,
+      "bytes": "13034"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_005_conservator/full_reference/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "216060"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_005_conservator/local/config.json",
+      "status": 200,
+      "bytes": "11955"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_005_conservator/local/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "187562"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_005_conservator/native_full/config.json",
+      "status": 200,
+      "bytes": "11964"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_005_conservator/native_full/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "218242"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_005_conservator/oracle_sparse/config.json",
+      "status": 200,
+      "bytes": "12406"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_005_conservator/oracle_sparse/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "221406"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_005_conservator/uniform_sparse/config.json",
+      "status": 200,
+      "bytes": "12400"
+    },
+    {
+      "path": "outputs/long_input/seed42/long_005_conservator/uniform_sparse/local_then_generated.mp4",
+      "status": 200,
+      "bytes": "198351"
+    },
+    {
+      "path": "report.html",
+      "status": 200,
+      "bytes": "21261"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/index.html",
+      "status": 200,
+      "bytes": "33140"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/index.html",
+      "status": 200,
+      "bytes": "72836"
+    },
+    {
+      "path": "reports/long_input/artifact_verification.json",
+      "status": 200,
+      "bytes": "26348"
+    },
+    {
+      "path": "reports/long_input/browser_verification.json",
+      "status": 200,
+      "bytes": "996"
+    },
+    {
+      "path": "reports/long_input/cost_analysis.json",
+      "status": 200,
+      "bytes": "8895"
+    },
+    {
+      "path": "reports/long_input/delivery_verification.json",
+      "status": 200,
+      "bytes": "22109"
+    },
+    {
+      "path": "reports/long_input/dino_metrics.json",
+      "status": 200,
+      "bytes": "18475"
+    },
+    {
+      "path": "reports/long_input/evaluation_provenance.json",
+      "status": 200,
+      "bytes": "656"
+    },
+    {
+      "path": "reports/long_input/index.html",
+      "status": 200,
+      "bytes": "40495"
+    },
+    {
+      "path": "reports/long_input/long_001_nursery_manager/A_all72.jpg",
+      "status": 200,
+      "bytes": "798701"
+    },
+    {
+      "path": "reports/long_input/long_001_nursery_manager/A_poster.jpg",
+      "status": 200,
+      "bytes": "47052"
+    },
+    {
+      "path": "reports/long_input/long_001_nursery_manager/B_all72.jpg",
+      "status": 200,
+      "bytes": "616367"
+    },
+    {
+      "path": "reports/long_input/long_001_nursery_manager/B_poster.jpg",
+      "status": 200,
+      "bytes": "36668"
+    },
+    {
+      "path": "reports/long_input/long_001_nursery_manager/C_all72.jpg",
+      "status": 200,
+      "bytes": "616501"
+    },
+    {
+      "path": "reports/long_input/long_001_nursery_manager/C_poster.jpg",
+      "status": 200,
+      "bytes": "36694"
+    },
+    {
+      "path": "reports/long_input/long_001_nursery_manager/D_all72.jpg",
+      "status": 200,
+      "bytes": "616976"
+    },
+    {
+      "path": "reports/long_input/long_001_nursery_manager/D_poster.jpg",
+      "status": 200,
+      "bytes": "35800"
+    },
+    {
+      "path": "reports/long_input/long_001_nursery_manager/E_all72.jpg",
+      "status": 200,
+      "bytes": "615374"
+    },
+    {
+      "path": "reports/long_input/long_001_nursery_manager/E_poster.jpg",
+      "status": 200,
+      "bytes": "36646"
+    },
+    {
+      "path": "reports/long_input/long_001_nursery_manager/blind_frames.jpg",
+      "status": 200,
+      "bytes": "596093"
+    },
+    {
+      "path": "reports/long_input/long_001_nursery_manager/comparison.mp4",
+      "status": 200,
+      "bytes": "845141"
+    },
+    {
+      "path": "reports/long_input/long_001_nursery_manager/input_gt_target.jpg",
+      "status": 200,
+      "bytes": "29714"
+    },
+    {
+      "path": "reports/long_input/long_001_nursery_manager/input_history_32s.jpg",
+      "status": 200,
+      "bytes": "25840"
+    },
+    {
+      "path": "reports/long_input/long_001_nursery_manager/input_local_context.jpg",
+      "status": 200,
+      "bytes": "21105"
+    },
+    {
+      "path": "reports/long_input/long_001_nursery_manager/input_oracle_context.jpg",
+      "status": 200,
+      "bytes": "30529"
+    },
+    {
+      "path": "reports/long_input/long_001_nursery_manager/input_uniform_context.jpg",
+      "status": 200,
+      "bytes": "25546"
+    },
+    {
+      "path": "reports/long_input/long_002_robot_head/A_all72.jpg",
+      "status": 200,
+      "bytes": "584469"
+    },
+    {
+      "path": "reports/long_input/long_002_robot_head/A_poster.jpg",
+      "status": 200,
+      "bytes": "33149"
+    },
+    {
+      "path": "reports/long_input/long_002_robot_head/B_all72.jpg",
+      "status": 200,
+      "bytes": "586798"
+    },
+    {
+      "path": "reports/long_input/long_002_robot_head/B_poster.jpg",
+      "status": 200,
+      "bytes": "33035"
+    },
+    {
+      "path": "reports/long_input/long_002_robot_head/C_all72.jpg",
+      "status": 200,
+      "bytes": "513498"
+    },
+    {
+      "path": "reports/long_input/long_002_robot_head/C_poster.jpg",
+      "status": 200,
+      "bytes": "31880"
+    },
+    {
+      "path": "reports/long_input/long_002_robot_head/D_all72.jpg",
+      "status": 200,
+      "bytes": "531521"
+    },
+    {
+      "path": "reports/long_input/long_002_robot_head/D_poster.jpg",
+      "status": 200,
+      "bytes": "35057"
+    },
+    {
+      "path": "reports/long_input/long_002_robot_head/E_all72.jpg",
+      "status": 200,
+      "bytes": "556815"
+    },
+    {
+      "path": "reports/long_input/long_002_robot_head/E_poster.jpg",
+      "status": 200,
+      "bytes": "36615"
+    },
+    {
+      "path": "reports/long_input/long_002_robot_head/blind_frames.jpg",
+      "status": 200,
+      "bytes": "510277"
+    },
+    {
+      "path": "reports/long_input/long_002_robot_head/comparison.mp4",
+      "status": 200,
+      "bytes": "1540149"
+    },
+    {
+      "path": "reports/long_input/long_002_robot_head/input_gt_target.jpg",
+      "status": 200,
+      "bytes": "21805"
+    },
+    {
+      "path": "reports/long_input/long_002_robot_head/input_history_32s.jpg",
+      "status": 200,
+      "bytes": "22801"
+    },
+    {
+      "path": "reports/long_input/long_002_robot_head/input_local_context.jpg",
+      "status": 200,
+      "bytes": "14007"
+    },
+    {
+      "path": "reports/long_input/long_002_robot_head/input_oracle_context.jpg",
+      "status": 200,
+      "bytes": "22103"
+    },
+    {
+      "path": "reports/long_input/long_002_robot_head/input_uniform_context.jpg",
+      "status": 200,
+      "bytes": "15977"
+    },
+    {
+      "path": "reports/long_input/long_003_student_return/A_all72.jpg",
+      "status": 200,
+      "bytes": "499801"
+    },
+    {
+      "path": "reports/long_input/long_003_student_return/A_poster.jpg",
+      "status": 200,
+      "bytes": "27273"
+    },
+    {
+      "path": "reports/long_input/long_003_student_return/B_all72.jpg",
+      "status": 200,
+      "bytes": "497457"
+    },
+    {
+      "path": "reports/long_input/long_003_student_return/B_poster.jpg",
+      "status": 200,
+      "bytes": "26919"
+    },
+    {
+      "path": "reports/long_input/long_003_student_return/C_all72.jpg",
+      "status": 200,
+      "bytes": "501720"
+    },
+    {
+      "path": "reports/long_input/long_003_student_return/C_poster.jpg",
+      "status": 200,
+      "bytes": "27040"
+    },
+    {
+      "path": "reports/long_input/long_003_student_return/D_all72.jpg",
+      "status": 200,
+      "bytes": "508591"
+    },
+    {
+      "path": "reports/long_input/long_003_student_return/D_poster.jpg",
+      "status": 200,
+      "bytes": "28210"
+    },
+    {
+      "path": "reports/long_input/long_003_student_return/E_all72.jpg",
+      "status": 200,
+      "bytes": "503359"
+    },
+    {
+      "path": "reports/long_input/long_003_student_return/E_poster.jpg",
+      "status": 200,
+      "bytes": "28112"
+    },
+    {
+      "path": "reports/long_input/long_003_student_return/blind_frames.jpg",
+      "status": 200,
+      "bytes": "453118"
+    },
+    {
+      "path": "reports/long_input/long_003_student_return/comparison.mp4",
+      "status": 200,
+      "bytes": "560639"
+    },
+    {
+      "path": "reports/long_input/long_003_student_return/input_gt_target.jpg",
+      "status": 200,
+      "bytes": "17330"
+    },
+    {
+      "path": "reports/long_input/long_003_student_return/input_history_32s.jpg",
+      "status": 200,
+      "bytes": "12847"
+    },
+    {
+      "path": "reports/long_input/long_003_student_return/input_local_context.jpg",
+      "status": 200,
+      "bytes": "15282"
+    },
+    {
+      "path": "reports/long_input/long_003_student_return/input_oracle_context.jpg",
+      "status": 200,
+      "bytes": "12925"
+    },
+    {
+      "path": "reports/long_input/long_003_student_return/input_uniform_context.jpg",
+      "status": 200,
+      "bytes": "12822"
+    },
+    {
+      "path": "reports/long_input/long_004_van_exterior/A_all72.jpg",
+      "status": 200,
+      "bytes": "741158"
+    },
+    {
+      "path": "reports/long_input/long_004_van_exterior/A_poster.jpg",
+      "status": 200,
+      "bytes": "44628"
+    },
+    {
+      "path": "reports/long_input/long_004_van_exterior/B_all72.jpg",
+      "status": 200,
+      "bytes": "733715"
+    },
+    {
+      "path": "reports/long_input/long_004_van_exterior/B_poster.jpg",
+      "status": 200,
+      "bytes": "44358"
+    },
+    {
+      "path": "reports/long_input/long_004_van_exterior/C_all72.jpg",
+      "status": 200,
+      "bytes": "738337"
+    },
+    {
+      "path": "reports/long_input/long_004_van_exterior/C_poster.jpg",
+      "status": 200,
+      "bytes": "44684"
+    },
+    {
+      "path": "reports/long_input/long_004_van_exterior/D_all72.jpg",
+      "status": 200,
+      "bytes": "806238"
+    },
+    {
+      "path": "reports/long_input/long_004_van_exterior/D_poster.jpg",
+      "status": 200,
+      "bytes": "50832"
+    },
+    {
+      "path": "reports/long_input/long_004_van_exterior/E_all72.jpg",
+      "status": 200,
+      "bytes": "731673"
+    },
+    {
+      "path": "reports/long_input/long_004_van_exterior/E_poster.jpg",
+      "status": 200,
+      "bytes": "44031"
+    },
+    {
+      "path": "reports/long_input/long_004_van_exterior/blind_frames.jpg",
+      "status": 200,
+      "bytes": "674800"
+    },
+    {
+      "path": "reports/long_input/long_004_van_exterior/comparison.mp4",
+      "status": 200,
+      "bytes": "2118299"
+    },
+    {
+      "path": "reports/long_input/long_004_van_exterior/input_gt_target.jpg",
+      "status": 200,
+      "bytes": "39079"
+    },
+    {
+      "path": "reports/long_input/long_004_van_exterior/input_history_32s.jpg",
+      "status": 200,
+      "bytes": "22358"
+    },
+    {
+      "path": "reports/long_input/long_004_van_exterior/input_local_context.jpg",
+      "status": 200,
+      "bytes": "29121"
+    },
+    {
+      "path": "reports/long_input/long_004_van_exterior/input_oracle_context.jpg",
+      "status": 200,
+      "bytes": "40372"
+    },
+    {
+      "path": "reports/long_input/long_004_van_exterior/input_uniform_context.jpg",
+      "status": 200,
+      "bytes": "20795"
+    },
+    {
+      "path": "reports/long_input/long_005_conservator/A_all72.jpg",
+      "status": 200,
+      "bytes": "539582"
+    },
+    {
+      "path": "reports/long_input/long_005_conservator/A_poster.jpg",
+      "status": 200,
+      "bytes": "31117"
+    },
+    {
+      "path": "reports/long_input/long_005_conservator/B_all72.jpg",
+      "status": 200,
+      "bytes": "607068"
+    },
+    {
+      "path": "reports/long_input/long_005_conservator/B_poster.jpg",
+      "status": 200,
+      "bytes": "36393"
+    },
+    {
+      "path": "reports/long_input/long_005_conservator/C_all72.jpg",
+      "status": 200,
+      "bytes": "568170"
+    },
+    {
+      "path": "reports/long_input/long_005_conservator/C_poster.jpg",
+      "status": 200,
+      "bytes": "34158"
+    },
+    {
+      "path": "reports/long_input/long_005_conservator/D_all72.jpg",
+      "status": 200,
+      "bytes": "419023"
+    },
+    {
+      "path": "reports/long_input/long_005_conservator/D_poster.jpg",
+      "status": 200,
+      "bytes": "24475"
+    },
+    {
+      "path": "reports/long_input/long_005_conservator/E_all72.jpg",
+      "status": 200,
+      "bytes": "469147"
+    },
+    {
+      "path": "reports/long_input/long_005_conservator/E_poster.jpg",
+      "status": 200,
+      "bytes": "28117"
+    },
+    {
+      "path": "reports/long_input/long_005_conservator/blind_frames.jpg",
+      "status": 200,
+      "bytes": "461806"
+    },
+    {
+      "path": "reports/long_input/long_005_conservator/comparison.mp4",
+      "status": 200,
+      "bytes": "707155"
+    },
+    {
+      "path": "reports/long_input/long_005_conservator/input_gt_target.jpg",
+      "status": 200,
+      "bytes": "17525"
+    },
+    {
+      "path": "reports/long_input/long_005_conservator/input_history_32s.jpg",
+      "status": 200,
+      "bytes": "13955"
+    },
+    {
+      "path": "reports/long_input/long_005_conservator/input_local_context.jpg",
+      "status": 200,
+      "bytes": "14943"
+    },
+    {
+      "path": "reports/long_input/long_005_conservator/input_oracle_context.jpg",
+      "status": 200,
+      "bytes": "16073"
+    },
+    {
+      "path": "reports/long_input/long_005_conservator/input_uniform_context.jpg",
+      "status": 200,
+      "bytes": "16407"
+    },
+    {
+      "path": "reports/long_input/qualitative_scores.csv",
+      "status": 200,
+      "bytes": "4830"
+    },
+    {
+      "path": "reports/long_input/results.csv",
+      "status": 200,
+      "bytes": "10402"
+    },
+    {
+      "path": "reports/long_input/review.json",
+      "status": 200,
+      "bytes": "11849"
+    },
+    {
+      "path": "reports/long_input/review_blind.json",
+      "status": 200,
+      "bytes": "4346"
+    },
+    {
+      "path": "reports/long_input/source_integrity_verification.json",
+      "status": 200,
+      "bytes": "460"
+    },
+    {
+      "path": "reports/long_input/summary.json",
+      "status": 200,
+      "bytes": "27093"
+    }
+  ],
+  "http_count": 185,
+  "video_count": 50,
+  "scope": "HTML/UTF-8/local assets and HTTP response; browser playback interaction is separate"
+}

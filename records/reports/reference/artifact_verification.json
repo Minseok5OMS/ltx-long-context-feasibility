@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-09-06T08:22:43.664978+00:00",
+  "evaluated_groups": [
+    "reports/reference/pilot_001_interview_return/past_seed42",
+    "reports/reference/pilot_001_interview_return/target_guide_seed42",
+    "reports/reference/pilot_002_interview_return/past_seed42"
+  ],
+  "completed_runs_checked": 9,
+  "target_frames_decoded": 648,
+  "target_frame_count_and_pts": "72 at 24 FPS in each run",
+  "saved_initial_and_seven_step_noise_pairing": "passed in all groups",
+  "generation_and_review_artifact_hashes": "passed",
+  "source_snapshots": {
+    "98a6c8bfbc7ff15616195c4d419303f43ae5a1fff12105e400bfe465b85322f2": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/source_snapshots/98a6c8bfbc7ff15616195c4d419303f43ae5a1fff12105e400bfe465b85322f2/run_reference_comparison.py",
+    "b5444faedcbde0af961115bde87226e6476bd3fc409130c0c7ab941b3fde760f": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/run_reference_comparison.py"
+  },
+  "past_vs_target_guide_local_latent_exact_equal": true,
+  "past_vs_target_guide_local_target_mp4_sha256_equal": true,
+  "html_local_links_checked": 57,
+  "python_syntax": "passed",
+  "documented_local_target_reference_positions": "match saved tensors in all nine runs",
+  "input_preview_and_source_clip_hashes_checked": 8,
+  "generation_seconds_range": [
+    15.793818030972034,
+    19.781138852704316
+  ],
+  "peak_gpu_allocated_gib_range": [
+    39.14470052719116,
+    39.14470052719116
+  ],
+  "excluded": "reference_target_guide_seed42_attempt1; interrupted preliminary attempt"
+}

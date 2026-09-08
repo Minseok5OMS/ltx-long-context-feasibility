@@ -1,0 +1,108 @@
+{
+  "command": "/mnt/minu/minseok/LTX-2/longcond/../.venv/bin/python feasibility_long_context/preview_candidates.py --candidate fv_84c74091_0000_00003 --start 236 --end 252 --frames 24",
+  "scope": "Sparse decoded frames only; no oracle validation or model output",
+  "videos": [
+    {
+      "id": "fv_84c74091_0000_00003",
+      "contact_sheet": "fv_84c74091_0000_00003_236-252.0.jpg",
+      "frames": [
+        {
+          "requested_seconds": 236.0,
+          "decoded_seconds": 236.00523859095335
+        },
+        {
+          "requested_seconds": 236.69565217391303,
+          "decoded_seconds": 236.71043352698211
+        },
+        {
+          "requested_seconds": 237.3913043478261,
+          "decoded_seconds": 237.41562846301085
+        },
+        {
+          "requested_seconds": 238.08695652173913,
+          "decoded_seconds": 238.0872426878001
+        },
+        {
+          "requested_seconds": 238.7826086956522,
+          "decoded_seconds": 238.79243762382887
+        },
+        {
+          "requested_seconds": 239.47826086956522,
+          "decoded_seconds": 239.4976325598576
+        },
+        {
+          "requested_seconds": 240.17391304347825,
+          "decoded_seconds": 240.20282749588637
+        },
+        {
+          "requested_seconds": 240.8695652173913,
+          "decoded_seconds": 240.87444172067563
+        },
+        {
+          "requested_seconds": 241.56521739130434,
+          "decoded_seconds": 241.5796366567044
+        },
+        {
+          "requested_seconds": 242.2608695652174,
+          "decoded_seconds": 242.28483159273313
+        },
+        {
+          "requested_seconds": 242.95652173913044,
+          "decoded_seconds": 242.9900265287619
+        },
+        {
+          "requested_seconds": 243.65217391304347,
+          "decoded_seconds": 243.66164075355115
+        },
+        {
+          "requested_seconds": 244.34782608695653,
+          "decoded_seconds": 244.36683568957991
+        },
+        {
+          "requested_seconds": 245.04347826086956,
+          "decoded_seconds": 245.07203062560865
+        },
+        {
+          "requested_seconds": 245.73913043478262,
+          "decoded_seconds": 245.74364485039794
+        },
+        {
+          "requested_seconds": 246.43478260869566,
+          "decoded_seconds": 246.44883978642667
+        },
+        {
+          "requested_seconds": 247.1304347826087,
+          "decoded_seconds": 247.15403472245544
+        },
+        {
+          "requested_seconds": 247.82608695652175,
+          "decoded_seconds": 247.85922965848417
+        },
+        {
+          "requested_seconds": 248.52173913043478,
+          "decoded_seconds": 248.53084388327343
+        },
+        {
+          "requested_seconds": 249.2173913043478,
+          "decoded_seconds": 249.2360388193022
+        },
+        {
+          "requested_seconds": 249.91304347826087,
+          "decoded_seconds": 249.94123375533093
+        },
+        {
+          "requested_seconds": 250.6086956521739,
+          "decoded_seconds": 250.61284798012022
+        },
+        {
+          "requested_seconds": 251.30434782608697,
+          "decoded_seconds": 251.31804291614895
+        },
+        {
+          "requested_seconds": 252.0,
+          "decoded_seconds": 252.02323785217772
+        }
+      ]
+    }
+  ]
+}

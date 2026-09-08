@@ -1,0 +1,1001 @@
+{
+  "command": "/mnt/minu/minseok/LTX-2/.venv/bin/python3 feasibility_long_context/expand_cached_candidates.py --rows 10 14 16 25 28 29",
+  "created_at_utc": "2026-09-07T08:21:47.107738+00:00",
+  "revision": "84c74091e1c6ee7a5dffabfafb5c9033e4718883",
+  "shard": "data/train-00000-of-01357.parquet",
+  "network_bytes": 0,
+  "selection": "Explicit rows chosen by source metadata for visual inspection; not based on generation results",
+  "candidates": [
+    {
+      "id": "fv_84c74091_0000_00010",
+      "repo_id": "HuggingFaceFV/finevideo",
+      "revision": "84c74091e1c6ee7a5dffabfafb5c9033e4718883",
+      "shard": "data/train-00000-of-01357.parquet",
+      "row_index": 10,
+      "sha256": "00382856c2955319a8dfc083fd8010a82384720fc48979ded47334efb1b0d7a0",
+      "source_bytes": 13166945,
+      "original_json_filename": "1TtcXC_u4r4.json",
+      "youtube_title": "Kerry Mills | Trainer Assessor",
+      "video_probe": {
+        "width": 640,
+        "height": 360,
+        "fps": 29.97002997002997,
+        "duration_seconds": 250.89161
+      },
+      "review_status": "unreviewed",
+      "is_validated_feasibility_example": false,
+      "preview_frames": [
+        {
+          "requested_seconds": 0.0,
+          "decoded_seconds": 0.0
+        },
+        {
+          "requested_seconds": 7.161188857142856,
+          "decoded_seconds": 7.1738333333333335
+        },
+        {
+          "requested_seconds": 14.322377714285713,
+          "decoded_seconds": 14.347666666666667
+        },
+        {
+          "requested_seconds": 21.483566571428568,
+          "decoded_seconds": 21.488133333333334
+        },
+        {
+          "requested_seconds": 28.644755428571425,
+          "decoded_seconds": 28.661966666666668
+        },
+        {
+          "requested_seconds": 35.80594428571428,
+          "decoded_seconds": 35.8358
+        },
+        {
+          "requested_seconds": 42.967133142857136,
+          "decoded_seconds": 42.97626666666667
+        },
+        {
+          "requested_seconds": 50.128322,
+          "decoded_seconds": 50.1501
+        },
+        {
+          "requested_seconds": 57.28951085714285,
+          "decoded_seconds": 57.29056666666666
+        },
+        {
+          "requested_seconds": 64.4506997142857,
+          "decoded_seconds": 64.4644
+        },
+        {
+          "requested_seconds": 71.61188857142857,
+          "decoded_seconds": 71.63823333333333
+        },
+        {
+          "requested_seconds": 78.77307742857143,
+          "decoded_seconds": 78.7787
+        },
+        {
+          "requested_seconds": 85.93426628571427,
+          "decoded_seconds": 85.95253333333334
+        },
+        {
+          "requested_seconds": 93.09545514285713,
+          "decoded_seconds": 93.12636666666667
+        },
+        {
+          "requested_seconds": 100.256644,
+          "decoded_seconds": 100.26683333333334
+        },
+        {
+          "requested_seconds": 107.41783285714284,
+          "decoded_seconds": 107.44066666666667
+        },
+        {
+          "requested_seconds": 114.5790217142857,
+          "decoded_seconds": 114.58113333333333
+        },
+        {
+          "requested_seconds": 121.74021057142856,
+          "decoded_seconds": 121.75496666666666
+        },
+        {
+          "requested_seconds": 128.9013994285714,
+          "decoded_seconds": 128.9288
+        },
+        {
+          "requested_seconds": 136.0625882857143,
+          "decoded_seconds": 136.06926666666666
+        },
+        {
+          "requested_seconds": 143.22377714285713,
+          "decoded_seconds": 143.2431
+        },
+        {
+          "requested_seconds": 150.384966,
+          "decoded_seconds": 150.41693333333333
+        },
+        {
+          "requested_seconds": 157.54615485714285,
+          "decoded_seconds": 157.5574
+        },
+        {
+          "requested_seconds": 164.7073437142857,
+          "decoded_seconds": 164.73123333333334
+        },
+        {
+          "requested_seconds": 171.86853257142855,
+          "decoded_seconds": 171.8717
+        },
+        {
+          "requested_seconds": 179.02972142857143,
+          "decoded_seconds": 179.04553333333334
+        },
+        {
+          "requested_seconds": 186.19091028571427,
+          "decoded_seconds": 186.21936666666667
+        },
+        {
+          "requested_seconds": 193.35209914285713,
+          "decoded_seconds": 193.35983333333334
+        },
+        {
+          "requested_seconds": 200.513288,
+          "decoded_seconds": 200.53366666666668
+        },
+        {
+          "requested_seconds": 207.67447685714285,
+          "decoded_seconds": 207.7075
+        },
+        {
+          "requested_seconds": 214.83566571428568,
+          "decoded_seconds": 214.84796666666668
+        },
+        {
+          "requested_seconds": 221.99685457142857,
+          "decoded_seconds": 222.0218
+        },
+        {
+          "requested_seconds": 229.1580434285714,
+          "decoded_seconds": 229.16226666666665
+        },
+        {
+          "requested_seconds": 236.31923228571426,
+          "decoded_seconds": 236.3361
+        },
+        {
+          "requested_seconds": 243.48042114285713,
+          "decoded_seconds": 243.50993333333332
+        },
+        {
+          "requested_seconds": 250.64161000000001,
+          "decoded_seconds": 250.6504
+        }
+      ]
+    },
+    {
+      "id": "fv_84c74091_0000_00014",
+      "repo_id": "HuggingFaceFV/finevideo",
+      "revision": "84c74091e1c6ee7a5dffabfafb5c9033e4718883",
+      "shard": "data/train-00000-of-01357.parquet",
+      "row_index": 14,
+      "sha256": "a56b8982c8b287bfa7c49a362f333bf103179e7dfbff7605ba2bce3dab6903bb",
+      "source_bytes": 40708365,
+      "original_json_filename": "XUWxQYmiBQY.json",
+      "youtube_title": "HG Obsidian Fury Review (Pacific Rim Uprising)",
+      "video_probe": {
+        "width": 640,
+        "height": 360,
+        "fps": 29.97,
+        "duration_seconds": 583.88898
+      },
+      "review_status": "unreviewed",
+      "is_validated_feasibility_example": false,
+      "preview_frames": [
+        {
+          "requested_seconds": 0.0,
+          "decoded_seconds": 0.0
+        },
+        {
+          "requested_seconds": 16.675399428571428,
+          "decoded_seconds": 16.68335001668335
+        },
+        {
+          "requested_seconds": 33.350798857142856,
+          "decoded_seconds": 33.3667000333667
+        },
+        {
+          "requested_seconds": 50.02619828571428,
+          "decoded_seconds": 50.050050050050054
+        },
+        {
+          "requested_seconds": 66.70159771428571,
+          "decoded_seconds": 66.7334000667334
+        },
+        {
+          "requested_seconds": 83.37699714285714,
+          "decoded_seconds": 83.38338338338339
+        },
+        {
+          "requested_seconds": 100.05239657142856,
+          "decoded_seconds": 100.06673340006674
+        },
+        {
+          "requested_seconds": 116.727796,
+          "decoded_seconds": 116.75008341675009
+        },
+        {
+          "requested_seconds": 133.40319542857142,
+          "decoded_seconds": 133.43343343343344
+        },
+        {
+          "requested_seconds": 150.07859485714283,
+          "decoded_seconds": 150.08341675008342
+        },
+        {
+          "requested_seconds": 166.75399428571427,
+          "decoded_seconds": 166.76676676676678
+        },
+        {
+          "requested_seconds": 183.4293937142857,
+          "decoded_seconds": 183.4501167834501
+        },
+        {
+          "requested_seconds": 200.10479314285712,
+          "decoded_seconds": 200.13346680013348
+        },
+        {
+          "requested_seconds": 216.78019257142856,
+          "decoded_seconds": 216.78345011678346
+        },
+        {
+          "requested_seconds": 233.455592,
+          "decoded_seconds": 233.4668001334668
+        },
+        {
+          "requested_seconds": 250.1309914285714,
+          "decoded_seconds": 250.15015015015015
+        },
+        {
+          "requested_seconds": 266.80639085714284,
+          "decoded_seconds": 266.8335001668335
+        },
+        {
+          "requested_seconds": 283.4817902857142,
+          "decoded_seconds": 283.4834834834835
+        },
+        {
+          "requested_seconds": 300.15718971428566,
+          "decoded_seconds": 300.16683350016683
+        },
+        {
+          "requested_seconds": 316.8325891428571,
+          "decoded_seconds": 316.85018351685017
+        },
+        {
+          "requested_seconds": 333.50798857142854,
+          "decoded_seconds": 333.53353353353356
+        },
+        {
+          "requested_seconds": 350.183388,
+          "decoded_seconds": 350.18351685018354
+        },
+        {
+          "requested_seconds": 366.8587874285714,
+          "decoded_seconds": 366.86686686686687
+        },
+        {
+          "requested_seconds": 383.53418685714286,
+          "decoded_seconds": 383.5502168835502
+        },
+        {
+          "requested_seconds": 400.20958628571424,
+          "decoded_seconds": 400.23356690023354
+        },
+        {
+          "requested_seconds": 416.8849857142857,
+          "decoded_seconds": 416.91691691691693
+        },
+        {
+          "requested_seconds": 433.5603851428571,
+          "decoded_seconds": 433.5669002335669
+        },
+        {
+          "requested_seconds": 450.2357845714285,
+          "decoded_seconds": 450.25025025025025
+        },
+        {
+          "requested_seconds": 466.911184,
+          "decoded_seconds": 466.9336002669336
+        },
+        {
+          "requested_seconds": 483.58658342857143,
+          "decoded_seconds": 483.616950283617
+        },
+        {
+          "requested_seconds": 500.2619828571428,
+          "decoded_seconds": 500.26693360026695
+        },
+        {
+          "requested_seconds": 516.9373822857142,
+          "decoded_seconds": 516.9502836169503
+        },
+        {
+          "requested_seconds": 533.6127817142857,
+          "decoded_seconds": 533.6336336336336
+        },
+        {
+          "requested_seconds": 550.2881811428571,
+          "decoded_seconds": 550.316983650317
+        },
+        {
+          "requested_seconds": 566.9635805714285,
+          "decoded_seconds": 566.966966966967
+        },
+        {
+          "requested_seconds": 583.63898,
+          "decoded_seconds": 583.6503169836503
+        }
+      ]
+    },
+    {
+      "id": "fv_84c74091_0000_00016",
+      "repo_id": "HuggingFaceFV/finevideo",
+      "revision": "84c74091e1c6ee7a5dffabfafb5c9033e4718883",
+      "shard": "data/train-00000-of-01357.parquet",
+      "row_index": 16,
+      "sha256": "ae7ae6180133441f15b9ac427f7d752dadc40008da46f662088dd7fb8333b4b4",
+      "source_bytes": 4417850,
+      "original_json_filename": "Z0JDTBGh4D8.json",
+      "youtube_title": "How to Install Ring Video Doorbell 3 or 3 Plus - Wired Install",
+      "video_probe": {
+        "width": 640,
+        "height": 360,
+        "fps": 23.976023976023978,
+        "duration_seconds": 186.316916
+      },
+      "review_status": "unreviewed",
+      "is_validated_feasibility_example": false,
+      "preview_frames": [
+        {
+          "requested_seconds": 0.0,
+          "decoded_seconds": 0.0
+        },
+        {
+          "requested_seconds": 5.3161976,
+          "decoded_seconds": 5.338666666666667
+        },
+        {
+          "requested_seconds": 10.6323952,
+          "decoded_seconds": 10.635625
+        },
+        {
+          "requested_seconds": 15.9485928,
+          "decoded_seconds": 15.974291666666666
+        },
+        {
+          "requested_seconds": 21.2647904,
+          "decoded_seconds": 21.27125
+        },
+        {
+          "requested_seconds": 26.580987999999998,
+          "decoded_seconds": 26.609916666666667
+        },
+        {
+          "requested_seconds": 31.8971856,
+          "decoded_seconds": 31.906875
+        },
+        {
+          "requested_seconds": 37.213383199999996,
+          "decoded_seconds": 37.24554166666667
+        },
+        {
+          "requested_seconds": 42.5295808,
+          "decoded_seconds": 42.5425
+        },
+        {
+          "requested_seconds": 47.8457784,
+          "decoded_seconds": 47.881166666666665
+        },
+        {
+          "requested_seconds": 53.161975999999996,
+          "decoded_seconds": 53.178125
+        },
+        {
+          "requested_seconds": 58.4781736,
+          "decoded_seconds": 58.51679166666667
+        },
+        {
+          "requested_seconds": 63.7943712,
+          "decoded_seconds": 63.81375
+        },
+        {
+          "requested_seconds": 69.1105688,
+          "decoded_seconds": 69.11070833333333
+        },
+        {
+          "requested_seconds": 74.42676639999999,
+          "decoded_seconds": 74.449375
+        },
+        {
+          "requested_seconds": 79.742964,
+          "decoded_seconds": 79.74633333333334
+        },
+        {
+          "requested_seconds": 85.0591616,
+          "decoded_seconds": 85.085
+        },
+        {
+          "requested_seconds": 90.37535919999999,
+          "decoded_seconds": 90.38195833333333
+        },
+        {
+          "requested_seconds": 95.6915568,
+          "decoded_seconds": 95.720625
+        },
+        {
+          "requested_seconds": 101.0077544,
+          "decoded_seconds": 101.01758333333333
+        },
+        {
+          "requested_seconds": 106.32395199999999,
+          "decoded_seconds": 106.35625
+        },
+        {
+          "requested_seconds": 111.64014959999999,
+          "decoded_seconds": 111.65320833333334
+        },
+        {
+          "requested_seconds": 116.9563472,
+          "decoded_seconds": 116.991875
+        },
+        {
+          "requested_seconds": 122.2725448,
+          "decoded_seconds": 122.28883333333333
+        },
+        {
+          "requested_seconds": 127.5887424,
+          "decoded_seconds": 127.6275
+        },
+        {
+          "requested_seconds": 132.90493999999998,
+          "decoded_seconds": 132.92445833333332
+        },
+        {
+          "requested_seconds": 138.2211376,
+          "decoded_seconds": 138.22141666666667
+        },
+        {
+          "requested_seconds": 143.5373352,
+          "decoded_seconds": 143.56008333333332
+        },
+        {
+          "requested_seconds": 148.85353279999998,
+          "decoded_seconds": 148.85704166666667
+        },
+        {
+          "requested_seconds": 154.1697304,
+          "decoded_seconds": 154.19570833333333
+        },
+        {
+          "requested_seconds": 159.485928,
+          "decoded_seconds": 159.49266666666668
+        },
+        {
+          "requested_seconds": 164.8021256,
+          "decoded_seconds": 164.83133333333333
+        },
+        {
+          "requested_seconds": 170.1183232,
+          "decoded_seconds": 170.12829166666666
+        },
+        {
+          "requested_seconds": 175.43452079999997,
+          "decoded_seconds": 175.46695833333334
+        },
+        {
+          "requested_seconds": 180.75071839999998,
+          "decoded_seconds": 180.76391666666666
+        },
+        {
+          "requested_seconds": 186.066916,
+          "decoded_seconds": 186.10258333333334
+        }
+      ]
+    },
+    {
+      "id": "fv_84c74091_0000_00025",
+      "repo_id": "HuggingFaceFV/finevideo",
+      "revision": "84c74091e1c6ee7a5dffabfafb5c9033e4718883",
+      "shard": "data/train-00000-of-01357.parquet",
+      "row_index": 25,
+      "sha256": "77aa00d5ee6c48b6cf4345d35101ed8fcfcf2d05379fe458b63efaa30e6fe4fa",
+      "source_bytes": 11330043,
+      "original_json_filename": "81CM8lLrgoM.json",
+      "youtube_title": "Short Film: Third Period",
+      "video_probe": {
+        "width": 640,
+        "height": 360,
+        "fps": 24.0,
+        "duration_seconds": 470.87746
+      },
+      "review_status": "unreviewed",
+      "is_validated_feasibility_example": false,
+      "preview_frames": [
+        {
+          "requested_seconds": 0.0,
+          "decoded_seconds": 0.0
+        },
+        {
+          "requested_seconds": 13.446498857142856,
+          "decoded_seconds": 13.458333333333334
+        },
+        {
+          "requested_seconds": 26.892997714285713,
+          "decoded_seconds": 26.916666666666668
+        },
+        {
+          "requested_seconds": 40.33949657142857,
+          "decoded_seconds": 40.375
+        },
+        {
+          "requested_seconds": 53.785995428571425,
+          "decoded_seconds": 53.791666666666664
+        },
+        {
+          "requested_seconds": 67.23249428571428,
+          "decoded_seconds": 67.25
+        },
+        {
+          "requested_seconds": 80.67899314285714,
+          "decoded_seconds": 80.70833333333333
+        },
+        {
+          "requested_seconds": 94.125492,
+          "decoded_seconds": 94.16666666666667
+        },
+        {
+          "requested_seconds": 107.57199085714285,
+          "decoded_seconds": 107.58333333333333
+        },
+        {
+          "requested_seconds": 121.01848971428572,
+          "decoded_seconds": 121.04166666666667
+        },
+        {
+          "requested_seconds": 134.46498857142856,
+          "decoded_seconds": 134.5
+        },
+        {
+          "requested_seconds": 147.9114874285714,
+          "decoded_seconds": 147.91666666666666
+        },
+        {
+          "requested_seconds": 161.35798628571428,
+          "decoded_seconds": 161.375
+        },
+        {
+          "requested_seconds": 174.80448514285715,
+          "decoded_seconds": 174.83333333333334
+        },
+        {
+          "requested_seconds": 188.250984,
+          "decoded_seconds": 188.29166666666666
+        },
+        {
+          "requested_seconds": 201.69748285714286,
+          "decoded_seconds": 201.70833333333334
+        },
+        {
+          "requested_seconds": 215.1439817142857,
+          "decoded_seconds": 215.16666666666666
+        },
+        {
+          "requested_seconds": 228.59048057142854,
+          "decoded_seconds": 228.625
+        },
+        {
+          "requested_seconds": 242.03697942857144,
+          "decoded_seconds": 242.04166666666666
+        },
+        {
+          "requested_seconds": 255.48347828571428,
+          "decoded_seconds": 255.5
+        },
+        {
+          "requested_seconds": 268.9299771428571,
+          "decoded_seconds": 268.9583333333333
+        },
+        {
+          "requested_seconds": 282.37647599999997,
+          "decoded_seconds": 282.4166666666667
+        },
+        {
+          "requested_seconds": 295.8229748571428,
+          "decoded_seconds": 295.8333333333333
+        },
+        {
+          "requested_seconds": 309.2694737142857,
+          "decoded_seconds": 309.2916666666667
+        },
+        {
+          "requested_seconds": 322.71597257142855,
+          "decoded_seconds": 322.75
+        },
+        {
+          "requested_seconds": 336.16247142857145,
+          "decoded_seconds": 336.1666666666667
+        },
+        {
+          "requested_seconds": 349.6089702857143,
+          "decoded_seconds": 349.625
+        },
+        {
+          "requested_seconds": 363.05546914285713,
+          "decoded_seconds": 363.0833333333333
+        },
+        {
+          "requested_seconds": 376.501968,
+          "decoded_seconds": 376.5416666666667
+        },
+        {
+          "requested_seconds": 389.9484668571429,
+          "decoded_seconds": 389.9583333333333
+        },
+        {
+          "requested_seconds": 403.3949657142857,
+          "decoded_seconds": 403.4166666666667
+        },
+        {
+          "requested_seconds": 416.84146457142856,
+          "decoded_seconds": 416.875
+        },
+        {
+          "requested_seconds": 430.2879634285714,
+          "decoded_seconds": 430.2916666666667
+        },
+        {
+          "requested_seconds": 443.73446228571424,
+          "decoded_seconds": 443.75
+        },
+        {
+          "requested_seconds": 457.1809611428571,
+          "decoded_seconds": 457.2083333333333
+        },
+        {
+          "requested_seconds": 470.62746,
+          "decoded_seconds": 470.6666666666667
+        }
+      ]
+    },
+    {
+      "id": "fv_84c74091_0000_00028",
+      "repo_id": "HuggingFaceFV/finevideo",
+      "revision": "84c74091e1c6ee7a5dffabfafb5c9033e4718883",
+      "shard": "data/train-00000-of-01357.parquet",
+      "row_index": 28,
+      "sha256": "2d9e67ce2150ee746cfda76f8d221d008699eaf3dcd09e8277117f8fee06930d",
+      "source_bytes": 28102153,
+      "original_json_filename": "MXYFQArjCxg.json",
+      "youtube_title": "1983 Aircooled Vanagon Subaru JDM 2.5 Conversion Tour",
+      "video_probe": {
+        "width": 640,
+        "height": 360,
+        "fps": 30.0,
+        "duration_seconds": 340.938594
+      },
+      "review_status": "unreviewed",
+      "is_validated_feasibility_example": false,
+      "preview_frames": [
+        {
+          "requested_seconds": 0.0,
+          "decoded_seconds": 0.0
+        },
+        {
+          "requested_seconds": 9.733959828571429,
+          "decoded_seconds": 9.766666666666667
+        },
+        {
+          "requested_seconds": 19.467919657142858,
+          "decoded_seconds": 19.5
+        },
+        {
+          "requested_seconds": 29.20187948571429,
+          "decoded_seconds": 29.233333333333334
+        },
+        {
+          "requested_seconds": 38.935839314285715,
+          "decoded_seconds": 38.96666666666667
+        },
+        {
+          "requested_seconds": 48.669799142857144,
+          "decoded_seconds": 48.7
+        },
+        {
+          "requested_seconds": 58.40375897142858,
+          "decoded_seconds": 58.43333333333333
+        },
+        {
+          "requested_seconds": 68.1377188,
+          "decoded_seconds": 68.16666666666667
+        },
+        {
+          "requested_seconds": 77.87167862857143,
+          "decoded_seconds": 77.9
+        },
+        {
+          "requested_seconds": 87.60563845714287,
+          "decoded_seconds": 87.63333333333334
+        },
+        {
+          "requested_seconds": 97.33959828571429,
+          "decoded_seconds": 97.36666666666666
+        },
+        {
+          "requested_seconds": 107.07355811428572,
+          "decoded_seconds": 107.1
+        },
+        {
+          "requested_seconds": 116.80751794285716,
+          "decoded_seconds": 116.83333333333333
+        },
+        {
+          "requested_seconds": 126.54147777142859,
+          "decoded_seconds": 126.56666666666666
+        },
+        {
+          "requested_seconds": 136.2754376,
+          "decoded_seconds": 136.3
+        },
+        {
+          "requested_seconds": 146.00939742857145,
+          "decoded_seconds": 146.03333333333333
+        },
+        {
+          "requested_seconds": 155.74335725714286,
+          "decoded_seconds": 155.76666666666668
+        },
+        {
+          "requested_seconds": 165.4773170857143,
+          "decoded_seconds": 165.5
+        },
+        {
+          "requested_seconds": 175.21127691428575,
+          "decoded_seconds": 175.23333333333332
+        },
+        {
+          "requested_seconds": 184.94523674285713,
+          "decoded_seconds": 184.96666666666667
+        },
+        {
+          "requested_seconds": 194.67919657142858,
+          "decoded_seconds": 194.7
+        },
+        {
+          "requested_seconds": 204.41315640000002,
+          "decoded_seconds": 204.43333333333334
+        },
+        {
+          "requested_seconds": 214.14711622857143,
+          "decoded_seconds": 214.16666666666666
+        },
+        {
+          "requested_seconds": 223.88107605714288,
+          "decoded_seconds": 223.9
+        },
+        {
+          "requested_seconds": 233.61503588571432,
+          "decoded_seconds": 233.63333333333333
+        },
+        {
+          "requested_seconds": 243.34899571428573,
+          "decoded_seconds": 243.36666666666667
+        },
+        {
+          "requested_seconds": 253.08295554285718,
+          "decoded_seconds": 253.1
+        },
+        {
+          "requested_seconds": 262.8169153714286,
+          "decoded_seconds": 262.8333333333333
+        },
+        {
+          "requested_seconds": 272.5508752,
+          "decoded_seconds": 272.56666666666666
+        },
+        {
+          "requested_seconds": 282.2848350285715,
+          "decoded_seconds": 282.3
+        },
+        {
+          "requested_seconds": 292.0187948571429,
+          "decoded_seconds": 292.03333333333336
+        },
+        {
+          "requested_seconds": 301.7527546857143,
+          "decoded_seconds": 301.76666666666665
+        },
+        {
+          "requested_seconds": 311.4867145142857,
+          "decoded_seconds": 311.5
+        },
+        {
+          "requested_seconds": 321.22067434285714,
+          "decoded_seconds": 321.23333333333335
+        },
+        {
+          "requested_seconds": 330.9546341714286,
+          "decoded_seconds": 330.96666666666664
+        },
+        {
+          "requested_seconds": 340.688594,
+          "decoded_seconds": 340.7
+        }
+      ]
+    },
+    {
+      "id": "fv_84c74091_0000_00029",
+      "repo_id": "HuggingFaceFV/finevideo",
+      "revision": "84c74091e1c6ee7a5dffabfafb5c9033e4718883",
+      "shard": "data/train-00000-of-01357.parquet",
+      "row_index": 29,
+      "sha256": "bcd9a41920f424b08a6a26f3a2b8d195ef5a1dc5856dd04c2f80a63485df4661",
+      "source_bytes": 9629974,
+      "original_json_filename": "7yY1OWjT4zA.json",
+      "youtube_title": "Cleaning a tiny 500-year-old embroidered book | In the Conservation Studio | British Library",
+      "video_probe": {
+        "width": 640,
+        "height": 360,
+        "fps": 30.0,
+        "duration_seconds": 186.409796
+      },
+      "review_status": "unreviewed",
+      "is_validated_feasibility_example": false,
+      "preview_frames": [
+        {
+          "requested_seconds": 0.0,
+          "decoded_seconds": 0.0
+        },
+        {
+          "requested_seconds": 5.318851314285714,
+          "decoded_seconds": 5.333333333333333
+        },
+        {
+          "requested_seconds": 10.637702628571429,
+          "decoded_seconds": 10.666666666666666
+        },
+        {
+          "requested_seconds": 15.956553942857141,
+          "decoded_seconds": 15.966666666666667
+        },
+        {
+          "requested_seconds": 21.275405257142857,
+          "decoded_seconds": 21.3
+        },
+        {
+          "requested_seconds": 26.594256571428573,
+          "decoded_seconds": 26.6
+        },
+        {
+          "requested_seconds": 31.913107885714282,
+          "decoded_seconds": 31.933333333333334
+        },
+        {
+          "requested_seconds": 37.231959200000006,
+          "decoded_seconds": 37.233333333333334
+        },
+        {
+          "requested_seconds": 42.550810514285715,
+          "decoded_seconds": 42.56666666666667
+        },
+        {
+          "requested_seconds": 47.869661828571424,
+          "decoded_seconds": 47.9
+        },
+        {
+          "requested_seconds": 53.18851314285715,
+          "decoded_seconds": 53.2
+        },
+        {
+          "requested_seconds": 58.507364457142856,
+          "decoded_seconds": 58.53333333333333
+        },
+        {
+          "requested_seconds": 63.826215771428565,
+          "decoded_seconds": 63.833333333333336
+        },
+        {
+          "requested_seconds": 69.14506708571427,
+          "decoded_seconds": 69.16666666666667
+        },
+        {
+          "requested_seconds": 74.46391840000001,
+          "decoded_seconds": 74.46666666666667
+        },
+        {
+          "requested_seconds": 79.78276971428572,
+          "decoded_seconds": 79.8
+        },
+        {
+          "requested_seconds": 85.10162102857143,
+          "decoded_seconds": 85.13333333333334
+        },
+        {
+          "requested_seconds": 90.42047234285714,
+          "decoded_seconds": 90.43333333333334
+        },
+        {
+          "requested_seconds": 95.73932365714285,
+          "decoded_seconds": 95.76666666666667
+        },
+        {
+          "requested_seconds": 101.05817497142857,
+          "decoded_seconds": 101.06666666666666
+        },
+        {
+          "requested_seconds": 106.3770262857143,
+          "decoded_seconds": 106.4
+        },
+        {
+          "requested_seconds": 111.6958776,
+          "decoded_seconds": 111.7
+        },
+        {
+          "requested_seconds": 117.01472891428571,
+          "decoded_seconds": 117.03333333333333
+        },
+        {
+          "requested_seconds": 122.33358022857142,
+          "decoded_seconds": 122.36666666666666
+        },
+        {
+          "requested_seconds": 127.65243154285713,
+          "decoded_seconds": 127.66666666666667
+        },
+        {
+          "requested_seconds": 132.97128285714285,
+          "decoded_seconds": 133.0
+        },
+        {
+          "requested_seconds": 138.29013417142855,
+          "decoded_seconds": 138.3
+        },
+        {
+          "requested_seconds": 143.6089854857143,
+          "decoded_seconds": 143.63333333333333
+        },
+        {
+          "requested_seconds": 148.92783680000002,
+          "decoded_seconds": 148.93333333333334
+        },
+        {
+          "requested_seconds": 154.24668811428572,
+          "decoded_seconds": 154.26666666666668
+        },
+        {
+          "requested_seconds": 159.56553942857144,
+          "decoded_seconds": 159.56666666666666
+        },
+        {
+          "requested_seconds": 164.88439074285714,
+          "decoded_seconds": 164.9
+        },
+        {
+          "requested_seconds": 170.20324205714286,
+          "decoded_seconds": 170.23333333333332
+        },
+        {
+          "requested_seconds": 175.52209337142858,
+          "decoded_seconds": 175.53333333333333
+        },
+        {
+          "requested_seconds": 180.84094468571428,
+          "decoded_seconds": 180.86666666666667
+        },
+        {
+          "requested_seconds": 186.159796,
+          "decoded_seconds": 186.16666666666666
+        }
+      ]
+    }
+  ],
+  "extracted_bytes": 107355330
+}

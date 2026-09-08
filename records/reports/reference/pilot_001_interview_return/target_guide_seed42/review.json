@@ -1,0 +1,17 @@
+{
+  "reviewer": "assistant_visual_inspection",
+  "method": "Six-frame GT/Local/Random/Oracle contact sheet plus 12-frame DINO and decoded-frame motion diagnostics; not human or blind review",
+  "status": "reviewed",
+  "local": "기본 past 실험과 동일한 출력이다. 공사 장면에서 다른 인터뷰 인물로 전환한다.",
+  "random": "참조의 산 풍경이 초기 target에 나타나고 어두워지는 전환을 거쳐 다른 인터뷰 인물을 생성한다.",
+  "oracle": "첫 프레임에는 공사 장면이 남지만 이후 과거 인터뷰 외형으로 전환한다. 연한 보라색 셔츠, 짧은 밝은 머리, 안경 없는 얼굴과 원형 표시가 있는 어두운 배경이 나타난다. GT보다 넓은 구도이며 입·머리·손 자세가 변한다.",
+  "oracle_attribute_checks": {
+    "light_lavender_shirt": "observed_after_transition",
+    "short_light_hair_without_glasses": "observed_after_transition",
+    "dark_backdrop_with_circular_marks": "observed_after_transition",
+    "exact_identity_correctness": "not_formally_evaluated"
+  },
+  "conclusion": "생성 시점에 배치한 과거 대표 이미지는 인터뷰 외형을 전달했다. 시각 조건 활용의 긍정적 진단이며 과거 시간 위치 참조의 성공은 아니다.",
+  "quality": "표본 프레임의 자세가 변하고 인접 프레임 MAE는 0.920/255로 단순 정지 출력은 아니다. 다만 과거와 GT가 같은 인터뷰 촬영 구도이며 생성도 참조와 매우 유사하다. 새로운 사건·상태의 생성 능력은 검증하지 않았다.",
+  "limits": "past와 비교하면 시간 위치뿐 아니라 영상→이미지와 token 수가 동시에 바뀐다. 위치만의 효과로 결론 내리지 않는다. 단순 픽셀 복사 여부 점검은 복잡한 재구성·암기 가능성을 배제하지 못한다."
+}

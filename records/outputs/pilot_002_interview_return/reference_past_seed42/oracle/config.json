@@ -1,0 +1,355 @@
+{
+  "status": "completed",
+  "example": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/data/pilot_002_interview_return",
+  "example_id": "pilot_002_interview_return",
+  "mode": "oracle",
+  "layout": "past",
+  "seed": 42,
+  "physical_gpu": 2,
+  "cuda_visible_devices": "2",
+  "command": "/mnt/minu/minseok/LTX-2/.venv/bin/python3 feasibility_long_context/run_reference_comparison.py --example feasibility_long_context/data/pilot_002_interview_return --mode oracle --gpu 2 --layout past --seed 42",
+  "cwd": "/mnt/minu/minseok/LTX-2/longcond",
+  "script_sha256": "98a6c8bfbc7ff15616195c4d419303f43ae5a1fff12105e400bfe465b85322f2",
+  "controls_sha256": "f15ef6a0b269e48410e56981cc399726c7f6ef89d6125ba390394cf12eb312a8",
+  "ltx_commit": "a95ab856bf29407b6b066ede0abe1846050db56c",
+  "started_at_utc": "2026-09-06T07:42:04.229969+00:00",
+  "models": {
+    "transformer": {
+      "path": "/mnt/minu/minseok/LTX-2/models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors",
+      "bytes": 42018190584,
+      "mtime_ns": 1787903911728802396
+    },
+    "video_vae": {
+      "path": "/mnt/minu/minseok/LTX-2/models/ltx-2.5/vae/ltx-2.5-video-vae-bf16.safetensors",
+      "bytes": 1472223346,
+      "mtime_ns": 1787902886111443535
+    },
+    "text_encoder": {
+      "path": "/mnt/minu/minseok/LTX-2/models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors",
+      "bytes": 26263858182,
+      "mtime_ns": 1787904902081692604
+    }
+  },
+  "environment": {
+    "torch": "2.13.0+cu132",
+    "cuda": "13.2",
+    "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  },
+  "prompt": "The video cuts back to a previously shown indoor interview. The interviewee continues speaking in a seated medium shot.",
+  "prompt_enhancement": false,
+  "fps": 24,
+  "width": 512,
+  "height": 288,
+  "prefix_frames": 49,
+  "target_frames": 72,
+  "total_frames": 121,
+  "target_decoded_slice": [
+    49,
+    121
+  ],
+  "base_video_tokens": 2304,
+  "prefix_tokens": 1008,
+  "common_time_shift_seconds": 4.041666666666667,
+  "reference_model_time_range": [
+    0,
+    3.0416666666666665
+  ],
+  "target_model_time_range": [
+    6.083333333333333,
+    9.083333333333334
+  ],
+  "source_dependency_gap_seconds": 114.6357888888889,
+  "reference_frames": 73,
+  "reference_source": {
+    "kind": "oracle",
+    "start": 60.0,
+    "end": 63.0
+  },
+  "input_cache": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_002_interview_return/reference_inputs_512x288",
+  "common_inputs_sha256": "fed09075b3d217d56273d13cdf0a721241c10bc1a6d9a38d9f5f79d5acba0657",
+  "local_latent_sha256": "d7a6fb100f89960e6d8a754967caedd7fd3d264b9cdc62cea4a1ad61195afdcc",
+  "prompt_context_hashes": {
+    "video_context": "ccc8aabc5715f23f82416c754d88e43a5d3179aedffff2b118e745c2d4862c83",
+    "audio_context": "2a077b2d0aa3c7f18b991a9a61d2a9d432cb504c8c84badba896147a0577a98b"
+  },
+  "sigmas": [
+    1.0,
+    0.9937499761581421,
+    0.987500011920929,
+    0.981249988079071,
+    0.9750000238418579,
+    0.909375011920929,
+    0.7250000238418579,
+    0.421875,
+    0.0
+  ],
+  "sampler": "Euler ancestral",
+  "eta": 1.0,
+  "s_noise": 1.0,
+  "precision": "bfloat16",
+  "guidance": "SimpleDenoiser; no CFG/STG",
+  "audio": "Jointly generated, no input audio or output audio decode",
+  "initial_noise_seed": 42,
+  "step_noise_seed": 10042,
+  "decoder_seed": 20042,
+  "noise_policy": "CPU base grid with independent seed per modality/step, appended clean references get zero noise",
+  "gt_video_opened": false,
+  "outputs": {
+    "target": {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_002_interview_return/reference_past_seed42/oracle/local_oracle.mp4",
+      "frames": 72,
+      "fps": 24,
+      "duration_seconds": 3.0,
+      "sha256": "03930bc441084100af27765467f00bb6ab1767e0649d5feaa77ee3295fbf107b",
+      "full_decode_passed": true
+    },
+    "continuation": {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_002_interview_return/reference_past_seed42/oracle/local_then_generated.mp4",
+      "frames": 120,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "sha256": "df5e7bfa315d1b9ae6ee491afe6e79c78a44e619a550186ef116c1a0b74e98cd",
+      "full_decode_passed": true
+    },
+    "decoded_full": {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_002_interview_return/reference_past_seed42/oracle/decoded_model_sequence.mp4",
+      "frames": 121,
+      "fps": 24,
+      "duration_seconds": 5.041666666666667,
+      "sha256": "c1076e76ca171b66cabf663983a3a8bc7ca88bb78664ffe1773db1ff5c590340",
+      "full_decode_passed": true
+    }
+  },
+  "base_video_positions_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+  "audio_positions_sha256": "a7f6da159340bee98bf40476995d7a6af97bc8532d5cab513afa3ada91052ddc",
+  "reference_tokens": 1440,
+  "final_frozen_max_abs_error": 0.0,
+  "noise_audit": {
+    "initial": [
+      {
+        "step": 0,
+        "modality": "video",
+        "seed": 42,
+        "base_shape": [
+          1,
+          2304,
+          128
+        ],
+        "base_sha256": "2f93ffd939d6b47143082d37155728b0a2b47320d34e3ae359cc1c0c40e1e7d7",
+        "target_sha256": "c3e0effc62e399cb642f0569b4b85bc3de9459d85bbfa26a66a07d2788dabb29"
+      },
+      {
+        "step": 0,
+        "modality": "audio",
+        "seed": 43,
+        "base_shape": [
+          1,
+          126,
+          128
+        ],
+        "base_sha256": "af1a4f1399db3d1bcdd41e28e3761b6b316b9c703aa600a95f0522b424bfa085"
+      }
+    ],
+    "ancestral": [
+      {
+        "step": 0,
+        "modality": "video",
+        "seed": 10042,
+        "base_shape": [
+          1,
+          2304,
+          128
+        ],
+        "base_sha256": "d138cae048b3f5976fdcc2252090629e32c8b1145c18daab81a3cbc80fce3fe9",
+        "target_sha256": "5f79f392863b4fdf343ef06c46df928adab88237b1dac90cb58199529f0b5b33"
+      },
+      {
+        "step": 0,
+        "modality": "audio",
+        "seed": 10043,
+        "base_shape": [
+          1,
+          126,
+          128
+        ],
+        "base_sha256": "bf26ca1d773a5cb2b3414d9074c2596c99c6f347164be0f39918e39e5f3b4dea"
+      },
+      {
+        "step": 1,
+        "modality": "video",
+        "seed": 10044,
+        "base_shape": [
+          1,
+          2304,
+          128
+        ],
+        "base_sha256": "ffefdfc5c4fdd20b20aa69a99c3147a3accded7d42af9e6a94958c04038509b9",
+        "target_sha256": "0c50a14283d388ee2ea815ba6f339fbf4599577cafa5fda1371907a64d485498"
+      },
+      {
+        "step": 1,
+        "modality": "audio",
+        "seed": 10045,
+        "base_shape": [
+          1,
+          126,
+          128
+        ],
+        "base_sha256": "0a01d868e581fb15a9c0bbe4761c3fd94710321e809944c0b7ac1a57efab5543"
+      },
+      {
+        "step": 2,
+        "modality": "video",
+        "seed": 10046,
+        "base_shape": [
+          1,
+          2304,
+          128
+        ],
+        "base_sha256": "aee09394e49be322f177cd04210d797f582d952f83ef3f98187ad4c54ec3b58e",
+        "target_sha256": "f179b69b5b37a46c584c0bcd4edb44b71110a18a0ccea582ac8360d94a0f3bc8"
+      },
+      {
+        "step": 2,
+        "modality": "audio",
+        "seed": 10047,
+        "base_shape": [
+          1,
+          126,
+          128
+        ],
+        "base_sha256": "7673794ce5cec3b344eb202f59fc96b7d63701654c883b5562649f557e51b022"
+      },
+      {
+        "step": 3,
+        "modality": "video",
+        "seed": 10048,
+        "base_shape": [
+          1,
+          2304,
+          128
+        ],
+        "base_sha256": "cbee35b49a040b929691dc32011251bfbb2a8c3775dc77fbf67f4a86edcde7c6",
+        "target_sha256": "aff1b9ab40be92ecaa51649ac80d852390005042a0320ba492531df2370b775f"
+      },
+      {
+        "step": 3,
+        "modality": "audio",
+        "seed": 10049,
+        "base_shape": [
+          1,
+          126,
+          128
+        ],
+        "base_sha256": "2c855935be3babcff20b3e459ba16ba6f77adbbe9cf94bd567392bb1529913c7"
+      },
+      {
+        "step": 4,
+        "modality": "video",
+        "seed": 10050,
+        "base_shape": [
+          1,
+          2304,
+          128
+        ],
+        "base_sha256": "25ff476595a5b262055c391227845f723391fb8e369a168f98ea75bfae17eb18",
+        "target_sha256": "c0fea7515320c2a9f2b5dae63d611849eebe6e1d7ad22e24fa6da6e8d0517aa2"
+      },
+      {
+        "step": 4,
+        "modality": "audio",
+        "seed": 10051,
+        "base_shape": [
+          1,
+          126,
+          128
+        ],
+        "base_sha256": "16d73ecba7b1df194ae3d5863fa9347f9acbf32c63c714f7705bf90b329f1953"
+      },
+      {
+        "step": 5,
+        "modality": "video",
+        "seed": 10052,
+        "base_shape": [
+          1,
+          2304,
+          128
+        ],
+        "base_sha256": "544de7a0d70c1b2bd0f71577830e2ca59f60977a7735b7577f1fca50697bfdaa",
+        "target_sha256": "f49331b4f24e42d0caa3a41b26c9a87829113a8d57463d9aee3a3e3dd462fa6e"
+      },
+      {
+        "step": 5,
+        "modality": "audio",
+        "seed": 10053,
+        "base_shape": [
+          1,
+          126,
+          128
+        ],
+        "base_sha256": "8e74579276a1e055cc8a4e43367a84bce2862210fdc32db886d4bd5cdfca2743"
+      },
+      {
+        "step": 6,
+        "modality": "video",
+        "seed": 10054,
+        "base_shape": [
+          1,
+          2304,
+          128
+        ],
+        "base_sha256": "e1db435a44de1738336ffeadecc5e0a8806e9c7229fce75b26de6de19f80345b",
+        "target_sha256": "da5676fcd6de42721ed587e2a65c8e33cc92dfab08e31cc08a24d32199f658ef"
+      },
+      {
+        "step": 6,
+        "modality": "audio",
+        "seed": 10055,
+        "base_shape": [
+          1,
+          126,
+          128
+        ],
+        "base_sha256": "979ed7d3f4522e28dfcc78c23baa0fe3213d7c064c91d5c731b8b07505693c8a"
+      }
+    ]
+  },
+  "denoising_trace": [
+    {
+      "step": 0,
+      "frozen_max_abs_error": 0.0
+    },
+    {
+      "step": 1,
+      "frozen_max_abs_error": 0.0
+    },
+    {
+      "step": 2,
+      "frozen_max_abs_error": 0.0
+    },
+    {
+      "step": 3,
+      "frozen_max_abs_error": 0.0
+    },
+    {
+      "step": 4,
+      "frozen_max_abs_error": 0.0
+    },
+    {
+      "step": 5,
+      "frozen_max_abs_error": 0.0
+    },
+    {
+      "step": 6,
+      "frozen_max_abs_error": 0.0
+    },
+    {
+      "step": 7,
+      "frozen_max_abs_error": 0.0
+    }
+  ],
+  "diffusion_seconds_including_load": 13.622843759134412,
+  "total_seconds": 17.394004611764103,
+  "peak_gpu_allocated_gib": 39.14470052719116,
+  "finished_at_utc": "2026-09-06T07:42:21.621321+00:00"
+}

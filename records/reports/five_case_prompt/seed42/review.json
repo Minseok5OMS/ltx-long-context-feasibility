@@ -1,0 +1,68 @@
+{
+  "status": "assistant_sample_frame_review_completed",
+  "reviewed_at_utc": "2026-09-08T07:28:49.599035+00:00",
+  "method": "Assistant visual inspection of all 15 condition sheets, covering all 60 generated targets at frames 0,8,16,24,40,56,71; actual Oracle/GT shown separately. Robot P2 Local/Image and Oracle also inspected at full 512x288.",
+  "sample_frame_indices": [
+    0,
+    8,
+    16,
+    24,
+    40,
+    56,
+    71
+  ],
+  "limitations": [
+    "Not blind evaluation or user confirmation.",
+    "No identity classifier or motion/optical-flow accuracy score.",
+    "Seven samples do not establish exact transition times or every intervening motion.",
+    "GT DINO is auxiliary and not prompt-compliance accuracy."
+  ],
+  "summary_ko": "Prompt 구체화와 연속성 설명은 일부 Past 참조 활용을 바꾸지만 일관되게 개선하지 않는다. 로봇·보존 작업자는 외관과 새 구도의 결합이 관찰되고 차량 Video/Past는 P2/P3에서 외부로 전환된다. 학생은 여전히 실패하고 관리자 Video/Past는 P0 성공에서 P1/P2/P3 실패로 바뀐다. P3의 역할 문장이 P2보다 일관되게 낫다는 근거는 없다.",
+  "cases": {
+    "five_001_nursery_manager": {
+      "summary_ko": "P1/P2/P3의 Local-only는 실내 인터뷰를 만들지만 실제 관리자와 다른 머리·옷차림이다. Image/Past는 P1에서 노트북에 머물다가 P2/P3에서 과거 외관과 장소가 회복된다. Video/Past는 P0에서 작동했지만 P1/P2/P3 모두 노트북 장면에 머문다.",
+      "variants": {
+        "P0": "Local은 식물 nursery 같은 장소의 다른 인물을 생성한다. Image/Past와 Video/Past는 과거의 짧은 머리·빨간 상의/검은 겉옷과 보육 공간을 함께 전달하되 과거 정면 구도에 가깝다.",
+        "P1": "Local은 실내 측면 인터뷰로 바뀌지만 Oracle 두 형식은 3초 동안 노트북을 유지한다. 참조 추가가 오히려 전환을 억제한 조건이며 attention 기전은 미측정이다.",
+        "P2": "Image/Past에서 과거 인물·장소가 다시 보인다. Video/Past는 노트북을 유지한다. Local의 실내 인터뷰 개선을 정확한 identity 회복으로 세지 않는다.",
+        "P3": "Image/Past는 과거 외관을 전달하며 P0/P2보다 상반신에 가까운 구도다. Video/Past는 여전히 노트북이다. 요청한 측면 구도를 완전히 따르는 것은 아니다."
+      }
+    },
+    "five_002_robot_head": {
+      "summary_ko": "P2/P3에서는 Local도 전시 구도로 전환하지만 둥근 은색 머리를 생성한다. Image/Past는 과거에 가까운 투구형 머리와 금색 얼굴부를 더 일찍 보여주고 Video/Past도 후반에 머리가 보인다. 이 사례는 전환 자체의 prompt 효과와 참조 외관의 추가 기여를 구분할 수 있다.",
+      "variants": {
+        "P0": "세 조건 모두 Local의 몸통 중심 근접 구도를 유지해 머리 평가가 제한된다.",
+        "P1": "화면이 일부 넓어지지만 머리 노출은 P2/P3보다 제한적이다. 완전한 개선으로 세지 않는다.",
+        "P2": "Local은 약 0.67초 표본부터 전시 구도지만 둥근 은색 머리다. Image/Past는 투구형 머리/금색 얼굴부가 보이고 Video/Past는 약 1.67초 이후 표본에서 머리가 드러난다. 과거의 손 조작은 함께 재현되지 않는다.",
+        "P3": "P2와 유사하다. Video/Past는 약 2.33초 표본에서 머리 노출이 뚜렷해 더 늦다. 정적인 전시 pose는 요청된 결과이며 움직임이 적다는 이유로 실패로 세지 않는다. 세부 형상 정확도는 별도 정량 검증하지 않았다."
+      }
+    },
+    "five_003_student_return": {
+      "summary_ko": "P0/P1/P2/P3의 세 조건 모두 교사 정면과 학생 뒷모습의 Local 구도에 머문다. 학생 얼굴을 보여주는 reverse-angle 전환이 나오지 않아 외관 활용을 평가할 전제가 충족되지 않는다.",
+      "variants": {
+        "P0": "세 조건 모두 학생 얼굴 쪽 전환에 실패한다. 교사의 시선·표정 변화나 작은 DINO 상승은 학생 identity 회복이 아니다.",
+        "P1": "세 조건 모두 학생 얼굴 쪽 전환에 실패한다. 교사의 시선·표정 변화나 작은 DINO 상승은 학생 identity 회복이 아니다.",
+        "P2": "세 조건 모두 학생 얼굴 쪽 전환에 실패한다. 교사의 시선·표정 변화나 작은 DINO 상승은 학생 identity 회복이 아니다.",
+        "P3": "세 조건 모두 학생 얼굴 쪽 전환에 실패한다. 교사의 시선·표정 변화나 작은 DINO 상승은 학생 identity 회복이 아니다."
+      }
+    },
+    "five_004_van_exterior": {
+      "summary_ko": "Local과 Image/Past는 모든 prompt에서 운전석 내부를 유지한다. Video/Past는 P2/P3에서 실제 과거 밴의 외관과 주변 장소를 보여주는 외부 장면으로 전환된다. 다만 과거 주차 구도에 가깝고 고정 카메라에서 바퀴를 굴리며 앞으로 주행했다는 성공 근거는 부족하다.",
+      "variants": {
+        "P0": "세 조건 모두 운전석 내부 장면을 지속한다.",
+        "P1": "외부 고정 카메라와 차량 자체 이동을 명확히 지시해도 세 조건 모두 내부를 유지한다.",
+        "P2": "Video/Past만 약 0.67초 표본에서 외부 장면으로 전환되고 과거의 밴 차체·앞부분·주변 장소가 보인다. 새 주행 동작 성공과는 구분한다.",
+        "P3": "Video/Past의 외부 전환이 유지되지만 P2보다 전환 겹침이 오래 남아 약 1초 표본부터 외관이 명확하다. DINO가 더 높아도 주행 제어가 더 낫다는 뜻은 아니다. Local/Image는 여전히 내부다."
+      }
+    },
+    "five_005_conservator": {
+      "summary_ko": "새 prompt에서 Oracle 두 형식은 회색 곱슬머리·안경을 유지하며 P0의 정면 작업대 전경에서 측면 근접 구도로 바뀐다. Local-only는 다른 머리와 안경 없는 인물이다. 원본을 가리지 않고 과거 외관과 새로운 구도를 결합할 수 있다는 근거지만 얼굴·손·책의 동시 노출과 전환 잔상은 남는다.",
+      "variants": {
+        "P0": "Local은 다른 인물을 생성하고 두 Oracle은 실제 과거 인물 외관을 전달하지만 정면의 넓은 작업대 구도다.",
+        "P1": "두 Oracle에서 회색 머리·안경과 측면 얼굴 구도가 보인다. Image는 전환 겹침이 있고 Video는 약 1초 표본부터 측면 얼굴이 뚜렷하다. Local도 측면 구도지만 실제 과거 외관과 다르다.",
+        "P2": "과거 외관·측면 구도는 유지된다. Image의 Local 손 장면 겹침이 더 오래 남는다. Video는 얼굴 위주여서 요청한 손·책 동시 노출은 제한적이다.",
+        "P3": "얼굴과 손/작업물이 함께 보이는 구간이 있지만 상단 얼굴이 잘리거나 겹침이 남는다. P1보다 일관된 개선은 아니다. 샘플 프레임에서 과거 영상의 정면 컷 순서/큰 자막을 그대로 재현하는 양상은 보이지 않는다."
+      }
+    }
+  }
+}

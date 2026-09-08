@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-09-08T07:31:52.015728+00:00",
+  "html_pages": 25,
+  "local_links_checked": 866,
+  "raw_md_navigation_links": 0,
+  "generated_video_players": 60,
+  "preload_none_video_players": 75,
+  "http_checked": false,
+  "http_assets": [],
+  "report_sha256": "5d5839b617f0a0e95b90857054c6044570ccbcfc24ebaa85515e6c3592b4c52c",
+  "summary_sha256": "b33877aef1aaff8b3e3929142d63e513af3dc512c6f28ada837d33a4da7546d7",
+  "artifact_audit_sha256": "8c806e7541f099ba2d78aa8272ec66886032f36ff92d0bb5df40da861147c671",
+  "limitations": [
+    "HTTP and local link checks do not verify playback on the user PC."
+  ]
+}

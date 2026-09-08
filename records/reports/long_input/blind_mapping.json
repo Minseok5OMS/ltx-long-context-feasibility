@@ -1,0 +1,37 @@
+{
+  "long_001_nursery_manager": {
+    "A": "oracle_sparse",
+    "B": "full_reference",
+    "C": "uniform_sparse",
+    "D": "local",
+    "E": "native_full"
+  },
+  "long_002_robot_head": {
+    "A": "native_full",
+    "B": "full_reference",
+    "C": "local",
+    "D": "oracle_sparse",
+    "E": "uniform_sparse"
+  },
+  "long_003_student_return": {
+    "A": "oracle_sparse",
+    "B": "local",
+    "C": "uniform_sparse",
+    "D": "full_reference",
+    "E": "native_full"
+  },
+  "long_004_van_exterior": {
+    "A": "local",
+    "B": "native_full",
+    "C": "uniform_sparse",
+    "D": "oracle_sparse",
+    "E": "full_reference"
+  },
+  "long_005_conservator": {
+    "A": "local",
+    "B": "oracle_sparse",
+    "C": "uniform_sparse",
+    "D": "native_full",
+    "E": "full_reference"
+  }
+}

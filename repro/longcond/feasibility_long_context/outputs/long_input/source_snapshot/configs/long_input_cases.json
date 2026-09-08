@@ -1,0 +1,322 @@
+{
+  "status": "frozen_for_execution",
+  "frozen_at_utc": "2026-09-08T08:57:45.622401+00:00",
+  "previous_formal_generations": 95,
+  "user_execution_authorized": true,
+  "seed": 42,
+  "width": 512,
+  "height": 288,
+  "fps": 24,
+  "history_seconds": 32,
+  "local_seconds": 2,
+  "target_seconds": 3,
+  "sampler_steps": 8,
+  "cells": [
+    "local",
+    "native_full",
+    "full_reference",
+    "oracle_sparse",
+    "uniform_sparse"
+  ],
+  "new_generations": 25,
+  "evidence_latent_frames": 9,
+  "protocol_sha256": "3e7e8926a5e64cab98f69a23c8528487c477346a9cd84d36103ac37f1e0e219e",
+  "source_review_sha256": "2551220eb870aac4cdd376951bb3d740081a973cb09942441e1b7bd4972d3d9a",
+  "dataset_revision": "84c74091e1c6ee7a5dffabfafb5c9033e4718883",
+  "uniform_rule": "One 9-latent-frame chunk at temporal center of eligible bank indices 1..90: indices 41..49; no evidence avoidance",
+  "multi_evidence_status": "All five are single-chunk appearance diagnostics; natural complementary multi-evidence dependency was not established.",
+  "success_criteria": {
+    "minimum_sources_oracle_improves_local": 2,
+    "noninferior_cases_out_of_5": 4,
+    "median_denoising_speedup_goal": 1.5,
+    "incremental_memory_reduction_goal": 0.2
+  },
+  "examples": [
+    {
+      "example_id": "long_001_nursery_manager",
+      "previous_example_id": "five_001_nursery_manager",
+      "candidate_id": "fv_84c74091_0000_00010",
+      "title_ko": "보육원 직원 재등장 (새 구간)",
+      "history_start": 77.84306666666667,
+      "history_end": 109.84306666666667,
+      "local_start": 107.84306666666667,
+      "target_start": 109.84306666666667,
+      "target_end": 112.84306666666667,
+      "oracle_indices": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "uniform_indices": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "oracle_nominal_source_interval": [
+        83.1764,
+        86.1764
+      ],
+      "uniform_nominal_source_interval": [
+        91.1764,
+        94.1764
+      ],
+      "prompt": "A hard cut switches from the visiting assessor to a three-quarter side-angle medium close-up of the same nursery staff member who was seated at the laptop earlier. Her face and shoulders remain fully visible as she speaks and makes a small hand gesture. The camera stays fixed on the staff member in the childcare room.",
+      "attributes": [
+        "The same apparent face and tied-back dark ponytail of the nursery staff member",
+        "Red collared shirt with navy sleeveless nursery uniform"
+      ],
+      "selection_reason": "The previous T=130.063 history contains a different staff member, not the manager. Move T to verified source cut at 109.8430667 and evaluate the staff member.",
+      "limitations": [
+        "This is a different staff member and target from the earlier nursery-manager diagnostic.",
+        "Local shows the visiting assessor; it contains a different visible person, not an empty scene.",
+        "The same staff member also occurs at the laptop closer to T; Oracle gap is not the nearest possible evidence gap."
+      ],
+      "source_review": "Assistant inspected timestamped RGB sheets before generation; not blind/user-validated selection",
+      "gt_dino_valid_for_requested_view": true,
+      "uniform_oracle_index_overlap": []
+    },
+    {
+      "example_id": "long_002_robot_head",
+      "previous_example_id": "five_002_robot_head",
+      "candidate_id": "fv_84c74091_0000_00014",
+      "title_ko": "로봇 모형의 가려졌던 머리",
+      "history_start": 228.0,
+      "history_end": 260.0,
+      "local_start": 258.0,
+      "target_start": 260.0,
+      "target_end": 263.0,
+      "oracle_indices": [
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ],
+      "uniform_indices": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "oracle_nominal_source_interval": [
+        237.33333333333334,
+        240.33333333333334
+      ],
+      "uniform_nominal_source_interval": [
+        241.33333333333334,
+        244.33333333333334
+      ],
+      "prompt": "The close-up of the robot's lower body ends with a hard cut to a wider display shot. The same robot model stands upright on its own, with its entire head, both shoulders and upper torso comfortably inside the frame. The camera is fixed at the model's head height. Its helmet and face retain their appearance from the earlier view. The model maintains its display pose for the rest of the shot.",
+      "attributes": [
+        "Angular helmet and small gold face insert",
+        "Upper shoulder armor shape and layered head-to-chest design"
+      ],
+      "selection_reason": "Move T to 260 so preceding 32 seconds contain the frontal helmet while Local does not. New-view prompting task; source continuation is not the requested-view GT.",
+      "limitations": [
+        "The original T=367.634 preceding 32 seconds did not clearly expose the required head.",
+        "New Local shows torso, legs and then the back of the head; the frontal gold face and helmet front are not exposed.",
+        "The unprompted source continuation at T=260 does not show the requested display view. It is a temporal continuation reference, not a valid full-frame GT for this prompted view. Judge head appearance against Oracle and prompt; do not rank this case by GT DINO.",
+        "Some Oracle frames contain hands over the torso; background is retained."
+      ],
+      "source_review": "Assistant inspected timestamped RGB sheets before generation; not blind/user-validated selection",
+      "gt_dino_valid_for_requested_view": false,
+      "uniform_oracle_index_overlap": []
+    },
+    {
+      "example_id": "long_003_student_return",
+      "previous_example_id": "five_003_student_return",
+      "candidate_id": "fv_84c74091_0000_00025",
+      "title_ko": "교실 학생의 얼굴 재등장",
+      "history_start": 92.58333333333333,
+      "history_end": 124.58333333333333,
+      "local_start": 122.58333333333333,
+      "target_start": 124.58333333333333,
+      "target_end": 127.58333333333333,
+      "oracle_indices": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "uniform_indices": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "oracle_nominal_source_interval": [
+        106.25,
+        109.25
+      ],
+      "uniform_nominal_source_interval": [
+        105.91666666666666,
+        108.91666666666666
+      ],
+      "prompt": "A hard cut switches from the teacher-facing view to a reverse-angle medium close-up of the same student at the teacher's desk. Her face is fully visible as she looks toward the teacher just beside the camera. She listens and gives a brief response with a small nod. The camera stays fixed on the student throughout the shot.",
+      "attributes": [
+        "The same apparent student face",
+        "Front curls and light shirt under the open hoodie"
+      ],
+      "selection_reason": "Original target retained; substitute evidence exists inside preceding 32 seconds.",
+      "limitations": [
+        "Maroon hoodie and some rear hair are already visible in Local and do not establish retrieval benefit.",
+        "Oracle and GT are similar reverse-angle shots with only a 14.58 second gap from the selected interval end.",
+        "The prompt specifies the role and shot direction, not the clothing or hair.",
+        "Exact GT turn timing is not requested; note pose copying separately."
+      ],
+      "source_review": "Assistant inspected timestamped RGB sheets before generation; not blind/user-validated selection",
+      "gt_dino_valid_for_requested_view": true,
+      "uniform_oracle_index_overlap": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "example_id": "long_004_van_exterior",
+      "previous_example_id": "five_004_van_exterior",
+      "candidate_id": "fv_84c74091_0000_00028",
+      "title_ko": "캠퍼 밴 외관으로 시점 전환",
+      "history_start": 276.0,
+      "history_end": 308.0,
+      "local_start": 306.0,
+      "target_start": 308.0,
+      "target_end": 311.0,
+      "oracle_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "uniform_indices": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "oracle_nominal_source_interval": [
+        276.0,
+        279.0
+      ],
+      "uniform_nominal_source_interval": [
+        289.3333333333333,
+        292.3333333333333
+      ],
+      "prompt": "A hard cut switches from the view inside the van to a wide exterior shot of the same camper van on a driveway. A stationary camera stands outside the vehicle at a front three-quarter angle, with the entire van in frame. The van itself rolls slowly forward across the driveway while its wheels turn. The camera remains fixed, and the exterior shot fills the frame. The same camper van seen earlier in the tour keeps its appearance across the cut.",
+      "attributes": [
+        "Cream-white boxy body with a brown side stripe",
+        "Black front grille with round headlights and the same window layout"
+      ],
+      "selection_reason": "Original target retained; substitute evidence exists inside preceding 32 seconds.",
+      "limitations": [
+        "The broad camper-van category is in the prompt and is not a recovered attribute.",
+        "Target includes a cross-dissolve and another parked van in the background.",
+        "Some generic vehicle identity may be inferred from the steering wheel; exterior detail recovery is the criterion."
+      ],
+      "source_review": "Assistant inspected timestamped RGB sheets before generation; not blind/user-validated selection",
+      "gt_dino_valid_for_requested_view": true,
+      "uniform_oracle_index_overlap": []
+    },
+    {
+      "example_id": "long_005_conservator",
+      "previous_example_id": "five_005_conservator",
+      "candidate_id": "fv_84c74091_0000_00029",
+      "title_ko": "보존 작업자의 얼굴 재등장",
+      "history_start": 78.46666666666667,
+      "history_end": 110.46666666666667,
+      "local_start": 108.46666666666667,
+      "target_start": 110.46666666666667,
+      "target_end": 113.46666666666667,
+      "oracle_indices": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "uniform_indices": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "oracle_nominal_source_interval": [
+        86.13333333333334,
+        89.13333333333334
+      ],
+      "uniform_nominal_source_interval": [
+        91.8,
+        94.8
+      ],
+      "prompt": "The close-up of the hands ends with a hard cut to a side-angle medium close-up of the same textile conservator at the workbench. Her face remains in the upper half of the frame, with her hands and the book visible below. She looks down and continues gently cleaning the book. The camera holds this view throughout the shot.",
+      "attributes": [
+        "Short wavy gray-blond hair and the same apparent face",
+        "Slim dark-rimmed eyeglasses"
+      ],
+      "selection_reason": "Original target retained; substitute evidence exists inside preceding 32 seconds.",
+      "limitations": [
+        "Gray sleeves are already in Local and do not count as recovered evidence.",
+        "GT face leaves the upper image near the end; whole-frame DINO mixes appearance, viewpoint and workbench content.",
+        "Embedded source captions are not removed; the selected image at 47.0 seconds has no bottom subtitle."
+      ],
+      "source_review": "Assistant inspected timestamped RGB sheets before generation; not blind/user-validated selection",
+      "gt_dino_valid_for_requested_view": true,
+      "uniform_oracle_index_overlap": []
+    }
+  ]
+}

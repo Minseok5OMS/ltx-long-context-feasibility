@@ -1,0 +1,488 @@
+{
+  "status": "completed",
+  "example_id": "long_003_student_return",
+  "example": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/data/long_input/long_003_student_return",
+  "cell": "full_reference",
+  "mode": "oracle",
+  "seed": 42,
+  "decoder_seed": 20042,
+  "physical_gpu": 0,
+  "cuda_visible_devices": "0",
+  "plan_sha256": "bdba61857111a43b2576f725d2be1dc262ee88480e40f30a49f712df5060d75f",
+  "script_sha256": "5aa18ab946620040043cecb7e21afc2597366029ee9857cc2262981d2d6deccf",
+  "controls_sha256": "4183a7030b694af476779125b83d30061fbbe7e3735778b2a5a7adab46ba3d73",
+  "models": {
+    "transformer": {
+      "path": "/mnt/minu/minseok/LTX-2/models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors",
+      "bytes": 42018190584,
+      "mtime_ns": 1787903911728802396
+    },
+    "video_vae": {
+      "path": "/mnt/minu/minseok/LTX-2/models/ltx-2.5/vae/ltx-2.5-video-vae-bf16.safetensors",
+      "bytes": 1472223346,
+      "mtime_ns": 1787902886111443535
+    },
+    "text_encoder": {
+      "path": "/mnt/minu/minseok/LTX-2/models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors",
+      "bytes": 26263858182,
+      "mtime_ns": 1787904902081692604
+    }
+  },
+  "prompt": "A hard cut switches from the teacher-facing view to a reverse-angle medium close-up of the same student at the teacher's desk. Her face is fully visible as she looks toward the teacher just beside the camera. She listens and gives a brief response with a small nod. The camera stays fixed on the student throughout the shot.",
+  "prompt_enhancement": false,
+  "fps": 24,
+  "width": 512,
+  "height": 288,
+  "target_frames": 72,
+  "prefix_latent_frames": 7,
+  "base_video_tokens": 2304,
+  "target_token_slice": [
+    1008,
+    2304
+  ],
+  "native_model_pixel_frames": 121,
+  "decoder_tail_pixel_frames": 121,
+  "decoder_tail_conditioning_latent_frames": 7,
+  "sigmas": [
+    1.0,
+    0.9937499761581421,
+    0.987500011920929,
+    0.981249988079071,
+    0.9750000238418579,
+    0.909375011920929,
+    0.7250000238418579,
+    0.421875,
+    0.0
+  ],
+  "sampler": "Euler ancestral",
+  "eta": 1.0,
+  "s_noise": 1.0,
+  "precision": "bfloat16",
+  "guidance": "SimpleDenoiser; no CFG/STG/LoRA",
+  "attention_backend": "PytorchAttention / torch SDPA",
+  "audio_policy": "Same 121/24-second jointly generated audio, shifted +30s; no source audio or audio decode",
+  "no_gt_loaded": true,
+  "command": "/mnt/minu/minseok/LTX-2/.venv/bin/python3 /mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/run_long_input.py --example long_003_student_return --cell full_reference --gpu 0",
+  "cwd": "/mnt/minu/minseok/LTX-2/longcond",
+  "started_at_utc": "2026-09-08T13:18:55.449478+00:00",
+  "environment": {
+    "torch": "2.13.0+cu132",
+    "cuda": "13.2",
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+  },
+  "outputs": {
+    "target": {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/long_input/seed42/long_003_student_return/full_reference/local_oracle.mp4",
+      "frames": 72,
+      "fps": 24,
+      "duration_seconds": 3.0,
+      "sha256": "090014ba272ed0463268104657a9d2be4f5fccb71a1330c4b7fce5bd80b43dcf",
+      "full_decode_passed": true
+    },
+    "continuation": {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/long_input/seed42/long_003_student_return/full_reference/local_then_generated.mp4",
+      "frames": 120,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "sha256": "ec60c0b271a8472fddbecf74185ff0f51d59d7001b08d036378a81489fa5c231",
+      "full_decode_passed": true
+    },
+    "decoded_full": {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/long_input/seed42/long_003_student_return/full_reference/decoded_model_sequence.mp4",
+      "frames": 121,
+      "fps": 24,
+      "duration_seconds": 5.041666666666667,
+      "sha256": "2b697202fb3799476867488a1fd86589e0802bb526050c6e4f713a3a1f5697d2",
+      "full_decode_passed": true
+    }
+  },
+  "cache_load_and_verify_seconds": 0.03791702538728714,
+  "input_caches": {
+    "local": {
+      "file_sha256": "f59edd5cbf900621a7155d68bbc970173cb1a7a881f1ea90ca549b84416f876f",
+      "metadata_sha256": "3eaac4488560afc881f31f8570b4688a19d4888447a7dd15c4c8b5891af303f1"
+    },
+    "text": {
+      "file_sha256": "cb36579b17fb434e3a73572025b9ae925c37db9cbc0a68c58cf65eabca9fa0c0",
+      "metadata_sha256": "fc78fe8e99254ea92cda6f92700b5a06196524c2d563ccec0dfc746ecaac9b1d"
+    },
+    "history": {
+      "file_sha256": "13852992040b9ecbb7e67d63f1c046a4c408a50ee002edbf467479f945986356",
+      "metadata_sha256": "5ffe5c4a60b54d07d7d48addc333880a9fc9939e7754e11538e0c418af1f6182"
+    }
+  },
+  "reference_latent_sha256": "c0ce44d613437318f8c758965979b7117cbdd481c36a4c6e223c5a64a9661eb1",
+  "reference_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90
+  ],
+  "cpu_gather_seconds": 0.004411032423377037,
+  "h2d_seconds": 0.001691640354692936,
+  "condition_latent_sha256": "4d236e3fe5868cf198a19c663bf96cb42fb85f22dfbdd13aea1232761853d373",
+  "text_hashes": {
+    "video_context": "dfaeb3c181bb9896f297bbfd6574767f06ff071bc9b53648406e50a31b52c298",
+    "audio_context": "f75b7ff546967bfbde045b938c1745e2a054e89b396edc351b4720de4cc3fe1c"
+  },
+  "reference_tokens": 13104,
+  "transformer_load_seconds": 8.771497756242752,
+  "resident_baseline_allocated_gib": 35.39244222640991,
+  "resident_baseline_reserved_gib": 40.3515625,
+  "resident_baseline_scope": "Loaded transformer plus already transferred text/condition inputs; before latent-state building",
+  "target_positions_sha256": "94baeb28ec0a470cb51ef15e3a4d0b10a2c735deea9f48372bece1e8a8457636",
+  "audio_positions_sha256": "57f0d6ab1797e4ca9599dea3456cb530b8b46da77afa8c577527641462e5da1c",
+  "audio_shape": [
+    1,
+    126,
+    128
+  ],
+  "actual_video_tokens": 15408,
+  "sampler_wall_seconds_including_audits": 18.288300663232803,
+  "sampler_audit_seconds": 0.10856139473617077,
+  "sampler_seconds_excluding_audits": 18.179739268496633,
+  "noise_cpu_bookkeeping_seconds": 0.018549100495874882,
+  "denoising_peak_allocated_gib": 39.048930644989014,
+  "denoising_peak_reserved_gib": 43.1796875,
+  "final_frozen_max_abs_error": 0.0,
+  "noise_audit": {
+    "initial": [
+      {
+        "step": 0,
+        "modality": "video",
+        "seed": 42,
+        "shape": [
+          1,
+          1296,
+          128
+        ],
+        "sha256": "036abab528e3594cf59ae8af9966d7ff320f50757f0e586c01adc96afe81e053"
+      },
+      {
+        "step": 0,
+        "modality": "audio",
+        "seed": 43,
+        "shape": [
+          1,
+          126,
+          128
+        ],
+        "sha256": "af1a4f1399db3d1bcdd41e28e3761b6b316b9c703aa600a95f0522b424bfa085"
+      }
+    ],
+    "ancestral": [
+      {
+        "step": 0,
+        "modality": "video",
+        "seed": 10042,
+        "shape": [
+          1,
+          1296,
+          128
+        ],
+        "sha256": "6d5db088ce620bbd91c0161e0b590a5caefcb89dbff1ad613a51f584c8ab50f2"
+      },
+      {
+        "step": 0,
+        "modality": "audio",
+        "seed": 10043,
+        "shape": [
+          1,
+          126,
+          128
+        ],
+        "sha256": "bf26ca1d773a5cb2b3414d9074c2596c99c6f347164be0f39918e39e5f3b4dea"
+      },
+      {
+        "step": 1,
+        "modality": "video",
+        "seed": 10044,
+        "shape": [
+          1,
+          1296,
+          128
+        ],
+        "sha256": "5de583183220c2e046908eaf71540e9a52a615a0d6a1828d7fcf3a3fa9e06d15"
+      },
+      {
+        "step": 1,
+        "modality": "audio",
+        "seed": 10045,
+        "shape": [
+          1,
+          126,
+          128
+        ],
+        "sha256": "0a01d868e581fb15a9c0bbe4761c3fd94710321e809944c0b7ac1a57efab5543"
+      },
+      {
+        "step": 2,
+        "modality": "video",
+        "seed": 10046,
+        "shape": [
+          1,
+          1296,
+          128
+        ],
+        "sha256": "e460e8d2cc55253e7d3dcd2834d050b72365d39b58b3435a7b17a5159952f640"
+      },
+      {
+        "step": 2,
+        "modality": "audio",
+        "seed": 10047,
+        "shape": [
+          1,
+          126,
+          128
+        ],
+        "sha256": "7673794ce5cec3b344eb202f59fc96b7d63701654c883b5562649f557e51b022"
+      },
+      {
+        "step": 3,
+        "modality": "video",
+        "seed": 10048,
+        "shape": [
+          1,
+          1296,
+          128
+        ],
+        "sha256": "692c939648491c1cd5a95be9921e0fb3f527c93947c87191378971c9f5f453e6"
+      },
+      {
+        "step": 3,
+        "modality": "audio",
+        "seed": 10049,
+        "shape": [
+          1,
+          126,
+          128
+        ],
+        "sha256": "2c855935be3babcff20b3e459ba16ba6f77adbbe9cf94bd567392bb1529913c7"
+      },
+      {
+        "step": 4,
+        "modality": "video",
+        "seed": 10050,
+        "shape": [
+          1,
+          1296,
+          128
+        ],
+        "sha256": "5ae246e26eae7c4b7f605ea267899053393b64e840678b2bc2dff86df39a66e4"
+      },
+      {
+        "step": 4,
+        "modality": "audio",
+        "seed": 10051,
+        "shape": [
+          1,
+          126,
+          128
+        ],
+        "sha256": "16d73ecba7b1df194ae3d5863fa9347f9acbf32c63c714f7705bf90b329f1953"
+      },
+      {
+        "step": 5,
+        "modality": "video",
+        "seed": 10052,
+        "shape": [
+          1,
+          1296,
+          128
+        ],
+        "sha256": "49335c673625fc8fed280c1055e5f68977c98c97d8eeb7a40067af1b73f304fa"
+      },
+      {
+        "step": 5,
+        "modality": "audio",
+        "seed": 10053,
+        "shape": [
+          1,
+          126,
+          128
+        ],
+        "sha256": "8e74579276a1e055cc8a4e43367a84bce2862210fdc32db886d4bd5cdfca2743"
+      },
+      {
+        "step": 6,
+        "modality": "video",
+        "seed": 10054,
+        "shape": [
+          1,
+          1296,
+          128
+        ],
+        "sha256": "e21754351192a5f0b42a7ad8ff22b7e629967dc71ab5d0cc5b13c012fbd17012"
+      },
+      {
+        "step": 6,
+        "modality": "audio",
+        "seed": 10055,
+        "shape": [
+          1,
+          126,
+          128
+        ],
+        "sha256": "979ed7d3f4522e28dfcc78c23baa0fe3213d7c064c91d5c731b8b07505693c8a"
+      }
+    ]
+  },
+  "denoising_trace": [
+    {
+      "step": 0,
+      "frozen_max_abs_error": 0.0,
+      "forward_wall_seconds": 2.472496203146875,
+      "forward_cuda_seconds": 2.472373046875
+    },
+    {
+      "step": 1,
+      "frozen_max_abs_error": 0.0,
+      "forward_wall_seconds": 2.2312650745734572,
+      "forward_cuda_seconds": 2.23117333984375
+    },
+    {
+      "step": 2,
+      "frozen_max_abs_error": 0.0,
+      "forward_wall_seconds": 2.232032568193972,
+      "forward_cuda_seconds": 2.231962646484375
+    },
+    {
+      "step": 3,
+      "frozen_max_abs_error": 0.0,
+      "forward_wall_seconds": 2.2332589365541935,
+      "forward_cuda_seconds": 2.23317919921875
+    },
+    {
+      "step": 4,
+      "frozen_max_abs_error": 0.0,
+      "forward_wall_seconds": 2.2338825184851885,
+      "forward_cuda_seconds": 2.23381201171875
+    },
+    {
+      "step": 5,
+      "frozen_max_abs_error": 0.0,
+      "forward_wall_seconds": 2.23449488542974,
+      "forward_cuda_seconds": 2.234417236328125
+    },
+    {
+      "step": 6,
+      "frozen_max_abs_error": 0.0,
+      "forward_wall_seconds": 2.2354088639840484,
+      "forward_cuda_seconds": 2.235353515625
+    },
+    {
+      "step": 7,
+      "frozen_max_abs_error": 0.0,
+      "forward_wall_seconds": 2.235570295713842,
+      "forward_cuda_seconds": 2.23550048828125
+    }
+  ],
+  "forward_cuda_seconds": 18.107771484375,
+  "forward_wall_seconds": 18.108409346081316,
+  "incremental_peak_allocated_gib": 3.6564884185791016,
+  "generation_process_seconds_before_decode": 27.85442069824785,
+  "cpu_peak_rss_gib": 40.86922073364258,
+  "device_monitor": {
+    "samples": 278,
+    "sample_interval_ms": 100,
+    "peak_device_used_gib": 43.89453125,
+    "temperature_c_range": [
+      42.0,
+      68.0
+    ],
+    "scope": "whole isolated process including loading/audits; device total, not process allocator"
+  },
+  "decoder_seconds": 3.544489917345345,
+  "decoder_process_wall_seconds": 8.022163292393088,
+  "decoder_peak_allocated_gib": 3.3081536293029785,
+  "decoder_result_sha256": "0dde52858f9b556daaf90d3db720ba10515f8d5c2392e6d464712cbdd3429c6a",
+  "total_process_seconds": 36.04252855293453,
+  "finished_at_utc": "2026-09-08T13:19:31.493305+00:00"
+}

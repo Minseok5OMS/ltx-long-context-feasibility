@@ -1,0 +1,22 @@
+{
+  "source_root": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context",
+  "formal_runs": 120,
+  "comparison_entries": 151,
+  "new_runs_by_batch": {
+    "6": 10,
+    "8": 45,
+    "7": 15,
+    "9": 25,
+    "1": 1,
+    "4": 3,
+    "2": 9,
+    "5": 2,
+    "3": 10
+  },
+  "unique_video_files": 284,
+  "source_config_copy_policy": "Byte-identical",
+  "media_copy_policy": "Byte-identical MP4, content-addressed; posters derived; still RGB uses original preprocessing",
+  "generation_performed": false,
+  "new_evaluation_performed": false,
+  "builder_sha256": "91afc332f5244be8dc3c04263024486f1d38c5f08b2d0ec7cbc33ad0001cf6c1"
+}

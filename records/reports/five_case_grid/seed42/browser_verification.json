@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-09-07T13:59:55.253680+00:00",
+  "browser": "Firefox headless",
+  "pages": [
+    {
+      "url": "http://127.0.0.1:8765/reports/five_case_grid/seed42/index.html",
+      "screenshot": "outputs/browser_check/five_grid.png",
+      "sha256": "7b047cf70c74d9d67971e3b63aca7c9f575f95201fc7ae5490fbe4bb12dffd86",
+      "viewport": [
+        1440,
+        3000
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:8765/FIVE_CASE_GRID_RESULT.html",
+      "screenshot": "outputs/browser_check/five_grid_result.png",
+      "sha256": "d4c84c8794503fc96851a81c9561cf2376c2569c740ade0a3f9ab514f46b11a2",
+      "viewport": [
+        1440,
+        1600
+      ]
+    }
+  ],
+  "observed": [
+    "Korean text, summary table, and report navigation render correctly",
+    "Actual Local/image/video references have visible previews",
+    "Synchronized comparison has GT/Local top row, Image second row, Video third row, Past left and Target right",
+    "Comparison player shows five-second duration",
+    "Linked result document renders as styled UTF-8 HTML"
+  ],
+  "limitations": [
+    "Browser screenshots and metadata checks do not establish full playback on the user PC",
+    "Qualitative findings are assistant sample-frame inspection, not human verification or blind assessment"
+  ],
+  "delivery_verification_sha256": "f3ceb3cc16dad42c0a03a79c9aae3b6575681d1a125216d4a681bc4f5d3ebf60",
+  "http_assets_checked": 189,
+  "html_pages_checked": 21,
+  "local_links_checked": 496,
+  "raw_md_navigation_links": 0,
+  "gpu_end_state": {
+    "0": {
+      "memory_used_mib": 14,
+      "utilization_percent": 0
+    },
+    "1": {
+      "memory_used_mib": 14,
+      "utilization_percent": 0
+    },
+    "2": {
+      "memory_used_mib": 14,
+      "utilization_percent": 0
+    }
+  },
+  "server": "Existing tmux server ltx-longcond-report / session report preserved",
+  "user_url": "http://localhost:8765/reports/five_case_grid/seed42/index.html"
+}

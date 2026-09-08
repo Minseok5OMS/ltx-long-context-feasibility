@@ -1,0 +1,606 @@
+{
+  "five_001_nursery_manager": {
+    "id": "five_001_nursery_manager",
+    "title": "보육원 관리자 재등장",
+    "inputs": {
+      "local_context": {
+        "path": "media/videos/c03b74ab2791cbc6d09852a39462369de59e0f5abc57800fba9ebf623a1fd7de.mp4",
+        "poster": "media/posters/c03b74ab2791cbc6d09852a39462369de59e0f5abc57800fba9ebf623a1fd7de.jpg",
+        "sha256": "c03b74ab2791cbc6d09852a39462369de59e0f5abc57800fba9ebf623a1fd7de",
+        "frames": 48,
+        "fps": 24.0,
+        "note": "RGB 표시 · 48 frames / 24 FPS"
+      },
+      "oracle_context": {
+        "path": "media/videos/d8b685f18afe2d3f64783c998d8ca32a5850a57bc1b6ab8bcf3d8debb550cd69.mp4",
+        "poster": "media/posters/d8b685f18afe2d3f64783c998d8ca32a5850a57bc1b6ab8bcf3d8debb550cd69.jpg",
+        "sha256": "d8b685f18afe2d3f64783c998d8ca32a5850a57bc1b6ab8bcf3d8debb550cd69",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "RGB 표시 · 72 frames / 24 FPS"
+      },
+      "gt_target": {
+        "path": "media/videos/721b20f581ff1ade267af5c1679d79c2542763c58b33249926948d13a8dd9c60.mp4",
+        "poster": "media/posters/721b20f581ff1ade267af5c1679d79c2542763c58b33249926948d13a8dd9c60.jpg",
+        "sha256": "721b20f581ff1ade267af5c1679d79c2542763c58b33249926948d13a8dd9c60",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "원본 후속 · 생성 입력 제외"
+      }
+    },
+    "stills": {
+      "oracle": {
+        "path": "media/stills/five_001_nursery_manager_oracle_frame36.png",
+        "frame_index": 36,
+        "preprocessing": "Exact run_generation.read_rgb centered Lanczos fit to 512x288",
+        "rgb_sha256": "a5d163c2ec509c77e452dc4a5735f5af8aa2b57be4e33409976e104cb22868e2"
+      }
+    },
+    "metadata": "records/data/five_001_nursery_manager/metadata.json",
+    "source_title": "Kerry Mills | Trainer Assessor",
+    "observation": "",
+    "note": "Local은 생성 조건입니다. 원본 후속은 입력에 넣지 않았습니다."
+  },
+  "five_002_robot_head": {
+    "id": "five_002_robot_head",
+    "title": "로봇 모형의 가려졌던 머리",
+    "inputs": {
+      "local_context": {
+        "path": "media/videos/d5f6a81366e9ce8d9cca51f3c6a6d2e4984ec9fc2f7145b9d7f144a85bd5e0db.mp4",
+        "poster": "media/posters/d5f6a81366e9ce8d9cca51f3c6a6d2e4984ec9fc2f7145b9d7f144a85bd5e0db.jpg",
+        "sha256": "d5f6a81366e9ce8d9cca51f3c6a6d2e4984ec9fc2f7145b9d7f144a85bd5e0db",
+        "frames": 48,
+        "fps": 24.0,
+        "note": "RGB 표시 · 48 frames / 24 FPS"
+      },
+      "oracle_context": {
+        "path": "media/videos/e15ae741c1e79a9d6f8026dbc0ec88969b744c7d050c4e98aa836f211d4aa5fe.mp4",
+        "poster": "media/posters/e15ae741c1e79a9d6f8026dbc0ec88969b744c7d050c4e98aa836f211d4aa5fe.jpg",
+        "sha256": "e15ae741c1e79a9d6f8026dbc0ec88969b744c7d050c4e98aa836f211d4aa5fe",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "RGB 표시 · 72 frames / 24 FPS"
+      },
+      "gt_target": {
+        "path": "media/videos/7fd86bac820db09bbed5316b7ffdbc82c7efae238d4d2638a6792064458d0e82.mp4",
+        "poster": "media/posters/7fd86bac820db09bbed5316b7ffdbc82c7efae238d4d2638a6792064458d0e82.jpg",
+        "sha256": "7fd86bac820db09bbed5316b7ffdbc82c7efae238d4d2638a6792064458d0e82",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "원본 후속 · 생성 입력 제외"
+      }
+    },
+    "stills": {
+      "oracle": {
+        "path": "media/stills/five_002_robot_head_oracle_frame36.png",
+        "frame_index": 36,
+        "preprocessing": "Exact run_generation.read_rgb centered Lanczos fit to 512x288",
+        "rgb_sha256": "f3b490edf7c397a214bda53e19da55f65a7be3ae11cd65f17daf451911e3756c"
+      }
+    },
+    "metadata": "records/data/five_002_robot_head/metadata.json",
+    "source_title": "HG Obsidian Fury Review (Pacific Rim Uprising)",
+    "observation": "",
+    "note": "Local은 생성 조건입니다. 원본 후속은 입력에 넣지 않았습니다."
+  },
+  "five_003_student_return": {
+    "id": "five_003_student_return",
+    "title": "교실 학생의 얼굴 재등장",
+    "inputs": {
+      "local_context": {
+        "path": "media/videos/af973ca0dc5e47730f88f1317c74db9649fe80347a5f015d94771fb0ab6bbc9f.mp4",
+        "poster": "media/posters/af973ca0dc5e47730f88f1317c74db9649fe80347a5f015d94771fb0ab6bbc9f.jpg",
+        "sha256": "af973ca0dc5e47730f88f1317c74db9649fe80347a5f015d94771fb0ab6bbc9f",
+        "frames": 48,
+        "fps": 24.0,
+        "note": "RGB 표시 · 48 frames / 24 FPS"
+      },
+      "oracle_context": {
+        "path": "media/videos/2cdbf4abd1c8ca13bb745e11ed76ac8d646c940fcb30567e3889af52c38652ad.mp4",
+        "poster": "media/posters/2cdbf4abd1c8ca13bb745e11ed76ac8d646c940fcb30567e3889af52c38652ad.jpg",
+        "sha256": "2cdbf4abd1c8ca13bb745e11ed76ac8d646c940fcb30567e3889af52c38652ad",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "RGB 표시 · 72 frames / 24 FPS"
+      },
+      "gt_target": {
+        "path": "media/videos/a5c8f3acf6682d799ba0652dc157059d48b8dd1a8d2000e32c505ac7a2d20a19.mp4",
+        "poster": "media/posters/a5c8f3acf6682d799ba0652dc157059d48b8dd1a8d2000e32c505ac7a2d20a19.jpg",
+        "sha256": "a5c8f3acf6682d799ba0652dc157059d48b8dd1a8d2000e32c505ac7a2d20a19",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "원본 후속 · 생성 입력 제외"
+      }
+    },
+    "stills": {
+      "oracle": {
+        "path": "media/stills/five_003_student_return_oracle_frame36.png",
+        "frame_index": 36,
+        "preprocessing": "Exact run_generation.read_rgb centered Lanczos fit to 512x288",
+        "rgb_sha256": "9364e26e06387cb6f1705373d696969e4dbed902ea8d2252fcbe44757e04dc3d"
+      }
+    },
+    "metadata": "records/data/five_003_student_return/metadata.json",
+    "source_title": "Short Film: Third Period",
+    "observation": "",
+    "note": "Local은 생성 조건입니다. 원본 후속은 입력에 넣지 않았습니다."
+  },
+  "five_004_van_exterior": {
+    "id": "five_004_van_exterior",
+    "title": "캠퍼 밴 외관으로 시점 전환",
+    "inputs": {
+      "local_context": {
+        "path": "media/videos/03b21a0e48d639865fddad345ed89a316b202dd6e88187af24b98b7471bde7e7.mp4",
+        "poster": "media/posters/03b21a0e48d639865fddad345ed89a316b202dd6e88187af24b98b7471bde7e7.jpg",
+        "sha256": "03b21a0e48d639865fddad345ed89a316b202dd6e88187af24b98b7471bde7e7",
+        "frames": 48,
+        "fps": 24.0,
+        "note": "RGB 표시 · 48 frames / 24 FPS"
+      },
+      "oracle_context": {
+        "path": "media/videos/e33850631fcd7e747aaf2538e358829bedc976dfecc83af5ff5b2748314a5338.mp4",
+        "poster": "media/posters/e33850631fcd7e747aaf2538e358829bedc976dfecc83af5ff5b2748314a5338.jpg",
+        "sha256": "e33850631fcd7e747aaf2538e358829bedc976dfecc83af5ff5b2748314a5338",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "RGB 표시 · 72 frames / 24 FPS"
+      },
+      "gt_target": {
+        "path": "media/videos/b44c687f4f87587bace865f6293b91f8b43a1e48ea904ffca70e1f2e30d5643a.mp4",
+        "poster": "media/posters/b44c687f4f87587bace865f6293b91f8b43a1e48ea904ffca70e1f2e30d5643a.jpg",
+        "sha256": "b44c687f4f87587bace865f6293b91f8b43a1e48ea904ffca70e1f2e30d5643a",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "원본 후속 · 생성 입력 제외"
+      }
+    },
+    "stills": {
+      "oracle": {
+        "path": "media/stills/five_004_van_exterior_oracle_frame36.png",
+        "frame_index": 36,
+        "preprocessing": "Exact run_generation.read_rgb centered Lanczos fit to 512x288",
+        "rgb_sha256": "563538a6fc8b726fe5ecd370e173df15ff239d8fe5529ee2be34a2a481801b77"
+      }
+    },
+    "metadata": "records/data/five_004_van_exterior/metadata.json",
+    "source_title": "1983 Aircooled Vanagon Subaru JDM 2.5 Conversion Tour",
+    "observation": "",
+    "note": "Local은 생성 조건입니다. 원본 후속은 입력에 넣지 않았습니다."
+  },
+  "five_005_conservator": {
+    "id": "five_005_conservator",
+    "title": "보존 작업자의 얼굴 재등장",
+    "inputs": {
+      "local_context": {
+        "path": "media/videos/16c72b537953bab48122204bddffdbf880fbc1c8a55c3d74073ec4b2bf5bc8e8.mp4",
+        "poster": "media/posters/16c72b537953bab48122204bddffdbf880fbc1c8a55c3d74073ec4b2bf5bc8e8.jpg",
+        "sha256": "16c72b537953bab48122204bddffdbf880fbc1c8a55c3d74073ec4b2bf5bc8e8",
+        "frames": 48,
+        "fps": 24.0,
+        "note": "RGB 표시 · 48 frames / 24 FPS"
+      },
+      "oracle_context": {
+        "path": "media/videos/043b280c2f5d90c63b8c4df759e5accad5931d9c1abeff3c3d1ccf33ce09edbb.mp4",
+        "poster": "media/posters/043b280c2f5d90c63b8c4df759e5accad5931d9c1abeff3c3d1ccf33ce09edbb.jpg",
+        "sha256": "043b280c2f5d90c63b8c4df759e5accad5931d9c1abeff3c3d1ccf33ce09edbb",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "RGB 표시 · 72 frames / 24 FPS"
+      },
+      "gt_target": {
+        "path": "media/videos/9e8d86af098e2df1ce18e10fe7c47eabfcc5ed15dcc009cb2dcad403d90daa2f.mp4",
+        "poster": "media/posters/9e8d86af098e2df1ce18e10fe7c47eabfcc5ed15dcc009cb2dcad403d90daa2f.jpg",
+        "sha256": "9e8d86af098e2df1ce18e10fe7c47eabfcc5ed15dcc009cb2dcad403d90daa2f",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "원본 후속 · 생성 입력 제외"
+      }
+    },
+    "stills": {
+      "oracle": {
+        "path": "media/stills/five_005_conservator_oracle_frame36.png",
+        "frame_index": 36,
+        "preprocessing": "Exact run_generation.read_rgb centered Lanczos fit to 512x288",
+        "rgb_sha256": "08de0b04c9c28ae1253a558b452cca9d381bea34325ee861b2da99742e3e1db9"
+      }
+    },
+    "metadata": "records/data/five_005_conservator/metadata.json",
+    "source_title": "Cleaning a tiny 500-year-old embroidered book | In the Conservation Studio | British Library",
+    "observation": "",
+    "note": "Local은 생성 조건입니다. 원본 후속은 입력에 넣지 않았습니다."
+  },
+  "long_001_nursery_manager": {
+    "id": "long_001_nursery_manager",
+    "title": "보육원 직원 재등장 (새 구간)",
+    "inputs": {
+      "local_context": {
+        "path": "media/videos/44066acc0d0304e11efa0f4a4f5658a4cfd121a2e3a45ceda59896a4ff9917b4.mp4",
+        "poster": "media/posters/44066acc0d0304e11efa0f4a4f5658a4cfd121a2e3a45ceda59896a4ff9917b4.jpg",
+        "sha256": "44066acc0d0304e11efa0f4a4f5658a4cfd121a2e3a45ceda59896a4ff9917b4",
+        "frames": 48,
+        "fps": 24.0,
+        "note": "RGB 표시 · 48 frames / 24 FPS"
+      },
+      "history_32s": {
+        "path": "media/videos/89bae05c6032692c091bf54c683c177ad4de6f827f0c1b5cc13ba12119356497.mp4",
+        "poster": "media/posters/89bae05c6032692c091bf54c683c177ad4de6f827f0c1b5cc13ba12119356497.jpg",
+        "sha256": "89bae05c6032692c091bf54c683c177ad4de6f827f0c1b5cc13ba12119356497",
+        "frames": 768,
+        "fps": 24.0,
+        "note": "RGB 표시 · 768 frames / 24 FPS"
+      },
+      "oracle_context": {
+        "path": "media/videos/0b4e5c2bf826d700fc92d87aff231498f1a46ee051c2cf957cd895442673fba7.mp4",
+        "poster": "media/posters/0b4e5c2bf826d700fc92d87aff231498f1a46ee051c2cf957cd895442673fba7.jpg",
+        "sha256": "0b4e5c2bf826d700fc92d87aff231498f1a46ee051c2cf957cd895442673fba7",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "RGB 표시 · 72 frames / 24 FPS · 실제 입력은 H bank의 latent 부분집합"
+      },
+      "uniform_context": {
+        "path": "media/videos/3f2f6693cd8747108d19781dd264abfb61c5c78407eb53c646ce6689284589e8.mp4",
+        "poster": "media/posters/3f2f6693cd8747108d19781dd264abfb61c5c78407eb53c646ce6689284589e8.jpg",
+        "sha256": "3f2f6693cd8747108d19781dd264abfb61c5c78407eb53c646ce6689284589e8",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "RGB 표시 · 72 frames / 24 FPS · 실제 입력은 H bank의 latent 부분집합"
+      },
+      "gt_target": {
+        "path": "media/videos/efe33c216da9b2d0ab445ab7a308fa038498d252cfc59c82830f6278cc1ff552.mp4",
+        "poster": "media/posters/efe33c216da9b2d0ab445ab7a308fa038498d252cfc59c82830f6278cc1ff552.jpg",
+        "sha256": "efe33c216da9b2d0ab445ab7a308fa038498d252cfc59c82830f6278cc1ff552",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "원본 후속 · 생성 입력 제외"
+      }
+    },
+    "stills": {},
+    "metadata": "records/data/long_input/long_001_nursery_manager/metadata.json",
+    "source_title": "Kerry Mills | Trainer Assessor",
+    "observation": "Oracle에서 필요한 직원 외관이 드러나지만 참조 구도를 따릅니다. 앞선 관리자 사례와 Target 시점 및 인물이 다릅니다.",
+    "note": "Local은 생성 조건입니다. 원본 후속은 입력에 넣지 않았습니다. Oracle/Uniform clip은 명목 구간 표시이며 독립 VAE 입력이 아닙니다."
+  },
+  "long_002_robot_head": {
+    "id": "long_002_robot_head",
+    "title": "로봇 모형의 가려졌던 머리",
+    "inputs": {
+      "local_context": {
+        "path": "media/videos/53b4b6656a571bec0af8baf41078f5165b8c57ef8e9b79ee1421f3bdb54931c8.mp4",
+        "poster": "media/posters/53b4b6656a571bec0af8baf41078f5165b8c57ef8e9b79ee1421f3bdb54931c8.jpg",
+        "sha256": "53b4b6656a571bec0af8baf41078f5165b8c57ef8e9b79ee1421f3bdb54931c8",
+        "frames": 48,
+        "fps": 24.0,
+        "note": "RGB 표시 · 48 frames / 24 FPS"
+      },
+      "history_32s": {
+        "path": "media/videos/6537c0e59359edfd48c5d67a34cc71c72302a040c928b3954377b5c02e0d4920.mp4",
+        "poster": "media/posters/6537c0e59359edfd48c5d67a34cc71c72302a040c928b3954377b5c02e0d4920.jpg",
+        "sha256": "6537c0e59359edfd48c5d67a34cc71c72302a040c928b3954377b5c02e0d4920",
+        "frames": 768,
+        "fps": 24.0,
+        "note": "RGB 표시 · 768 frames / 24 FPS"
+      },
+      "oracle_context": {
+        "path": "media/videos/ee1546f8e4fef7d6967b30dea840d6a0598de50d78646f30c7664039a1444337.mp4",
+        "poster": "media/posters/ee1546f8e4fef7d6967b30dea840d6a0598de50d78646f30c7664039a1444337.jpg",
+        "sha256": "ee1546f8e4fef7d6967b30dea840d6a0598de50d78646f30c7664039a1444337",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "RGB 표시 · 72 frames / 24 FPS · 실제 입력은 H bank의 latent 부분집합"
+      },
+      "uniform_context": {
+        "path": "media/videos/2ed497a6b7e9d92f10fe3830500039b23dec80885df5af95be5b37d28b929e9e.mp4",
+        "poster": "media/posters/2ed497a6b7e9d92f10fe3830500039b23dec80885df5af95be5b37d28b929e9e.jpg",
+        "sha256": "2ed497a6b7e9d92f10fe3830500039b23dec80885df5af95be5b37d28b929e9e",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "RGB 표시 · 72 frames / 24 FPS · 실제 입력은 H bank의 latent 부분집합"
+      },
+      "gt_target": {
+        "path": "media/videos/1be0b1aec988bc0ade7921e85eaed5eabb74d933ac8fb1825946ec7f02a48c3c.mp4",
+        "poster": "media/posters/1be0b1aec988bc0ade7921e85eaed5eabb74d933ac8fb1825946ec7f02a48c3c.jpg",
+        "sha256": "1be0b1aec988bc0ade7921e85eaed5eabb74d933ac8fb1825946ec7f02a48c3c",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "원본 후속 · 요청한 display의 GT 아님 · GT DINO 제외"
+      }
+    },
+    "stills": {},
+    "metadata": "records/data/long_input/long_002_robot_head/metadata.json",
+    "source_title": "HG Obsidian Fury Review (Pacific Rim Uprising)",
+    "observation": "Oracle은 각진 helmet·금색 앞면을 손 없는 새 display와 결합합니다. 원본 후속은 요청 구도의 GT가 아닙니다.",
+    "note": "Local은 생성 조건입니다. 원본 후속은 입력에 넣지 않았습니다. Oracle/Uniform clip은 명목 구간 표시이며 독립 VAE 입력이 아닙니다."
+  },
+  "long_003_student_return": {
+    "id": "long_003_student_return",
+    "title": "교실 학생의 얼굴 재등장",
+    "inputs": {
+      "local_context": {
+        "path": "media/videos/ce12a8ff3a1f93a3b63070823f09e83a8a1d690dbd34ae566220a05c20ccf738.mp4",
+        "poster": "media/posters/ce12a8ff3a1f93a3b63070823f09e83a8a1d690dbd34ae566220a05c20ccf738.jpg",
+        "sha256": "ce12a8ff3a1f93a3b63070823f09e83a8a1d690dbd34ae566220a05c20ccf738",
+        "frames": 48,
+        "fps": 24.0,
+        "note": "RGB 표시 · 48 frames / 24 FPS"
+      },
+      "history_32s": {
+        "path": "media/videos/06b7a5614664b30f994a8d62865dfa6e45093882abe287bfa9cebeb03d05d521.mp4",
+        "poster": "media/posters/06b7a5614664b30f994a8d62865dfa6e45093882abe287bfa9cebeb03d05d521.jpg",
+        "sha256": "06b7a5614664b30f994a8d62865dfa6e45093882abe287bfa9cebeb03d05d521",
+        "frames": 768,
+        "fps": 24.0,
+        "note": "RGB 표시 · 768 frames / 24 FPS"
+      },
+      "oracle_context": {
+        "path": "media/videos/f5aea1fe170dec8130cab65006f08062ea0caa62fc32714cfb22a1c0a331efa0.mp4",
+        "poster": "media/posters/f5aea1fe170dec8130cab65006f08062ea0caa62fc32714cfb22a1c0a331efa0.jpg",
+        "sha256": "f5aea1fe170dec8130cab65006f08062ea0caa62fc32714cfb22a1c0a331efa0",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "RGB 표시 · 72 frames / 24 FPS · 실제 입력은 H bank의 latent 부분집합"
+      },
+      "uniform_context": {
+        "path": "media/videos/8ec9fa2b579e3428528069b13401de9cb9b4e0e8576a57bc8e99d67407a59c3d.mp4",
+        "poster": "media/posters/8ec9fa2b579e3428528069b13401de9cb9b4e0e8576a57bc8e99d67407a59c3d.jpg",
+        "sha256": "8ec9fa2b579e3428528069b13401de9cb9b4e0e8576a57bc8e99d67407a59c3d",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "RGB 표시 · 72 frames / 24 FPS · 실제 입력은 H bank의 latent 부분집합"
+      },
+      "gt_target": {
+        "path": "media/videos/a5c8f3acf6682d799ba0652dc157059d48b8dd1a8d2000e32c505ac7a2d20a19.mp4",
+        "poster": "media/posters/a5c8f3acf6682d799ba0652dc157059d48b8dd1a8d2000e32c505ac7a2d20a19.jpg",
+        "sha256": "a5c8f3acf6682d799ba0652dc157059d48b8dd1a8d2000e32c505ac7a2d20a19",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "원본 후속 · 생성 입력 제외"
+      }
+    },
+    "stills": {},
+    "metadata": "records/data/long_input/long_003_student_return/metadata.json",
+    "source_title": "Short Film: Third Period",
+    "observation": "모든 조건에서 필요한 학생 얼굴이 드러나지 않습니다. Oracle/Uniform indices가 8/9 겹칩니다.",
+    "note": "Local은 생성 조건입니다. 원본 후속은 입력에 넣지 않았습니다. Oracle/Uniform clip은 명목 구간 표시이며 독립 VAE 입력이 아닙니다."
+  },
+  "long_004_van_exterior": {
+    "id": "long_004_van_exterior",
+    "title": "캠퍼 밴 외관으로 시점 전환",
+    "inputs": {
+      "local_context": {
+        "path": "media/videos/ff56594fa1e2046ff5dc13a79e8ac5d0829a927b6ee5c593503b9b3c6957b4fc.mp4",
+        "poster": "media/posters/ff56594fa1e2046ff5dc13a79e8ac5d0829a927b6ee5c593503b9b3c6957b4fc.jpg",
+        "sha256": "ff56594fa1e2046ff5dc13a79e8ac5d0829a927b6ee5c593503b9b3c6957b4fc",
+        "frames": 48,
+        "fps": 24.0,
+        "note": "RGB 표시 · 48 frames / 24 FPS"
+      },
+      "history_32s": {
+        "path": "media/videos/f0306a3de129f688293622b79db339bd9884172a99ec65f15a09fdc0f3332d08.mp4",
+        "poster": "media/posters/f0306a3de129f688293622b79db339bd9884172a99ec65f15a09fdc0f3332d08.jpg",
+        "sha256": "f0306a3de129f688293622b79db339bd9884172a99ec65f15a09fdc0f3332d08",
+        "frames": 768,
+        "fps": 24.0,
+        "note": "RGB 표시 · 768 frames / 24 FPS"
+      },
+      "oracle_context": {
+        "path": "media/videos/59fd2e786d1071e7e30026a90d1e76d207635bf442c06c74aa5eb01003de082f.mp4",
+        "poster": "media/posters/59fd2e786d1071e7e30026a90d1e76d207635bf442c06c74aa5eb01003de082f.jpg",
+        "sha256": "59fd2e786d1071e7e30026a90d1e76d207635bf442c06c74aa5eb01003de082f",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "RGB 표시 · 72 frames / 24 FPS · 실제 입력은 H bank의 latent 부분집합"
+      },
+      "uniform_context": {
+        "path": "media/videos/566fdff17a339ccea7d9c4a4b212bf671281c6d99aa184dc23fdb074dc5d8aae.mp4",
+        "poster": "media/posters/566fdff17a339ccea7d9c4a4b212bf671281c6d99aa184dc23fdb074dc5d8aae.jpg",
+        "sha256": "566fdff17a339ccea7d9c4a4b212bf671281c6d99aa184dc23fdb074dc5d8aae",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "RGB 표시 · 72 frames / 24 FPS · 실제 입력은 H bank의 latent 부분집합"
+      },
+      "gt_target": {
+        "path": "media/videos/b44c687f4f87587bace865f6293b91f8b43a1e48ea904ffca70e1f2e30d5643a.mp4",
+        "poster": "media/posters/b44c687f4f87587bace865f6293b91f8b43a1e48ea904ffca70e1f2e30d5643a.jpg",
+        "sha256": "b44c687f4f87587bace865f6293b91f8b43a1e48ea904ffca70e1f2e30d5643a",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "원본 후속 · 생성 입력 제외"
+      }
+    },
+    "stills": {},
+    "metadata": "records/data/long_input/long_004_van_exterior/metadata.json",
+    "source_title": "1983 Aircooled Vanagon Subaru JDM 2.5 Conversion Tour",
+    "observation": "Oracle에서 밴 외관이 드러나지만 selfie/주차 장면을 재현합니다. 주행 성공으로 판단하지 않았습니다.",
+    "note": "Local은 생성 조건입니다. 원본 후속은 입력에 넣지 않았습니다. Oracle/Uniform clip은 명목 구간 표시이며 독립 VAE 입력이 아닙니다."
+  },
+  "long_005_conservator": {
+    "id": "long_005_conservator",
+    "title": "보존 작업자의 얼굴 재등장",
+    "inputs": {
+      "local_context": {
+        "path": "media/videos/2a93021b1f15e6f7fc429aec569af1b223de7303474dc4d55fab4223fa183fd6.mp4",
+        "poster": "media/posters/2a93021b1f15e6f7fc429aec569af1b223de7303474dc4d55fab4223fa183fd6.jpg",
+        "sha256": "2a93021b1f15e6f7fc429aec569af1b223de7303474dc4d55fab4223fa183fd6",
+        "frames": 48,
+        "fps": 24.0,
+        "note": "RGB 표시 · 48 frames / 24 FPS"
+      },
+      "history_32s": {
+        "path": "media/videos/66f1afff8aae3597f06ccab1c1ee6325e24e1692d01f070a588536560ca04d70.mp4",
+        "poster": "media/posters/66f1afff8aae3597f06ccab1c1ee6325e24e1692d01f070a588536560ca04d70.jpg",
+        "sha256": "66f1afff8aae3597f06ccab1c1ee6325e24e1692d01f070a588536560ca04d70",
+        "frames": 768,
+        "fps": 24.0,
+        "note": "RGB 표시 · 768 frames / 24 FPS"
+      },
+      "oracle_context": {
+        "path": "media/videos/ee4b4cb49cd711044cf503295e06120c23428b8d2843da9d89287da0a16dcc1c.mp4",
+        "poster": "media/posters/ee4b4cb49cd711044cf503295e06120c23428b8d2843da9d89287da0a16dcc1c.jpg",
+        "sha256": "ee4b4cb49cd711044cf503295e06120c23428b8d2843da9d89287da0a16dcc1c",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "RGB 표시 · 72 frames / 24 FPS · 실제 입력은 H bank의 latent 부분집합"
+      },
+      "uniform_context": {
+        "path": "media/videos/87427179c1a265698e6df25754229ac51b5750a867d50c458704ddd074dfadbd.mp4",
+        "poster": "media/posters/87427179c1a265698e6df25754229ac51b5750a867d50c458704ddd074dfadbd.jpg",
+        "sha256": "87427179c1a265698e6df25754229ac51b5750a867d50c458704ddd074dfadbd",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "RGB 표시 · 72 frames / 24 FPS · 실제 입력은 H bank의 latent 부분집합"
+      },
+      "gt_target": {
+        "path": "media/videos/9e8d86af098e2df1ce18e10fe7c47eabfcc5ed15dcc009cb2dcad403d90daa2f.mp4",
+        "poster": "media/posters/9e8d86af098e2df1ce18e10fe7c47eabfcc5ed15dcc009cb2dcad403d90daa2f.jpg",
+        "sha256": "9e8d86af098e2df1ce18e10fe7c47eabfcc5ed15dcc009cb2dcad403d90daa2f",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "원본 후속 · 생성 입력 제외"
+      }
+    },
+    "stills": {},
+    "metadata": "records/data/long_input/long_005_conservator/metadata.json",
+    "source_title": "Cleaning a tiny 500-year-old embroidered book | In the Conservation Studio | British Library",
+    "observation": "Oracle의 회색 머리/안경은 일부만 노출되고 얼굴이 잘립니다. Native/Full은 지속적인 겹침을 보입니다.",
+    "note": "Local은 생성 조건입니다. 원본 후속은 입력에 넣지 않았습니다. Oracle/Uniform clip은 명목 구간 표시이며 독립 VAE 입력이 아닙니다."
+  },
+  "pilot_000_local_cooking": {
+    "id": "pilot_000_local_cooking",
+    "title": "pilot_000_local_cooking",
+    "inputs": {
+      "local_context": {
+        "path": "media/videos/3c0afc106b7156c97f1adea5d5eb6730157531ce708b1097031238947f0d5e5a.mp4",
+        "poster": "media/posters/3c0afc106b7156c97f1adea5d5eb6730157531ce708b1097031238947f0d5e5a.jpg",
+        "sha256": "3c0afc106b7156c97f1adea5d5eb6730157531ce708b1097031238947f0d5e5a",
+        "frames": 48,
+        "fps": 24.0,
+        "note": "RGB 표시 · 48 frames / 24 FPS"
+      },
+      "gt_target": {
+        "path": "media/videos/8bbde594ec52ce8d98420acb65c99bb558fe09cf919da284551c1b949884bbdc.mp4",
+        "poster": "media/posters/8bbde594ec52ce8d98420acb65c99bb558fe09cf919da284551c1b949884bbdc.jpg",
+        "sha256": "8bbde594ec52ce8d98420acb65c99bb558fe09cf919da284551c1b949884bbdc",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "원본 후속 · 생성 입력 제외"
+      }
+    },
+    "stills": {},
+    "metadata": "records/data/pilot_000_local_cooking/metadata.json",
+    "source_title": "Vendakka Moru Curry, Ladysfinger Yoghurt Curry, Okra curd curry",
+    "observation": "",
+    "note": "Local은 생성 조건입니다. 원본 후속은 입력에 넣지 않았습니다."
+  },
+  "pilot_001_interview_return": {
+    "id": "pilot_001_interview_return",
+    "title": "pilot_001_interview_return",
+    "inputs": {
+      "local_context": {
+        "path": "media/videos/3db1881b88303a781de6cca2866a483e43a47ff03c15c8949213479afa61c124.mp4",
+        "poster": "media/posters/3db1881b88303a781de6cca2866a483e43a47ff03c15c8949213479afa61c124.jpg",
+        "sha256": "3db1881b88303a781de6cca2866a483e43a47ff03c15c8949213479afa61c124",
+        "frames": 48,
+        "fps": 24.0,
+        "note": "RGB 표시 · 48 frames / 24 FPS"
+      },
+      "oracle_context": {
+        "path": "media/videos/192a580090a50e362862988c4c70da14e3180da3bc76c6dc9e6b605d741eae91.mp4",
+        "poster": "media/posters/192a580090a50e362862988c4c70da14e3180da3bc76c6dc9e6b605d741eae91.jpg",
+        "sha256": "192a580090a50e362862988c4c70da14e3180da3bc76c6dc9e6b605d741eae91",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "RGB 표시 · 72 frames / 24 FPS"
+      },
+      "random_context": {
+        "path": "media/videos/ac32828b0e52b07bec603a18ea746f0c51dd1c271a7e2860beb7d8e55295172b.mp4",
+        "poster": "media/posters/ac32828b0e52b07bec603a18ea746f0c51dd1c271a7e2860beb7d8e55295172b.jpg",
+        "sha256": "ac32828b0e52b07bec603a18ea746f0c51dd1c271a7e2860beb7d8e55295172b",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "RGB 표시 · 72 frames / 24 FPS"
+      },
+      "gt_target": {
+        "path": "media/videos/d0b9718cbc1e5226057b1e80960aab6d92efe2b9fe77d2860ac1630308343125.mp4",
+        "poster": "media/posters/d0b9718cbc1e5226057b1e80960aab6d92efe2b9fe77d2860ac1630308343125.jpg",
+        "sha256": "d0b9718cbc1e5226057b1e80960aab6d92efe2b9fe77d2860ac1630308343125",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "원본 후속 · 생성 입력 제외"
+      }
+    },
+    "stills": {
+      "oracle": {
+        "path": "media/stills/pilot_001_interview_return_oracle_frame36.png",
+        "frame_index": 36,
+        "preprocessing": "Exact run_generation.read_rgb centered Lanczos fit to 512x288",
+        "rgb_sha256": "12c0cd99d6aa1d94d11740ed23087657c779053cb831c2c4524b5d6465c86507"
+      },
+      "random": {
+        "path": "media/stills/pilot_001_interview_return_random_frame36.png",
+        "frame_index": 36,
+        "preprocessing": "Exact run_generation.read_rgb centered Lanczos fit to 512x288",
+        "rgb_sha256": "9572a1b67f3dca6356be6c2e6c2526ee46d83cc9ace5a58542e393d816f714fe"
+      }
+    },
+    "metadata": "records/data/pilot_001_interview_return/metadata.json",
+    "source_title": "Training Heavy Equipment Operators",
+    "observation": "",
+    "note": "Local은 생성 조건입니다. 원본 후속은 입력에 넣지 않았습니다."
+  },
+  "pilot_002_interview_return": {
+    "id": "pilot_002_interview_return",
+    "title": "pilot_002_interview_return",
+    "inputs": {
+      "local_context": {
+        "path": "media/videos/6939f5167a376b797e135559627e8070a6397b50c4967c99ff149943779e9537.mp4",
+        "poster": "media/posters/6939f5167a376b797e135559627e8070a6397b50c4967c99ff149943779e9537.jpg",
+        "sha256": "6939f5167a376b797e135559627e8070a6397b50c4967c99ff149943779e9537",
+        "frames": 48,
+        "fps": 24.0,
+        "note": "RGB 표시 · 48 frames / 24 FPS"
+      },
+      "oracle_context": {
+        "path": "media/videos/6cfffd6467739a10bd61d601e3239d13d44751e67766f0a43de5a32d154af1a9.mp4",
+        "poster": "media/posters/6cfffd6467739a10bd61d601e3239d13d44751e67766f0a43de5a32d154af1a9.jpg",
+        "sha256": "6cfffd6467739a10bd61d601e3239d13d44751e67766f0a43de5a32d154af1a9",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "RGB 표시 · 72 frames / 24 FPS"
+      },
+      "random_context": {
+        "path": "media/videos/ac32828b0e52b07bec603a18ea746f0c51dd1c271a7e2860beb7d8e55295172b.mp4",
+        "poster": "media/posters/ac32828b0e52b07bec603a18ea746f0c51dd1c271a7e2860beb7d8e55295172b.jpg",
+        "sha256": "ac32828b0e52b07bec603a18ea746f0c51dd1c271a7e2860beb7d8e55295172b",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "RGB 표시 · 72 frames / 24 FPS"
+      },
+      "gt_target": {
+        "path": "media/videos/bf7dfea607086ca50c7e148d5966630fb3116091ee47318113a74536436e85d3.mp4",
+        "poster": "media/posters/bf7dfea607086ca50c7e148d5966630fb3116091ee47318113a74536436e85d3.jpg",
+        "sha256": "bf7dfea607086ca50c7e148d5966630fb3116091ee47318113a74536436e85d3",
+        "frames": 72,
+        "fps": 24.0,
+        "note": "원본 후속 · 생성 입력 제외"
+      }
+    },
+    "stills": {
+      "oracle": {
+        "path": "media/stills/pilot_002_interview_return_oracle_frame36.png",
+        "frame_index": 36,
+        "preprocessing": "Exact run_generation.read_rgb centered Lanczos fit to 512x288",
+        "rgb_sha256": "09f4b77cb53d450492ea74404c438027295c97f3e86459fef61ca00e296d7c8c"
+      },
+      "random": {
+        "path": "media/stills/pilot_002_interview_return_random_frame36.png",
+        "frame_index": 36,
+        "preprocessing": "Exact run_generation.read_rgb centered Lanczos fit to 512x288",
+        "rgb_sha256": "9572a1b67f3dca6356be6c2e6c2526ee46d83cc9ace5a58542e393d816f714fe"
+      }
+    },
+    "metadata": "records/data/pilot_002_interview_return/metadata.json",
+    "source_title": "Training Heavy Equipment Operators",
+    "observation": "",
+    "note": "Local은 생성 조건입니다. 원본 후속은 입력에 넣지 않았습니다."
+  }
+}

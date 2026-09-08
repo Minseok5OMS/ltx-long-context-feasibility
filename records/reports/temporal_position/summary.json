@@ -1,0 +1,518 @@
+{
+  "example_id": "pilot_001_interview_return",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "new_generations": 10,
+  "reused_generations": 2,
+  "command": "/mnt/minu/minseok/LTX-2/.venv/bin/python3 feasibility_long_context/evaluate_temporal_position.py --seeds 42 43 44 --gpu 2",
+  "evaluation_script_sha256": "ab637e1a1b6bfcebb13222d807ff83455a90bff9ecc91ce9d0c53d881d1b9236",
+  "audit_script_sha256": "7275444a96ae0fa50e7c2367dd44b5761e248ed49665fd66c43c799ef6a65a9e",
+  "metric": {
+    "name": "dinov2_vitb14_mean_aligned_frame_cls_cosine",
+    "sample_frame_indices": [
+      0,
+      6,
+      13,
+      19,
+      26,
+      32,
+      39,
+      45,
+      52,
+      58,
+      65,
+      71
+    ],
+    "preprocessing": "RGB, short edge 256 bicubic, center crop 224, ImageNet normalization, FP32",
+    "weights_sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73",
+    "backbone_source_sha256": "871fca671b12a9ff02e810654baf509e97ccf461bf8196ce5ddeefff2fd87d3e",
+    "interpretation": "Auxiliary whole-frame similarity; not identity correctness"
+  },
+  "rows": [
+    {
+      "example_id": "pilot_001_interview_return",
+      "seed": 42,
+      "reference_kind": "image",
+      "reference_position": "past",
+      "reference_tokens": 144,
+      "dino_gt_cosine": 0.7725699543952942,
+      "adjacent_pixel_mae_0_255": 1.9050177335739136,
+      "reused": false
+    },
+    {
+      "example_id": "pilot_001_interview_return",
+      "seed": 42,
+      "reference_kind": "image",
+      "reference_position": "target",
+      "reference_tokens": 144,
+      "dino_gt_cosine": 0.8596082329750061,
+      "adjacent_pixel_mae_0_255": 0.9201650619506836,
+      "reused": true
+    },
+    {
+      "example_id": "pilot_001_interview_return",
+      "seed": 42,
+      "reference_kind": "video",
+      "reference_position": "past",
+      "reference_tokens": 1440,
+      "dino_gt_cosine": 0.03916202113032341,
+      "adjacent_pixel_mae_0_255": 3.5075323581695557,
+      "reused": true
+    },
+    {
+      "example_id": "pilot_001_interview_return",
+      "seed": 42,
+      "reference_kind": "video",
+      "reference_position": "target",
+      "reference_tokens": 1440,
+      "dino_gt_cosine": 0.9061753153800964,
+      "adjacent_pixel_mae_0_255": 0.6470935940742493,
+      "reused": false
+    },
+    {
+      "example_id": "pilot_001_interview_return",
+      "seed": 43,
+      "reference_kind": "image",
+      "reference_position": "past",
+      "reference_tokens": 144,
+      "dino_gt_cosine": 0.7119318842887878,
+      "adjacent_pixel_mae_0_255": 1.6870853900909424,
+      "reused": false
+    },
+    {
+      "example_id": "pilot_001_interview_return",
+      "seed": 43,
+      "reference_kind": "image",
+      "reference_position": "target",
+      "reference_tokens": 144,
+      "dino_gt_cosine": 0.8439686298370361,
+      "adjacent_pixel_mae_0_255": 1.5081321001052856,
+      "reused": false
+    },
+    {
+      "example_id": "pilot_001_interview_return",
+      "seed": 43,
+      "reference_kind": "video",
+      "reference_position": "past",
+      "reference_tokens": 1440,
+      "dino_gt_cosine": 0.0480928011238575,
+      "adjacent_pixel_mae_0_255": 4.074632167816162,
+      "reused": false
+    },
+    {
+      "example_id": "pilot_001_interview_return",
+      "seed": 43,
+      "reference_kind": "video",
+      "reference_position": "target",
+      "reference_tokens": 1440,
+      "dino_gt_cosine": 0.8682826161384583,
+      "adjacent_pixel_mae_0_255": 0.6971814632415771,
+      "reused": false
+    },
+    {
+      "example_id": "pilot_001_interview_return",
+      "seed": 44,
+      "reference_kind": "image",
+      "reference_position": "past",
+      "reference_tokens": 144,
+      "dino_gt_cosine": 0.7351564764976501,
+      "adjacent_pixel_mae_0_255": 1.5626100301742554,
+      "reused": false
+    },
+    {
+      "example_id": "pilot_001_interview_return",
+      "seed": 44,
+      "reference_kind": "image",
+      "reference_position": "target",
+      "reference_tokens": 144,
+      "dino_gt_cosine": 0.8534240126609802,
+      "adjacent_pixel_mae_0_255": 0.9695635437965393,
+      "reused": false
+    },
+    {
+      "example_id": "pilot_001_interview_return",
+      "seed": 44,
+      "reference_kind": "video",
+      "reference_position": "past",
+      "reference_tokens": 1440,
+      "dino_gt_cosine": 0.04186384752392769,
+      "adjacent_pixel_mae_0_255": 3.245619058609009,
+      "reused": false
+    },
+    {
+      "example_id": "pilot_001_interview_return",
+      "seed": 44,
+      "reference_kind": "video",
+      "reference_position": "target",
+      "reference_tokens": 1440,
+      "dino_gt_cosine": 0.8691855072975159,
+      "adjacent_pixel_mae_0_255": 0.7474074363708496,
+      "reused": false
+    }
+  ],
+  "aggregate_scores": {
+    "image_past": {
+      "mean": 0.7398861050605774,
+      "values_by_seed": {
+        "42": 0.7725699543952942,
+        "43": 0.7119318842887878,
+        "44": 0.7351564764976501
+      }
+    },
+    "image_target": {
+      "mean": 0.8523336251576742,
+      "values_by_seed": {
+        "42": 0.8596082329750061,
+        "43": 0.8439686298370361,
+        "44": 0.8534240126609802
+      }
+    },
+    "video_past": {
+      "mean": 0.043039556592702866,
+      "values_by_seed": {
+        "42": 0.03916202113032341,
+        "43": 0.0480928011238575,
+        "44": 0.04186384752392769
+      }
+    },
+    "video_target": {
+      "mean": 0.8812144796053568,
+      "values_by_seed": {
+        "42": 0.9061753153800964,
+        "43": 0.8682826161384583,
+        "44": 0.8691855072975159
+      }
+    }
+  },
+  "paired_effects": [
+    {
+      "seed": 42,
+      "image_target_minus_past": 0.08703827857971191,
+      "video_target_minus_past": 0.867013294249773,
+      "video_minus_image_at_past": -0.7334079332649708,
+      "video_minus_image_at_target": 0.04656708240509033,
+      "interaction_video_delta_minus_image_delta": 0.7799750156700611
+    },
+    {
+      "seed": 43,
+      "image_target_minus_past": 0.1320367455482483,
+      "video_target_minus_past": 0.8201898150146008,
+      "video_minus_image_at_past": -0.6638390831649303,
+      "video_minus_image_at_target": 0.02431398630142212,
+      "interaction_video_delta_minus_image_delta": 0.6881530694663525
+    },
+    {
+      "seed": 44,
+      "image_target_minus_past": 0.11826753616333008,
+      "video_target_minus_past": 0.8273216597735882,
+      "video_minus_image_at_past": -0.6932926289737225,
+      "video_minus_image_at_target": 0.015761494636535645,
+      "interaction_video_delta_minus_image_delta": 0.7090541236102581
+    }
+  ],
+  "mean_effects": {
+    "image_target_minus_past": 0.11244752009709676,
+    "video_target_minus_past": 0.838174923012654,
+    "video_minus_image_at_past": -0.6968465484678745,
+    "video_minus_image_at_target": 0.028880854447682697,
+    "interaction_video_delta_minus_image_delta": 0.7257274029155573
+  },
+  "pixel_diagnostics": {
+    "42_image_past": {
+      "dino_gt_frame_cosines": [
+        0.05552970990538597,
+        0.048848990350961685,
+        0.861808717250824,
+        0.9384147524833679,
+        0.892447292804718,
+        0.9134655594825745,
+        0.9083379507064819,
+        0.9133479595184326,
+        0.9448955059051514,
+        0.9362467527389526,
+        0.9248964190483093,
+        0.9326000809669495
+      ],
+      "adjacent_pixel_mae_0_255": 1.9050177335739136,
+      "near_static_pair_fraction_mae_below_0_1": 0.04225352112676056,
+      "boundary_pixel_mae_0_255": 9.644097328186035,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 15.58285109202067,
+      "oracle_max_feature_cosine_mean": 0.8098923563957214
+    },
+    "42_image_target": {
+      "dino_gt_frame_cosines": [
+        0.021922212094068527,
+        0.9432902336120605,
+        0.9434705376625061,
+        0.9556700587272644,
+        0.9164729714393616,
+        0.9217758774757385,
+        0.9232728481292725,
+        0.9241715669631958,
+        0.9538803100585938,
+        0.935261607170105,
+        0.9355340003967285,
+        0.940576434135437
+      ],
+      "adjacent_pixel_mae_0_255": 0.9201650619506836,
+      "near_static_pair_fraction_mae_below_0_1": 0.0,
+      "boundary_pixel_mae_0_255": 12.870282173156738,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 7.190423508485158,
+      "oracle_max_feature_cosine_mean": 0.8906251788139343
+    },
+    "42_video_past": {
+      "dino_gt_frame_cosines": [
+        0.05538449436426163,
+        0.05895539000630379,
+        0.037540942430496216,
+        0.04314785450696945,
+        0.03471994772553444,
+        0.03424924612045288,
+        0.04037321358919144,
+        0.04728177934885025,
+        0.05262266471982002,
+        0.034897077828645706,
+        0.018374381586909294,
+        0.01239730603992939
+      ],
+      "adjacent_pixel_mae_0_255": 3.5075323581695557,
+      "near_static_pair_fraction_mae_below_0_1": 0.0,
+      "boundary_pixel_mae_0_255": 9.273828506469727,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 43.5711867014567,
+      "oracle_max_feature_cosine_mean": 0.050073396414518356
+    },
+    "42_video_target": {
+      "dino_gt_frame_cosines": [
+        0.4623583257198334,
+        0.9305453300476074,
+        0.9417073726654053,
+        0.9512692093849182,
+        0.9439594149589539,
+        0.9350966811180115,
+        0.9390426874160767,
+        0.9538607001304626,
+        0.9491060376167297,
+        0.9528598785400391,
+        0.9572192430496216,
+        0.9570791125297546
+      ],
+      "adjacent_pixel_mae_0_255": 0.6470935940742493,
+      "near_static_pair_fraction_mae_below_0_1": 0.028169014084507043,
+      "boundary_pixel_mae_0_255": 23.370590209960938,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 4.529094994068146,
+      "oracle_max_feature_cosine_mean": 0.9450628161430359
+    },
+    "43_image_past": {
+      "dino_gt_frame_cosines": [
+        0.05054375156760216,
+        0.047654684633016586,
+        0.21163946390151978,
+        0.8530082702636719,
+        0.8972240090370178,
+        0.8920871019363403,
+        0.9341956973075867,
+        0.9387832880020142,
+        0.9450265169143677,
+        0.8984153866767883,
+        0.9345057010650635,
+        0.9400984048843384
+      ],
+      "adjacent_pixel_mae_0_255": 1.6870853900909424,
+      "near_static_pair_fraction_mae_below_0_1": 0.0,
+      "boundary_pixel_mae_0_255": 9.512740135192871,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 12.612042208512625,
+      "oracle_max_feature_cosine_mean": 0.7393361926078796
+    },
+    "43_image_target": {
+      "dino_gt_frame_cosines": [
+        0.03420428931713104,
+        0.9235109090805054,
+        0.8801763653755188,
+        0.9194194078445435,
+        0.9092468619346619,
+        0.9046761989593506,
+        0.901555597782135,
+        0.9385320544242859,
+        0.9380847811698914,
+        0.9192178249359131,
+        0.9311366677284241,
+        0.927862286567688
+      ],
+      "adjacent_pixel_mae_0_255": 1.5081321001052856,
+      "near_static_pair_fraction_mae_below_0_1": 0.014084507042253521,
+      "boundary_pixel_mae_0_255": 13.831231117248535,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 8.77581556638082,
+      "oracle_max_feature_cosine_mean": 0.8800224661827087
+    },
+    "43_video_past": {
+      "dino_gt_frame_cosines": [
+        0.05237496644258499,
+        0.05669572204351425,
+        0.04256017878651619,
+        0.042979203164577484,
+        0.03873725235462189,
+        0.037103161215782166,
+        0.04790712520480156,
+        0.034074775874614716,
+        0.07736597955226898,
+        0.03879259154200554,
+        0.052532896399497986,
+        0.05598974600434303
+      ],
+      "adjacent_pixel_mae_0_255": 4.074632167816162,
+      "near_static_pair_fraction_mae_below_0_1": 0.0,
+      "boundary_pixel_mae_0_255": 9.13006591796875,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 43.46071147918701,
+      "oracle_max_feature_cosine_mean": 0.05667397379875183
+    },
+    "43_video_target": {
+      "dino_gt_frame_cosines": [
+        0.014666629955172539,
+        0.9297254085540771,
+        0.9339944124221802,
+        0.9496775269508362,
+        0.9447799921035767,
+        0.9340037107467651,
+        0.9327882528305054,
+        0.949521541595459,
+        0.9533324241638184,
+        0.9531018137931824,
+        0.9603571891784668,
+        0.9634437561035156
+      ],
+      "adjacent_pixel_mae_0_255": 0.6971814632415771,
+      "near_static_pair_fraction_mae_below_0_1": 0.056338028169014086,
+      "boundary_pixel_mae_0_255": 20.274518966674805,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 4.803593397140503,
+      "oracle_max_feature_cosine_mean": 0.9073465466499329
+    },
+    "44_image_past": {
+      "dino_gt_frame_cosines": [
+        0.055651478469371796,
+        0.05278683453798294,
+        0.3519977331161499,
+        0.9099573493003845,
+        0.9374068975448608,
+        0.887261152267456,
+        0.9014387726783752,
+        0.9024446606636047,
+        0.9565944671630859,
+        0.9561063051223755,
+        0.9527459144592285,
+        0.9574861526489258
+      ],
+      "adjacent_pixel_mae_0_255": 1.5626100301742554,
+      "near_static_pair_fraction_mae_below_0_1": 0.028169014084507043,
+      "boundary_pixel_mae_0_255": 9.349968910217285,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 13.426043589909872,
+      "oracle_max_feature_cosine_mean": 0.7590901255607605
+    },
+    "44_image_target": {
+      "dino_gt_frame_cosines": [
+        0.03277289867401123,
+        0.9298424124717712,
+        0.920204758644104,
+        0.9334250092506409,
+        0.9267345666885376,
+        0.901231586933136,
+        0.9073531627655029,
+        0.9167221188545227,
+        0.9450485706329346,
+        0.9439993500709534,
+        0.9389853477478027,
+        0.944768488407135
+      ],
+      "adjacent_pixel_mae_0_255": 0.9695635437965393,
+      "near_static_pair_fraction_mae_below_0_1": 0.0,
+      "boundary_pixel_mae_0_255": 12.228291511535645,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 7.500575641791026,
+      "oracle_max_feature_cosine_mean": 0.8906173706054688
+    },
+    "44_video_past": {
+      "dino_gt_frame_cosines": [
+        0.06256668269634247,
+        0.04206138849258423,
+        0.032516829669475555,
+        0.05212133750319481,
+        0.047732479870319366,
+        0.03602786362171173,
+        0.037254564464092255,
+        0.026480942964553833,
+        0.03965498507022858,
+        0.03869163617491722,
+        0.0446479395031929,
+        0.04260947182774544
+      ],
+      "adjacent_pixel_mae_0_255": 3.245619058609009,
+      "near_static_pair_fraction_mae_below_0_1": 0.0,
+      "boundary_pixel_mae_0_255": 9.317765235900879,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 43.64319324493408,
+      "oracle_max_feature_cosine_mean": 0.05230238661170006
+    },
+    "44_video_target": {
+      "dino_gt_frame_cosines": [
+        0.03593122959136963,
+        0.9329167604446411,
+        0.938971221446991,
+        0.9486902356147766,
+        0.94523024559021,
+        0.9363536238670349,
+        0.9389182925224304,
+        0.9418102502822876,
+        0.9427523612976074,
+        0.9486733078956604,
+        0.960722804069519,
+        0.9592561721801758
+      ],
+      "adjacent_pixel_mae_0_255": 0.7474074363708496,
+      "near_static_pair_fraction_mae_below_0_1": 0.028169014084507043,
+      "boundary_pixel_mae_0_255": 17.326122283935547,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 5.147442797819774,
+      "oracle_max_feature_cosine_mean": 0.9074668884277344
+    }
+  },
+  "reused_anchor_metric_checks": {
+    "image_target": {
+      "previous": 0.8596082329750061,
+      "current": 0.8596082329750061,
+      "absolute_difference": 0.0
+    },
+    "video_past": {
+      "previous": 0.03916202113032341,
+      "current": 0.03916202113032341,
+      "absolute_difference": 0.0
+    }
+  },
+  "artifact_audit": "artifact_verification.json",
+  "comparison_videos": {
+    "seed42_comparison": {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/temporal_position/seed42_comparison.mp4",
+      "frames": 120,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "sha256": "f4ef057a6e03923cefa360abb5826caf118713469894cdc655e9d92072eb0b89",
+      "full_decode_passed": true
+    },
+    "seed43_comparison": {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/temporal_position/seed43_comparison.mp4",
+      "frames": 120,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "sha256": "24b477c50c16e79e96a320a595d9e76058a65e51e35a3401dbfcdae41d916d00",
+      "full_decode_passed": true
+    },
+    "seed44_comparison": {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/temporal_position/seed44_comparison.mp4",
+      "frames": 120,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "sha256": "0b66a31a299bdfe6157aa57f66342cb877180944e633b8b60501a571c5b25159",
+      "full_decode_passed": true
+    }
+  },
+  "review_status": "See review.json for assistant visual inspection; user review remains separate",
+  "scope": "One source example, three paired seeds; Oracle only; no memory training or IC-LoRA"
+}

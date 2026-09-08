@@ -1,0 +1,243 @@
+{
+  "reviewer": "assistant; provisional qualitative assessment, not human benchmark labels",
+  "method_ko": "1차: 조건명을 확인하기 전 25개 영상의 7개 시점 및 8개 결과의 전체 72프레임 sheet 검토. 조건명 매핑 후 나머지 17개 전체 72프레임 sheet도 검토했다. 각 출력 3초의 전체 프레임을 확인했지만 실시간 재생을 직접 관찰한 평가는 아니다. 미세한 외관·동작의 최종 판단은 영상 재생 검토가 필요하다.",
+  "rubric": {
+    "evidence_score": "0 absent/wrong, 1 partial/uncertain, 2 clear requested evidence; see visibility field",
+    "view_action_score": "0 failed, 1 partial, 2 requested composition/action after transition; identity scored separately",
+    "continuity_score": "0 severe persistent artifacts, 1 some transition/visual defects, 2 acceptable in frame inspection"
+  },
+  "examples": {
+    "long_001_nursery_manager": {
+      "summary_ko": "Oracle만 대상 직원의 외관을 드러낸다. 참조와 비슷한 중간 거리 구도로 돌아가며 요청한 측면 close-up은 약하다.",
+      "cells": {
+        "oracle_sparse": {
+          "blind_code": "A",
+          "evidence_score": 2,
+          "view_action_score": 1,
+          "continuity_score": 1,
+          "visibility": "visible_target",
+          "observation_ko": "약 0.125초부터 직원으로 전환, 어두운 묶은 머리와 빨간 셔츠/남색 조끼가 보인다. Oracle과 매우 비슷한 중간 거리 구도를 재현하며 요청한 측면 close-up은 약하다. 초반 dissolve 이후 말/손 동작 변화가 있다."
+        },
+        "full_reference": {
+          "blind_code": "B",
+          "evidence_score": 0,
+          "view_action_score": 0,
+          "continuity_score": 2,
+          "visibility": "wrong_subject",
+          "observation_ko": "방문 평가자의 금발 얼굴 close-up이 지속한다. 대상 직원으로 전환하지 않는다."
+        },
+        "uniform_sparse": {
+          "blind_code": "C",
+          "evidence_score": 0,
+          "view_action_score": 0,
+          "continuity_score": 2,
+          "visibility": "wrong_subject",
+          "observation_ko": "방문 평가자의 금발 얼굴 close-up이 지속한다. 대상 직원으로 전환하지 않는다."
+        },
+        "local": {
+          "blind_code": "D",
+          "evidence_score": 0,
+          "view_action_score": 0,
+          "continuity_score": 2,
+          "visibility": "wrong_subject",
+          "observation_ko": "방문 평가자의 금발 얼굴 close-up과 손짓이 지속한다. 대상 직원으로 전환하지 않는다."
+        },
+        "native_full": {
+          "blind_code": "E",
+          "evidence_score": 0,
+          "view_action_score": 0,
+          "continuity_score": 2,
+          "visibility": "wrong_subject",
+          "observation_ko": "방문 평가자의 금발 얼굴 close-up이 지속한다. 대상 직원으로 전환하지 않는다."
+        }
+      }
+    },
+    "long_002_robot_head": {
+      "summary_ko": "Oracle은 각진 helmet/금색 앞면을 독립 display 구도와 결합한다. Local은 새 구도를 만들지만 둥근 은색 얼굴로 바뀐다. 긴 입력 두 조건은 손 조작과 머리 잘림을 유지한다.",
+      "cells": {
+        "native_full": {
+          "blind_code": "A",
+          "evidence_score": 0,
+          "view_action_score": 0,
+          "continuity_score": 2,
+          "visibility": "not_exposed",
+          "observation_ko": "손으로 몸통을 조작하며 머리가 상단에서 잘린다. 요청한 독립 display와 앞면 외관을 확인할 수 없다."
+        },
+        "full_reference": {
+          "blind_code": "B",
+          "evidence_score": 0,
+          "view_action_score": 0,
+          "continuity_score": 2,
+          "visibility": "not_exposed",
+          "observation_ko": "손으로 몸통을 조작하며 머리가 상단에서 잘린다. 요청한 독립 display와 앞면 외관을 확인할 수 없다."
+        },
+        "local": {
+          "blind_code": "C",
+          "evidence_score": 0,
+          "view_action_score": 2,
+          "continuity_score": 1,
+          "visibility": "visible_wrong_attribute",
+          "observation_ko": "약 0.208초 이후 손 없는 정면 display를 만들지만 머리가 둥근 은색 얼굴로 바뀌어 Oracle의 각진 helmet/금색 앞면과 다르다."
+        },
+        "oracle_sparse": {
+          "blind_code": "D",
+          "evidence_score": 2,
+          "view_action_score": 2,
+          "continuity_score": 1,
+          "visibility": "visible_target",
+          "observation_ko": "약 0.5초 이후 손 없는 정면 display에서 각진 helmet과 금색 앞면, 어깨 형상을 함께 유지한다. 초반 약 0.25–0.5초 dissolve/겹침이 있다. 이후 거의 고정된 display는 요청과 부합한다."
+        },
+        "uniform_sparse": {
+          "blind_code": "E",
+          "evidence_score": 0,
+          "view_action_score": 1,
+          "continuity_score": 2,
+          "visibility": "wrong_view_back",
+          "observation_ko": "손이 빠지며 더 넓은 display를 만들지만 주로 등/뒷면을 유지한다. 요청한 앞면 속성 전달은 확인할 수 없다."
+        }
+      }
+    },
+    "long_003_student_return": {
+      "summary_ko": "모든 조건이 교사 앞면/학생 뒷면을 유지한다. 학생 얼굴 미노출이며 identity 오류로 단정하지 않는다. Oracle/Uniform은 9개 중 8개 latent index가 겹친다.",
+      "cells": {
+        "oracle_sparse": {
+          "blind_code": "A",
+          "evidence_score": 0,
+          "view_action_score": 0,
+          "continuity_score": 2,
+          "visibility": "not_exposed",
+          "observation_ko": "교사 앞면/학생 뒷면을 유지한다. 학생 얼굴 reverse angle 실패."
+        },
+        "local": {
+          "blind_code": "B",
+          "evidence_score": 0,
+          "view_action_score": 0,
+          "continuity_score": 2,
+          "visibility": "not_exposed",
+          "observation_ko": "교사 앞면/학생 뒷면을 유지한다. 학생 얼굴 reverse angle 실패."
+        },
+        "uniform_sparse": {
+          "blind_code": "C",
+          "evidence_score": 0,
+          "view_action_score": 0,
+          "continuity_score": 2,
+          "visibility": "not_exposed",
+          "observation_ko": "교사 앞면/학생 뒷면을 유지한다. 학생 얼굴 reverse angle 실패."
+        },
+        "full_reference": {
+          "blind_code": "D",
+          "evidence_score": 0,
+          "view_action_score": 0,
+          "continuity_score": 2,
+          "visibility": "not_exposed",
+          "observation_ko": "교사 앞면/학생 뒷면을 유지한다. 학생 얼굴 reverse angle 실패."
+        },
+        "native_full": {
+          "blind_code": "E",
+          "evidence_score": 0,
+          "view_action_score": 0,
+          "continuity_score": 2,
+          "visibility": "not_exposed",
+          "observation_ko": "교사 앞면/학생 뒷면을 유지한다. 학생 얼굴 reverse angle 실패."
+        }
+      }
+    },
+    "long_004_van_exterior": {
+      "summary_ko": "Oracle만 외부 차체를 드러내지만 남성 selfie/주차 구도도 재현한다. 약 1초의 긴 dissolve가 있으며 주행·바퀴 회전 성공은 아니다.",
+      "cells": {
+        "local": {
+          "blind_code": "A",
+          "evidence_score": 0,
+          "view_action_score": 0,
+          "continuity_score": 2,
+          "visibility": "not_exposed",
+          "observation_ko": "차량 내부 운전 시점을 유지한다. 외부 차체 속성은 노출되지 않는다."
+        },
+        "native_full": {
+          "blind_code": "B",
+          "evidence_score": 0,
+          "view_action_score": 0,
+          "continuity_score": 2,
+          "visibility": "not_exposed",
+          "observation_ko": "차량 내부 운전 시점을 유지한다. 외부 차체 속성은 노출되지 않는다."
+        },
+        "uniform_sparse": {
+          "blind_code": "C",
+          "evidence_score": 0,
+          "view_action_score": 0,
+          "continuity_score": 2,
+          "visibility": "not_exposed",
+          "observation_ko": "차량 내부 운전 시점을 유지한다. 외부 차체 속성은 노출되지 않는다."
+        },
+        "oracle_sparse": {
+          "blind_code": "D",
+          "evidence_score": 2,
+          "view_action_score": 1,
+          "continuity_score": 1,
+          "visibility": "visible_target",
+          "observation_ko": "약 0.25–1.33초 긴 dissolve 후 외부의 밝은 각진 밴/어두운 전면 띠가 보인다. Oracle의 남성 selfie와 주차 구도를 함께 재현한다. 바퀴 회전이나 도로 주행은 확인되지 않으며 주행 요청 성공으로 평가하지 않는다."
+        },
+        "full_reference": {
+          "blind_code": "E",
+          "evidence_score": 0,
+          "view_action_score": 0,
+          "continuity_score": 2,
+          "visibility": "not_exposed",
+          "observation_ko": "차량 내부 운전 시점을 유지한다. 외부 차체 속성은 노출되지 않는다."
+        }
+      }
+    },
+    "long_005_conservator": {
+      "summary_ko": "Oracle은 회색 머리/안경 일부가 상단에 잘리고 손/몸통 및 자막을 재현한다. 긴 입력 두 조건은 지속적인 이중 영상이다. Local/Uniform은 더 깨끗한 측면 얼굴을 만들지만 과거의 머리/안경 외관이 다르다.",
+      "cells": {
+        "local": {
+          "blind_code": "A",
+          "evidence_score": 0,
+          "view_action_score": 2,
+          "continuity_score": 2,
+          "visibility": "visible_wrong_attribute",
+          "observation_ko": "갈색 묶은 머리/안경 없는 측면 얼굴과 상체가 나타난다. Oracle의 회색 머리/안경 외관과 다르다."
+        },
+        "oracle_sparse": {
+          "blind_code": "B",
+          "evidence_score": 1,
+          "view_action_score": 1,
+          "continuity_score": 1,
+          "visibility": "partial_cropped",
+          "observation_ko": "손/몸통 중심 구도에 gray hair/glasses 얼굴 일부가 화면 상단에서 잘린다. 머리·얼굴 전체 노출을 충족하지 못한다. 약 1초 이후 참조 자막이 나타나고 마지막에 겹침이 있다."
+        },
+        "uniform_sparse": {
+          "blind_code": "C",
+          "evidence_score": 0,
+          "view_action_score": 2,
+          "continuity_score": 2,
+          "visibility": "visible_wrong_attribute",
+          "observation_ko": "갈색 묶은 머리/안경 없는 측면 얼굴과 상체가 나타난다. Oracle의 회색 머리/안경 외관과 다르다."
+        },
+        "native_full": {
+          "blind_code": "D",
+          "evidence_score": 0,
+          "view_action_score": 0,
+          "continuity_score": 0,
+          "visibility": "not_exposed",
+          "observation_ko": "얼굴 없이 작업대/손/책의 이중 영상과 흐림이 1초 이후에도 지속한다. 자막도 나타난다."
+        },
+        "full_reference": {
+          "blind_code": "E",
+          "evidence_score": 0,
+          "view_action_score": 0,
+          "continuity_score": 0,
+          "visibility": "not_exposed",
+          "observation_ko": "얼굴 없이 작업대/손/책의 이중 영상과 흐림이 1초 이후에도 지속한다. 자막도 나타난다."
+        }
+      }
+    }
+  },
+  "paired_evidence_vs_native_and_full": {
+    "clear_wins": 3,
+    "partial_improvement": 1,
+    "shared_failure": 1,
+    "clear_losses": 0
+  },
+  "interpretation_ko": "선택 증거의 부분적인 품질 이점과 계산 절감은 확인됐다. 로봇은 외관과 새 구도를 결합했다. 전체 연구의 압축 전역 메모리 직접 조건/자동 검색은 미검증이다."
+}

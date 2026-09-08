@@ -1,0 +1,214 @@
+{
+  "status": "completed",
+  "started_at_utc": "2026-09-06T07:07:13.860641+00:00",
+  "command": "/mnt/minu/minseok/LTX-2/.venv/bin/python3 feasibility_long_context/run_generation.py --mode local --gpu 0 --seed 42",
+  "cwd": "/mnt/minu/minseok/LTX-2/longcond",
+  "script_sha256": "97497c9f76482ddaa267ae2b75c5acc27c28a89bc5d68ffc18e2e22814e451b4",
+  "mode": "local",
+  "seed": 42,
+  "physical_gpu": 0,
+  "cuda_visible_devices": "0",
+  "width": 512,
+  "height": 288,
+  "example": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/data/pilot_000_local_cooking",
+  "outputs": {
+    "local_context": {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_000_local_cooking/local_seed42/local_context.mp4",
+      "frames": 48,
+      "fps": 24,
+      "duration_seconds": 2.0,
+      "sha256": "bf33cdf4a3c0e0282d20d0bbc2b2f4e1000bd9afab7278f7d74241e622ebd31d",
+      "full_decode_passed": true
+    },
+    "model_prefix": {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_000_local_cooking/local_seed42/model_prefix.mp4",
+      "frames": 49,
+      "fps": 24,
+      "duration_seconds": 2.0416666666666665,
+      "sha256": "ce6d5c5787ded9446233aa09ab426b5dc024127714a4947a3bdc469fedeec8de",
+      "full_decode_passed": true
+    },
+    "local_only": {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_000_local_cooking/local_seed42/local_only.mp4",
+      "frames": 72,
+      "fps": 24,
+      "duration_seconds": 3.0,
+      "sha256": "a5d38af5a97e257c30fb33f6c3358f743ba77c32fa4a57de1c5c4f8ed20db533",
+      "full_decode_passed": true
+    },
+    "decoded_model_sequence": {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_000_local_cooking/local_seed42/decoded_model_sequence.mp4",
+      "frames": 121,
+      "fps": 24,
+      "duration_seconds": 5.041666666666667,
+      "sha256": "c8f6875ade43bf8bd1402e1a8bd3dcb9c9a2542b5e0c6faa81830bea15dc8088",
+      "full_decode_passed": true
+    },
+    "local_then_generated": {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_000_local_cooking/local_seed42/local_then_generated.mp4",
+      "frames": 120,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "sha256": "a25d71625b8fa404ea1e2d80ef79350eb6edf63b9fa7ffe538892fdbc261d741",
+      "full_decode_passed": true
+    }
+  },
+  "timings_seconds": {
+    "local_encode": 1.1621908508241177,
+    "prompt_encode": 14.544372523203492,
+    "diffusion_including_load": 11.97498521162197,
+    "video_decode": 2.189730415120721
+  },
+  "prompt": "An overhead kitchen shot continues as a person stirs the contents of a pan on the stove.",
+  "prompt_enhancement": false,
+  "fps": 24,
+  "local_frames": 48,
+  "prefix_frames": 49,
+  "target_frames": 72,
+  "total_frames": 121,
+  "target_decoded_slice": [
+    49,
+    121
+  ],
+  "local_clip_sha256": "3c0afc106b7156c97f1adea5d5eb6730157531ce708b1097031238947f0d5e5a",
+  "metadata_sha256": "5d9041dca77f13275d72c59304367a595a8a558224aa88f2786c794f624fad32",
+  "preprocessing": {
+    "spatial": "Pillow ImageOps.fit, centered crop, Lanczos resize",
+    "temporal": "Prepend exactly one copy of the first local frame",
+    "prefix_source_frame_seconds": [
+      246.01229054031364,
+      246.01229054031364,
+      246.01229054031364,
+      246.07945196279258,
+      246.11303267403204,
+      246.1466133852715,
+      246.18019409651097,
+      246.2473555189899,
+      246.28093623022934,
+      246.3145169414688,
+      246.34809765270828,
+      246.4152590751872,
+      246.44883978642667,
+      246.48242049766614,
+      246.5160012089056,
+      246.58316263138454,
+      246.616743342624,
+      246.65032405386347,
+      246.68390476510294,
+      246.71748547634238,
+      246.7846468988213,
+      246.81822761006077,
+      246.85180832130024,
+      246.8853890325397,
+      246.95255045501864,
+      246.9861311662581,
+      247.01971187749757,
+      247.05329258873704,
+      247.12045401121597,
+      247.15403472245544,
+      247.18761543369487,
+      247.22119614493434,
+      247.28835756741327,
+      247.32193827865274,
+      247.3555189898922,
+      247.38909970113167,
+      247.4562611236106,
+      247.48984183485007,
+      247.52342254608953,
+      247.557003257329,
+      247.6241646798079,
+      247.65774539104737,
+      247.69132610228684,
+      247.7249068135263,
+      247.75848752476577,
+      247.8256489472447,
+      247.85922965848417,
+      247.89281036972363,
+      247.9263910809631
+    ],
+    "first_frame_is_alignment_padding": true,
+    "virtual_model_origin_source_seconds": 245.95833333333334,
+    "normalization": "uint8 RGB / 127.5 - 1",
+    "gt_video_opened_by_generation": false
+  },
+  "model_recipe": "LTX 2.5 distilled stage 1 only; joint AV denoising, video output only",
+  "guidance": "SimpleDenoiser; no CFG/STG",
+  "audio_conditioning": false,
+  "sampler": "Euler ancestral",
+  "ancestral_eta": 1.0,
+  "ancestral_s_noise": 1.0,
+  "ancestral_seed": 10042,
+  "decoder_seed": 20042,
+  "stage_2_refinement": false,
+  "quantization": null,
+  "precision": "bfloat16",
+  "compilation": false,
+  "models": {
+    "transformer": {
+      "path": "/mnt/minu/minseok/LTX-2/models/ltx-2.5/diffusion_models/ltx-2.5-22b-distilled-transformer-bf16.safetensors",
+      "size_bytes": 42018190584,
+      "mtime_ns": 1787903911728802396
+    },
+    "video_vae": {
+      "path": "/mnt/minu/minseok/LTX-2/models/ltx-2.5/vae/ltx-2.5-video-vae-bf16.safetensors",
+      "size_bytes": 1472223346,
+      "mtime_ns": 1787902886111443535
+    },
+    "text_encoder": {
+      "path": "/mnt/minu/minseok/LTX-2/models/ltx-2.5/text_encoders/gemma4-12b-with-proj-ltx-2.5-bf16.safetensors",
+      "size_bytes": 26263858182,
+      "mtime_ns": 1787904902081692604
+    }
+  },
+  "ltx_commit": "a95ab856bf29407b6b066ede0abe1846050db56c",
+  "environment": {
+    "torch": "2.13.0+cu132",
+    "cuda_runtime": "13.2",
+    "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "python": "3.13.13 | packaged by Anaconda, Inc. | (main, Apr 14 2026, 06:19:41) [GCC 14.3.0]"
+  },
+  "model_version": [
+    2,
+    5,
+    0
+  ],
+  "sigmas": [
+    1.0,
+    0.9937499761581421,
+    0.987500011920929,
+    0.981249988079071,
+    0.9750000238418579,
+    0.909375011920929,
+    0.7250000238418579,
+    0.421875,
+    0.0
+  ],
+  "attention": "SDPA[FLASH_ATTENTION>EFFICIENT_ATTENTION>MATH>CUDNN_ATTENTION>OVERRIDEABLE]",
+  "local_latent_shape": [
+    1,
+    128,
+    7,
+    9,
+    16
+  ],
+  "local_latent_sha256": "d0ce658517e6cd98e9e8ff2197ab52a131a9612cf82210c903dc3d407410d31f",
+  "target_noise_sha256": "ca8cf6c7debda2469031e4f0fe1a2f2b9a661398837c877d5bfed4c9fbef47aa",
+  "target_noise_shape": [
+    1,
+    1296,
+    128
+  ],
+  "final_local_latent_max_abs_error": 0.0,
+  "generated_latent_shape": [
+    1,
+    128,
+    16,
+    9,
+    16
+  ],
+  "peak_gpu_allocated_gib": 39.1761794090271,
+  "peak_gpu_reserved_gib": 40.53125,
+  "decoded_prefix_rgb_mae_0_255": 5.155033588409424,
+  "total_seconds": 35.87033686321229,
+  "finished_at_utc": "2026-09-06T07:07:49.730983+00:00"
+}

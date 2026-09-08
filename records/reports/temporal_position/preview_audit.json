@@ -1,0 +1,125 @@
+{
+  "status": "passed",
+  "common_fields": [
+    "example_id",
+    "models",
+    "ltx_commit",
+    "controls_sha256",
+    "environment",
+    "prompt",
+    "prompt_enhancement",
+    "fps",
+    "width",
+    "height",
+    "prefix_frames",
+    "target_frames",
+    "total_frames",
+    "target_decoded_slice",
+    "base_video_tokens",
+    "prefix_tokens",
+    "common_time_shift_seconds",
+    "target_model_time_range",
+    "common_inputs_sha256",
+    "local_latent_sha256",
+    "prompt_context_hashes",
+    "sigmas",
+    "sampler",
+    "eta",
+    "s_noise",
+    "precision",
+    "guidance",
+    "audio",
+    "noise_policy",
+    "base_video_positions_sha256",
+    "audio_positions_sha256",
+    "reference_source",
+    "source_dependency_gap_seconds"
+  ],
+  "paired_fields": [
+    "seed",
+    "initial_noise_seed",
+    "step_noise_seed",
+    "decoder_seed",
+    "noise_audit"
+  ],
+  "actual_initial_and_seven_step_noise_equal_within_seed": true,
+  "declared_seed_reproduces_saved_target_noise": true,
+  "reference_pairs": [
+    {
+      "seed": 42,
+      "reference_kind": "image",
+      "exact_translated_positions_equal": true,
+      "past_range": [
+        0.0,
+        0.0416666679084301
+      ],
+      "target_range": [
+        6.083333492279053,
+        6.125
+      ]
+    },
+    {
+      "seed": 42,
+      "reference_kind": "video",
+      "exact_translated_positions_equal": true,
+      "past_range": [
+        0.0,
+        3.0416667461395264
+      ],
+      "target_range": [
+        6.083333492279053,
+        9.125
+      ]
+    }
+  ],
+  "provenance": [
+    {
+      "seed": 42,
+      "cell": "image_past",
+      "reused": false,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_001_interview_return/temporal_position_seed42/image_past/config.json",
+      "config_sha256": "006335e073c3858164e1e876719acf97c64dd74e754dfbc0fc684a56340af038",
+      "runner_source": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/run_temporal_position.py",
+      "runner_sha256": "53b50f33522e78e408cc0ec3522c9bb0b59937441a07ab203c7f17e370f55864",
+      "reference_input_tensor_sha256": "9eb6391f9da862dd1e54cdf0b52a1571b5fc4ebcc767e3866248993795b92d47",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "generated_latent_tensor_sha256": "a7dab111d32c9183de6a14b47d1f7644e1b3282902e33c317ac51bf9c92c9154"
+    },
+    {
+      "seed": 42,
+      "cell": "image_target",
+      "reused": true,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_001_interview_return/reference_target_guide_seed42/oracle/config.json",
+      "config_sha256": "7fe29fc6901bb1859cc784e5f3bba7bc2bbc1f04a34e50f81365857dd6c76d01",
+      "runner_source": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/run_reference_comparison.py",
+      "runner_sha256": "b5444faedcbde0af961115bde87226e6476bd3fc409130c0c7ab941b3fde760f",
+      "reference_input_tensor_sha256": "9eb6391f9da862dd1e54cdf0b52a1571b5fc4ebcc767e3866248993795b92d47",
+      "positions_tensor_sha256": "2678a13a5b08c45629073b3895369f803b348a1726fa7a0ec19e294826c2593b",
+      "generated_latent_tensor_sha256": "a0fe7aace76e29b28d1237935ad8e1ae1d1037a10c7ad04370453dc9c7cb4d35"
+    },
+    {
+      "seed": 42,
+      "cell": "video_past",
+      "reused": true,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_001_interview_return/reference_past_seed42/oracle/config.json",
+      "config_sha256": "e4d23c730f96a10a980540864d359ecb8f63e9cd275308993e4cbc3190628dc6",
+      "runner_source": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/source_snapshots/98a6c8bfbc7ff15616195c4d419303f43ae5a1fff12105e400bfe465b85322f2/run_reference_comparison.py",
+      "runner_sha256": "98a6c8bfbc7ff15616195c4d419303f43ae5a1fff12105e400bfe465b85322f2",
+      "reference_input_tensor_sha256": "aceeddaa2133697081c47842eda4a3a4c9e202919866951387cf9fd8068367f0",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "generated_latent_tensor_sha256": "76eae6279b1a10c90870a9c5899327cf1a3fb1b8b463fa05fcc73ca7c91cb02c"
+    },
+    {
+      "seed": 42,
+      "cell": "video_target",
+      "reused": false,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_001_interview_return/temporal_position_seed42/video_target/config.json",
+      "config_sha256": "e0f7b7550de6bd004f67611e6b18f979f421751f19868a60bbba94b14c08b913",
+      "runner_source": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/run_temporal_position.py",
+      "runner_sha256": "53b50f33522e78e408cc0ec3522c9bb0b59937441a07ab203c7f17e370f55864",
+      "reference_input_tensor_sha256": "aceeddaa2133697081c47842eda4a3a4c9e202919866951387cf9fd8068367f0",
+      "positions_tensor_sha256": "82d893d8c89b9a7af2983e529070d2d0801f1530e6661b5d3db02427ed7b0692",
+      "generated_latent_tensor_sha256": "2212d979fa4e268cc30429362bc8c33e9626d255034d7e42ee4f0b7185bd51c1"
+    }
+  ]
+}

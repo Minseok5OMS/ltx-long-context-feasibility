@@ -1,0 +1,2198 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-09-08T07:35:02.121174+00:00",
+  "html_pages": 25,
+  "local_links_checked": 866,
+  "raw_md_navigation_links": 0,
+  "generated_video_players": 60,
+  "preload_none_video_players": 75,
+  "http_checked": true,
+  "http_assets": [
+    {
+      "path": "CONCLUSION.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "CONCLUSION.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "DATA_REVIEW.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "DATA_REVIEW.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "FEASIBILITY_STATUS.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "FEASIBILITY_STATUS.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "FIVE_CASE_GRID_PROTOCOL.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "FIVE_CASE_GRID_PROTOCOL.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "FIVE_CASE_GRID_RESULT.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "FIVE_CASE_GRID_RESULT.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "FIVE_CASE_PROTOCOL.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "FIVE_CASE_PROTOCOL.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "FIVE_CASE_RESULT.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "FIVE_CASE_RESULT.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "IC_LORA_CATALOG_REVIEW.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "IC_LORA_CATALOG_REVIEW.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "LOCAL_SMOKE_RESULT.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "LOCAL_SMOKE_RESULT.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "NEXT_STAGE.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "NEXT_STAGE.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "PROMPT_CONTROL_PROPOSAL.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "PROMPT_CONTROL_PROPOSAL.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "PROMPT_CONTROL_RESULT.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "PROMPT_CONTROL_RESULT.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "README.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "README.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "REFERENCE_FORMAT_DIAGNOSIS.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "REFERENCE_FORMAT_DIAGNOSIS.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "REFERENCE_FORMAT_RESULT.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "REFERENCE_FORMAT_RESULT.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "REFERENCE_PROTOCOL.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "REFERENCE_PROTOCOL.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "REFERENCE_REPETITION_DIAGNOSIS.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "REFERENCE_REPETITION_DIAGNOSIS.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "REFERENCE_REPETITION_RESULT.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "REFERENCE_REPETITION_RESULT.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "REFERENCE_RESULT.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "REFERENCE_RESULT.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "SETUP_NOTES.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "SETUP_NOTES.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "TEMPORAL_POSITION_ABLATION.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "TEMPORAL_POSITION_ABLATION.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "TEMPORAL_POSITION_RESULT.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "TEMPORAL_POSITION_RESULT.md",
+      "status": 200,
+      "content_type": "text/markdown"
+    },
+    {
+      "path": "configs/five_case_prompt.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "configs/five_case_prompt_proposal.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "configs/pilot_examples.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "data/five_001_nursery_manager/gt_target.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/five_001_nursery_manager/local_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/five_001_nursery_manager/metadata.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "data/five_001_nursery_manager/oracle_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/five_002_robot_head/gt_target.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/five_002_robot_head/local_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/five_002_robot_head/metadata.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "data/five_002_robot_head/oracle_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/five_003_student_return/gt_target.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/five_003_student_return/local_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/five_003_student_return/metadata.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "data/five_003_student_return/oracle_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/five_004_van_exterior/gt_target.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/five_004_van_exterior/local_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/five_004_van_exterior/metadata.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "data/five_004_van_exterior/oracle_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/five_005_conservator/gt_target.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/five_005_conservator/local_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/five_005_conservator/metadata.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "data/five_005_conservator/oracle_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/pilot_001_interview_return/gt_target.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/pilot_001_interview_return/local_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/pilot_001_interview_return/metadata.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "data/pilot_001_interview_return/oracle_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/pilot_001_interview_return/random_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/pilot_002_interview_return/gt_target.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/pilot_002_interview_return/local_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/pilot_002_interview_return/metadata.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "data/pilot_002_interview_return/oracle_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "data/pilot_002_interview_return/random_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/five_case_inputs_512x288/local_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/five_case_inputs_512x288/oracle_image.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/five_case_video_inputs_512x288/inputs.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/five_case_video_inputs_512x288/oracle_padded_input.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/image_past_seed42/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/image_past_seed42/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/image_past_seed42/oracle/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/image_past_seed42/oracle/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/prompt_control_seed42/P1/image_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/prompt_control_seed42/P1/image_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/prompt_control_seed42/P1/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/prompt_control_seed42/P1/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/prompt_control_seed42/P1/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/prompt_control_seed42/P1/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/prompt_control_seed42/P2/image_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/prompt_control_seed42/P2/image_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/prompt_control_seed42/P2/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/prompt_control_seed42/P2/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/prompt_control_seed42/P2/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/prompt_control_seed42/P2/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/prompt_control_seed42/P3/image_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/prompt_control_seed42/P3/image_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/prompt_control_seed42/P3/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/prompt_control_seed42/P3/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/prompt_control_seed42/P3/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/prompt_control_seed42/P3/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/reference_grid_seed42/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_001_nursery_manager/reference_grid_seed42/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_002_robot_head/five_case_inputs_512x288/local_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_002_robot_head/five_case_inputs_512x288/oracle_image.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "outputs/five_002_robot_head/five_case_video_inputs_512x288/inputs.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_002_robot_head/five_case_video_inputs_512x288/oracle_padded_input.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_002_robot_head/image_past_seed42/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_002_robot_head/image_past_seed42/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_002_robot_head/image_past_seed42/oracle/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_002_robot_head/image_past_seed42/oracle/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_002_robot_head/prompt_control_seed42/P1/image_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_002_robot_head/prompt_control_seed42/P1/image_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_002_robot_head/prompt_control_seed42/P1/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_002_robot_head/prompt_control_seed42/P1/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_002_robot_head/prompt_control_seed42/P1/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_002_robot_head/prompt_control_seed42/P1/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_002_robot_head/prompt_control_seed42/P2/image_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_002_robot_head/prompt_control_seed42/P2/image_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_002_robot_head/prompt_control_seed42/P2/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_002_robot_head/prompt_control_seed42/P2/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_002_robot_head/prompt_control_seed42/P2/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_002_robot_head/prompt_control_seed42/P2/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_002_robot_head/prompt_control_seed42/P3/image_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_002_robot_head/prompt_control_seed42/P3/image_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_002_robot_head/prompt_control_seed42/P3/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_002_robot_head/prompt_control_seed42/P3/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_002_robot_head/prompt_control_seed42/P3/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_002_robot_head/prompt_control_seed42/P3/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_002_robot_head/reference_grid_seed42/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_002_robot_head/reference_grid_seed42/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_003_student_return/five_case_inputs_512x288/local_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_003_student_return/five_case_inputs_512x288/oracle_image.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "outputs/five_003_student_return/five_case_video_inputs_512x288/inputs.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_003_student_return/five_case_video_inputs_512x288/oracle_padded_input.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_003_student_return/image_past_seed42/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_003_student_return/image_past_seed42/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_003_student_return/image_past_seed42/oracle/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_003_student_return/image_past_seed42/oracle/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_003_student_return/prompt_control_seed42/P1/image_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_003_student_return/prompt_control_seed42/P1/image_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_003_student_return/prompt_control_seed42/P1/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_003_student_return/prompt_control_seed42/P1/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_003_student_return/prompt_control_seed42/P1/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_003_student_return/prompt_control_seed42/P1/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_003_student_return/prompt_control_seed42/P2/image_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_003_student_return/prompt_control_seed42/P2/image_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_003_student_return/prompt_control_seed42/P2/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_003_student_return/prompt_control_seed42/P2/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_003_student_return/prompt_control_seed42/P2/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_003_student_return/prompt_control_seed42/P2/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_003_student_return/prompt_control_seed42/P3/image_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_003_student_return/prompt_control_seed42/P3/image_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_003_student_return/prompt_control_seed42/P3/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_003_student_return/prompt_control_seed42/P3/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_003_student_return/prompt_control_seed42/P3/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_003_student_return/prompt_control_seed42/P3/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_003_student_return/reference_grid_seed42/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_003_student_return/reference_grid_seed42/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/five_case_inputs_512x288/local_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/five_case_inputs_512x288/oracle_image.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/five_case_video_inputs_512x288/inputs.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/five_case_video_inputs_512x288/oracle_padded_input.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/image_past_seed42/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/image_past_seed42/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/image_past_seed42/oracle/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/image_past_seed42/oracle/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/prompt_control_seed42/P1/image_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/prompt_control_seed42/P1/image_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/prompt_control_seed42/P1/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/prompt_control_seed42/P1/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/prompt_control_seed42/P1/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/prompt_control_seed42/P1/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/prompt_control_seed42/P2/image_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/prompt_control_seed42/P2/image_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/prompt_control_seed42/P2/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/prompt_control_seed42/P2/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/prompt_control_seed42/P2/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/prompt_control_seed42/P2/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/prompt_control_seed42/P3/image_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/prompt_control_seed42/P3/image_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/prompt_control_seed42/P3/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/prompt_control_seed42/P3/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/prompt_control_seed42/P3/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/prompt_control_seed42/P3/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/reference_grid_seed42/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_004_van_exterior/reference_grid_seed42/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_005_conservator/five_case_inputs_512x288/local_context.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_005_conservator/five_case_inputs_512x288/oracle_image.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "outputs/five_005_conservator/five_case_video_inputs_512x288/inputs.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_005_conservator/five_case_video_inputs_512x288/oracle_padded_input.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_005_conservator/image_past_seed42/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_005_conservator/image_past_seed42/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_005_conservator/image_past_seed42/oracle/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_005_conservator/image_past_seed42/oracle/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_005_conservator/prompt_control_seed42/P1/image_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_005_conservator/prompt_control_seed42/P1/image_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_005_conservator/prompt_control_seed42/P1/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_005_conservator/prompt_control_seed42/P1/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_005_conservator/prompt_control_seed42/P1/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_005_conservator/prompt_control_seed42/P1/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_005_conservator/prompt_control_seed42/P2/image_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_005_conservator/prompt_control_seed42/P2/image_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_005_conservator/prompt_control_seed42/P2/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_005_conservator/prompt_control_seed42/P2/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_005_conservator/prompt_control_seed42/P2/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_005_conservator/prompt_control_seed42/P2/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_005_conservator/prompt_control_seed42/P3/image_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_005_conservator/prompt_control_seed42/P3/image_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_005_conservator/prompt_control_seed42/P3/local/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_005_conservator/prompt_control_seed42/P3/local/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_005_conservator/prompt_control_seed42/P3/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_005_conservator/prompt_control_seed42/P3/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/five_005_conservator/reference_grid_seed42/video_past/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/five_005_conservator/reference_grid_seed42/video_past/local_then_generated.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/pilot_000_local_cooking/local_seed42/comparison.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/pilot_000_local_cooking/local_seed42/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/pilot_000_local_cooking/local_seed42/local_only.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/pilot_000_local_cooking/local_seed42/run.log",
+      "status": 200,
+      "content_type": "application/octet-stream"
+    },
+    {
+      "path": "outputs/pilot_001_interview_return/reference_inputs_512x288/inputs.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/pilot_001_interview_return/reference_past_seed42/comparison.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/pilot_001_interview_return/reference_past_seed42/oracle/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/pilot_001_interview_return/reference_target_guide_seed42/comparison.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/pilot_001_interview_return/reference_target_guide_seed42/oracle/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/pilot_002_interview_return/reference_inputs_512x288/inputs.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "outputs/pilot_002_interview_return/reference_past_seed42/comparison.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "outputs/pilot_002_interview_return/reference_past_seed42/oracle/config.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reference_controls.py",
+      "status": 200,
+      "content_type": "text/x-python"
+    },
+    {
+      "path": "report.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/candidates/index_overview.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/finevideo_access.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/artifact_verification.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_001_nursery_manager/comparison.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_001_nursery_manager/comparison_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_001_nursery_manager/comparison_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_001_nursery_manager/gt_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_001_nursery_manager/image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_001_nursery_manager/image_target_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_001_nursery_manager/video_input_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_001_nursery_manager/video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_001_nursery_manager/video_target_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_002_robot_head/comparison.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_002_robot_head/comparison_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_002_robot_head/comparison_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_002_robot_head/gt_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_002_robot_head/image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_002_robot_head/image_target_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_002_robot_head/video_input_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_002_robot_head/video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_002_robot_head/video_target_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_003_student_return/comparison.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_003_student_return/comparison_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_003_student_return/comparison_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_003_student_return/gt_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_003_student_return/image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_003_student_return/image_target_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_003_student_return/video_input_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_003_student_return/video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_003_student_return/video_target_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_004_van_exterior/comparison.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_004_van_exterior/comparison_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_004_van_exterior/comparison_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_004_van_exterior/gt_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_004_van_exterior/image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_004_van_exterior/image_target_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_004_van_exterior/video_input_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_004_van_exterior/video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_004_van_exterior/video_target_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_005_conservator/comparison.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_005_conservator/comparison_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_005_conservator/comparison_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_005_conservator/gt_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_005_conservator/image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_005_conservator/image_target_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_005_conservator/video_input_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_005_conservator/video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/five_005_conservator/video_target_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/results.csv",
+      "status": 200,
+      "content_type": "text/csv"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/review.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/five_case_grid/seed42/summary.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/artifact_verification.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/P0_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/P0_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/P0_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/P1_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/P1_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/P1_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/P2_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/P2_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/P2_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/P3_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/P3_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/P3_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/comparison_P0.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/comparison_P1.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/comparison_P2.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/comparison_P3.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/image_past_prompt_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/local_input_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/local_prompt_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_001_nursery_manager/video_past_prompt_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/P0_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/P0_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/P0_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/P1_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/P1_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/P1_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/P2_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/P2_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/P2_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/P3_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/P3_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/P3_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/comparison_P0.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/comparison_P1.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/comparison_P2.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/comparison_P3.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/image_past_prompt_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/local_input_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/local_prompt_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_002_robot_head/video_past_prompt_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/P0_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/P0_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/P0_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/P1_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/P1_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/P1_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/P2_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/P2_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/P2_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/P3_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/P3_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/P3_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/comparison_P0.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/comparison_P1.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/comparison_P2.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/comparison_P3.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/image_past_prompt_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/local_input_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/local_prompt_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_003_student_return/video_past_prompt_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/P0_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/P0_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/P0_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/P1_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/P1_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/P1_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/P2_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/P2_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/P2_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/P3_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/P3_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/P3_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/comparison_P0.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/comparison_P1.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/comparison_P2.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/comparison_P3.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/image_past_prompt_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/local_input_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/local_prompt_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_004_van_exterior/video_past_prompt_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/P0_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/P0_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/P0_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/P1_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/P1_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/P1_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/P2_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/P2_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/P2_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/P3_image_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/P3_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/P3_video_past_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/comparison_P0.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/comparison_P1.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/comparison_P2.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/comparison_P3.mp4",
+      "status": 200,
+      "content_type": "video/mp4"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/image_past_prompt_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/local_input_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/local_prompt_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/five_005_conservator/video_past_prompt_frames.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/results.csv",
+      "status": 200,
+      "content_type": "text/csv"
+    },
+    {
+      "path": "reports/five_case_prompt/seed42/summary.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/five_case_selection/execution_recovery.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/five_cases/seed42/artifact_verification.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_001_nursery_manager/input_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_002_robot_head/input_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_003_student_return/input_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_004_van_exterior/input_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/five_005_conservator/input_local_poster.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/five_cases/seed42/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/five_cases/seed42/results.csv",
+      "status": 200,
+      "content_type": "text/csv"
+    },
+    {
+      "path": "reports/five_cases/seed42/review.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/local_smoke/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/local_smoke/summary.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/pilot/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/pilot/preparation.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference/artifact_verification.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_001_interview_return/inputs.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_001_interview_return/inputs_overview.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_001_interview_return/local_middle.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_001_interview_return/oracle_middle.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_001_interview_return/random_middle.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_002_interview_return/inputs.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_002_interview_return/inputs_overview.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_002_interview_return/local_middle.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_002_interview_return/oracle_middle.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "reports/reference/inputs/pilot_002_interview_return/random_middle.png",
+      "status": 200,
+      "content_type": "image/png"
+    },
+    {
+      "path": "reports/reference/pilot_001_interview_return/past_seed42/comparison.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/reference/pilot_001_interview_return/past_seed42/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/reference/pilot_001_interview_return/past_seed42/review.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference/pilot_001_interview_return/past_seed42/summary.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference/pilot_001_interview_return/target_guide_seed42/comparison.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/reference/pilot_001_interview_return/target_guide_seed42/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/reference/pilot_001_interview_return/target_guide_seed42/review.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference/pilot_001_interview_return/target_guide_seed42/summary.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference/pilot_002_interview_return/past_seed42/comparison.jpg",
+      "status": 200,
+      "content_type": "image/jpeg"
+    },
+    {
+      "path": "reports/reference/pilot_002_interview_return/past_seed42/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/reference/pilot_002_interview_return/past_seed42/review.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference/pilot_002_interview_return/past_seed42/summary.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference_format/seed42/artifact_verification.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference_format/seed42/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/reference_format/seed42/results.csv",
+      "status": 200,
+      "content_type": "text/csv"
+    },
+    {
+      "path": "reports/reference_repetition/seed42/artifact_verification.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/reference_repetition/seed42/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/reference_repetition/seed42/results.csv",
+      "status": 200,
+      "content_type": "text/csv"
+    },
+    {
+      "path": "reports/temporal_position/artifact_verification.json",
+      "status": 200,
+      "content_type": "application/json"
+    },
+    {
+      "path": "reports/temporal_position/index.html",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "reports/temporal_position/results.csv",
+      "status": 200,
+      "content_type": "text/csv"
+    },
+    {
+      "path": "results.csv",
+      "status": 200,
+      "content_type": "text/csv"
+    },
+    {
+      "path": "run_generation.py",
+      "status": 200,
+      "content_type": "text/x-python"
+    },
+    {
+      "path": "run_reference_comparison.py",
+      "status": 200,
+      "content_type": "text/x-python"
+    }
+  ],
+  "report_sha256": "5d5839b617f0a0e95b90857054c6044570ccbcfc24ebaa85515e6c3592b4c52c",
+  "summary_sha256": "b33877aef1aaff8b3e3929142d63e513af3dc512c6f28ada837d33a4da7546d7",
+  "artifact_audit_sha256": "8c806e7541f099ba2d78aa8272ec66886032f36ff92d0bb5df40da861147c671",
+  "limitations": [
+    "HTTP and local link checks do not verify playback on the user PC."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "files": [
+    "long_input_common.py",
+    "long_input_controls.py",
+    "run_long_input.py",
+    "prepare_long_input_cache.py",
+    "prepare_long_input_data.py",
+    "freeze_long_input_cases.py",
+    "run_long_input_batch.py",
+    "decode_five_case_latent.py",
+    "reference_controls.py",
+    "run_generation.py",
+    "configs/long_input_cases.json"
+  ],
+  "scope": "11 generation/config files equal their frozen snapshot hashes"
+}

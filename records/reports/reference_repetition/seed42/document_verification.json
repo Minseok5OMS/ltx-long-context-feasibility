@@ -1,0 +1,17 @@
+{
+  "utf8_html_pages": 16,
+  "local_links_assets_and_anchors_checked": 298,
+  "raw_markdown_navigation_links": 0,
+  "new_and_updated_scripts_syntax_checked": [
+    "repetition_controls.py",
+    "test_repetition_controls.py",
+    "run_reference_repetition.py",
+    "repetition_artifacts.py",
+    "evaluate_reference_repetition.py",
+    "make_reference_repetition_report.py",
+    "make_reference_report.py"
+  ],
+  "adopted_generation_configs": {
+    "completed": 25
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "documents": [
+    {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/long_input/index.html",
+      "sha256": "392057e9caa89242549e6e43f8fb22ecb96f9aba943ff4325f44a59e3766ece4",
+      "videos": 50
+    },
+    {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/LONG_INPUT_RESULT.html",
+      "sha256": "44b79862f1578ab66ceb73204155ba49fb36aadbcbd98d2befc14fd372bdea79",
+      "videos": 0
+    },
+    {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/LONG_INPUT_VS_SPARSE_PROTOCOL.html",
+      "sha256": "3a940181ef563fff509834307d4b2998a7e84dfe6480a4b57f5d84a2cef6120a",
+      "videos": 0
+    },
+    {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/NEXT_STAGE.html",
+      "sha256": "82500f99220fef3beac368b3051221d4202133d38008e767a0e993780a5e86f8",
+      "videos": 0
+    }
+  ],
+  "local_links": 186,
+  "http_assets": [],
+  "http_count": 0,
+  "video_count": 50,
+  "scope": "HTML/UTF-8/local assets and HTTP response; browser playback interaction is separate"
+}

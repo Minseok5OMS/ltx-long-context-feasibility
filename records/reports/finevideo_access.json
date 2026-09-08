@@ -1,0 +1,14 @@
+{
+  "checked_at_utc": "2026-09-06T06:57:29.459644+00:00",
+  "repo_id": "HuggingFaceFV/finevideo",
+  "command": "/mnt/minu/minseok/LTX-2/longcond/../.venv/bin/python feasibility_long_context/download_finevideo.py --revision 84c74091e1c6ee7a5dffabfafb5c9033e4718883 --max-videos 5 --max-shards 1 --max-shard-mib 700 --min-duration 60 --max-duration 600",
+  "token_available": true,
+  "status": "allowed",
+  "revision": "84c74091e1c6ee7a5dffabfafb5c9033e4718883",
+  "gated": "auto",
+  "parquet_count": 1357,
+  "first_shard": {
+    "path": "data/train-00000-of-01357.parquet",
+    "bytes": 493919884
+  }
+}

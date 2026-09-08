@@ -1,0 +1,27 @@
+{
+  "scope": "Post hoc diagnostic after seeing delayed transitions; same saved 12-frame features, subset at >=1s",
+  "sample_frame_indices": [
+    26,
+    32,
+    39,
+    45,
+    52,
+    58,
+    65,
+    71
+  ],
+  "dino_cosine_after_first_second": {
+    "42_image_past": 0.9207796901464462,
+    "42_image_target": 0.9313682019710541,
+    "42_video_past": 0.03436445211991668,
+    "42_video_target": 0.9485279694199562,
+    "43_image_past": 0.9225420132279396,
+    "43_image_target": 0.9212890341877937,
+    "43_video_past": 0.04781294101849198,
+    "43_video_target": 0.9489160850644112,
+    "44_image_past": 0.9314355403184891,
+    "44_image_target": 0.9281053990125656,
+    "44_video_past": 0.039137485437095165,
+    "44_video_target": 0.9467146322131157
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "command": "/mnt/minu/minseok/LTX-2/longcond/../.venv/bin/python feasibility_long_context/preview_candidates.py --candidate fv_84c74091_0000_00000 --start 44 --end 49 --frames 12",
+  "scope": "Sparse decoded frames only; no oracle validation or model output",
+  "videos": [
+    {
+      "id": "fv_84c74091_0000_00000",
+      "contact_sheet": "fv_84c74091_0000_00000_44-49.0.jpg",
+      "frames": [
+        {
+          "requested_seconds": 44.0,
+          "decoded_seconds": 44.0023
+        },
+        {
+          "requested_seconds": 44.45454545454545,
+          "decoded_seconds": 44.46108888888889
+        },
+        {
+          "requested_seconds": 44.90909090909091,
+          "decoded_seconds": 44.91987777777778
+        },
+        {
+          "requested_seconds": 45.36363636363637,
+          "decoded_seconds": 45.37866666666667
+        },
+        {
+          "requested_seconds": 45.81818181818182,
+          "decoded_seconds": 45.83745555555556
+        },
+        {
+          "requested_seconds": 46.27272727272727,
+          "decoded_seconds": 46.296255555555554
+        },
+        {
+          "requested_seconds": 46.72727272727273,
+          "decoded_seconds": 46.755044444444444
+        },
+        {
+          "requested_seconds": 47.18181818181818,
+          "decoded_seconds": 47.21383333333333
+        },
+        {
+          "requested_seconds": 47.63636363636363,
+          "decoded_seconds": 47.67262222222222
+        },
+        {
+          "requested_seconds": 48.09090909090909,
+          "decoded_seconds": 48.13142222222222
+        },
+        {
+          "requested_seconds": 48.54545454545455,
+          "decoded_seconds": 48.5485
+        },
+        {
+          "requested_seconds": 49.0,
+          "decoded_seconds": 49.00728888888889
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "model": "cached dinov2_vitb14",
+  "weights_sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73",
+  "precision": "float32",
+  "frames": [
+    0,
+    6,
+    13,
+    19,
+    26,
+    32,
+    39,
+    45,
+    52,
+    58,
+    65,
+    71
+  ],
+  "resize": "short edge 256 bicubic, centered 224 crop, ImageNet normalization",
+  "script_sha256": "8a21a758d0b9000bf0d732c2e5a10d2f6c84fadd44109fe488d02a33dd530674",
+  "physical_gpu": 2,
+  "scope": "Auxiliary frame-global similarity; not identity/attribute accuracy; robot GT excluded before generation",
+  "plan_sha256": "bdba61857111a43b2576f725d2be1dc262ee88480e40f30a49f712df5060d75f"
+}

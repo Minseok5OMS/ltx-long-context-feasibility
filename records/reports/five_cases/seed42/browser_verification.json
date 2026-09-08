@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-09-07T13:07:52.615486+00:00",
+  "browser": "Firefox headless",
+  "viewport": [
+    1440,
+    2600
+  ],
+  "url": "http://127.0.0.1:8765/reports/five_cases/seed42/index.html",
+  "screenshot": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/browser_check/five_cases.png",
+  "screenshot_sha256": "9b86090d2f211c35d44351a643de2ea9df9c41413426fe2f1f3c66f55dcf74d6",
+  "report_sha256": "e7a8d1916065b73bf31061e1fd0d70ac85c5de8e01774e5b2ea33903b539b1cb",
+  "visual_review": "Assistant inspected final screenshot: Korean text, summary table, first case actual Local/Oracle/GT images, native video controls and 5-second comparison duration display correctly. Full playback interaction was not automated.",
+  "fix": "Actual Oracle images load eagerly; comparison videos preload metadata.",
+  "server": "Existing tmux ltx-longcond-report/report session remained running; not restarted.",
+  "http_assets_200": 171,
+  "local_links_checked": 446,
+  "html_pages_checked": 19,
+  "raw_md_navigation_links": 0,
+  "gpu_end_state": "GPUs 0,1,2 each 14 MiB baseline and 0 percent utilization after all jobs finished."
+}

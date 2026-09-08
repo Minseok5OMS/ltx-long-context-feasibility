@@ -1,0 +1,16 @@
+{
+  "reviewer": "assistant_visual_inspection",
+  "method": "Six-frame GT/Local/Random/Oracle contact sheet plus decoded-frame motion diagnostics; not human or blind review",
+  "status": "reviewed",
+  "local": "안전모와 반사 조끼를 입은 local의 인물이 실내에서 앉아 말하는 장면으로 이어진다. GT의 안경·수염·어깨 무늬를 복원하지 못한다.",
+  "random": "안전모와 반사 조끼를 유지한 채 실내 좌석 장면으로 바뀐다. GT의 안경·수염·어깨 무늬를 복원하지 못한다.",
+  "oracle": "약 1.2초 이후 주황색 폴로셔츠 어깨의 검은 반복 무늬와 가슴 표식이 나타난다. 그러나 local의 안전모와 인물이 남고 GT의 검은 직사각 안경·수염은 나타나지 않는다.",
+  "oracle_attribute_checks": {
+    "black_rectangular_glasses_and_beard": "not_observed",
+    "dark_repeated_pattern_on_orange_polo_shoulders": "observed_after_transition",
+    "oracle_interviewee_appearance_as_a_whole": "not_recovered"
+  },
+  "conclusion": "과거 참조의 의상 세부가 일부 반영된 징후가 있으나, 인물 재등장 복원은 불완전하다.",
+  "quality": "Local 인물과 Oracle 의상이 혼합된다. 장면·자세 변화가 있고 단순 정지 복사 출력은 아니다.",
+  "limits": "주황색 자체는 local 조끼에도 있다. 성공 근거로 주황색만 세지 않는다. 동일 원본의 다른 사례와 독립 표본으로 집계하지 않는다."
+}

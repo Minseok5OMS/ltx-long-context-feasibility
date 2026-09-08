@@ -1,0 +1,158 @@
+{
+  "example_id": "pilot_001_interview_return",
+  "layout": "target_guide",
+  "seed": 42,
+  "scope": "Prompted-cut reference utilization diagnostic",
+  "command": "/mnt/minu/minseok/LTX-2/.venv/bin/python3 feasibility_long_context/evaluate_reference.py --gpu 0 --layout target_guide --seed 42",
+  "group_directory": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_001_interview_return/reference_target_guide_seed42",
+  "paired_controls": {
+    "status": "passed",
+    "equal_fields": [
+      "example_id",
+      "layout",
+      "seed",
+      "models",
+      "ltx_commit",
+      "script_sha256",
+      "controls_sha256",
+      "prompt",
+      "prompt_enhancement",
+      "fps",
+      "width",
+      "height",
+      "prefix_frames",
+      "target_frames",
+      "total_frames",
+      "base_video_tokens",
+      "prefix_tokens",
+      "common_time_shift_seconds",
+      "target_model_time_range",
+      "common_inputs_sha256",
+      "local_latent_sha256",
+      "prompt_context_hashes",
+      "sigmas",
+      "sampler",
+      "eta",
+      "s_noise",
+      "precision",
+      "guidance",
+      "audio",
+      "initial_noise_seed",
+      "step_noise_seed",
+      "decoder_seed",
+      "noise_policy",
+      "base_video_positions_sha256",
+      "audio_positions_sha256",
+      "noise_audit"
+    ],
+    "saved_initial_and_all_7_step_noises_match": true,
+    "reference_tokens": {
+      "local": 0,
+      "random": 144,
+      "oracle": 144
+    }
+  },
+  "metric": {
+    "name": "dinov2_vitb14_mean_aligned_frame_cls_cosine",
+    "sample_frame_indices": [
+      0,
+      6,
+      13,
+      19,
+      26,
+      32,
+      39,
+      45,
+      52,
+      58,
+      65,
+      71
+    ],
+    "preprocessing": "RGB, short edge 256 bicubic, center crop 224, ImageNet normalization, FP32",
+    "weights_path": "/home/minseok/.cache/torch/hub/checkpoints/dinov2_vitb14_pretrain.pth",
+    "weights_sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73",
+    "local_model_repo": "/home/minseok/.cache/torch/hub/facebookresearch_dinov2_main",
+    "backbone_source_sha256": "871fca671b12a9ff02e810654baf509e97ccf461bf8196ce5ddeefff2fd87d3e",
+    "interpretation": "Auxiliary whole-frame similarity, not identity correctness or causal memory evidence"
+  },
+  "scores": {
+    "local": 0.27134057879447937,
+    "random": 0.2271442413330078,
+    "oracle": 0.8596082329750061
+  },
+  "oracle_minus_local": 0.5882676541805267,
+  "oracle_minus_random": 0.6324639916419983,
+  "pixel_diagnostics": {
+    "local": {
+      "dino_gt_frame_cosines": [
+        0.053426459431648254,
+        0.05451010912656784,
+        0.03023979626595974,
+        0.022135108709335327,
+        0.2177909016609192,
+        0.3736828565597534,
+        0.3911631107330322,
+        0.39955127239227295,
+        0.4373166561126709,
+        0.42501264810562134,
+        0.4118005037307739,
+        0.43945711851119995
+      ],
+      "adjacent_pixel_mae_0_255": 2.4075286388397217,
+      "near_static_pair_fraction_mae_below_0_1": 0.014084507042253521,
+      "boundary_pixel_mae_0_255": 9.299307823181152,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 44.33445803324381,
+      "oracle_max_feature_cosine_mean": 0.29497790336608887
+    },
+    "random": {
+      "dino_gt_frame_cosines": [
+        0.042401932179927826,
+        0.03688230738043785,
+        0.04170374572277069,
+        0.04566501826047897,
+        0.06384339928627014,
+        0.08035608381032944,
+        0.04889779910445213,
+        0.44732749462127686,
+        0.4639661908149719,
+        0.4784724712371826,
+        0.48400357365608215,
+        0.4922107458114624
+      ],
+      "adjacent_pixel_mae_0_255": 2.7041308879852295,
+      "near_static_pair_fraction_mae_below_0_1": 0.028169014084507043,
+      "boundary_pixel_mae_0_255": 47.31814956665039,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 60.75194104512533,
+      "oracle_max_feature_cosine_mean": 0.226828932762146
+    },
+    "oracle": {
+      "dino_gt_frame_cosines": [
+        0.021922212094068527,
+        0.9432902336120605,
+        0.9434705376625061,
+        0.9556700587272644,
+        0.9164729714393616,
+        0.9217758774757385,
+        0.9232728481292725,
+        0.9241715669631958,
+        0.9538803100585938,
+        0.935261607170105,
+        0.9355340003967285,
+        0.940576434135437
+      ],
+      "adjacent_pixel_mae_0_255": 0.9201650619506836,
+      "near_static_pair_fraction_mae_below_0_1": 0.0,
+      "boundary_pixel_mae_0_255": 12.870282173156738,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 7.190423508485158,
+      "oracle_max_feature_cosine_mean": 0.8906251788139343
+    }
+  },
+  "source_dependency_gap_seconds": 65.82533333333333,
+  "config_sha256": {
+    "local": "176337e80f97f71322e478af9e2f222b8a622d614d3d8a3954d80e9c7fcaf634",
+    "random": "586b662e7afc3cd19abb4a2c827e5327bb4cf568bf1ad777a4682269d1ed4ab1",
+    "oracle": "7fe29fc6901bb1859cc784e5f3bba7bc2bbc1f04a34e50f81365857dd6c76d01"
+  },
+  "review_status": "Assistant sample-frame review recorded in review.json; not human or blind review",
+  "review_sha256": "0d60e47850d25626b416294b8df5ddef3b0e059aa8ea233d6977ebc3b7eb623a"
+}

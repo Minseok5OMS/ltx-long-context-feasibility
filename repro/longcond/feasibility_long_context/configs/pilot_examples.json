@@ -1,0 +1,75 @@
+{
+  "dataset_revision": "84c74091e1c6ee7a5dffabfafb5c9033e4718883",
+  "purpose": "One local continuation smoke test and two reference-utilization diagnostics; not a long-range benchmark",
+  "clip_fps": 24,
+  "examples": [
+    {
+      "example_id": "pilot_000_local_cooking",
+      "candidate_id": "fv_84c74091_0000_00003",
+      "task_type": "local_continuation_smoke_test",
+      "allowed_modes": ["local"],
+      "local_start": 246.0,
+      "local_end": 248.0,
+      "target_start": 248.0,
+      "target_end": 251.0,
+      "prompt": "An overhead kitchen shot continues as a person stirs the contents of a pan on the stove.",
+      "review": {
+        "status": "agent_frame_reviewed_diagnostic",
+        "human_verified": false,
+        "is_validated_long_range_example": false,
+        "observations": "The same pan, spoon, and hands remain visible across the local and target windows. Use to check temporal continuation and motion before adding distant evidence.",
+        "limitations": ["Local already reveals the visible appearance; this example cannot establish a benefit from distant evidence."]
+      }
+    },
+    {
+      "example_id": "pilot_001_interview_return",
+      "candidate_id": "fv_84c74091_0000_00000",
+      "task_type": "prompted_cut_reference_utilization",
+      "dependency_type": "character",
+      "allowed_modes": ["local", "random", "oracle"],
+      "local_start": 156.82533333333333,
+      "local_end": 158.82533333333333,
+      "target_start": 158.82533333333333,
+      "target_end": 161.82533333333333,
+      "oracle_start": 90.0,
+      "oracle_end": 93.0,
+      "random_start": 44.0,
+      "random_end": 47.0,
+      "prompt": "The video cuts back to a previously shown indoor interview. The interviewee continues speaking in a seated medium shot.",
+      "random_selection": "Manually selected same-source unrelated scenery; not an unbiased random draw",
+      "review": {
+        "status": "agent_frame_reviewed_diagnostic",
+        "human_verified": false,
+        "is_validated_long_range_example": false,
+        "evaluation_attributes_do_not_condition_on": ["Light lavender open-collar shirt", "Short light hair and no eyeglasses", "Dark backdrop with circular marks behind the seated interviewee"],
+        "observations": "Local shows a distant construction vehicle. Oracle and target show the same apparent interviewee and indoor setup. The target begins at a decoded shot boundary.",
+        "limitations": ["The cut is explicitly requested; its timing is not predicted from local context.", "The prompt does not uniquely identify one of the video's several interviewees.", "The source uses edited interviews, so repeated takes or near-duplicate views can make reference use easier.", "The two interview diagnostics share one source video and are not independent samples."]
+      }
+    },
+    {
+      "example_id": "pilot_002_interview_return",
+      "candidate_id": "fv_84c74091_0000_00000",
+      "task_type": "prompted_cut_reference_utilization",
+      "dependency_type": "character",
+      "allowed_modes": ["local", "random", "oracle"],
+      "local_start": 175.6357888888889,
+      "local_end": 177.6357888888889,
+      "target_start": 177.6357888888889,
+      "target_end": 180.6357888888889,
+      "oracle_start": 60.0,
+      "oracle_end": 63.0,
+      "random_start": 44.0,
+      "random_end": 47.0,
+      "prompt": "The video cuts back to a previously shown indoor interview. The interviewee continues speaking in a seated medium shot.",
+      "random_selection": "Manually selected same-source unrelated scenery; not an unbiased random draw",
+      "review": {
+        "status": "agent_frame_reviewed_diagnostic",
+        "human_verified": false,
+        "is_validated_long_range_example": false,
+        "evaluation_attributes_do_not_condition_on": ["Black rectangular eyeglasses and beard", "Dark repeated pattern across the shoulders of an orange polo shirt"],
+        "observations": "Local shows a worker in a helmet. Oracle and target show the same apparent interviewee with eyeglasses and a patterned polo shirt.",
+        "limitations": ["Orange is already visible in the local safety vest, so orange color alone is not a valid absent-from-local attribute.", "The cut is explicitly requested and the prompt does not uniquely select an interviewee.", "The two interview diagnostics share one source video and are not independent samples.", "Use appearance and ongoing motion together to detect reference copying or static output."]
+      }
+    }
+  ]
+}

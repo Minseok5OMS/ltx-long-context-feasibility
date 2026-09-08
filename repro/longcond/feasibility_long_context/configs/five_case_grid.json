@@ -1,0 +1,196 @@
+{
+  "frozen_at_utc": "2026-09-07T13:25:46.625735+00:00",
+  "cohort_config_sha256": "5911ef474bc2b929104b2dee8cf57f79b25baea421facf91a0c59c7c9f1c724f",
+  "prior_artifact_audit_sha256": "4fbb4343143adf87dffd293670282727389ae0723df88891f8e996acff56fea9",
+  "seed": 42,
+  "new_cells": [
+    "image_target",
+    "video_past",
+    "video_target"
+  ],
+  "reused_cells": [
+    "image_past"
+  ],
+  "reference_cells": [
+    "image_past",
+    "image_target",
+    "video_past",
+    "video_target"
+  ],
+  "local_baseline_reused": true,
+  "new_generations": 15,
+  "reference_cells_total": 20,
+  "generations_including_local_baselines": 25,
+  "target_offset_seconds": 6.083333333333333,
+  "prompt_changes": false,
+  "attention_measurement": false,
+  "examples": [
+    "five_001_nursery_manager",
+    "five_002_robot_head",
+    "five_003_student_return",
+    "five_004_van_exterior",
+    "five_005_conservator"
+  ],
+  "reused_provenance": [
+    {
+      "example_id": "five_001_nursery_manager",
+      "mode": "local",
+      "config_sha256": "d25c7db6f2a30f8a3f64d00769f1dbd1c89e5d6dd0bedc9c1308016eb11145fb",
+      "input_cache_sha256": "5763c4cf101d353f5ece4ce8e4e2e7daaf25a3371560beee82ce75b5a410d88d",
+      "oracle_image_sha256": "ff795e8c7dd74e25f34714439e6fcee1cb626de661c7a570633d3045f30b3b15",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_clean_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "generated_latent_tensor_sha256": "eb43997807ec2aaea4b9e8869ffe0c2250a84b918b40549b301e50a69ab65b50",
+      "reference_tokens": 0,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "mode": "oracle",
+      "config_sha256": "d02c49fab5243d4e829093a0160276945cfa94720cbca04b4becfc78ae3ce99e",
+      "input_cache_sha256": "5763c4cf101d353f5ece4ce8e4e2e7daaf25a3371560beee82ce75b5a410d88d",
+      "oracle_image_sha256": "ff795e8c7dd74e25f34714439e6fcee1cb626de661c7a570633d3045f30b3b15",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_clean_tokens_sha256": "c9fa70523f80353c8d1d809b2f95336785dc74398cf6aac66d933e8414480d6f",
+      "generated_latent_tensor_sha256": "3aa01828e266e8d79937c12fa394cc64ab03e1beecd55469e0b3e075e26b5129",
+      "reference_tokens": 144,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "mode": "local",
+      "config_sha256": "11fdc49234bef37704eccbce73b7557fb2f22384503c4c8666150d77070b35c1",
+      "input_cache_sha256": "5187e4cae8d6ec3e76125b5f58b7087eecf4cc3491f01ef6041947c0965232f8",
+      "oracle_image_sha256": "e359083d77893fd6824b3b77776ade0616632b5c88f1ad2776a98a04a893db95",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_clean_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "generated_latent_tensor_sha256": "5cdc36037bb674f90abffdcf8564ce0746b6f923d870767816dd68cc83b2a307",
+      "reference_tokens": 0,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "mode": "oracle",
+      "config_sha256": "551949e0b223242612c26ea50baed64bd55de55714d2a313c819486256c63420",
+      "input_cache_sha256": "5187e4cae8d6ec3e76125b5f58b7087eecf4cc3491f01ef6041947c0965232f8",
+      "oracle_image_sha256": "e359083d77893fd6824b3b77776ade0616632b5c88f1ad2776a98a04a893db95",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_clean_tokens_sha256": "a0b01041085491a676640cacc400cd22aa87f7f17bd708bbe02908adb6705362",
+      "generated_latent_tensor_sha256": "41ad86e8902730e24a9caaa61a6e68a85498b144d8baf3304cff74c06cc98c56",
+      "reference_tokens": 144,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "mode": "local",
+      "config_sha256": "219555b96349664a2937223fbb3a0027313eb3ecfc84ad1af2cb5fc59aedef37",
+      "input_cache_sha256": "3f110ca2435d11f4b02364aca47f69e0405a11047e21798f7ec5950163eef74f",
+      "oracle_image_sha256": "79c9b02de3b208ea74b0e1151f5ab65f971e5ee649d70a727871629436c1fd4a",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_clean_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "generated_latent_tensor_sha256": "f1a9cfd699208222bfdc0918a461b78e34e7b7d86f79dabb2f8bbe7adcf7d472",
+      "reference_tokens": 0,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "mode": "oracle",
+      "config_sha256": "d5279ec668be653234b9ea39594626007d0b9c25a9961be0edf185aca75d1e35",
+      "input_cache_sha256": "3f110ca2435d11f4b02364aca47f69e0405a11047e21798f7ec5950163eef74f",
+      "oracle_image_sha256": "79c9b02de3b208ea74b0e1151f5ab65f971e5ee649d70a727871629436c1fd4a",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_clean_tokens_sha256": "c9da74392cf09e54c20f1cf59dd1d0ec09342915e860085c36cba9fc7a5dd3f5",
+      "generated_latent_tensor_sha256": "5931a54b5e63df4da0ec211968e8baea0bf387708c711ccafc4911ca39870e17",
+      "reference_tokens": 144,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "mode": "local",
+      "config_sha256": "9b348fe0c155d42821b61dc3eb3b013cea42a32695cf0b4702fbbc144473af5c",
+      "input_cache_sha256": "bf8e0731fc46ce2a3b1dd01a1e6e16fe3c1d13240889981e67b94184f0714720",
+      "oracle_image_sha256": "64032b809b35ed65e58c97d7fbbd3bf28e06798be635d1565b659ce5d4210fe8",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_clean_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "generated_latent_tensor_sha256": "875ca25916b48ea98533cfefa95938925f590623a9a3345cf6881e5ae10e098e",
+      "reference_tokens": 0,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "mode": "oracle",
+      "config_sha256": "3c444d984f4c8ac123074d0b62e3913f1188e8eee99657b08c27d53be9f9a226",
+      "input_cache_sha256": "bf8e0731fc46ce2a3b1dd01a1e6e16fe3c1d13240889981e67b94184f0714720",
+      "oracle_image_sha256": "64032b809b35ed65e58c97d7fbbd3bf28e06798be635d1565b659ce5d4210fe8",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_clean_tokens_sha256": "d8bf850efd0c98be5514f584101e3797ae7b926a3a38760a2146000eb39eade4",
+      "generated_latent_tensor_sha256": "96bf803a7a6fea038a39b04b446cab6f352d079c5d357d58489efbe487d4f076",
+      "reference_tokens": 144,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "mode": "local",
+      "config_sha256": "2f0cdb7c728a392220f2c43b62e74f15bc03636983d8a1df13ef549f7c5c063e",
+      "input_cache_sha256": "1c45d6ded50960aa398c65e71d51771d66df9e4466e145f180066a652374aa0a",
+      "oracle_image_sha256": "6e8976f362347191da9f6b9666054db88245c7eacbdaa19daa9bc42d22aa3540",
+      "positions_tensor_sha256": "27d7c03cd419ca021accd1be241e19162725794943ca67009f57f2349353cf68",
+      "reference_clean_tokens_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "generated_latent_tensor_sha256": "8e19bd8b01f5636915f269033ddd08b667fc31c370cdc8ecbf957d70aff51383",
+      "reference_tokens": 0,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "mode": "oracle",
+      "config_sha256": "f6fa26a481b48053254652b53cb0e065dca60ed833ef003b4f7d092875486d3a",
+      "input_cache_sha256": "1c45d6ded50960aa398c65e71d51771d66df9e4466e145f180066a652374aa0a",
+      "oracle_image_sha256": "6e8976f362347191da9f6b9666054db88245c7eacbdaa19daa9bc42d22aa3540",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "reference_clean_tokens_sha256": "a5b81231c92c8cdcc5cd06ce880bc844bd0e4ec3d3fd5f314e5eecc8f3bd2dc7",
+      "generated_latent_tensor_sha256": "9274612b2f05fd84a99734b53ee401ecc3b132f19d51d0d1df4a5f0290f7ce9d",
+      "reference_tokens": 144,
+      "full_decoded_frames_and_pts": {
+        "target": 72,
+        "continuation": 120,
+        "decoded_full": 121
+      }
+    }
+  ]
+}

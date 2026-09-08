@@ -1,0 +1,221 @@
+{
+  "dataset_revision": "84c74091e1c6ee7a5dffabfafb5c9033e4718883",
+  "frozen_at_utc": "2026-09-07T08:33:28.883891+00:00",
+  "purpose": "Five distinct FineVideo sources, single seed, selected past-image appearance utility under prompted view changes; not a state/event/dynamics or retrieval benchmark.",
+  "clip_fps": 24,
+  "protocol": {
+    "seed": 42,
+    "layout": "image_past",
+    "oracle_selection_clip_frame": 36,
+    "actual_reference_images": 1,
+    "reference_tokens": 144,
+    "width": 512,
+    "height": 288,
+    "local_frames": 48,
+    "target_frames": 72,
+    "sampler_steps": 8,
+    "common_time_shift_frames": 97,
+    "reference_model_time_range": [
+      0,
+      0.041666666666666664
+    ],
+    "new_generations": 10,
+    "new_random": false
+  },
+  "selection": {
+    "cached_shard_rows": 33,
+    "original_candidates": 5,
+    "additional_source_rows_extracted": [
+      10,
+      14,
+      16,
+      25,
+      28,
+      29
+    ],
+    "source_rows_used": [
+      10,
+      14,
+      25,
+      28,
+      29
+    ],
+    "selection_based_on_outputs": false,
+    "rejections": {
+      "original_cooking_and_continuous_presenter_performer": "Local commonly already reveals relevant appearance.",
+      "row16_doorbell": "Introductory finished-product footage complicates chronological state claims; not needed for five-source appearance cohort."
+    },
+    "limitations": [
+      "Hand-curated from one cached shard, not a random population sample.",
+      "These are independent source files, not proof of statistical independence or universal long-range performance.",
+      "No state, event, multi-evidence or video-motion transfer claim."
+    ]
+  },
+  "examples": [
+    {
+      "example_id": "five_001_nursery_manager",
+      "candidate_id": "fv_84c74091_0000_00010",
+      "title_ko": "보육원 관리자 재등장",
+      "task_type": "prompted_view_transition_reference_appearance",
+      "dependency_type": "character",
+      "allowed_modes": [
+        "local",
+        "oracle"
+      ],
+      "local_start": 128.06326666666666,
+      "local_end": 130.06326666666666,
+      "target_start": 130.06326666666666,
+      "target_end": 133.06326666666666,
+      "oracle_start": 48.0,
+      "oracle_end": 51.0,
+      "prompt": "The video returns to the nursery manager's seated interview as she continues speaking.",
+      "review": {
+        "status": "assistant_source_sample_frames_reviewed_before_generation",
+        "human_verified": false,
+        "is_validated_long_range_benchmark": false,
+        "evaluation_attributes_do_not_condition_on": [
+          "Dark hair in a bun and the same apparent face",
+          "Red long sleeves under a black sleeveless pinafore"
+        ],
+        "observations": "Local contains a laptop and pointing hand, without the returning person. Oracle is a medium interview view; GT is a closer side view.",
+        "limitations": [
+          "The camera return is explicitly requested.",
+          "Appearance at a new framing is tested; identity is a visual judgment, not a biometric score."
+        ]
+      }
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "candidate_id": "fv_84c74091_0000_00014",
+      "title_ko": "로봇 모형의 가려졌던 머리",
+      "task_type": "prompted_view_transition_reference_appearance",
+      "dependency_type": "object",
+      "allowed_modes": [
+        "local",
+        "oracle"
+      ],
+      "local_start": 365.6343009676343,
+      "local_end": 367.6343009676343,
+      "target_start": 367.6343009676343,
+      "target_end": 370.6343009676343,
+      "oracle_start": 147.0,
+      "oracle_end": 150.0,
+      "prompt": "The view switches to the same robot model posed on its display turntable, showing its head and upper body.",
+      "review": {
+        "status": "assistant_source_sample_frames_reviewed_before_generation",
+        "human_verified": false,
+        "is_validated_long_range_benchmark": false,
+        "evaluation_attributes_do_not_condition_on": [
+          "Angular helmet and small gold face insert",
+          "Upper shoulder armor shape and layered head-to-chest design"
+        ],
+        "observations": "Local shows hands holding the robot torso and legs, with the head outside the top of the frame. Oracle shows the head at close range; GT uses a wider display pose.",
+        "limitations": [
+          "Black body color and much of the chest are already in Local and do not count as recovered evidence.",
+          "Head details occupy few pixels in the wider GT.",
+          "The source target is nearly static for much of this window; motion cannot be a primary success test here."
+        ]
+      }
+    },
+    {
+      "example_id": "five_003_student_return",
+      "candidate_id": "fv_84c74091_0000_00025",
+      "title_ko": "교실 학생의 얼굴 재등장",
+      "task_type": "prompted_view_transition_reference_appearance",
+      "dependency_type": "character",
+      "allowed_modes": [
+        "local",
+        "oracle"
+      ],
+      "local_start": 122.58333333333333,
+      "local_end": 124.58333333333333,
+      "target_start": 124.58333333333333,
+      "target_end": 127.58333333333333,
+      "oracle_start": 107.0,
+      "oracle_end": 110.0,
+      "prompt": "The view returns to the student standing at the teacher's desk as she listens and responds.",
+      "review": {
+        "status": "assistant_source_sample_frames_reviewed_before_generation",
+        "human_verified": false,
+        "is_validated_long_range_benchmark": false,
+        "evaluation_attributes_do_not_condition_on": [
+          "The same apparent student face",
+          "Front curls and light shirt under the open hoodie"
+        ],
+        "observations": "Local faces the teacher and shows only part of the student from behind/right. Oracle and early GT face the student; the GT student turns away near the end.",
+        "limitations": [
+          "Maroon hoodie and some rear hair are already visible in Local and do not establish retrieval benefit.",
+          "Oracle and GT are similar reverse-angle shots with only a 14.58 second gap from the selected interval end.",
+          "The prompt specifies the role and shot direction, not the clothing or hair.",
+          "Exact GT turn timing is not requested; note pose copying separately."
+        ]
+      }
+    },
+    {
+      "example_id": "five_004_van_exterior",
+      "candidate_id": "fv_84c74091_0000_00028",
+      "title_ko": "캠퍼 밴 외관으로 시점 전환",
+      "task_type": "prompted_view_transition_reference_appearance",
+      "dependency_type": "object",
+      "allowed_modes": [
+        "local",
+        "oracle"
+      ],
+      "local_start": 306.0,
+      "local_end": 308.0,
+      "target_start": 308.0,
+      "target_end": 311.0,
+      "oracle_start": 138.0,
+      "oracle_end": 141.0,
+      "prompt": "The camera transitions outside to the camper van from the tour as it slowly drives across the driveway.",
+      "review": {
+        "status": "assistant_source_sample_frames_reviewed_before_generation",
+        "human_verified": false,
+        "is_validated_long_range_benchmark": false,
+        "evaluation_attributes_do_not_condition_on": [
+          "Cream-white boxy body with a brown side stripe",
+          "Black front grille with round headlights and the same window layout"
+        ],
+        "observations": "Local shows the driving interior. The target starts immediately before an approximately one-second cross-dissolve to the van exterior. Oracle shows the parked van from a closer, different location.",
+        "limitations": [
+          "The broad camper-van category is in the prompt and is not a recovered attribute.",
+          "Target includes a cross-dissolve and another parked van in the background.",
+          "Some generic vehicle identity may be inferred from the steering wheel; exterior detail recovery is the criterion."
+        ]
+      }
+    },
+    {
+      "example_id": "five_005_conservator",
+      "candidate_id": "fv_84c74091_0000_00029",
+      "title_ko": "보존 작업자의 얼굴 재등장",
+      "task_type": "prompted_view_transition_reference_appearance",
+      "dependency_type": "character",
+      "allowed_modes": [
+        "local",
+        "oracle"
+      ],
+      "local_start": 108.46666666666667,
+      "local_end": 110.46666666666667,
+      "target_start": 110.46666666666667,
+      "target_end": 113.46666666666667,
+      "oracle_start": 45.5,
+      "oracle_end": 48.5,
+      "prompt": "The camera returns to the textile conservator at the workbench, showing her face as she looks down and resumes working.",
+      "review": {
+        "status": "assistant_source_sample_frames_reviewed_before_generation",
+        "human_verified": false,
+        "is_validated_long_range_benchmark": false,
+        "evaluation_attributes_do_not_condition_on": [
+          "Short wavy gray-blond hair and the same apparent face",
+          "Slim dark-rimmed eyeglasses"
+        ],
+        "observations": "Local shows hands, sleeves, and a cleaning tool. Oracle is a frontal workbench view; GT is a close downward-facing profile and then pans down.",
+        "limitations": [
+          "Gray sleeves are already in Local and do not count as recovered evidence.",
+          "GT face leaves the upper image near the end; whole-frame DINO mixes appearance, viewpoint and workbench content.",
+          "Embedded source captions are not removed; the selected image at 47.0 seconds has no bottom subtitle."
+        ]
+      }
+    }
+  ]
+}

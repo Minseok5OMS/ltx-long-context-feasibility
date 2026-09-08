@@ -1,0 +1,40 @@
+{
+  "scope": "Local continuation smoke test; no oracle comparison or learned perceptual metric",
+  "command": "/mnt/minu/minseok/LTX-2/.venv/bin/python3 feasibility_long_context/make_local_report.py",
+  "run_directory": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_000_local_cooking/local_seed42",
+  "run_config_sha256": "3c225faee0d60d156eca3fb1f2ec257213be94d86b7d86e96e612917a133d723",
+  "generation_completed": true,
+  "gt_loaded_after_generation": true,
+  "generated_frames": 72,
+  "target_seconds": 3.0,
+  "local_latent_max_abs_error": 0.0,
+  "generation_seconds": 35.87033686321229,
+  "peak_gpu_allocated_gib": 39.1761794090271,
+  "pixel_diagnostics_0_255_not_benchmark_scores": {
+    "generated_vs_gt_mae": 23.33266258239746,
+    "generated_adjacent_frame_mae": 4.615819931030273,
+    "gt_adjacent_frame_mae": 5.124691486358643,
+    "last_local_to_first_generated_mae": 7.658422470092773,
+    "last_local_to_first_gt_mae": 7.210611820220947,
+    "generated_near_static_pair_fraction_mae_below_0_1": 0.0
+  },
+  "derived_outputs": {
+    "gt_target": {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_000_local_cooking/local_seed42/gt_target.mp4",
+      "frames": 72,
+      "fps": 24,
+      "duration_seconds": 3.0,
+      "sha256": "cd8ca88f737f650bae4b8da2dbc7b4b7954f44368442916c05d2f4677adbcf46",
+      "full_decode_passed": true
+    },
+    "comparison": {
+      "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_000_local_cooking/local_seed42/comparison.mp4",
+      "frames": 120,
+      "fps": 24,
+      "duration_seconds": 5.0,
+      "sha256": "5b7867ea4cfe06c7a31d6756b66470c2227d80bedc5d31800b320767fa24e1c8",
+      "full_decode_passed": true
+    }
+  },
+  "visual_review": "See LOCAL_SMOKE_RESULT.md; automatic motion differences alone do not establish plausible motion"
+}

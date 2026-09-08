@@ -1,0 +1,75 @@
+{
+  "reason": "Initial three Oracle denoising runs completed but the in-process CHUNKED_EAGER diffusion VAE decoder failed with CUBLAS/illegal-memory-access errors. Fresh decoder process succeeds. All 10 formal conditions are rerun uniformly with the same denoising settings and decoder seed.",
+  "attempt1_directories": [
+    {
+      "original": "feasibility_long_context/outputs/five_001_nursery_manager/image_past_seed42",
+      "preserved_at": "feasibility_long_context/outputs/five_001_nursery_manager/image_past_seed42_attempt1",
+      "conditions": {
+        "local": "completed",
+        "oracle": "failed"
+      }
+    },
+    {
+      "original": "feasibility_long_context/outputs/five_002_robot_head/image_past_seed42",
+      "preserved_at": "feasibility_long_context/outputs/five_002_robot_head/image_past_seed42_attempt1",
+      "conditions": {
+        "local": "completed",
+        "oracle": "failed"
+      }
+    },
+    {
+      "original": "feasibility_long_context/outputs/five_003_student_return/image_past_seed42",
+      "preserved_at": "feasibility_long_context/outputs/five_003_student_return/image_past_seed42_attempt1",
+      "conditions": {
+        "local": "completed",
+        "oracle": "failed"
+      }
+    }
+  ],
+  "decoder_local_exact_mp4_sha256_reproduction": {
+    "target": true,
+    "continuation": true,
+    "decoded_full": true
+  },
+  "decoder_oracle_recovery": "passed",
+  "protocol_and_inputs_changed": false,
+  "attempt1_formal_score_inclusion": false,
+  "retry_latent_reproducibility": [
+    {
+      "example_id": "five_001_nursery_manager",
+      "mode": "local",
+      "latent_bitwise_equal_after_decoder_isolation": true,
+      "max_abs_latent_difference": 0.0
+    },
+    {
+      "example_id": "five_001_nursery_manager",
+      "mode": "oracle",
+      "latent_bitwise_equal_after_decoder_isolation": true,
+      "max_abs_latent_difference": 0.0
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "mode": "local",
+      "latent_bitwise_equal_after_decoder_isolation": true,
+      "max_abs_latent_difference": 0.0
+    },
+    {
+      "example_id": "five_002_robot_head",
+      "mode": "oracle",
+      "latent_bitwise_equal_after_decoder_isolation": true,
+      "max_abs_latent_difference": 0.0
+    },
+    {
+      "example_id": "five_003_student_return",
+      "mode": "local",
+      "latent_bitwise_equal_after_decoder_isolation": true,
+      "max_abs_latent_difference": 0.0
+    },
+    {
+      "example_id": "five_003_student_return",
+      "mode": "oracle",
+      "latent_bitwise_equal_after_decoder_isolation": true,
+      "max_abs_latent_difference": 0.0
+    }
+  ]
+}

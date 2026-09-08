@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "html_pages": 8,
+  "local_links_assets_and_anchors": 180,
+  "utf8_meta": true,
+  "raw_md_navigation_links": 0,
+  "markdown_tables_rendered": 8,
+  "external_renderer_or_font_dependency": false,
+  "syntax": "passed",
+  "browser_visual_review": {
+    "browser": "Firefox headless",
+    "status": "passed",
+    "pages": [
+      "REFERENCE_PROTOCOL.html",
+      "report.html"
+    ],
+    "observed": "Korean text, Markdown tables, dark document styling, two reference method cards, and input previews displayed correctly",
+    "screenshots": [
+      "outputs/browser_check/protocol.png",
+      "outputs/browser_check/comparison.png"
+    ]
+  },
+  "http": {
+    "REFERENCE_PROTOCOL.html": 200,
+    "content_type": "text/html"
+  }
+}

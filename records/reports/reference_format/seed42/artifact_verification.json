@@ -1,0 +1,227 @@
+{
+  "status": "passed",
+  "seed": 42,
+  "new_generations": 3,
+  "reused_generations": 2,
+  "common_and_paired_fields": [
+    "example_id",
+    "models",
+    "ltx_commit",
+    "controls_sha256",
+    "environment",
+    "prompt",
+    "prompt_enhancement",
+    "fps",
+    "width",
+    "height",
+    "prefix_frames",
+    "target_frames",
+    "total_frames",
+    "target_decoded_slice",
+    "base_video_tokens",
+    "prefix_tokens",
+    "common_time_shift_seconds",
+    "target_model_time_range",
+    "common_inputs_sha256",
+    "local_latent_sha256",
+    "prompt_context_hashes",
+    "sigmas",
+    "sampler",
+    "eta",
+    "s_noise",
+    "precision",
+    "guidance",
+    "audio",
+    "noise_policy",
+    "base_video_positions_sha256",
+    "audio_positions_sha256",
+    "reference_source",
+    "source_dependency_gap_seconds",
+    "seed",
+    "initial_noise_seed",
+    "step_noise_seed",
+    "decoder_seed",
+    "noise_audit"
+  ],
+  "actual_initial_and_seven_step_noise_equal": true,
+  "target_frames_fully_decoded": 360,
+  "B_C_reference_content_equal": true,
+  "D_E_reference_content_equal": true,
+  "B_D_positions_equal": true,
+  "C_E_positions_equal": true,
+  "B_reference_content_and_grid_are_ten_exact_A_copies": true,
+  "provenance": [
+    {
+      "case": "A",
+      "reused": true,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_001_interview_return/temporal_position_seed42/image_past/config.json",
+      "config_sha256": "006335e073c3858164e1e876719acf97c64dd74e754dfbc0fc684a56340af038",
+      "runner_source": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/run_temporal_position.py",
+      "runner_sha256": "53b50f33522e78e408cc0ec3522c9bb0b59937441a07ab203c7f17e370f55864",
+      "reference_tensor_sha256": "9eb6391f9da862dd1e54cdf0b52a1571b5fc4ebcc767e3866248993795b92d47",
+      "reference_clean_tokens_sha256": "40a1cfa15d1d56775d680d621f537b3c65726b1384719ed48eb8177521520077",
+      "positions_tensor_sha256": "5726aed780f20602fb24849aa20bfa8316139cce446b4f6047da3b32e520deba",
+      "generated_latent_tensor_sha256": "a7dab111d32c9183de6a14b47d1f7644e1b3282902e33c317ac51bf9c92c9154",
+      "unique_temporal_bounds": [
+        [
+          0.0,
+          0.0416666679084301
+        ]
+      ],
+      "reference_tokens": 144,
+      "target_frames_and_pts_verified": true
+    },
+    {
+      "case": "B",
+      "reused": false,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_001_interview_return/reference_format_seed42/B_repeat_same/config.json",
+      "config_sha256": "45c896f0ca3c1230c6a27f7369b61f374a0c3eca02ae1888845e2fc38d3e269c",
+      "runner_source": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/run_reference_format.py",
+      "runner_sha256": "4adf6d940d5ec906a8900e2f1df6d06e95d7343f8e069bbcc3995d2f7e811800",
+      "reference_tensor_sha256": "2fa8a86f9230f1270aa99f17de17550aca2c615f66d13f10ce01d3ee3da08eb4",
+      "reference_clean_tokens_sha256": "c25d1b66b12a05773d25e269241986c31bb7c7add26257e5d258ac0da231c398",
+      "positions_tensor_sha256": "2085b8ec89a92fdc0ea9d3fe6632af9350e9ddbe5d3499cbe7d614be50b6b36b",
+      "generated_latent_tensor_sha256": "27f29e81efbf831915de1205662c92c6236e8d2b8f11340b4acc011880a30a04",
+      "unique_temporal_bounds": [
+        [
+          0.0,
+          0.0416666679084301
+        ]
+      ],
+      "reference_tokens": 1440,
+      "target_frames_and_pts_verified": true
+    },
+    {
+      "case": "C",
+      "reused": false,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_001_interview_return/reference_format_seed42/C_repeat_spread/config.json",
+      "config_sha256": "aa629763171019ed761abe178061e7e432366f1f8f541e9a736df08c338a223b",
+      "runner_source": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/run_reference_format.py",
+      "runner_sha256": "4adf6d940d5ec906a8900e2f1df6d06e95d7343f8e069bbcc3995d2f7e811800",
+      "reference_tensor_sha256": "2fa8a86f9230f1270aa99f17de17550aca2c615f66d13f10ce01d3ee3da08eb4",
+      "reference_clean_tokens_sha256": "c25d1b66b12a05773d25e269241986c31bb7c7add26257e5d258ac0da231c398",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "generated_latent_tensor_sha256": "04b099c339511d68990470933cada7598d2787d90f8409b93250294a12939372",
+      "unique_temporal_bounds": [
+        [
+          0.0,
+          0.0416666679084301
+        ],
+        [
+          0.0416666679084301,
+          0.375
+        ],
+        [
+          0.375,
+          0.7083333730697632
+        ],
+        [
+          0.7083333730697632,
+          1.0416667461395264
+        ],
+        [
+          1.0416667461395264,
+          1.375
+        ],
+        [
+          1.375,
+          1.7083333730697632
+        ],
+        [
+          1.7083333730697632,
+          2.0416667461395264
+        ],
+        [
+          2.0416667461395264,
+          2.375
+        ],
+        [
+          2.375,
+          2.7083334922790527
+        ],
+        [
+          2.7083334922790527,
+          3.0416667461395264
+        ]
+      ],
+      "reference_tokens": 1440,
+      "target_frames_and_pts_verified": true
+    },
+    {
+      "case": "D",
+      "reused": false,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_001_interview_return/reference_format_seed42/D_video_same/config.json",
+      "config_sha256": "65b436b47aa3a1e7cfc7e494ec78f5b85dc74b12eb86041d9b7d23c8ea0649dc",
+      "runner_source": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/run_reference_format.py",
+      "runner_sha256": "4adf6d940d5ec906a8900e2f1df6d06e95d7343f8e069bbcc3995d2f7e811800",
+      "reference_tensor_sha256": "aceeddaa2133697081c47842eda4a3a4c9e202919866951387cf9fd8068367f0",
+      "reference_clean_tokens_sha256": "72dda0f2072edb905afc9ec1b5e18a4cabeb1d82c2f9b64e0a89000adde6216e",
+      "positions_tensor_sha256": "2085b8ec89a92fdc0ea9d3fe6632af9350e9ddbe5d3499cbe7d614be50b6b36b",
+      "generated_latent_tensor_sha256": "3765ee3483c18e6275a18900dbe9fa51a8534ccbe66b2433eccf286a40d83e9d",
+      "unique_temporal_bounds": [
+        [
+          0.0,
+          0.0416666679084301
+        ]
+      ],
+      "reference_tokens": 1440,
+      "target_frames_and_pts_verified": true
+    },
+    {
+      "case": "E",
+      "reused": true,
+      "config_path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/pilot_001_interview_return/reference_past_seed42/oracle/config.json",
+      "config_sha256": "e4d23c730f96a10a980540864d359ecb8f63e9cd275308993e4cbc3190628dc6",
+      "runner_source": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/outputs/source_snapshots/98a6c8bfbc7ff15616195c4d419303f43ae5a1fff12105e400bfe465b85322f2/run_reference_comparison.py",
+      "runner_sha256": "98a6c8bfbc7ff15616195c4d419303f43ae5a1fff12105e400bfe465b85322f2",
+      "reference_tensor_sha256": "aceeddaa2133697081c47842eda4a3a4c9e202919866951387cf9fd8068367f0",
+      "reference_clean_tokens_sha256": "72dda0f2072edb905afc9ec1b5e18a4cabeb1d82c2f9b64e0a89000adde6216e",
+      "positions_tensor_sha256": "f5e84c1d33a8f69d4a050ef69d03324b52d8a39fe6e698dfe05765678a1e715e",
+      "generated_latent_tensor_sha256": "76eae6279b1a10c90870a9c5899327cf1a3fb1b8b463fa05fcc73ca7c91cb02c",
+      "unique_temporal_bounds": [
+        [
+          0.0,
+          0.0416666679084301
+        ],
+        [
+          0.0416666679084301,
+          0.375
+        ],
+        [
+          0.375,
+          0.7083333730697632
+        ],
+        [
+          0.7083333730697632,
+          1.0416667461395264
+        ],
+        [
+          1.0416667461395264,
+          1.375
+        ],
+        [
+          1.375,
+          1.7083333730697632
+        ],
+        [
+          1.7083333730697632,
+          2.0416667461395264
+        ],
+        [
+          2.0416667461395264,
+          2.375
+        ],
+        [
+          2.375,
+          2.7083334922790527
+        ],
+        [
+          2.7083334922790527,
+          3.0416667461395264
+        ]
+      ],
+      "reference_tokens": 1440,
+      "target_frames_and_pts_verified": true
+    }
+  ]
+}

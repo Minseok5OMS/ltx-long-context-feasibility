@@ -1,0 +1,40 @@
+{
+  "status": "assistant_sample_review_completed",
+  "reviewer": "assistant; not user or blind review",
+  "method": "Inspected GT plus all four conditions at frames 0,14,28,43,57,71 for each seed; consulted full-clip pixel diagnostics. No full-speed video playback claim.",
+  "sample_frame_indices": [
+    0,
+    14,
+    28,
+    43,
+    57,
+    71
+  ],
+  "conclusion": "세 seed 모두 영상 참조를 생성 시간 위치로 옮기면 공사 장면 지속에서 인터뷰 외형 재현으로 바뀐다. 이미지 한 장은 과거 위치에서도 외형이 전달되며, 생성 위치에서는 전환이 빨라진다. 시간 위치의 영향은 크지만 참조 형식과 함께 작용한다.",
+  "per_seed": {
+    "42": {
+      "image_past": "0초는 공사 장면, 0.58초에는 어두운 인터뷰로 전환, 1.17초 이후 보라색 셔츠와 원형 표시 배경이 뚜렷하다.",
+      "image_target": "첫 target 프레임은 공사 장면이다. 0.58초에는 인터뷰 외형이 뚜렷하고, 입·머리·손 자세가 변한다.",
+      "video_past": "모든 검토 시점에서 공사 차량과 나무 장면이 이어진다. 인터뷰 인물·셔츠·배경은 나타나지 않는다.",
+      "video_target": "첫 target 프레임에는 공사 장면과 인터뷰가 겹친다. 0.58초 이후 보라색 셔츠·짧은 밝은 머리·원형 표시 배경이 재현되고 입·머리 자세가 변한다. 전체 구도와 동작은 과거 참조에 가깝다."
+    },
+    "43": {
+      "image_past": "0초는 공사 장면, 0.58초에도 공사와 인터뷰가 겹친다. 1.17초 이후 보라색 셔츠와 원형 표시 배경이 나타난다.",
+      "image_target": "첫 target 프레임은 공사 장면이다. 0.58초에는 인터뷰 외형과 양손 제스처가 보이고, 이후 손을 내린다.",
+      "video_past": "모든 검토 시점에서 공사 차량과 나무 장면이 이어진다. 인터뷰 인물·셔츠·배경은 나타나지 않는다.",
+      "video_target": "첫 target 프레임에는 공사 장면과 인터뷰가 겹친다. 0.58초 이후 보라색 셔츠·짧은 밝은 머리·원형 표시 배경이 재현되고 입·머리 자세가 변한다. 전체 구도와 동작은 과거 참조에 가깝다."
+    },
+    "44": {
+      "image_past": "0초는 공사 장면, 0.58초에도 공사와 인터뷰가 겹친다. 1.17초 이후 보라색 셔츠와 원형 표시 배경이 나타난다.",
+      "image_target": "첫 target 프레임은 공사 장면이다. 0.58초에는 인터뷰 외형이 뚜렷하고, 입·머리·손 자세가 변한다.",
+      "video_past": "모든 검토 시점에서 공사 차량과 나무 장면이 이어진다. 인터뷰 인물·셔츠·배경은 나타나지 않는다.",
+      "video_target": "첫 target 프레임에는 공사 장면과 인터뷰가 겹친다. 0.58초 이후 보라색 셔츠·짧은 밝은 머리·원형 표시 배경이 재현되고 입·머리 자세가 변한다. 전체 구도와 동작은 과거 참조에 가깝다."
+    }
+  },
+  "limitations": [
+    "One source scene; three seeds are not three independent examples.",
+    "Whole-frame DINO favors similar scene composition and reference replay.",
+    "Sampled frames and pixel changes do not establish motion quality or exact identity.",
+    "No Random/hard-negative factorial, no memory network, no training."
+  ]
+}

@@ -1,0 +1,4 @@
+example_id,layout,seed,dependency_type,dependency_gap_seconds,score_name,local_only_score,random_score,oracle_score,hard_negative_score,oracle_minus_local,oracle_minus_random
+pilot_001_interview_return,past,42,character,65.82533333333333,dinov2_vitb14_mean_aligned_frame_cls_cosine,0.27134057879447937,0.30173248052597046,0.03916202113032341,,-0.23217855766415596,-0.26257045939564705
+pilot_001_interview_return,target_guide,42,character,65.82533333333333,dinov2_vitb14_mean_aligned_frame_cls_cosine,0.27134057879447937,0.2271442413330078,0.8596082329750061,,0.5882676541805267,0.6324639916419983
+pilot_002_interview_return,past,42,character,114.6357888888889,dinov2_vitb14_mean_aligned_frame_cls_cosine,0.41055288910865784,0.30968937277793884,0.4469328224658966,,0.03637993335723877,0.13724344968795776

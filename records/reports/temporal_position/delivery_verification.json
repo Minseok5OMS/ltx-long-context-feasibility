@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "target_frames_fully_decoded": 864,
+  "comparison_frames_fully_decoded": 360,
+  "all_frame_pts_exact_24fps": true,
+  "frame_counts": {
+    "42_image_past": 72,
+    "42_image_target": 72,
+    "42_video_past": 72,
+    "42_video_target": 72,
+    "43_image_past": 72,
+    "43_image_target": 72,
+    "43_video_past": 72,
+    "43_video_target": 72,
+    "44_image_past": 72,
+    "44_image_target": 72,
+    "44_video_past": 72,
+    "44_video_target": 72,
+    "seed42_comparison": 120,
+    "seed43_comparison": 120,
+    "seed44_comparison": 120
+  },
+  "utf8_html_pages": 11,
+  "local_links_assets_and_anchors_checked": 247,
+  "raw_markdown_navigation_links": 0,
+  "new_scripts_syntax_checked": [
+    "temporal_controls.py",
+    "test_temporal_controls.py",
+    "run_temporal_position.py",
+    "run_temporal_seed.py",
+    "temporal_artifacts.py",
+    "evaluate_temporal_position.py",
+    "make_temporal_report.py"
+  ],
+  "runner_snapshots_preserved": true,
+  "condition_tests": "5 tests passed on CPU and GPU earlier in this run; actual GPU anchors exact",
+  "browser": {
+    "engine": "Firefox headless",
+    "http_status": 200,
+    "korean_text_and_layout": "visually inspected",
+    "screenshot": "outputs/browser_check/temporal_position.png",
+    "full_video_playback": "not claimed; files fully decoded and timestamps verified separately"
+  },
+  "review_sha256": "a70760bf295a850fcc31f7957dd853f591220fa25c6197817717ac7b1bd46a58",
+  "rendered_report_sha256": "86503a12b894e666ea7d43a521dc1942c9566c3031e8453ae12b1c1468323fe5"
+}

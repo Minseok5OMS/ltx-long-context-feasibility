@@ -1,0 +1,140 @@
+{
+  "command": "/mnt/minu/minseok/LTX-2/longcond/../.venv/bin/python feasibility_long_context/preview_candidates.py --candidate fv_84c74091_0000_00000 --start 168 --end 184 --frames 32",
+  "scope": "Sparse decoded frames only; no oracle validation or model output",
+  "videos": [
+    {
+      "id": "fv_84c74091_0000_00000",
+      "contact_sheet": "fv_84c74091_0000_00000_168-184.0.jpg",
+      "frames": [
+        {
+          "requested_seconds": 168.0,
+          "decoded_seconds": 168.00116666666668
+        },
+        {
+          "requested_seconds": 168.51612903225808,
+          "decoded_seconds": 168.54337777777778
+        },
+        {
+          "requested_seconds": 169.03225806451613,
+          "decoded_seconds": 169.04387777777777
+        },
+        {
+          "requested_seconds": 169.5483870967742,
+          "decoded_seconds": 169.5860888888889
+        },
+        {
+          "requested_seconds": 170.06451612903226,
+          "decoded_seconds": 170.08658888888888
+        },
+        {
+          "requested_seconds": 170.58064516129033,
+          "decoded_seconds": 170.5870888888889
+        },
+        {
+          "requested_seconds": 171.09677419354838,
+          "decoded_seconds": 171.12928888888888
+        },
+        {
+          "requested_seconds": 171.61290322580646,
+          "decoded_seconds": 171.6297888888889
+        },
+        {
+          "requested_seconds": 172.1290322580645,
+          "decoded_seconds": 172.13028888888888
+        },
+        {
+          "requested_seconds": 172.6451612903226,
+          "decoded_seconds": 172.6725
+        },
+        {
+          "requested_seconds": 173.16129032258064,
+          "decoded_seconds": 173.173
+        },
+        {
+          "requested_seconds": 173.67741935483872,
+          "decoded_seconds": 173.7152111111111
+        },
+        {
+          "requested_seconds": 174.19354838709677,
+          "decoded_seconds": 174.21571111111112
+        },
+        {
+          "requested_seconds": 174.70967741935485,
+          "decoded_seconds": 174.7162111111111
+        },
+        {
+          "requested_seconds": 175.2258064516129,
+          "decoded_seconds": 175.2584222222222
+        },
+        {
+          "requested_seconds": 175.74193548387098,
+          "decoded_seconds": 175.75892222222222
+        },
+        {
+          "requested_seconds": 176.25806451612902,
+          "decoded_seconds": 176.2594222222222
+        },
+        {
+          "requested_seconds": 176.7741935483871,
+          "decoded_seconds": 176.80163333333334
+        },
+        {
+          "requested_seconds": 177.29032258064515,
+          "decoded_seconds": 177.30213333333333
+        },
+        {
+          "requested_seconds": 177.80645161290323,
+          "decoded_seconds": 177.84433333333334
+        },
+        {
+          "requested_seconds": 178.32258064516128,
+          "decoded_seconds": 178.34483333333333
+        },
+        {
+          "requested_seconds": 178.83870967741936,
+          "decoded_seconds": 178.84533333333334
+        },
+        {
+          "requested_seconds": 179.3548387096774,
+          "decoded_seconds": 179.38754444444444
+        },
+        {
+          "requested_seconds": 179.8709677419355,
+          "decoded_seconds": 179.88804444444443
+        },
+        {
+          "requested_seconds": 180.38709677419354,
+          "decoded_seconds": 180.38854444444445
+        },
+        {
+          "requested_seconds": 180.90322580645162,
+          "decoded_seconds": 180.93074444444446
+        },
+        {
+          "requested_seconds": 181.41935483870967,
+          "decoded_seconds": 181.43124444444445
+        },
+        {
+          "requested_seconds": 181.93548387096774,
+          "decoded_seconds": 181.97345555555555
+        },
+        {
+          "requested_seconds": 182.4516129032258,
+          "decoded_seconds": 182.47395555555556
+        },
+        {
+          "requested_seconds": 182.96774193548387,
+          "decoded_seconds": 182.97446666666667
+        },
+        {
+          "requested_seconds": 183.48387096774195,
+          "decoded_seconds": 183.51667777777777
+        },
+        {
+          "requested_seconds": 184.0,
+          "decoded_seconds": 184.0171777777778
+        }
+      ]
+    }
+  ]
+}

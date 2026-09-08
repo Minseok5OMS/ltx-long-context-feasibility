@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "verified_at_utc": "2026-09-08T06:55:56.564704+00:00",
+  "html_pages": 23,
+  "local_links_checked": 537,
+  "raw_md_navigation_links": 0,
+  "http_checked": false,
+  "http_assets": [],
+  "report_sha256": "62371b9e3f93d46a469a412c672b76e0a667762e2411c7965868eaadc0cbff62",
+  "summary_sha256": "ae3f31d6f5ca19c363e959e3de1c0008537730866a9215331d7453577d7abb42",
+  "review_sha256": "384c8011d1bb50616c79e56a8eee974462cf05f6c824947c58ec55d03a713fd6",
+  "artifact_audit_sha256": "2c3aae81e035c13da55a3e1ec49ffcadabc0762e7a23c9f744f50a9aa314ba94",
+  "report_script_sha256": "ee9f907caab26b5bc284b055be36086d8c05e93c0200047684f191a8d3f7323d"
+}

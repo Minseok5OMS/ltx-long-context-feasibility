@@ -1,0 +1,130 @@
+{
+  "status": "passed",
+  "plan_sha256": "bdba61857111a43b2576f725d2be1dc262ee88480e40f30a49f712df5060d75f",
+  "checks": [],
+  "examples": [
+    {
+      "example_id": "long_005_conservator",
+      "cells": [
+        {
+          "cell": "local",
+          "checks": "cache/source subset, clean prefix, actual initial state, 7 noises, exact actual GPU positions, audio, 8-step freeze, all video frames passed",
+          "cpu_recomputed_position_max_abs_error_seconds": 3.814697265625e-06,
+          "config_sha256": "3b2bf00ccf8ee53367b4c57cf2c08a8b236ea23e6527141840bece0a4fe42d67",
+          "videos": [
+            {
+              "kind": "target",
+              "frames": 72,
+              "decoded_rgb_sha256": "8d15b0091ecb839ef8b4bc54658230da31ce6ade733554a5d87744c7be7a8b5a"
+            },
+            {
+              "kind": "continuation",
+              "frames": 120,
+              "decoded_rgb_sha256": "e2c6ba65d1ca89d6c9e2bf645a85faa559eaf7d5955b0f8d175c09a4630650f4"
+            },
+            {
+              "kind": "decoded_full",
+              "frames": 121,
+              "decoded_rgb_sha256": "ccf39607f7a5015da926f361cd3423e9edea2702deb9e14e1388421bd7d8e343"
+            }
+          ]
+        },
+        {
+          "cell": "native_full",
+          "checks": "cache/source subset, clean prefix, actual initial state, 7 noises, exact actual GPU positions, audio, 8-step freeze, all video frames passed",
+          "cpu_recomputed_position_max_abs_error_seconds": 3.814697265625e-06,
+          "config_sha256": "b0c87f6e71e2f0a623cfb7dc6f1b5efa560de0d5c4e78aea002a234112931a65",
+          "videos": [
+            {
+              "kind": "target",
+              "frames": 72,
+              "decoded_rgb_sha256": "cfe78cdb608173ab48ccfabc7c17236225885b1941343d756ab31d62a148abe5"
+            },
+            {
+              "kind": "continuation",
+              "frames": 120,
+              "decoded_rgb_sha256": "5c86f53a07b6d133f8381d49c078b5b659ababc153f1ae3055f82dd6175764f4"
+            },
+            {
+              "kind": "decoded_full",
+              "frames": 121,
+              "decoded_rgb_sha256": "375ad1411a4ea51ddd409dd4b1ce22fd849aa3cc5609e457296db3ab1a3fee91"
+            }
+          ]
+        },
+        {
+          "cell": "full_reference",
+          "checks": "cache/source subset, clean prefix, actual initial state, 7 noises, exact actual GPU positions, audio, 8-step freeze, all video frames passed",
+          "cpu_recomputed_position_max_abs_error_seconds": 3.814697265625e-06,
+          "config_sha256": "95be4a6f279bb40cb1ff3047c473c5160c2be4b84779b0124ee52886486c0e94",
+          "videos": [
+            {
+              "kind": "target",
+              "frames": 72,
+              "decoded_rgb_sha256": "cf06f5d70f29067278a342fc28474c633dc0be434781263b400ad1fc01fb9ca6"
+            },
+            {
+              "kind": "continuation",
+              "frames": 120,
+              "decoded_rgb_sha256": "b30ed313a09dc25d9fbe280d14a4073779e86531269af4b25e4deda270bf7f78"
+            },
+            {
+              "kind": "decoded_full",
+              "frames": 121,
+              "decoded_rgb_sha256": "78d14add5588b4fd411498bea41c43ffa24d6957ccfab7785467b51c5e78597e"
+            }
+          ]
+        },
+        {
+          "cell": "oracle_sparse",
+          "checks": "cache/source subset, clean prefix, actual initial state, 7 noises, exact actual GPU positions, audio, 8-step freeze, all video frames passed",
+          "cpu_recomputed_position_max_abs_error_seconds": 3.814697265625e-06,
+          "config_sha256": "dd2c011b32f1e45ea5b2427e84f8f7f4d120d62f7129622be3927ae11b47dab1",
+          "videos": [
+            {
+              "kind": "target",
+              "frames": 72,
+              "decoded_rgb_sha256": "8fa5e62cb056c8e8e9fee9e78b180e63aa7d7623f9584f0d5124bda34d307b48"
+            },
+            {
+              "kind": "continuation",
+              "frames": 120,
+              "decoded_rgb_sha256": "2a30f2bbae7c2488782192be39e4d009d15e2b0f5f7fe500191405fd57b91650"
+            },
+            {
+              "kind": "decoded_full",
+              "frames": 121,
+              "decoded_rgb_sha256": "b369aee882204bb6b40c3d71077bfb90e045cbc7b19855cd38342aade199bd3f"
+            }
+          ]
+        },
+        {
+          "cell": "uniform_sparse",
+          "checks": "cache/source subset, clean prefix, actual initial state, 7 noises, exact actual GPU positions, audio, 8-step freeze, all video frames passed",
+          "cpu_recomputed_position_max_abs_error_seconds": 3.814697265625e-06,
+          "config_sha256": "3f8482b18b922e8cfe460352c6d13bee928ae452099c2116030537b59392700a",
+          "videos": [
+            {
+              "kind": "target",
+              "frames": 72,
+              "decoded_rgb_sha256": "0ba341b63857abadb92a4c2412b758ee3cbd0ec91ce1d43acb7b6cefcfe340bb"
+            },
+            {
+              "kind": "continuation",
+              "frames": 120,
+              "decoded_rgb_sha256": "352231db2f6f61e07dd9d76b0178938e2280d7f8c1144f6c5c293b0111615820"
+            },
+            {
+              "kind": "decoded_full",
+              "frames": 121,
+              "decoded_rgb_sha256": "e2609250252e00ca7f73f0a73b9c81bccd646b78cdbb60a30654a0047d55f9b6"
+            }
+          ]
+        }
+      ],
+      "same_observed_rgb_native_H_Local": true,
+      "gt_disjoint": true
+    }
+  ],
+  "completed_conditions": 5
+}

@@ -1,0 +1,247 @@
+{
+  "example_id": "pilot_001_interview_return",
+  "seed": 42,
+  "new_generations": 3,
+  "reused_generations": 2,
+  "command": "/mnt/minu/minseok/LTX-2/.venv/bin/python3 feasibility_long_context/evaluate_reference_format.py --gpu 2",
+  "evaluation_script_sha256": "414f007e9049d5b4fb6a715cc9d571256d308108adaba9895fbb1fffadcb57fd",
+  "audit_script_sha256": "81e2f957b0a24bf315a29a3e50e36b0cd999b36be0c1583eafffe2aedce530e7",
+  "metric": {
+    "name": "dinov2_vitb14_mean_aligned_frame_cls_cosine",
+    "sample_frame_indices": [
+      0,
+      6,
+      13,
+      19,
+      26,
+      32,
+      39,
+      45,
+      52,
+      58,
+      65,
+      71
+    ],
+    "after_1s_sample_indices": [
+      26,
+      32,
+      39,
+      45,
+      52,
+      58,
+      65,
+      71
+    ],
+    "after_1s_scope": "Supplementary fixed window selected before inspecting B/C/D outputs; not automatic transition detection",
+    "preprocessing": "RGB, short edge 256 bicubic, center crop 224, ImageNet normalization, FP32",
+    "weights_sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73",
+    "backbone_source_sha256": "871fca671b12a9ff02e810654baf509e97ccf461bf8196ce5ddeefff2fd87d3e"
+  },
+  "rows": [
+    {
+      "case": "A",
+      "name": "image_single",
+      "seed": 42,
+      "reference_tokens": 144,
+      "reference_time_layout": "same",
+      "reused": true,
+      "dino_gt_cosine": 0.7725699543952942,
+      "dino_gt_cosine_after_1s": 0.9207797050476074,
+      "adjacent_pixel_mae_0_255": 1.9050177335739136
+    },
+    {
+      "case": "B",
+      "name": "repeat_same",
+      "seed": 42,
+      "reference_tokens": 1440,
+      "reference_time_layout": "same",
+      "reused": false,
+      "dino_gt_cosine": 0.03445374593138695,
+      "dino_gt_cosine_after_1s": 0.025604253634810448,
+      "adjacent_pixel_mae_0_255": 4.396816253662109
+    },
+    {
+      "case": "C",
+      "name": "repeat_spread",
+      "seed": 42,
+      "reference_tokens": 1440,
+      "reference_time_layout": "spread",
+      "reused": false,
+      "dino_gt_cosine": 0.0381944477558136,
+      "dino_gt_cosine_after_1s": 0.03600439801812172,
+      "adjacent_pixel_mae_0_255": 3.4490649700164795
+    },
+    {
+      "case": "D",
+      "name": "video_same",
+      "seed": 42,
+      "reference_tokens": 1440,
+      "reference_time_layout": "same",
+      "reused": false,
+      "dino_gt_cosine": 0.03737587854266167,
+      "dino_gt_cosine_after_1s": 0.030401455238461494,
+      "adjacent_pixel_mae_0_255": 5.371242046356201
+    },
+    {
+      "case": "E",
+      "name": "video_spread",
+      "seed": 42,
+      "reference_tokens": 1440,
+      "reference_time_layout": "spread",
+      "reused": true,
+      "dino_gt_cosine": 0.03916202113032341,
+      "dino_gt_cosine_after_1s": 0.034364450722932816,
+      "adjacent_pixel_mae_0_255": 3.5075323581695557
+    }
+  ],
+  "contrasts": {
+    "B_minus_A": {
+      "dino_gt_cosine": -0.7381162084639072,
+      "dino_gt_cosine_after_1s": -0.895175451412797
+    },
+    "C_minus_B": {
+      "dino_gt_cosine": 0.003740701824426651,
+      "dino_gt_cosine_after_1s": 0.010400144383311272
+    },
+    "E_minus_D": {
+      "dino_gt_cosine": 0.0017861425876617432,
+      "dino_gt_cosine_after_1s": 0.003962995484471321
+    },
+    "D_minus_B": {
+      "dino_gt_cosine": 0.0029221326112747192,
+      "dino_gt_cosine_after_1s": 0.004797201603651047
+    },
+    "E_minus_C": {
+      "dino_gt_cosine": 0.0009675733745098114,
+      "dino_gt_cosine_after_1s": -0.0016399472951889038
+    }
+  },
+  "pixel_diagnostics": {
+    "A": {
+      "dino_gt_frame_cosines": [
+        0.05552970990538597,
+        0.048848990350961685,
+        0.861808717250824,
+        0.9384147524833679,
+        0.892447292804718,
+        0.9134655594825745,
+        0.9083379507064819,
+        0.9133479595184326,
+        0.9448955059051514,
+        0.9362467527389526,
+        0.9248964190483093,
+        0.9326000809669495
+      ],
+      "adjacent_pixel_mae_0_255": 1.9050177335739136,
+      "near_static_pair_fraction_mae_below_0_1": 0.04225352112676056,
+      "boundary_pixel_mae_0_255": 9.644097328186035,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 15.58285109202067,
+      "oracle_max_feature_cosine_mean": 0.8098923563957214
+    },
+    "B": {
+      "dino_gt_frame_cosines": [
+        0.04890407994389534,
+        0.05765930190682411,
+        0.05751510709524155,
+        0.044532448053359985,
+        0.017734050750732422,
+        0.018916012719273567,
+        0.028689004480838776,
+        0.034048765897750854,
+        0.01638398878276348,
+        0.0336596742272377,
+        0.0192745141685009,
+        0.03612801060080528
+      ],
+      "adjacent_pixel_mae_0_255": 4.396816253662109,
+      "near_static_pair_fraction_mae_below_0_1": 0.0,
+      "boundary_pixel_mae_0_255": 9.10679817199707,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 43.86178334554037,
+      "oracle_max_feature_cosine_mean": 0.04496621713042259
+    },
+    "C": {
+      "dino_gt_frame_cosines": [
+        0.050714150071144104,
+        0.04705661162734032,
+        0.042782608419656754,
+        0.02974485233426094,
+        0.03743837773799896,
+        0.029318004846572876,
+        0.04353415593504906,
+        0.04571853578090668,
+        0.038421209901571274,
+        0.0378589890897274,
+        0.03570884093642235,
+        0.02003704383969307
+      ],
+      "adjacent_pixel_mae_0_255": 3.4490649700164795,
+      "near_static_pair_fraction_mae_below_0_1": 0.0,
+      "boundary_pixel_mae_0_255": 9.283411026000977,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 43.48444430033366,
+      "oracle_max_feature_cosine_mean": 0.048521578311920166
+    },
+    "D": {
+      "dino_gt_frame_cosines": [
+        0.05519862845540047,
+        0.05581348016858101,
+        0.0512167364358902,
+        0.043070074170827866,
+        0.0318857878446579,
+        0.03152912110090256,
+        0.024925177916884422,
+        0.018535632640123367,
+        0.013848816975951195,
+        0.03158094733953476,
+        0.03703983873128891,
+        0.05386631563305855
+      ],
+      "adjacent_pixel_mae_0_255": 5.371242046356201,
+      "near_static_pair_fraction_mae_below_0_1": 0.0,
+      "boundary_pixel_mae_0_255": 9.18337631225586,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 43.73960145314535,
+      "oracle_max_feature_cosine_mean": 0.04902219399809837
+    },
+    "E": {
+      "dino_gt_frame_cosines": [
+        0.05538449436426163,
+        0.05895539000630379,
+        0.037540942430496216,
+        0.04314785450696945,
+        0.03471994772553444,
+        0.03424924612045288,
+        0.04037321358919144,
+        0.04728177934885025,
+        0.05262266471982002,
+        0.034897077828645706,
+        0.018374381586909294,
+        0.01239730603992939
+      ],
+      "adjacent_pixel_mae_0_255": 3.5075323581695557,
+      "near_static_pair_fraction_mae_below_0_1": 0.0,
+      "boundary_pixel_mae_0_255": 9.273828506469727,
+      "oracle_nearest_frame_pixel_mae_128x72_mean": 43.5711867014567,
+      "oracle_max_feature_cosine_mean": 0.050073396414518356
+    }
+  },
+  "anchor_metric_checks": {
+    "A": {
+      "previous": 0.7725699543952942,
+      "current": 0.7725699543952942
+    },
+    "E": {
+      "previous": 0.03916202113032341,
+      "current": 0.03916202113032341
+    }
+  },
+  "comparison_video": {
+    "path": "/mnt/minu/minseok/LTX-2/longcond/feasibility_long_context/reports/reference_format/seed42/comparison.mp4",
+    "frames": 120,
+    "fps": 24,
+    "duration_seconds": 5.0,
+    "sha256": "ee908e04b7fd857057e917d8d67d866f749baf6812b2e780ecb477c5d34bc3ac",
+    "full_decode_passed": true
+  },
+  "artifact_audit": "artifact_verification.json",
+  "scope": "Single scene and seed; artificial duplication/coordinate collapse diagnosis; no training or IC-LoRA",
+  "review_status": "See review.json for assistant sample-frame review; user review is separate"
+}
