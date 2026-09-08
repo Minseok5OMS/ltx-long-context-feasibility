@@ -1,6 +1,6 @@
 # 데이터와 산출물
 
-[처음](../README.md) · [갤러리](../index.html)
+[처음](../README.md) · [GitHub 결과 페이지](../browse/README.md)
 
 FineVideo `HuggingFaceFV/finevideo` revision `84c74091e1c6ee7a5dffabfafb5c9033e4718883`에서 선택한 원본을 사용했습니다. 두 초기 인터뷰는 같은 원본이며 마지막 5개 사례는 앞선 5개 원본을 다시 사용했습니다. [사례 metadata](../results/cases.json)에 원본 제목, shard/row, source hash, 구간, 실제 사용한 prompt 및 기존 진단의 제한을 연결했습니다.
 
@@ -18,6 +18,7 @@ FineVideo `HuggingFaceFV/finevideo` revision `84c74091e1c6ee7a5dffabfafb5c9033e4
 
 | 경로 | 내용 |
 |---|---|
+| `browse/`, `media/previews/` | GitHub용 실험·사례별 Markdown과 움직이는 축소 GIF |
 | `index.html`, `site/` | 실제 조건명과 재사용 표시를 갖춘 정적 갤러리 |
 | `docs/`, `README.md` | 현재 결론과 읽기 순서; HTML 읽기 버전 포함 |
 | `media/` | 120회 Target·continuation, 짧은 실제 참조/Local/후속, 32초 표시 영상, 미리보기 |

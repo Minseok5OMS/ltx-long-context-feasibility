@@ -1,6 +1,7 @@
 """Verify the portable archive. Optional full video decode requires PyAV."""
 import argparse
 import json
+import re
 from collections import Counter
 from html.parser import HTMLParser
 from pathlib import Path
@@ -67,6 +68,22 @@ def main():
             target = page.parent / unquote(url.path)
             assert target.is_file(), f'Broken link in {page.relative_to(ROOT)}: {href}'
             link_count += 1
+    markdown_links = 0
+    for page in [ROOT / 'README.md', *ROOT.glob('docs/*.md'), *ROOT.glob('browse/**/*.md')]:
+        for href in re.findall(r'!?\[[^\]\n]*\]\(([^)\n]+)\)', page.read_text(encoding='utf-8')):
+            url = urlsplit(href)
+            if url.scheme or url.netloc or not url.path:
+                continue
+            assert (page.parent / unquote(url.path)).is_file(), f'Broken Markdown link: {page}: {href}'
+            markdown_links += 1
+    preview_file = ROOT / 'results/github_previews.json'
+    if preview_file.exists():
+        previews = json.loads(preview_file.read_text())['previews']
+        for run in data['runs'].values():
+            assert run['target']['sha256'] in previews
+        for checksum, preview in previews.items():
+            assert digest(ROOT / preview['source']) == checksum
+            assert (ROOT / preview['path']).read_bytes()[:6] in {b'GIF87a', b'GIF89a'}
     frozen = ROOT / 'repro/longcond/feasibility_long_context/configs/long_input_cases.json'
     assert digest(frozen) == 'bdba61857111a43b2576f725d2be1dc262ee88480e40f30a49f712df5060d75f'
     frames = 0
@@ -79,7 +96,7 @@ def main():
             frames += count
     print(json.dumps({'status': 'passed', 'files_hashed': len(manifest['files']),
                       'formal_runs': 120, 'comparison_entries': 151, 'reused_entries': 31,
-                      'html_links_checked': link_count, 'unique_mp4': len(assets),
+                      'html_links_checked': link_count, 'markdown_links_checked': markdown_links, 'unique_mp4': len(assets),
                       'full_decode': args.decode, 'decoded_frames': frames}, indent=2))
 
 

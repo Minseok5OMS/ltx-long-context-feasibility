@@ -1,6 +1,6 @@
 # 결과와 해석의 범위
 
-[갤러리](../index.html) · [처음](../README.md)
+[GitHub 결과 페이지](../browse/README.md) · [처음](../README.md)
 
 ## 필요한 증거를 활용할 능력은 있으나 제어가 안정적이지 않다
 

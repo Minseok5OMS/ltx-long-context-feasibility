@@ -1,5 +1,5 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>METHODS · LTX Feasibility</title><link rel="stylesheet" href="../site/style.css"></head><body><header class="doc"><nav><a href="../index.html">입력·출력 갤러리</a><a href="../README.html">전체 요약</a><a href="METHODS.md" download>Markdown 원문 다운로드</a></nav></header><main class="doc"><h1>실제 입력 방식과 비교 통제</h1>
-<p><a href="../index.html">갤러리</a> · <a href="../README.html">처음</a></p>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>METHODS · LTX Feasibility</title><link rel="stylesheet" href="../site/style.css"></head><body><header class="doc"><nav><a href="../index.html">로컬 HTML 갤러리</a><a href="METHODS.md">Markdown 원문</a></nav></header><main class="doc"><h1>실제 입력 방식과 비교 통제</h1>
+<p><a href="../browse/README.md">GitHub 결과 페이지</a> · <a href="../README.html">처음</a></p>
 <h2>Local은 생성 조건이다</h2>
 <p>독립 Local 2초의 첫 프레임을 한 번 padding해 49 RGB frame으로 VAE 인코딩하고, 7 latent frame을 생성 sequence의 clean prefix로 고정합니다. 뒤의 9 latent frame은 noise에서 denoising해 새 Target 72 RGB frame, 3초를 만듭니다. 고정 prefix도 생성 중 attention에 참여합니다. 단순히 출력 영상 앞에 붙이는 작업만 한 것이 아닙니다.</p>
 <p>디코딩은 conditioning 7 + Target 9 latent에서 121 RGB frame을 얻고 <code>[49:121]</code>만 Target으로 평가합니다. 별도의 continuation 영상은 원본 Local 48 frame과 생성 Target 72 frame을 붙인 5초 표시 영상입니다. 갤러리의 기본 출력은 <strong>새로 생성한 Target 3초</strong>입니다.</p>

@@ -1,12 +1,28 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>README · LTX Feasibility</title><link rel="stylesheet" href="site/style.css"></head><body><header class="doc"><nav><a href="index.html">입력·출력 갤러리</a><a href="README.html">전체 요약</a><a href="README.md" download>Markdown 원문 다운로드</a></nav></header><main class="doc"><h1>LTX Long-Context Feasibility</h1>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>README · LTX Feasibility</title><link rel="stylesheet" href="site/style.css"></head><body><header class="doc"><nav><a href="index.html">로컬 HTML 갤러리</a><a href="README.md">Markdown 원문</a></nav></header><main class="doc"><h1>LTX Long-Context Feasibility</h1>
 <p><strong>Addressable Global Memory for Long-Context Video Generation</strong> 연구의 Stage 1 실험 기록입니다. FineVideo의 과거 증거를 frozen LTX 2.5에 주었을 때 생성에 활용할 수 있는지, 긴 과거 전체보다 필요한 chunk를 선택하는 것이 유리한지 확인했습니다.</p>
 <p><strong>정식 생성 120회, 9개 실험 묶음을 완료하고 feasibility를 종료했습니다.</strong> Oracle 증거의 효용과 계산 절감은 부분적으로 확인했습니다. 학습된 압축 메모리와 자동 검색의 효과는 아직 검증하지 않았습니다.</p>
-<h2>먼저 볼 결과</h2>
-<p><a href="index.html">입력·출력 갤러리</a>에는 모든 120회 생성과 비교에 재사용한 결과가 있습니다. 브라우저에서 저장소의 <code>index.html</code>을 열거나 아래 명령으로 실행하세요. GitHub 파일 화면은 HTML 앱을 실행하지 않습니다.</p>
-<pre><code class="language-bash">cd /home/minseok/workspace/ltx-long-context-feasibility
-python3 -m http.server 8766 --bind 127.0.0.1
-</code></pre>
-<p>서버에서 작업한다면 VS Code의 <strong>Ports</strong>에서 <code>8766</code>을 전달한 뒤 브라우저에서 <code>http://localhost:8766</code>을 엽니다. Markdown의 브라우저용 HTML도 함께 제공하여 한글 문서를 바로 읽을 수 있습니다. 갤러리는 외부 JavaScript 서비스나 모델 없이 동작합니다.</p>
+<h2>GitHub에서 바로 결과 보기</h2>
+<p><strong><a href="browse/experiment_9/README.md">마지막 32초 비교 · 5사례</a></strong> · <strong><a href="browse/README.md">전체 9개 실험 · 120회 결과</a></strong></p>
+<p>영상 파일은 이 저장소의 <code>media/videos/</code>에 포함되어 있습니다. 아래와 각 사례 페이지의 움직이는 미리보기는 **GIF(256×144, 8 FPS)**이며, 클릭하면 원본 MP4를 엽니다. 별도 웹서버나 GitHub Pages 설정이 필요하지 않습니다. 정밀 평가는 원본 MP4(512×288, 24 FPS)를 사용하세요.</p>
+<h3>로봇 예시 · 같은 Local과 prompt, 다른 과거 입력</h3>
+<table>
+<thead>
+<tr>
+<th>Local-only</th>
+<th>Native-Full · 연속 32초</th>
+<th>Oracle-sparse · 선택 chunk</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="media/videos/1bb8d7c2fb496ff1f9acd24f8d58a35a228c5107ce27666fbb0d6be9c1ac5bd7.mp4"><img src="media/previews/1bb8d7c2fb496ff1f9acd24f8d58a35a228c5107ce27666fbb0d6be9c1ac5bd7.gif" alt="Local-only" /></a></td>
+<td><a href="media/videos/7353b0ff45c64fd43769e5d85bf34e0e741006d556a8ee9a81cc33abfe94755b.mp4"><img src="media/previews/7353b0ff45c64fd43769e5d85bf34e0e741006d556a8ee9a81cc33abfe94755b.gif" alt="Native-Full · 연속 32초" /></a></td>
+<td><a href="media/videos/2998f4e5a180f41f7e771b39eb7109ee7d658904b2192d2b5d872ea8e03aeed9.mp4"><img src="media/previews/2998f4e5a180f41f7e771b39eb7109ee7d658904b2192d2b5d872ea8e03aeed9.gif" alt="Oracle-sparse · 선택 chunk" /></a></td>
+</tr>
+</tbody>
+</table>
+<p>Oracle은 각진 helmet·금색 앞면을 손 없는 새 display와 결합했습니다. 초반 dissolve는 남아 있습니다. <a href="browse/experiment_9/long_002_robot_head.md">실제 입력·5조건·prompt 확인</a></p>
+<p>성공 사례와 함께 <a href="browse/experiment_9/long_003_student_return.md">학생의 공동 실패</a>, <a href="browse/experiment_9/long_004_van_exterior.md">차량의 주행 실패</a>, <a href="browse/experiment_9/long_005_conservator.md">보존 작업자의 부분 노출</a>을 확인하세요.</p>
 <p>마지막 실험은 <strong>연속 과거 32초와 선택 chunk를 비교한 5사례 × 5조건</strong>입니다. 동일 GPU 0에서 조건마다 새 프로세스로 실행했습니다.</p>
 <table>
 <thead>

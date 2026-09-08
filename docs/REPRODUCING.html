@@ -1,6 +1,8 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>REPRODUCING · LTX Feasibility</title><link rel="stylesheet" href="../site/style.css"></head><body><header class="doc"><nav><a href="../index.html">입력·출력 갤러리</a><a href="../README.html">전체 요약</a><a href="REPRODUCING.md" download>Markdown 원문 다운로드</a></nav></header><main class="doc"><h1>저장 결과 확인과 원실험 재현</h1>
-<p><a href="../README.html">처음</a> · <a href="../index.html">갤러리</a></p>
-<h2>모델 없이 확인</h2>
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>REPRODUCING · LTX Feasibility</title><link rel="stylesheet" href="../site/style.css"></head><body><header class="doc"><nav><a href="../index.html">로컬 HTML 갤러리</a><a href="REPRODUCING.md">Markdown 원문</a></nav></header><main class="doc"><h1>저장 결과 확인과 원실험 재현</h1>
+<p><a href="../README.html">처음</a> · <a href="../browse/README.md">GitHub 결과 페이지</a></p>
+<h2>GitHub에서 바로 확인</h2>
+<p><a href="../browse/README.md">전체 실험 페이지</a>를 열면 입력과 생성 결과의 GIF를 바로 볼 수 있습니다. 영상은 이미 저장소에 포함되어 있으며 MP4 링크로 원본을 열 수 있습니다. 페이지 탐색에 서버 실행은 필요 없습니다.</p>
+<h2>로컬 HTML 갤러리와 무결성 확인</h2>
 <p>저장소 루트에서 실행합니다. 갤러리와 HTML 문서는 네트워크 서비스나 GPU 없이 열 수 있습니다.</p>
 <pre><code class="language-bash">python3 scripts/verify_archive.py
 python3 -m http.server 8766 --bind 127.0.0.1

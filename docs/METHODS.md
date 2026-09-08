@@ -1,6 +1,6 @@
 # 실제 입력 방식과 비교 통제
 
-[갤러리](../index.html) · [처음](../README.md)
+[GitHub 결과 페이지](../browse/README.md) · [처음](../README.md)
 
 ## Local은 생성 조건이다
 
